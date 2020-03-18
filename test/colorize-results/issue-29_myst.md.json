@@ -23,7 +23,7 @@
 	},
 	{
 		"c": "#",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.markdown markup.heading.myst heading.1.myst punctuation.definition.heading.myst",
+		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.markdown markup.heading.markdown heading.1.markdown punctuation.definition.heading.markdown",
 		"r": {
 			"dark_plus": "markup.heading: #569CD6",
 			"light_plus": "markup.heading: #800000",
@@ -34,7 +34,7 @@
 	},
 	{
 		"c": " ",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.markdown markup.heading.myst heading.1.myst",
+		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.markdown markup.heading.markdown heading.1.markdown",
 		"r": {
 			"dark_plus": "markup.heading: #569CD6",
 			"light_plus": "markup.heading: #800000",
@@ -45,7 +45,7 @@
 	},
 	{
 		"c": "markdown",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.markdown markup.heading.myst heading.1.myst entity.name.section.myst",
+		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.markdown markup.heading.markdown heading.1.markdown entity.name.section.markdown",
 		"r": {
 			"dark_plus": "markup.heading: #569CD6",
 			"light_plus": "markup.heading: #800000",
@@ -56,7 +56,7 @@
 	},
 	{
 		"c": "**",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.markdown meta.paragraph.myst markup.bold.myst punctuation.definition.bold.myst",
+		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.markdown meta.paragraph.markdown markup.bold.markdown punctuation.definition.bold.markdown",
 		"r": {
 			"dark_plus": "markup.bold: #569CD6",
 			"light_plus": "markup.bold: #000080",
@@ -67,7 +67,7 @@
 	},
 	{
 		"c": "markdown",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.markdown meta.paragraph.myst markup.bold.myst",
+		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.markdown meta.paragraph.markdown markup.bold.markdown",
 		"r": {
 			"dark_plus": "markup.bold: #569CD6",
 			"light_plus": "markup.bold: #000080",
@@ -78,7 +78,7 @@
 	},
 	{
 		"c": "**",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.markdown meta.paragraph.myst markup.bold.myst punctuation.definition.bold.myst",
+		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.markdown meta.paragraph.markdown markup.bold.markdown punctuation.definition.bold.markdown",
 		"r": {
 			"dark_plus": "markup.bold: #569CD6",
 			"light_plus": "markup.bold: #000080",
