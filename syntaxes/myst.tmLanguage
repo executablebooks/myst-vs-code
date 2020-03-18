@@ -1389,16 +1389,6 @@
         <key>while</key>
         <string>(^|\G)\s*(&gt;) ?</string>
       </dict>
-      <key>directive_block</key>
-      <dict>
-        <key>patterns</key>
-        <array>
-          <dict>
-            <key>include</key>
-            <string>#directive_block_admonition</string>
-          </dict>
-        </array>
-      </dict>
       <key>directive_block_admonition</key>
       <dict>
         <key>begin</key>
@@ -1418,7 +1408,7 @@
           <key>5</key>
           <dict>
             <key>name</key>
-            <string>directive.block.attributes.myst</string>
+            <string>support.variable.attributes.directive.myst</string>
           </dict>
         </dict>
         <key>end</key>
@@ -1482,6 +1472,3221 @@
         <key>name</key>
         <string>markup.fenced_code.block.myst</string>
       </dict>
+      <key>directive_block_unknown</key>
+      <dict>
+        <key>begin</key>
+        <string>(^|\G)(\s*)(`{3,}|~{3,})\s*\{([a-zA-Z0-9\_\-\@]+)\}\s*(?=([^`~]*)?$)</string>
+        <key>beginCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+          <key>4</key>
+          <dict>
+            <key>name</key>
+            <string>support.class.directive.myst</string>
+          </dict>
+          <key>5</key>
+          <dict>
+            <key>name</key>
+            <string>support.variable.language.myst</string>
+          </dict>
+        </dict>
+        <key>end</key>
+        <string>(^|\G)(\2|\s{0,3})(\3)\s*$</string>
+        <key>endCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+        </dict>
+        <key>name</key>
+        <string>markup.fenced_code.block.myst</string>
+      </dict>
+      <key>code_cell_block_css</key>
+      <dict>
+        <key>begin</key>
+        <string>(^|\G)(\s*)(`{3,}|~{3,})\s*\{(code-cell|code|code-block)\}\s+(?i:(css|css.erb)((\s+|:|\{)[^`~]*)?$)</string>
+        <key>name</key>
+        <string>markup.code_cell.block.myst</string>
+        <key>end</key>
+        <string>(^|\G)(\2|\s{0,3})(\3)\s*$</string>
+        <key>beginCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+          <key>4</key>
+          <dict>
+            <key>name</key>
+            <string>support.class.directive.myst</string>
+          </dict>
+          <key>5</key>
+          <dict>
+            <key>name</key>
+            <string>support.variable.language.myst</string>
+          </dict>
+          <key>6</key>
+          <dict>
+            <key>name</key>
+            <string>directive.block.language.attributes.myst</string>
+          </dict>
+        </dict>
+        <key>endCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+        </dict>
+        <key>patterns</key>
+        <array>
+          <dict>
+            <key>begin</key>
+            <string>(^|\G)(\s*)(.*)</string>
+            <key>while</key>
+            <string>(^|\G)(?!\s*([`~]{3,})\s*$)</string>
+            <key>contentName</key>
+            <string>meta.embedded.block.css</string>
+            <key>patterns</key>
+            <array>
+              <dict>
+                <key>include</key>
+                <string>source.css</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <key>code_cell_block_basic</key>
+      <dict>
+        <key>begin</key>
+        <string>(^|\G)(\s*)(`{3,}|~{3,})\s*\{(code-cell|code|code-block)\}\s+(?i:(html|htm|shtml|xhtml|inc|tmpl|tpl)((\s+|:|\{)[^`~]*)?$)</string>
+        <key>name</key>
+        <string>markup.code_cell.block.myst</string>
+        <key>end</key>
+        <string>(^|\G)(\2|\s{0,3})(\3)\s*$</string>
+        <key>beginCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+          <key>4</key>
+          <dict>
+            <key>name</key>
+            <string>support.class.directive.myst</string>
+          </dict>
+          <key>5</key>
+          <dict>
+            <key>name</key>
+            <string>support.variable.language.myst</string>
+          </dict>
+          <key>6</key>
+          <dict>
+            <key>name</key>
+            <string>directive.block.language.attributes.myst</string>
+          </dict>
+        </dict>
+        <key>endCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+        </dict>
+        <key>patterns</key>
+        <array>
+          <dict>
+            <key>begin</key>
+            <string>(^|\G)(\s*)(.*)</string>
+            <key>while</key>
+            <string>(^|\G)(?!\s*([`~]{3,})\s*$)</string>
+            <key>contentName</key>
+            <string>meta.embedded.block.html</string>
+            <key>patterns</key>
+            <array>
+              <dict>
+                <key>include</key>
+                <string>text.html.basic</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <key>code_cell_block_ini</key>
+      <dict>
+        <key>begin</key>
+        <string>(^|\G)(\s*)(`{3,}|~{3,})\s*\{(code-cell|code|code-block)\}\s+(?i:(ini|conf)((\s+|:|\{)[^`~]*)?$)</string>
+        <key>name</key>
+        <string>markup.code_cell.block.myst</string>
+        <key>end</key>
+        <string>(^|\G)(\2|\s{0,3})(\3)\s*$</string>
+        <key>beginCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+          <key>4</key>
+          <dict>
+            <key>name</key>
+            <string>support.class.directive.myst</string>
+          </dict>
+          <key>5</key>
+          <dict>
+            <key>name</key>
+            <string>support.variable.language.myst</string>
+          </dict>
+          <key>6</key>
+          <dict>
+            <key>name</key>
+            <string>directive.block.language.attributes.myst</string>
+          </dict>
+        </dict>
+        <key>endCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+        </dict>
+        <key>patterns</key>
+        <array>
+          <dict>
+            <key>begin</key>
+            <string>(^|\G)(\s*)(.*)</string>
+            <key>while</key>
+            <string>(^|\G)(?!\s*([`~]{3,})\s*$)</string>
+            <key>contentName</key>
+            <string>meta.embedded.block.ini</string>
+            <key>patterns</key>
+            <array>
+              <dict>
+                <key>include</key>
+                <string>source.ini</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <key>code_cell_block_java</key>
+      <dict>
+        <key>begin</key>
+        <string>(^|\G)(\s*)(`{3,}|~{3,})\s*\{(code-cell|code|code-block)\}\s+(?i:(java|bsh)((\s+|:|\{)[^`~]*)?$)</string>
+        <key>name</key>
+        <string>markup.code_cell.block.myst</string>
+        <key>end</key>
+        <string>(^|\G)(\2|\s{0,3})(\3)\s*$</string>
+        <key>beginCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+          <key>4</key>
+          <dict>
+            <key>name</key>
+            <string>support.class.directive.myst</string>
+          </dict>
+          <key>5</key>
+          <dict>
+            <key>name</key>
+            <string>support.variable.language.myst</string>
+          </dict>
+          <key>6</key>
+          <dict>
+            <key>name</key>
+            <string>directive.block.language.attributes.myst</string>
+          </dict>
+        </dict>
+        <key>endCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+        </dict>
+        <key>patterns</key>
+        <array>
+          <dict>
+            <key>begin</key>
+            <string>(^|\G)(\s*)(.*)</string>
+            <key>while</key>
+            <string>(^|\G)(?!\s*([`~]{3,})\s*$)</string>
+            <key>contentName</key>
+            <string>meta.embedded.block.java</string>
+            <key>patterns</key>
+            <array>
+              <dict>
+                <key>include</key>
+                <string>source.java</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <key>code_cell_block_lua</key>
+      <dict>
+        <key>begin</key>
+        <string>(^|\G)(\s*)(`{3,}|~{3,})\s*\{(code-cell|code|code-block)\}\s+(?i:(lua)((\s+|:|\{)[^`~]*)?$)</string>
+        <key>name</key>
+        <string>markup.code_cell.block.myst</string>
+        <key>end</key>
+        <string>(^|\G)(\2|\s{0,3})(\3)\s*$</string>
+        <key>beginCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+          <key>4</key>
+          <dict>
+            <key>name</key>
+            <string>support.class.directive.myst</string>
+          </dict>
+          <key>5</key>
+          <dict>
+            <key>name</key>
+            <string>support.variable.language.myst</string>
+          </dict>
+          <key>6</key>
+          <dict>
+            <key>name</key>
+            <string>directive.block.language.attributes.myst</string>
+          </dict>
+        </dict>
+        <key>endCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+        </dict>
+        <key>patterns</key>
+        <array>
+          <dict>
+            <key>begin</key>
+            <string>(^|\G)(\s*)(.*)</string>
+            <key>while</key>
+            <string>(^|\G)(?!\s*([`~]{3,})\s*$)</string>
+            <key>contentName</key>
+            <string>meta.embedded.block.lua</string>
+            <key>patterns</key>
+            <array>
+              <dict>
+                <key>include</key>
+                <string>source.lua</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <key>code_cell_block_makefile</key>
+      <dict>
+        <key>begin</key>
+        <string>(^|\G)(\s*)(`{3,}|~{3,})\s*\{(code-cell|code|code-block)\}\s+(?i:(Makefile|makefile|GNUmakefile|OCamlMakefile)((\s+|:|\{)[^`~]*)?$)</string>
+        <key>name</key>
+        <string>markup.code_cell.block.myst</string>
+        <key>end</key>
+        <string>(^|\G)(\2|\s{0,3})(\3)\s*$</string>
+        <key>beginCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+          <key>4</key>
+          <dict>
+            <key>name</key>
+            <string>support.class.directive.myst</string>
+          </dict>
+          <key>5</key>
+          <dict>
+            <key>name</key>
+            <string>support.variable.language.myst</string>
+          </dict>
+          <key>6</key>
+          <dict>
+            <key>name</key>
+            <string>directive.block.language.attributes.myst</string>
+          </dict>
+        </dict>
+        <key>endCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+        </dict>
+        <key>patterns</key>
+        <array>
+          <dict>
+            <key>begin</key>
+            <string>(^|\G)(\s*)(.*)</string>
+            <key>while</key>
+            <string>(^|\G)(?!\s*([`~]{3,})\s*$)</string>
+            <key>contentName</key>
+            <string>meta.embedded.block.makefile</string>
+            <key>patterns</key>
+            <array>
+              <dict>
+                <key>include</key>
+                <string>source.makefile</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <key>code_cell_block_perl</key>
+      <dict>
+        <key>begin</key>
+        <string>(^|\G)(\s*)(`{3,}|~{3,})\s*\{(code-cell|code|code-block)\}\s+(?i:(perl|pl|pm|pod|t|PL|psgi|vcl)((\s+|:|\{)[^`~]*)?$)</string>
+        <key>name</key>
+        <string>markup.code_cell.block.myst</string>
+        <key>end</key>
+        <string>(^|\G)(\2|\s{0,3})(\3)\s*$</string>
+        <key>beginCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+          <key>4</key>
+          <dict>
+            <key>name</key>
+            <string>support.class.directive.myst</string>
+          </dict>
+          <key>5</key>
+          <dict>
+            <key>name</key>
+            <string>support.variable.language.myst</string>
+          </dict>
+          <key>6</key>
+          <dict>
+            <key>name</key>
+            <string>directive.block.language.attributes.myst</string>
+          </dict>
+        </dict>
+        <key>endCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+        </dict>
+        <key>patterns</key>
+        <array>
+          <dict>
+            <key>begin</key>
+            <string>(^|\G)(\s*)(.*)</string>
+            <key>while</key>
+            <string>(^|\G)(?!\s*([`~]{3,})\s*$)</string>
+            <key>contentName</key>
+            <string>meta.embedded.block.perl</string>
+            <key>patterns</key>
+            <array>
+              <dict>
+                <key>include</key>
+                <string>source.perl</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <key>code_cell_block_r</key>
+      <dict>
+        <key>begin</key>
+        <string>(^|\G)(\s*)(`{3,}|~{3,})\s*\{(code-cell|code|code-block)\}\s+(?i:(R|r|s|S|Rprofile|\{\.r.+?\})((\s+|:|\{)[^`~]*)?$)</string>
+        <key>name</key>
+        <string>markup.code_cell.block.myst</string>
+        <key>end</key>
+        <string>(^|\G)(\2|\s{0,3})(\3)\s*$</string>
+        <key>beginCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+          <key>4</key>
+          <dict>
+            <key>name</key>
+            <string>support.class.directive.myst</string>
+          </dict>
+          <key>5</key>
+          <dict>
+            <key>name</key>
+            <string>support.variable.language.myst</string>
+          </dict>
+          <key>6</key>
+          <dict>
+            <key>name</key>
+            <string>directive.block.language.attributes.myst</string>
+          </dict>
+        </dict>
+        <key>endCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+        </dict>
+        <key>patterns</key>
+        <array>
+          <dict>
+            <key>begin</key>
+            <string>(^|\G)(\s*)(.*)</string>
+            <key>while</key>
+            <string>(^|\G)(?!\s*([`~]{3,})\s*$)</string>
+            <key>contentName</key>
+            <string>meta.embedded.block.r</string>
+            <key>patterns</key>
+            <array>
+              <dict>
+                <key>include</key>
+                <string>source.r</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <key>code_cell_block_ruby</key>
+      <dict>
+        <key>begin</key>
+        <string>(^|\G)(\s*)(`{3,}|~{3,})\s*\{(code-cell|code|code-block)\}\s+(?i:(ruby|rb|rbx|rjs|Rakefile|rake|cgi|fcgi|gemspec|irbrc|Capfile|ru|prawn|Cheffile|Gemfile|Guardfile|Hobofile|Vagrantfile|Appraisals|Rantfile|Berksfile|Berksfile.lock|Thorfile|Puppetfile)((\s+|:|\{)[^`~]*)?$)</string>
+        <key>name</key>
+        <string>markup.code_cell.block.myst</string>
+        <key>end</key>
+        <string>(^|\G)(\2|\s{0,3})(\3)\s*$</string>
+        <key>beginCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+          <key>4</key>
+          <dict>
+            <key>name</key>
+            <string>support.class.directive.myst</string>
+          </dict>
+          <key>5</key>
+          <dict>
+            <key>name</key>
+            <string>support.variable.language.myst</string>
+          </dict>
+          <key>6</key>
+          <dict>
+            <key>name</key>
+            <string>directive.block.language.attributes.myst</string>
+          </dict>
+        </dict>
+        <key>endCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+        </dict>
+        <key>patterns</key>
+        <array>
+          <dict>
+            <key>begin</key>
+            <string>(^|\G)(\s*)(.*)</string>
+            <key>while</key>
+            <string>(^|\G)(?!\s*([`~]{3,})\s*$)</string>
+            <key>contentName</key>
+            <string>meta.embedded.block.ruby</string>
+            <key>patterns</key>
+            <array>
+              <dict>
+                <key>include</key>
+                <string>source.ruby</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <key>code_cell_block_php</key>
+      <dict>
+        <key>begin</key>
+        <string>(^|\G)(\s*)(`{3,}|~{3,})\s*\{(code-cell|code|code-block)\}\s+(?i:(php|php3|php4|php5|phpt|phtml|aw|ctp)((\s+|:|\{)[^`~]*)?$)</string>
+        <key>name</key>
+        <string>markup.code_cell.block.myst</string>
+        <key>end</key>
+        <string>(^|\G)(\2|\s{0,3})(\3)\s*$</string>
+        <key>beginCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+          <key>4</key>
+          <dict>
+            <key>name</key>
+            <string>support.class.directive.myst</string>
+          </dict>
+          <key>5</key>
+          <dict>
+            <key>name</key>
+            <string>support.variable.language.myst</string>
+          </dict>
+          <key>6</key>
+          <dict>
+            <key>name</key>
+            <string>directive.block.language.attributes.myst</string>
+          </dict>
+        </dict>
+        <key>endCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+        </dict>
+        <key>patterns</key>
+        <array>
+          <dict>
+            <key>begin</key>
+            <string>(^|\G)(\s*)(.*)</string>
+            <key>while</key>
+            <string>(^|\G)(?!\s*([`~]{3,})\s*$)</string>
+            <key>contentName</key>
+            <string>meta.embedded.block.php</string>
+            <key>patterns</key>
+            <array>
+              <dict>
+                <key>include</key>
+                <string>text.html.basic</string>
+              </dict>
+              <dict>
+                <key>include</key>
+                <string>source.php</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <key>code_cell_block_sql</key>
+      <dict>
+        <key>begin</key>
+        <string>(^|\G)(\s*)(`{3,}|~{3,})\s*\{(code-cell|code|code-block)\}\s+(?i:(sql|ddl|dml)((\s+|:|\{)[^`~]*)?$)</string>
+        <key>name</key>
+        <string>markup.code_cell.block.myst</string>
+        <key>end</key>
+        <string>(^|\G)(\2|\s{0,3})(\3)\s*$</string>
+        <key>beginCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+          <key>4</key>
+          <dict>
+            <key>name</key>
+            <string>support.class.directive.myst</string>
+          </dict>
+          <key>5</key>
+          <dict>
+            <key>name</key>
+            <string>support.variable.language.myst</string>
+          </dict>
+          <key>6</key>
+          <dict>
+            <key>name</key>
+            <string>directive.block.language.attributes.myst</string>
+          </dict>
+        </dict>
+        <key>endCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+        </dict>
+        <key>patterns</key>
+        <array>
+          <dict>
+            <key>begin</key>
+            <string>(^|\G)(\s*)(.*)</string>
+            <key>while</key>
+            <string>(^|\G)(?!\s*([`~]{3,})\s*$)</string>
+            <key>contentName</key>
+            <string>meta.embedded.block.sql</string>
+            <key>patterns</key>
+            <array>
+              <dict>
+                <key>include</key>
+                <string>source.sql</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <key>code_cell_block_vs_net</key>
+      <dict>
+        <key>begin</key>
+        <string>(^|\G)(\s*)(`{3,}|~{3,})\s*\{(code-cell|code|code-block)\}\s+(?i:(vb)((\s+|:|\{)[^`~]*)?$)</string>
+        <key>name</key>
+        <string>markup.code_cell.block.myst</string>
+        <key>end</key>
+        <string>(^|\G)(\2|\s{0,3})(\3)\s*$</string>
+        <key>beginCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+          <key>4</key>
+          <dict>
+            <key>name</key>
+            <string>support.class.directive.myst</string>
+          </dict>
+          <key>5</key>
+          <dict>
+            <key>name</key>
+            <string>support.variable.language.myst</string>
+          </dict>
+          <key>6</key>
+          <dict>
+            <key>name</key>
+            <string>directive.block.language.attributes.myst</string>
+          </dict>
+        </dict>
+        <key>endCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+        </dict>
+        <key>patterns</key>
+        <array>
+          <dict>
+            <key>begin</key>
+            <string>(^|\G)(\s*)(.*)</string>
+            <key>while</key>
+            <string>(^|\G)(?!\s*([`~]{3,})\s*$)</string>
+            <key>contentName</key>
+            <string>meta.embedded.block.vs_net</string>
+            <key>patterns</key>
+            <array>
+              <dict>
+                <key>include</key>
+                <string>source.asp.vb.net</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <key>code_cell_block_xml</key>
+      <dict>
+        <key>begin</key>
+        <string>(^|\G)(\s*)(`{3,}|~{3,})\s*\{(code-cell|code|code-block)\}\s+(?i:(xml|xsd|tld|jsp|pt|cpt|dtml|rss|opml)((\s+|:|\{)[^`~]*)?$)</string>
+        <key>name</key>
+        <string>markup.code_cell.block.myst</string>
+        <key>end</key>
+        <string>(^|\G)(\2|\s{0,3})(\3)\s*$</string>
+        <key>beginCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+          <key>4</key>
+          <dict>
+            <key>name</key>
+            <string>support.class.directive.myst</string>
+          </dict>
+          <key>5</key>
+          <dict>
+            <key>name</key>
+            <string>support.variable.language.myst</string>
+          </dict>
+          <key>6</key>
+          <dict>
+            <key>name</key>
+            <string>directive.block.language.attributes.myst</string>
+          </dict>
+        </dict>
+        <key>endCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+        </dict>
+        <key>patterns</key>
+        <array>
+          <dict>
+            <key>begin</key>
+            <string>(^|\G)(\s*)(.*)</string>
+            <key>while</key>
+            <string>(^|\G)(?!\s*([`~]{3,})\s*$)</string>
+            <key>contentName</key>
+            <string>meta.embedded.block.xml</string>
+            <key>patterns</key>
+            <array>
+              <dict>
+                <key>include</key>
+                <string>text.xml</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <key>code_cell_block_xsl</key>
+      <dict>
+        <key>begin</key>
+        <string>(^|\G)(\s*)(`{3,}|~{3,})\s*\{(code-cell|code|code-block)\}\s+(?i:(xsl|xslt)((\s+|:|\{)[^`~]*)?$)</string>
+        <key>name</key>
+        <string>markup.code_cell.block.myst</string>
+        <key>end</key>
+        <string>(^|\G)(\2|\s{0,3})(\3)\s*$</string>
+        <key>beginCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+          <key>4</key>
+          <dict>
+            <key>name</key>
+            <string>support.class.directive.myst</string>
+          </dict>
+          <key>5</key>
+          <dict>
+            <key>name</key>
+            <string>support.variable.language.myst</string>
+          </dict>
+          <key>6</key>
+          <dict>
+            <key>name</key>
+            <string>directive.block.language.attributes.myst</string>
+          </dict>
+        </dict>
+        <key>endCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+        </dict>
+        <key>patterns</key>
+        <array>
+          <dict>
+            <key>begin</key>
+            <string>(^|\G)(\s*)(.*)</string>
+            <key>while</key>
+            <string>(^|\G)(?!\s*([`~]{3,})\s*$)</string>
+            <key>contentName</key>
+            <string>meta.embedded.block.xsl</string>
+            <key>patterns</key>
+            <array>
+              <dict>
+                <key>include</key>
+                <string>text.xml.xsl</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <key>code_cell_block_yaml</key>
+      <dict>
+        <key>begin</key>
+        <string>(^|\G)(\s*)(`{3,}|~{3,})\s*\{(code-cell|code|code-block)\}\s+(?i:(yaml|yml)((\s+|:|\{)[^`~]*)?$)</string>
+        <key>name</key>
+        <string>markup.code_cell.block.myst</string>
+        <key>end</key>
+        <string>(^|\G)(\2|\s{0,3})(\3)\s*$</string>
+        <key>beginCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+          <key>4</key>
+          <dict>
+            <key>name</key>
+            <string>support.class.directive.myst</string>
+          </dict>
+          <key>5</key>
+          <dict>
+            <key>name</key>
+            <string>support.variable.language.myst</string>
+          </dict>
+          <key>6</key>
+          <dict>
+            <key>name</key>
+            <string>directive.block.language.attributes.myst</string>
+          </dict>
+        </dict>
+        <key>endCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+        </dict>
+        <key>patterns</key>
+        <array>
+          <dict>
+            <key>begin</key>
+            <string>(^|\G)(\s*)(.*)</string>
+            <key>while</key>
+            <string>(^|\G)(?!\s*([`~]{3,})\s*$)</string>
+            <key>contentName</key>
+            <string>meta.embedded.block.yaml</string>
+            <key>patterns</key>
+            <array>
+              <dict>
+                <key>include</key>
+                <string>source.yaml</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <key>code_cell_block_dosbatch</key>
+      <dict>
+        <key>begin</key>
+        <string>(^|\G)(\s*)(`{3,}|~{3,})\s*\{(code-cell|code|code-block)\}\s+(?i:(bat|batch)((\s+|:|\{)[^`~]*)?$)</string>
+        <key>name</key>
+        <string>markup.code_cell.block.myst</string>
+        <key>end</key>
+        <string>(^|\G)(\2|\s{0,3})(\3)\s*$</string>
+        <key>beginCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+          <key>4</key>
+          <dict>
+            <key>name</key>
+            <string>support.class.directive.myst</string>
+          </dict>
+          <key>5</key>
+          <dict>
+            <key>name</key>
+            <string>support.variable.language.myst</string>
+          </dict>
+          <key>6</key>
+          <dict>
+            <key>name</key>
+            <string>directive.block.language.attributes.myst</string>
+          </dict>
+        </dict>
+        <key>endCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+        </dict>
+        <key>patterns</key>
+        <array>
+          <dict>
+            <key>begin</key>
+            <string>(^|\G)(\s*)(.*)</string>
+            <key>while</key>
+            <string>(^|\G)(?!\s*([`~]{3,})\s*$)</string>
+            <key>contentName</key>
+            <string>meta.embedded.block.dosbatch</string>
+            <key>patterns</key>
+            <array>
+              <dict>
+                <key>include</key>
+                <string>source.batchfile</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <key>code_cell_block_clojure</key>
+      <dict>
+        <key>begin</key>
+        <string>(^|\G)(\s*)(`{3,}|~{3,})\s*\{(code-cell|code|code-block)\}\s+(?i:(clj|cljs|clojure)((\s+|:|\{)[^`~]*)?$)</string>
+        <key>name</key>
+        <string>markup.code_cell.block.myst</string>
+        <key>end</key>
+        <string>(^|\G)(\2|\s{0,3})(\3)\s*$</string>
+        <key>beginCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+          <key>4</key>
+          <dict>
+            <key>name</key>
+            <string>support.class.directive.myst</string>
+          </dict>
+          <key>5</key>
+          <dict>
+            <key>name</key>
+            <string>support.variable.language.myst</string>
+          </dict>
+          <key>6</key>
+          <dict>
+            <key>name</key>
+            <string>directive.block.language.attributes.myst</string>
+          </dict>
+        </dict>
+        <key>endCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+        </dict>
+        <key>patterns</key>
+        <array>
+          <dict>
+            <key>begin</key>
+            <string>(^|\G)(\s*)(.*)</string>
+            <key>while</key>
+            <string>(^|\G)(?!\s*([`~]{3,})\s*$)</string>
+            <key>contentName</key>
+            <string>meta.embedded.block.clojure</string>
+            <key>patterns</key>
+            <array>
+              <dict>
+                <key>include</key>
+                <string>source.clojure</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <key>code_cell_block_coffee</key>
+      <dict>
+        <key>begin</key>
+        <string>(^|\G)(\s*)(`{3,}|~{3,})\s*\{(code-cell|code|code-block)\}\s+(?i:(coffee|Cakefile|coffee.erb)((\s+|:|\{)[^`~]*)?$)</string>
+        <key>name</key>
+        <string>markup.code_cell.block.myst</string>
+        <key>end</key>
+        <string>(^|\G)(\2|\s{0,3})(\3)\s*$</string>
+        <key>beginCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+          <key>4</key>
+          <dict>
+            <key>name</key>
+            <string>support.class.directive.myst</string>
+          </dict>
+          <key>5</key>
+          <dict>
+            <key>name</key>
+            <string>support.variable.language.myst</string>
+          </dict>
+          <key>6</key>
+          <dict>
+            <key>name</key>
+            <string>directive.block.language.attributes.myst</string>
+          </dict>
+        </dict>
+        <key>endCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+        </dict>
+        <key>patterns</key>
+        <array>
+          <dict>
+            <key>begin</key>
+            <string>(^|\G)(\s*)(.*)</string>
+            <key>while</key>
+            <string>(^|\G)(?!\s*([`~]{3,})\s*$)</string>
+            <key>contentName</key>
+            <string>meta.embedded.block.coffee</string>
+            <key>patterns</key>
+            <array>
+              <dict>
+                <key>include</key>
+                <string>source.coffee</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <key>code_cell_block_c</key>
+      <dict>
+        <key>begin</key>
+        <string>(^|\G)(\s*)(`{3,}|~{3,})\s*\{(code-cell|code|code-block)\}\s+(?i:(c|h)((\s+|:|\{)[^`~]*)?$)</string>
+        <key>name</key>
+        <string>markup.code_cell.block.myst</string>
+        <key>end</key>
+        <string>(^|\G)(\2|\s{0,3})(\3)\s*$</string>
+        <key>beginCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+          <key>4</key>
+          <dict>
+            <key>name</key>
+            <string>support.class.directive.myst</string>
+          </dict>
+          <key>5</key>
+          <dict>
+            <key>name</key>
+            <string>support.variable.language.myst</string>
+          </dict>
+          <key>6</key>
+          <dict>
+            <key>name</key>
+            <string>directive.block.language.attributes.myst</string>
+          </dict>
+        </dict>
+        <key>endCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+        </dict>
+        <key>patterns</key>
+        <array>
+          <dict>
+            <key>begin</key>
+            <string>(^|\G)(\s*)(.*)</string>
+            <key>while</key>
+            <string>(^|\G)(?!\s*([`~]{3,})\s*$)</string>
+            <key>contentName</key>
+            <string>meta.embedded.block.c</string>
+            <key>patterns</key>
+            <array>
+              <dict>
+                <key>include</key>
+                <string>source.c</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <key>code_cell_block_cpp</key>
+      <dict>
+        <key>begin</key>
+        <string>(^|\G)(\s*)(`{3,}|~{3,})\s*\{(code-cell|code|code-block)\}\s+(?i:(cpp|c\+\+|cxx)((\s+|:|\{)[^`~]*)?$)</string>
+        <key>name</key>
+        <string>markup.code_cell.block.myst</string>
+        <key>end</key>
+        <string>(^|\G)(\2|\s{0,3})(\3)\s*$</string>
+        <key>beginCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+          <key>4</key>
+          <dict>
+            <key>name</key>
+            <string>support.class.directive.myst</string>
+          </dict>
+          <key>5</key>
+          <dict>
+            <key>name</key>
+            <string>support.variable.language.myst</string>
+          </dict>
+          <key>6</key>
+          <dict>
+            <key>name</key>
+            <string>directive.block.language.attributes.myst</string>
+          </dict>
+        </dict>
+        <key>endCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+        </dict>
+        <key>patterns</key>
+        <array>
+          <dict>
+            <key>begin</key>
+            <string>(^|\G)(\s*)(.*)</string>
+            <key>while</key>
+            <string>(^|\G)(?!\s*([`~]{3,})\s*$)</string>
+            <key>contentName</key>
+            <string>meta.embedded.block.cpp source.cpp</string>
+            <key>patterns</key>
+            <array>
+              <dict>
+                <key>include</key>
+                <string>source.cpp</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <key>code_cell_block_diff</key>
+      <dict>
+        <key>begin</key>
+        <string>(^|\G)(\s*)(`{3,}|~{3,})\s*\{(code-cell|code|code-block)\}\s+(?i:(patch|diff|rej)((\s+|:|\{)[^`~]*)?$)</string>
+        <key>name</key>
+        <string>markup.code_cell.block.myst</string>
+        <key>end</key>
+        <string>(^|\G)(\2|\s{0,3})(\3)\s*$</string>
+        <key>beginCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+          <key>4</key>
+          <dict>
+            <key>name</key>
+            <string>support.class.directive.myst</string>
+          </dict>
+          <key>5</key>
+          <dict>
+            <key>name</key>
+            <string>support.variable.language.myst</string>
+          </dict>
+          <key>6</key>
+          <dict>
+            <key>name</key>
+            <string>directive.block.language.attributes.myst</string>
+          </dict>
+        </dict>
+        <key>endCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+        </dict>
+        <key>patterns</key>
+        <array>
+          <dict>
+            <key>begin</key>
+            <string>(^|\G)(\s*)(.*)</string>
+            <key>while</key>
+            <string>(^|\G)(?!\s*([`~]{3,})\s*$)</string>
+            <key>contentName</key>
+            <string>meta.embedded.block.diff</string>
+            <key>patterns</key>
+            <array>
+              <dict>
+                <key>include</key>
+                <string>source.diff</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <key>code_cell_block_dockerfile</key>
+      <dict>
+        <key>begin</key>
+        <string>(^|\G)(\s*)(`{3,}|~{3,})\s*\{(code-cell|code|code-block)\}\s+(?i:(dockerfile|Dockerfile)((\s+|:|\{)[^`~]*)?$)</string>
+        <key>name</key>
+        <string>markup.code_cell.block.myst</string>
+        <key>end</key>
+        <string>(^|\G)(\2|\s{0,3})(\3)\s*$</string>
+        <key>beginCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+          <key>4</key>
+          <dict>
+            <key>name</key>
+            <string>support.class.directive.myst</string>
+          </dict>
+          <key>5</key>
+          <dict>
+            <key>name</key>
+            <string>support.variable.language.myst</string>
+          </dict>
+          <key>6</key>
+          <dict>
+            <key>name</key>
+            <string>directive.block.language.attributes.myst</string>
+          </dict>
+        </dict>
+        <key>endCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+        </dict>
+        <key>patterns</key>
+        <array>
+          <dict>
+            <key>begin</key>
+            <string>(^|\G)(\s*)(.*)</string>
+            <key>while</key>
+            <string>(^|\G)(?!\s*([`~]{3,})\s*$)</string>
+            <key>contentName</key>
+            <string>meta.embedded.block.dockerfile</string>
+            <key>patterns</key>
+            <array>
+              <dict>
+                <key>include</key>
+                <string>source.dockerfile</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <key>code_cell_block_git_commit</key>
+      <dict>
+        <key>begin</key>
+        <string>(^|\G)(\s*)(`{3,}|~{3,})\s*\{(code-cell|code|code-block)\}\s+(?i:(COMMIT_EDITMSG|MERGE_MSG)((\s+|:|\{)[^`~]*)?$)</string>
+        <key>name</key>
+        <string>markup.code_cell.block.myst</string>
+        <key>end</key>
+        <string>(^|\G)(\2|\s{0,3})(\3)\s*$</string>
+        <key>beginCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+          <key>4</key>
+          <dict>
+            <key>name</key>
+            <string>support.class.directive.myst</string>
+          </dict>
+          <key>5</key>
+          <dict>
+            <key>name</key>
+            <string>support.variable.language.myst</string>
+          </dict>
+          <key>6</key>
+          <dict>
+            <key>name</key>
+            <string>directive.block.language.attributes.myst</string>
+          </dict>
+        </dict>
+        <key>endCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+        </dict>
+        <key>patterns</key>
+        <array>
+          <dict>
+            <key>begin</key>
+            <string>(^|\G)(\s*)(.*)</string>
+            <key>while</key>
+            <string>(^|\G)(?!\s*([`~]{3,})\s*$)</string>
+            <key>contentName</key>
+            <string>meta.embedded.block.git_commit</string>
+            <key>patterns</key>
+            <array>
+              <dict>
+                <key>include</key>
+                <string>text.git-commit</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <key>code_cell_block_git_rebase</key>
+      <dict>
+        <key>begin</key>
+        <string>(^|\G)(\s*)(`{3,}|~{3,})\s*\{(code-cell|code|code-block)\}\s+(?i:(git-rebase-todo)((\s+|:|\{)[^`~]*)?$)</string>
+        <key>name</key>
+        <string>markup.code_cell.block.myst</string>
+        <key>end</key>
+        <string>(^|\G)(\2|\s{0,3})(\3)\s*$</string>
+        <key>beginCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+          <key>4</key>
+          <dict>
+            <key>name</key>
+            <string>support.class.directive.myst</string>
+          </dict>
+          <key>5</key>
+          <dict>
+            <key>name</key>
+            <string>support.variable.language.myst</string>
+          </dict>
+          <key>6</key>
+          <dict>
+            <key>name</key>
+            <string>directive.block.language.attributes.myst</string>
+          </dict>
+        </dict>
+        <key>endCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+        </dict>
+        <key>patterns</key>
+        <array>
+          <dict>
+            <key>begin</key>
+            <string>(^|\G)(\s*)(.*)</string>
+            <key>while</key>
+            <string>(^|\G)(?!\s*([`~]{3,})\s*$)</string>
+            <key>contentName</key>
+            <string>meta.embedded.block.git_rebase</string>
+            <key>patterns</key>
+            <array>
+              <dict>
+                <key>include</key>
+                <string>text.git-rebase</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <key>code_cell_block_go</key>
+      <dict>
+        <key>begin</key>
+        <string>(^|\G)(\s*)(`{3,}|~{3,})\s*\{(code-cell|code|code-block)\}\s+(?i:(go|golang)((\s+|:|\{)[^`~]*)?$)</string>
+        <key>name</key>
+        <string>markup.code_cell.block.myst</string>
+        <key>end</key>
+        <string>(^|\G)(\2|\s{0,3})(\3)\s*$</string>
+        <key>beginCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+          <key>4</key>
+          <dict>
+            <key>name</key>
+            <string>support.class.directive.myst</string>
+          </dict>
+          <key>5</key>
+          <dict>
+            <key>name</key>
+            <string>support.variable.language.myst</string>
+          </dict>
+          <key>6</key>
+          <dict>
+            <key>name</key>
+            <string>directive.block.language.attributes.myst</string>
+          </dict>
+        </dict>
+        <key>endCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+        </dict>
+        <key>patterns</key>
+        <array>
+          <dict>
+            <key>begin</key>
+            <string>(^|\G)(\s*)(.*)</string>
+            <key>while</key>
+            <string>(^|\G)(?!\s*([`~]{3,})\s*$)</string>
+            <key>contentName</key>
+            <string>meta.embedded.block.go</string>
+            <key>patterns</key>
+            <array>
+              <dict>
+                <key>include</key>
+                <string>source.go</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <key>code_cell_block_groovy</key>
+      <dict>
+        <key>begin</key>
+        <string>(^|\G)(\s*)(`{3,}|~{3,})\s*\{(code-cell|code|code-block)\}\s+(?i:(groovy|gvy)((\s+|:|\{)[^`~]*)?$)</string>
+        <key>name</key>
+        <string>markup.code_cell.block.myst</string>
+        <key>end</key>
+        <string>(^|\G)(\2|\s{0,3})(\3)\s*$</string>
+        <key>beginCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+          <key>4</key>
+          <dict>
+            <key>name</key>
+            <string>support.class.directive.myst</string>
+          </dict>
+          <key>5</key>
+          <dict>
+            <key>name</key>
+            <string>support.variable.language.myst</string>
+          </dict>
+          <key>6</key>
+          <dict>
+            <key>name</key>
+            <string>directive.block.language.attributes.myst</string>
+          </dict>
+        </dict>
+        <key>endCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+        </dict>
+        <key>patterns</key>
+        <array>
+          <dict>
+            <key>begin</key>
+            <string>(^|\G)(\s*)(.*)</string>
+            <key>while</key>
+            <string>(^|\G)(?!\s*([`~]{3,})\s*$)</string>
+            <key>contentName</key>
+            <string>meta.embedded.block.groovy</string>
+            <key>patterns</key>
+            <array>
+              <dict>
+                <key>include</key>
+                <string>source.groovy</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <key>code_cell_block_pug</key>
+      <dict>
+        <key>begin</key>
+        <string>(^|\G)(\s*)(`{3,}|~{3,})\s*\{(code-cell|code|code-block)\}\s+(?i:(jade|pug)((\s+|:|\{)[^`~]*)?$)</string>
+        <key>name</key>
+        <string>markup.code_cell.block.myst</string>
+        <key>end</key>
+        <string>(^|\G)(\2|\s{0,3})(\3)\s*$</string>
+        <key>beginCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+          <key>4</key>
+          <dict>
+            <key>name</key>
+            <string>support.class.directive.myst</string>
+          </dict>
+          <key>5</key>
+          <dict>
+            <key>name</key>
+            <string>support.variable.language.myst</string>
+          </dict>
+          <key>6</key>
+          <dict>
+            <key>name</key>
+            <string>directive.block.language.attributes.myst</string>
+          </dict>
+        </dict>
+        <key>endCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+        </dict>
+        <key>patterns</key>
+        <array>
+          <dict>
+            <key>begin</key>
+            <string>(^|\G)(\s*)(.*)</string>
+            <key>while</key>
+            <string>(^|\G)(?!\s*([`~]{3,})\s*$)</string>
+            <key>contentName</key>
+            <string>meta.embedded.block.pug</string>
+            <key>patterns</key>
+            <array>
+              <dict>
+                <key>include</key>
+                <string>text.pug</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <key>code_cell_block_js</key>
+      <dict>
+        <key>begin</key>
+        <string>(^|\G)(\s*)(`{3,}|~{3,})\s*\{(code-cell|code|code-block)\}\s+(?i:(js|jsx|javascript|es6|mjs|cjs|\{\.js.+?\})((\s+|:|\{)[^`~]*)?$)</string>
+        <key>name</key>
+        <string>markup.code_cell.block.myst</string>
+        <key>end</key>
+        <string>(^|\G)(\2|\s{0,3})(\3)\s*$</string>
+        <key>beginCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+          <key>4</key>
+          <dict>
+            <key>name</key>
+            <string>support.class.directive.myst</string>
+          </dict>
+          <key>5</key>
+          <dict>
+            <key>name</key>
+            <string>support.variable.language.myst</string>
+          </dict>
+          <key>6</key>
+          <dict>
+            <key>name</key>
+            <string>directive.block.language.attributes.myst</string>
+          </dict>
+        </dict>
+        <key>endCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+        </dict>
+        <key>patterns</key>
+        <array>
+          <dict>
+            <key>begin</key>
+            <string>(^|\G)(\s*)(.*)</string>
+            <key>while</key>
+            <string>(^|\G)(?!\s*([`~]{3,})\s*$)</string>
+            <key>contentName</key>
+            <string>meta.embedded.block.javascript</string>
+            <key>patterns</key>
+            <array>
+              <dict>
+                <key>include</key>
+                <string>source.js</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <key>code_cell_block_js_regexp</key>
+      <dict>
+        <key>begin</key>
+        <string>(^|\G)(\s*)(`{3,}|~{3,})\s*\{(code-cell|code|code-block)\}\s+(?i:(regexp)((\s+|:|\{)[^`~]*)?$)</string>
+        <key>name</key>
+        <string>markup.code_cell.block.myst</string>
+        <key>end</key>
+        <string>(^|\G)(\2|\s{0,3})(\3)\s*$</string>
+        <key>beginCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+          <key>4</key>
+          <dict>
+            <key>name</key>
+            <string>support.class.directive.myst</string>
+          </dict>
+          <key>5</key>
+          <dict>
+            <key>name</key>
+            <string>support.variable.language.myst</string>
+          </dict>
+          <key>6</key>
+          <dict>
+            <key>name</key>
+            <string>directive.block.language.attributes.myst</string>
+          </dict>
+        </dict>
+        <key>endCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+        </dict>
+        <key>patterns</key>
+        <array>
+          <dict>
+            <key>begin</key>
+            <string>(^|\G)(\s*)(.*)</string>
+            <key>while</key>
+            <string>(^|\G)(?!\s*([`~]{3,})\s*$)</string>
+            <key>contentName</key>
+            <string>meta.embedded.block.js_regexp</string>
+            <key>patterns</key>
+            <array>
+              <dict>
+                <key>include</key>
+                <string>source.js.regexp</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <key>code_cell_block_json</key>
+      <dict>
+        <key>begin</key>
+        <string>(^|\G)(\s*)(`{3,}|~{3,})\s*\{(code-cell|code|code-block)\}\s+(?i:(json|json5|sublime-settings|sublime-menu|sublime-keymap|sublime-mousemap|sublime-theme|sublime-build|sublime-project|sublime-completions)((\s+|:|\{)[^`~]*)?$)</string>
+        <key>name</key>
+        <string>markup.code_cell.block.myst</string>
+        <key>end</key>
+        <string>(^|\G)(\2|\s{0,3})(\3)\s*$</string>
+        <key>beginCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+          <key>4</key>
+          <dict>
+            <key>name</key>
+            <string>support.class.directive.myst</string>
+          </dict>
+          <key>5</key>
+          <dict>
+            <key>name</key>
+            <string>support.variable.language.myst</string>
+          </dict>
+          <key>6</key>
+          <dict>
+            <key>name</key>
+            <string>directive.block.language.attributes.myst</string>
+          </dict>
+        </dict>
+        <key>endCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+        </dict>
+        <key>patterns</key>
+        <array>
+          <dict>
+            <key>begin</key>
+            <string>(^|\G)(\s*)(.*)</string>
+            <key>while</key>
+            <string>(^|\G)(?!\s*([`~]{3,})\s*$)</string>
+            <key>contentName</key>
+            <string>meta.embedded.block.json</string>
+            <key>patterns</key>
+            <array>
+              <dict>
+                <key>include</key>
+                <string>source.json</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <key>code_cell_block_jsonc</key>
+      <dict>
+        <key>begin</key>
+        <string>(^|\G)(\s*)(`{3,}|~{3,})\s*\{(code-cell|code|code-block)\}\s+(?i:(jsonc)((\s+|:|\{)[^`~]*)?$)</string>
+        <key>name</key>
+        <string>markup.code_cell.block.myst</string>
+        <key>end</key>
+        <string>(^|\G)(\2|\s{0,3})(\3)\s*$</string>
+        <key>beginCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+          <key>4</key>
+          <dict>
+            <key>name</key>
+            <string>support.class.directive.myst</string>
+          </dict>
+          <key>5</key>
+          <dict>
+            <key>name</key>
+            <string>support.variable.language.myst</string>
+          </dict>
+          <key>6</key>
+          <dict>
+            <key>name</key>
+            <string>directive.block.language.attributes.myst</string>
+          </dict>
+        </dict>
+        <key>endCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+        </dict>
+        <key>patterns</key>
+        <array>
+          <dict>
+            <key>begin</key>
+            <string>(^|\G)(\s*)(.*)</string>
+            <key>while</key>
+            <string>(^|\G)(?!\s*([`~]{3,})\s*$)</string>
+            <key>contentName</key>
+            <string>meta.embedded.block.jsonc</string>
+            <key>patterns</key>
+            <array>
+              <dict>
+                <key>include</key>
+                <string>source.json.comments</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <key>code_cell_block_less</key>
+      <dict>
+        <key>begin</key>
+        <string>(^|\G)(\s*)(`{3,}|~{3,})\s*\{(code-cell|code|code-block)\}\s+(?i:(less)((\s+|:|\{)[^`~]*)?$)</string>
+        <key>name</key>
+        <string>markup.code_cell.block.myst</string>
+        <key>end</key>
+        <string>(^|\G)(\2|\s{0,3})(\3)\s*$</string>
+        <key>beginCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+          <key>4</key>
+          <dict>
+            <key>name</key>
+            <string>support.class.directive.myst</string>
+          </dict>
+          <key>5</key>
+          <dict>
+            <key>name</key>
+            <string>support.variable.language.myst</string>
+          </dict>
+          <key>6</key>
+          <dict>
+            <key>name</key>
+            <string>directive.block.language.attributes.myst</string>
+          </dict>
+        </dict>
+        <key>endCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+        </dict>
+        <key>patterns</key>
+        <array>
+          <dict>
+            <key>begin</key>
+            <string>(^|\G)(\s*)(.*)</string>
+            <key>while</key>
+            <string>(^|\G)(?!\s*([`~]{3,})\s*$)</string>
+            <key>contentName</key>
+            <string>meta.embedded.block.less</string>
+            <key>patterns</key>
+            <array>
+              <dict>
+                <key>include</key>
+                <string>source.css.less</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <key>code_cell_block_objc</key>
+      <dict>
+        <key>begin</key>
+        <string>(^|\G)(\s*)(`{3,}|~{3,})\s*\{(code-cell|code|code-block)\}\s+(?i:(objectivec|objective-c|mm|objc|obj-c|m|h)((\s+|:|\{)[^`~]*)?$)</string>
+        <key>name</key>
+        <string>markup.code_cell.block.myst</string>
+        <key>end</key>
+        <string>(^|\G)(\2|\s{0,3})(\3)\s*$</string>
+        <key>beginCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+          <key>4</key>
+          <dict>
+            <key>name</key>
+            <string>support.class.directive.myst</string>
+          </dict>
+          <key>5</key>
+          <dict>
+            <key>name</key>
+            <string>support.variable.language.myst</string>
+          </dict>
+          <key>6</key>
+          <dict>
+            <key>name</key>
+            <string>directive.block.language.attributes.myst</string>
+          </dict>
+        </dict>
+        <key>endCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+        </dict>
+        <key>patterns</key>
+        <array>
+          <dict>
+            <key>begin</key>
+            <string>(^|\G)(\s*)(.*)</string>
+            <key>while</key>
+            <string>(^|\G)(?!\s*([`~]{3,})\s*$)</string>
+            <key>contentName</key>
+            <string>meta.embedded.block.objc</string>
+            <key>patterns</key>
+            <array>
+              <dict>
+                <key>include</key>
+                <string>source.objc</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <key>code_cell_block_swift</key>
+      <dict>
+        <key>begin</key>
+        <string>(^|\G)(\s*)(`{3,}|~{3,})\s*\{(code-cell|code|code-block)\}\s+(?i:(swift)((\s+|:|\{)[^`~]*)?$)</string>
+        <key>name</key>
+        <string>markup.code_cell.block.myst</string>
+        <key>end</key>
+        <string>(^|\G)(\2|\s{0,3})(\3)\s*$</string>
+        <key>beginCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+          <key>4</key>
+          <dict>
+            <key>name</key>
+            <string>support.class.directive.myst</string>
+          </dict>
+          <key>5</key>
+          <dict>
+            <key>name</key>
+            <string>support.variable.language.myst</string>
+          </dict>
+          <key>6</key>
+          <dict>
+            <key>name</key>
+            <string>directive.block.language.attributes.myst</string>
+          </dict>
+        </dict>
+        <key>endCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+        </dict>
+        <key>patterns</key>
+        <array>
+          <dict>
+            <key>begin</key>
+            <string>(^|\G)(\s*)(.*)</string>
+            <key>while</key>
+            <string>(^|\G)(?!\s*([`~]{3,})\s*$)</string>
+            <key>contentName</key>
+            <string>meta.embedded.block.swift</string>
+            <key>patterns</key>
+            <array>
+              <dict>
+                <key>include</key>
+                <string>source.swift</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <key>code_cell_block_scss</key>
+      <dict>
+        <key>begin</key>
+        <string>(^|\G)(\s*)(`{3,}|~{3,})\s*\{(code-cell|code|code-block)\}\s+(?i:(scss)((\s+|:|\{)[^`~]*)?$)</string>
+        <key>name</key>
+        <string>markup.code_cell.block.myst</string>
+        <key>end</key>
+        <string>(^|\G)(\2|\s{0,3})(\3)\s*$</string>
+        <key>beginCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+          <key>4</key>
+          <dict>
+            <key>name</key>
+            <string>support.class.directive.myst</string>
+          </dict>
+          <key>5</key>
+          <dict>
+            <key>name</key>
+            <string>support.variable.language.myst</string>
+          </dict>
+          <key>6</key>
+          <dict>
+            <key>name</key>
+            <string>directive.block.language.attributes.myst</string>
+          </dict>
+        </dict>
+        <key>endCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+        </dict>
+        <key>patterns</key>
+        <array>
+          <dict>
+            <key>begin</key>
+            <string>(^|\G)(\s*)(.*)</string>
+            <key>while</key>
+            <string>(^|\G)(?!\s*([`~]{3,})\s*$)</string>
+            <key>contentName</key>
+            <string>meta.embedded.block.scss</string>
+            <key>patterns</key>
+            <array>
+              <dict>
+                <key>include</key>
+                <string>source.css.scss</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <key>code_cell_block_perl6</key>
+      <dict>
+        <key>begin</key>
+        <string>(^|\G)(\s*)(`{3,}|~{3,})\s*\{(code-cell|code|code-block)\}\s+(?i:(perl6|p6|pl6|pm6|nqp)((\s+|:|\{)[^`~]*)?$)</string>
+        <key>name</key>
+        <string>markup.code_cell.block.myst</string>
+        <key>end</key>
+        <string>(^|\G)(\2|\s{0,3})(\3)\s*$</string>
+        <key>beginCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+          <key>4</key>
+          <dict>
+            <key>name</key>
+            <string>support.class.directive.myst</string>
+          </dict>
+          <key>5</key>
+          <dict>
+            <key>name</key>
+            <string>support.variable.language.myst</string>
+          </dict>
+          <key>6</key>
+          <dict>
+            <key>name</key>
+            <string>directive.block.language.attributes.myst</string>
+          </dict>
+        </dict>
+        <key>endCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+        </dict>
+        <key>patterns</key>
+        <array>
+          <dict>
+            <key>begin</key>
+            <string>(^|\G)(\s*)(.*)</string>
+            <key>while</key>
+            <string>(^|\G)(?!\s*([`~]{3,})\s*$)</string>
+            <key>contentName</key>
+            <string>meta.embedded.block.perl6</string>
+            <key>patterns</key>
+            <array>
+              <dict>
+                <key>include</key>
+                <string>source.perl.6</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <key>code_cell_block_powershell</key>
+      <dict>
+        <key>begin</key>
+        <string>(^|\G)(\s*)(`{3,}|~{3,})\s*\{(code-cell|code|code-block)\}\s+(?i:(powershell|ps1|psm1|psd1)((\s+|:|\{)[^`~]*)?$)</string>
+        <key>name</key>
+        <string>markup.code_cell.block.myst</string>
+        <key>end</key>
+        <string>(^|\G)(\2|\s{0,3})(\3)\s*$</string>
+        <key>beginCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+          <key>4</key>
+          <dict>
+            <key>name</key>
+            <string>support.class.directive.myst</string>
+          </dict>
+          <key>5</key>
+          <dict>
+            <key>name</key>
+            <string>support.variable.language.myst</string>
+          </dict>
+          <key>6</key>
+          <dict>
+            <key>name</key>
+            <string>directive.block.language.attributes.myst</string>
+          </dict>
+        </dict>
+        <key>endCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+        </dict>
+        <key>patterns</key>
+        <array>
+          <dict>
+            <key>begin</key>
+            <string>(^|\G)(\s*)(.*)</string>
+            <key>while</key>
+            <string>(^|\G)(?!\s*([`~]{3,})\s*$)</string>
+            <key>contentName</key>
+            <string>meta.embedded.block.powershell</string>
+            <key>patterns</key>
+            <array>
+              <dict>
+                <key>include</key>
+                <string>source.powershell</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <key>code_cell_block_python</key>
+      <dict>
+        <key>begin</key>
+        <string>(^|\G)(\s*)(`{3,}|~{3,})\s*\{(code-cell|code|code-block)\}\s+(?i:(python|py|py3|rpy|pyw|cpy|SConstruct|Sconstruct|sconstruct|SConscript|gyp|gypi|\{\.python.+?\})((\s+|:|\{)[^`~]*)?$)</string>
+        <key>name</key>
+        <string>markup.code_cell.block.myst</string>
+        <key>end</key>
+        <string>(^|\G)(\2|\s{0,3})(\3)\s*$</string>
+        <key>beginCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+          <key>4</key>
+          <dict>
+            <key>name</key>
+            <string>support.class.directive.myst</string>
+          </dict>
+          <key>5</key>
+          <dict>
+            <key>name</key>
+            <string>support.variable.language.myst</string>
+          </dict>
+          <key>6</key>
+          <dict>
+            <key>name</key>
+            <string>directive.block.language.attributes.myst</string>
+          </dict>
+        </dict>
+        <key>endCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+        </dict>
+        <key>patterns</key>
+        <array>
+          <dict>
+            <key>begin</key>
+            <string>(^|\G)(\s*)(.*)</string>
+            <key>while</key>
+            <string>(^|\G)(?!\s*([`~]{3,})\s*$)</string>
+            <key>contentName</key>
+            <string>meta.embedded.block.python</string>
+            <key>patterns</key>
+            <array>
+              <dict>
+                <key>include</key>
+                <string>source.python</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <key>code_cell_block_ipython</key>
+      <dict>
+        <key>begin</key>
+        <string>(^|\G)(\s*)(`{3,}|~{3,})\s*\{(code-cell|code|code-block)\}\s+(?i:(ipython|ipython2|ipython3|\{\.ipython.+?\})((\s+|:|\{)[^`~]*)?$)</string>
+        <key>name</key>
+        <string>markup.code_cell.block.myst</string>
+        <key>end</key>
+        <string>(^|\G)(\2|\s{0,3})(\3)\s*$</string>
+        <key>beginCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+          <key>4</key>
+          <dict>
+            <key>name</key>
+            <string>support.class.directive.myst</string>
+          </dict>
+          <key>5</key>
+          <dict>
+            <key>name</key>
+            <string>support.variable.language.myst</string>
+          </dict>
+          <key>6</key>
+          <dict>
+            <key>name</key>
+            <string>directive.block.language.attributes.myst</string>
+          </dict>
+        </dict>
+        <key>endCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+        </dict>
+        <key>patterns</key>
+        <array>
+          <dict>
+            <key>begin</key>
+            <string>(^|\G)(\s*)(.*)</string>
+            <key>while</key>
+            <string>(^|\G)(?!\s*([`~]{3,})\s*$)</string>
+            <key>contentName</key>
+            <string>meta.embedded.block.ipython</string>
+            <key>patterns</key>
+            <array>
+              <dict>
+                <key>include</key>
+                <string>source.python</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <key>code_cell_block_regexp_python</key>
+      <dict>
+        <key>begin</key>
+        <string>(^|\G)(\s*)(`{3,}|~{3,})\s*\{(code-cell|code|code-block)\}\s+(?i:(re)((\s+|:|\{)[^`~]*)?$)</string>
+        <key>name</key>
+        <string>markup.code_cell.block.myst</string>
+        <key>end</key>
+        <string>(^|\G)(\2|\s{0,3})(\3)\s*$</string>
+        <key>beginCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+          <key>4</key>
+          <dict>
+            <key>name</key>
+            <string>support.class.directive.myst</string>
+          </dict>
+          <key>5</key>
+          <dict>
+            <key>name</key>
+            <string>support.variable.language.myst</string>
+          </dict>
+          <key>6</key>
+          <dict>
+            <key>name</key>
+            <string>directive.block.language.attributes.myst</string>
+          </dict>
+        </dict>
+        <key>endCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+        </dict>
+        <key>patterns</key>
+        <array>
+          <dict>
+            <key>begin</key>
+            <string>(^|\G)(\s*)(.*)</string>
+            <key>while</key>
+            <string>(^|\G)(?!\s*([`~]{3,})\s*$)</string>
+            <key>contentName</key>
+            <string>meta.embedded.block.regexp_python</string>
+            <key>patterns</key>
+            <array>
+              <dict>
+                <key>include</key>
+                <string>source.regexp.python</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <key>code_cell_block_rust</key>
+      <dict>
+        <key>begin</key>
+        <string>(^|\G)(\s*)(`{3,}|~{3,})\s*\{(code-cell|code|code-block)\}\s+(?i:(rust|rs|\{\.rust.+?\})((\s+|:|\{)[^`~]*)?$)</string>
+        <key>name</key>
+        <string>markup.code_cell.block.myst</string>
+        <key>end</key>
+        <string>(^|\G)(\2|\s{0,3})(\3)\s*$</string>
+        <key>beginCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+          <key>4</key>
+          <dict>
+            <key>name</key>
+            <string>support.class.directive.myst</string>
+          </dict>
+          <key>5</key>
+          <dict>
+            <key>name</key>
+            <string>support.variable.language.myst</string>
+          </dict>
+          <key>6</key>
+          <dict>
+            <key>name</key>
+            <string>directive.block.language.attributes.myst</string>
+          </dict>
+        </dict>
+        <key>endCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+        </dict>
+        <key>patterns</key>
+        <array>
+          <dict>
+            <key>begin</key>
+            <string>(^|\G)(\s*)(.*)</string>
+            <key>while</key>
+            <string>(^|\G)(?!\s*([`~]{3,})\s*$)</string>
+            <key>contentName</key>
+            <string>meta.embedded.block.rust</string>
+            <key>patterns</key>
+            <array>
+              <dict>
+                <key>include</key>
+                <string>source.rust</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <key>code_cell_block_scala</key>
+      <dict>
+        <key>begin</key>
+        <string>(^|\G)(\s*)(`{3,}|~{3,})\s*\{(code-cell|code|code-block)\}\s+(?i:(scala|sbt)((\s+|:|\{)[^`~]*)?$)</string>
+        <key>name</key>
+        <string>markup.code_cell.block.myst</string>
+        <key>end</key>
+        <string>(^|\G)(\2|\s{0,3})(\3)\s*$</string>
+        <key>beginCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+          <key>4</key>
+          <dict>
+            <key>name</key>
+            <string>support.class.directive.myst</string>
+          </dict>
+          <key>5</key>
+          <dict>
+            <key>name</key>
+            <string>support.variable.language.myst</string>
+          </dict>
+          <key>6</key>
+          <dict>
+            <key>name</key>
+            <string>directive.block.language.attributes.myst</string>
+          </dict>
+        </dict>
+        <key>endCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+        </dict>
+        <key>patterns</key>
+        <array>
+          <dict>
+            <key>begin</key>
+            <string>(^|\G)(\s*)(.*)</string>
+            <key>while</key>
+            <string>(^|\G)(?!\s*([`~]{3,})\s*$)</string>
+            <key>contentName</key>
+            <string>meta.embedded.block.scala</string>
+            <key>patterns</key>
+            <array>
+              <dict>
+                <key>include</key>
+                <string>source.scala</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <key>code_cell_block_shell</key>
+      <dict>
+        <key>begin</key>
+        <string>(^|\G)(\s*)(`{3,}|~{3,})\s*\{(code-cell|code|code-block)\}\s+(?i:(shell|sh|bash|zsh|bashrc|bash_profile|bash_login|profile|bash_logout|.textmate_init|\{\.bash.+?\})((\s+|:|\{)[^`~]*)?$)</string>
+        <key>name</key>
+        <string>markup.code_cell.block.myst</string>
+        <key>end</key>
+        <string>(^|\G)(\2|\s{0,3})(\3)\s*$</string>
+        <key>beginCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+          <key>4</key>
+          <dict>
+            <key>name</key>
+            <string>support.class.directive.myst</string>
+          </dict>
+          <key>5</key>
+          <dict>
+            <key>name</key>
+            <string>support.variable.language.myst</string>
+          </dict>
+          <key>6</key>
+          <dict>
+            <key>name</key>
+            <string>directive.block.language.attributes.myst</string>
+          </dict>
+        </dict>
+        <key>endCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+        </dict>
+        <key>patterns</key>
+        <array>
+          <dict>
+            <key>begin</key>
+            <string>(^|\G)(\s*)(.*)</string>
+            <key>while</key>
+            <string>(^|\G)(?!\s*([`~]{3,})\s*$)</string>
+            <key>contentName</key>
+            <string>meta.embedded.block.shellscript</string>
+            <key>patterns</key>
+            <array>
+              <dict>
+                <key>include</key>
+                <string>source.shell</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <key>code_cell_block_ts</key>
+      <dict>
+        <key>begin</key>
+        <string>(^|\G)(\s*)(`{3,}|~{3,})\s*\{(code-cell|code|code-block)\}\s+(?i:(typescript|ts)((\s+|:|\{)[^`~]*)?$)</string>
+        <key>name</key>
+        <string>markup.code_cell.block.myst</string>
+        <key>end</key>
+        <string>(^|\G)(\2|\s{0,3})(\3)\s*$</string>
+        <key>beginCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+          <key>4</key>
+          <dict>
+            <key>name</key>
+            <string>support.class.directive.myst</string>
+          </dict>
+          <key>5</key>
+          <dict>
+            <key>name</key>
+            <string>support.variable.language.myst</string>
+          </dict>
+          <key>6</key>
+          <dict>
+            <key>name</key>
+            <string>directive.block.language.attributes.myst</string>
+          </dict>
+        </dict>
+        <key>endCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+        </dict>
+        <key>patterns</key>
+        <array>
+          <dict>
+            <key>begin</key>
+            <string>(^|\G)(\s*)(.*)</string>
+            <key>while</key>
+            <string>(^|\G)(?!\s*([`~]{3,})\s*$)</string>
+            <key>contentName</key>
+            <string>meta.embedded.block.typescript</string>
+            <key>patterns</key>
+            <array>
+              <dict>
+                <key>include</key>
+                <string>source.ts</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <key>code_cell_block_tsx</key>
+      <dict>
+        <key>begin</key>
+        <string>(^|\G)(\s*)(`{3,}|~{3,})\s*\{(code-cell|code|code-block)\}\s+(?i:(tsx)((\s+|:|\{)[^`~]*)?$)</string>
+        <key>name</key>
+        <string>markup.code_cell.block.myst</string>
+        <key>end</key>
+        <string>(^|\G)(\2|\s{0,3})(\3)\s*$</string>
+        <key>beginCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+          <key>4</key>
+          <dict>
+            <key>name</key>
+            <string>support.class.directive.myst</string>
+          </dict>
+          <key>5</key>
+          <dict>
+            <key>name</key>
+            <string>support.variable.language.myst</string>
+          </dict>
+          <key>6</key>
+          <dict>
+            <key>name</key>
+            <string>directive.block.language.attributes.myst</string>
+          </dict>
+        </dict>
+        <key>endCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+        </dict>
+        <key>patterns</key>
+        <array>
+          <dict>
+            <key>begin</key>
+            <string>(^|\G)(\s*)(.*)</string>
+            <key>while</key>
+            <string>(^|\G)(?!\s*([`~]{3,})\s*$)</string>
+            <key>contentName</key>
+            <string>meta.embedded.block.typescriptreact</string>
+            <key>patterns</key>
+            <array>
+              <dict>
+                <key>include</key>
+                <string>source.tsx</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <key>code_cell_block_csharp</key>
+      <dict>
+        <key>begin</key>
+        <string>(^|\G)(\s*)(`{3,}|~{3,})\s*\{(code-cell|code|code-block)\}\s+(?i:(cs|csharp|c#)((\s+|:|\{)[^`~]*)?$)</string>
+        <key>name</key>
+        <string>markup.code_cell.block.myst</string>
+        <key>end</key>
+        <string>(^|\G)(\2|\s{0,3})(\3)\s*$</string>
+        <key>beginCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+          <key>4</key>
+          <dict>
+            <key>name</key>
+            <string>support.class.directive.myst</string>
+          </dict>
+          <key>5</key>
+          <dict>
+            <key>name</key>
+            <string>support.variable.language.myst</string>
+          </dict>
+          <key>6</key>
+          <dict>
+            <key>name</key>
+            <string>directive.block.language.attributes.myst</string>
+          </dict>
+        </dict>
+        <key>endCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+        </dict>
+        <key>patterns</key>
+        <array>
+          <dict>
+            <key>begin</key>
+            <string>(^|\G)(\s*)(.*)</string>
+            <key>while</key>
+            <string>(^|\G)(?!\s*([`~]{3,})\s*$)</string>
+            <key>contentName</key>
+            <string>meta.embedded.block.csharp</string>
+            <key>patterns</key>
+            <array>
+              <dict>
+                <key>include</key>
+                <string>source.cs</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <key>code_cell_block_fsharp</key>
+      <dict>
+        <key>begin</key>
+        <string>(^|\G)(\s*)(`{3,}|~{3,})\s*\{(code-cell|code|code-block)\}\s+(?i:(fs|fsharp|f#)((\s+|:|\{)[^`~]*)?$)</string>
+        <key>name</key>
+        <string>markup.code_cell.block.myst</string>
+        <key>end</key>
+        <string>(^|\G)(\2|\s{0,3})(\3)\s*$</string>
+        <key>beginCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+          <key>4</key>
+          <dict>
+            <key>name</key>
+            <string>support.class.directive.myst</string>
+          </dict>
+          <key>5</key>
+          <dict>
+            <key>name</key>
+            <string>support.variable.language.myst</string>
+          </dict>
+          <key>6</key>
+          <dict>
+            <key>name</key>
+            <string>directive.block.language.attributes.myst</string>
+          </dict>
+        </dict>
+        <key>endCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+        </dict>
+        <key>patterns</key>
+        <array>
+          <dict>
+            <key>begin</key>
+            <string>(^|\G)(\s*)(.*)</string>
+            <key>while</key>
+            <string>(^|\G)(?!\s*([`~]{3,})\s*$)</string>
+            <key>contentName</key>
+            <string>meta.embedded.block.fsharp</string>
+            <key>patterns</key>
+            <array>
+              <dict>
+                <key>include</key>
+                <string>source.fsharp</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <key>code_cell_block_dart</key>
+      <dict>
+        <key>begin</key>
+        <string>(^|\G)(\s*)(`{3,}|~{3,})\s*\{(code-cell|code|code-block)\}\s+(?i:(dart)((\s+|:|\{)[^`~]*)?$)</string>
+        <key>name</key>
+        <string>markup.code_cell.block.myst</string>
+        <key>end</key>
+        <string>(^|\G)(\2|\s{0,3})(\3)\s*$</string>
+        <key>beginCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+          <key>4</key>
+          <dict>
+            <key>name</key>
+            <string>support.class.directive.myst</string>
+          </dict>
+          <key>5</key>
+          <dict>
+            <key>name</key>
+            <string>support.variable.language.myst</string>
+          </dict>
+          <key>6</key>
+          <dict>
+            <key>name</key>
+            <string>directive.block.language.attributes.myst</string>
+          </dict>
+        </dict>
+        <key>endCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+        </dict>
+        <key>patterns</key>
+        <array>
+          <dict>
+            <key>begin</key>
+            <string>(^|\G)(\s*)(.*)</string>
+            <key>while</key>
+            <string>(^|\G)(?!\s*([`~]{3,})\s*$)</string>
+            <key>contentName</key>
+            <string>meta.embedded.block.dart</string>
+            <key>patterns</key>
+            <array>
+              <dict>
+                <key>include</key>
+                <string>source.dart</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <key>code_cell_block_handlebars</key>
+      <dict>
+        <key>begin</key>
+        <string>(^|\G)(\s*)(`{3,}|~{3,})\s*\{(code-cell|code|code-block)\}\s+(?i:(handlebars|hbs)((\s+|:|\{)[^`~]*)?$)</string>
+        <key>name</key>
+        <string>markup.code_cell.block.myst</string>
+        <key>end</key>
+        <string>(^|\G)(\2|\s{0,3})(\3)\s*$</string>
+        <key>beginCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+          <key>4</key>
+          <dict>
+            <key>name</key>
+            <string>support.class.directive.myst</string>
+          </dict>
+          <key>5</key>
+          <dict>
+            <key>name</key>
+            <string>support.variable.language.myst</string>
+          </dict>
+          <key>6</key>
+          <dict>
+            <key>name</key>
+            <string>directive.block.language.attributes.myst</string>
+          </dict>
+        </dict>
+        <key>endCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+        </dict>
+        <key>patterns</key>
+        <array>
+          <dict>
+            <key>begin</key>
+            <string>(^|\G)(\s*)(.*)</string>
+            <key>while</key>
+            <string>(^|\G)(?!\s*([`~]{3,})\s*$)</string>
+            <key>contentName</key>
+            <string>meta.embedded.block.handlebars</string>
+            <key>patterns</key>
+            <array>
+              <dict>
+                <key>include</key>
+                <string>text.html.handlebars</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <key>code_cell_block_markdown</key>
+      <dict>
+        <key>begin</key>
+        <string>(^|\G)(\s*)(`{3,}|~{3,})\s*\{(code-cell|code|code-block)\}\s+(?i:(markdown|md)((\s+|:|\{)[^`~]*)?$)</string>
+        <key>name</key>
+        <string>markup.code_cell.block.myst</string>
+        <key>end</key>
+        <string>(^|\G)(\2|\s{0,3})(\3)\s*$</string>
+        <key>beginCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+          <key>4</key>
+          <dict>
+            <key>name</key>
+            <string>support.class.directive.myst</string>
+          </dict>
+          <key>5</key>
+          <dict>
+            <key>name</key>
+            <string>support.variable.language.myst</string>
+          </dict>
+          <key>6</key>
+          <dict>
+            <key>name</key>
+            <string>directive.block.language.attributes.myst</string>
+          </dict>
+        </dict>
+        <key>endCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+        </dict>
+        <key>patterns</key>
+        <array>
+          <dict>
+            <key>begin</key>
+            <string>(^|\G)(\s*)(.*)</string>
+            <key>while</key>
+            <string>(^|\G)(?!\s*([`~]{3,})\s*$)</string>
+            <key>contentName</key>
+            <string>meta.embedded.block.markdown</string>
+            <key>patterns</key>
+            <array>
+              <dict>
+                <key>include</key>
+                <string>text.html.markdown</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <key>code_cell_block_log</key>
+      <dict>
+        <key>begin</key>
+        <string>(^|\G)(\s*)(`{3,}|~{3,})\s*\{(code-cell|code|code-block)\}\s+(?i:(log)((\s+|:|\{)[^`~]*)?$)</string>
+        <key>name</key>
+        <string>markup.code_cell.block.myst</string>
+        <key>end</key>
+        <string>(^|\G)(\2|\s{0,3})(\3)\s*$</string>
+        <key>beginCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+          <key>4</key>
+          <dict>
+            <key>name</key>
+            <string>support.class.directive.myst</string>
+          </dict>
+          <key>5</key>
+          <dict>
+            <key>name</key>
+            <string>support.variable.language.myst</string>
+          </dict>
+          <key>6</key>
+          <dict>
+            <key>name</key>
+            <string>directive.block.language.attributes.myst</string>
+          </dict>
+        </dict>
+        <key>endCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+        </dict>
+        <key>patterns</key>
+        <array>
+          <dict>
+            <key>begin</key>
+            <string>(^|\G)(\s*)(.*)</string>
+            <key>while</key>
+            <string>(^|\G)(?!\s*([`~]{3,})\s*$)</string>
+            <key>contentName</key>
+            <string>meta.embedded.block.log</string>
+            <key>patterns</key>
+            <array>
+              <dict>
+                <key>include</key>
+                <string>text.log</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <key>directive_block</key>
+      <dict>
+        <key>patterns</key>
+        <array>
+          <dict>
+            <key>include</key>
+            <string>#directive_block_admonition</string>
+          </dict>
+          <dict>
+            <key>include</key>
+            <string>#code_cell_block_css</string>
+          </dict>
+          <dict>
+            <key>include</key>
+            <string>#code_cell_block_basic</string>
+          </dict>
+          <dict>
+            <key>include</key>
+            <string>#code_cell_block_ini</string>
+          </dict>
+          <dict>
+            <key>include</key>
+            <string>#code_cell_block_java</string>
+          </dict>
+          <dict>
+            <key>include</key>
+            <string>#code_cell_block_lua</string>
+          </dict>
+          <dict>
+            <key>include</key>
+            <string>#code_cell_block_makefile</string>
+          </dict>
+          <dict>
+            <key>include</key>
+            <string>#code_cell_block_perl</string>
+          </dict>
+          <dict>
+            <key>include</key>
+            <string>#code_cell_block_r</string>
+          </dict>
+          <dict>
+            <key>include</key>
+            <string>#code_cell_block_ruby</string>
+          </dict>
+          <dict>
+            <key>include</key>
+            <string>#code_cell_block_php</string>
+          </dict>
+          <dict>
+            <key>include</key>
+            <string>#code_cell_block_sql</string>
+          </dict>
+          <dict>
+            <key>include</key>
+            <string>#code_cell_block_vs_net</string>
+          </dict>
+          <dict>
+            <key>include</key>
+            <string>#code_cell_block_xml</string>
+          </dict>
+          <dict>
+            <key>include</key>
+            <string>#code_cell_block_xsl</string>
+          </dict>
+          <dict>
+            <key>include</key>
+            <string>#code_cell_block_yaml</string>
+          </dict>
+          <dict>
+            <key>include</key>
+            <string>#code_cell_block_dosbatch</string>
+          </dict>
+          <dict>
+            <key>include</key>
+            <string>#code_cell_block_clojure</string>
+          </dict>
+          <dict>
+            <key>include</key>
+            <string>#code_cell_block_coffee</string>
+          </dict>
+          <dict>
+            <key>include</key>
+            <string>#code_cell_block_c</string>
+          </dict>
+          <dict>
+            <key>include</key>
+            <string>#code_cell_block_cpp</string>
+          </dict>
+          <dict>
+            <key>include</key>
+            <string>#code_cell_block_diff</string>
+          </dict>
+          <dict>
+            <key>include</key>
+            <string>#code_cell_block_dockerfile</string>
+          </dict>
+          <dict>
+            <key>include</key>
+            <string>#code_cell_block_git_commit</string>
+          </dict>
+          <dict>
+            <key>include</key>
+            <string>#code_cell_block_git_rebase</string>
+          </dict>
+          <dict>
+            <key>include</key>
+            <string>#code_cell_block_go</string>
+          </dict>
+          <dict>
+            <key>include</key>
+            <string>#code_cell_block_groovy</string>
+          </dict>
+          <dict>
+            <key>include</key>
+            <string>#code_cell_block_pug</string>
+          </dict>
+          <dict>
+            <key>include</key>
+            <string>#code_cell_block_js</string>
+          </dict>
+          <dict>
+            <key>include</key>
+            <string>#code_cell_block_js_regexp</string>
+          </dict>
+          <dict>
+            <key>include</key>
+            <string>#code_cell_block_json</string>
+          </dict>
+          <dict>
+            <key>include</key>
+            <string>#code_cell_block_jsonc</string>
+          </dict>
+          <dict>
+            <key>include</key>
+            <string>#code_cell_block_less</string>
+          </dict>
+          <dict>
+            <key>include</key>
+            <string>#code_cell_block_objc</string>
+          </dict>
+          <dict>
+            <key>include</key>
+            <string>#code_cell_block_swift</string>
+          </dict>
+          <dict>
+            <key>include</key>
+            <string>#code_cell_block_scss</string>
+          </dict>
+          <dict>
+            <key>include</key>
+            <string>#code_cell_block_perl6</string>
+          </dict>
+          <dict>
+            <key>include</key>
+            <string>#code_cell_block_powershell</string>
+          </dict>
+          <dict>
+            <key>include</key>
+            <string>#code_cell_block_python</string>
+          </dict>
+          <dict>
+            <key>include</key>
+            <string>#code_cell_block_ipython</string>
+          </dict>
+          <dict>
+            <key>include</key>
+            <string>#code_cell_block_regexp_python</string>
+          </dict>
+          <dict>
+            <key>include</key>
+            <string>#code_cell_block_rust</string>
+          </dict>
+          <dict>
+            <key>include</key>
+            <string>#code_cell_block_scala</string>
+          </dict>
+          <dict>
+            <key>include</key>
+            <string>#code_cell_block_shell</string>
+          </dict>
+          <dict>
+            <key>include</key>
+            <string>#code_cell_block_ts</string>
+          </dict>
+          <dict>
+            <key>include</key>
+            <string>#code_cell_block_tsx</string>
+          </dict>
+          <dict>
+            <key>include</key>
+            <string>#code_cell_block_csharp</string>
+          </dict>
+          <dict>
+            <key>include</key>
+            <string>#code_cell_block_fsharp</string>
+          </dict>
+          <dict>
+            <key>include</key>
+            <string>#code_cell_block_dart</string>
+          </dict>
+          <dict>
+            <key>include</key>
+            <string>#code_cell_block_handlebars</string>
+          </dict>
+          <dict>
+            <key>include</key>
+            <string>#code_cell_block_markdown</string>
+          </dict>
+          <dict>
+            <key>include</key>
+            <string>#code_cell_block_log</string>
+          </dict>
+          <dict>
+            <key>include</key>
+            <string>#directive_block_unknown</string>
+          </dict>
+        </array>
+      </dict>
       <key>fenced_code_block_css</key>
       <dict>
         <key>begin</key>
@@ -1500,7 +4705,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>support.class.language.myst</string>
+            <string>support.variable.language.myst</string>
           </dict>
           <key>5</key>
           <dict>
@@ -1553,7 +4758,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>support.class.language.myst</string>
+            <string>support.variable.language.myst</string>
           </dict>
           <key>5</key>
           <dict>
@@ -1606,7 +4811,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>support.class.language.myst</string>
+            <string>support.variable.language.myst</string>
           </dict>
           <key>5</key>
           <dict>
@@ -1659,7 +4864,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>support.class.language.myst</string>
+            <string>support.variable.language.myst</string>
           </dict>
           <key>5</key>
           <dict>
@@ -1712,7 +4917,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>support.class.language.myst</string>
+            <string>support.variable.language.myst</string>
           </dict>
           <key>5</key>
           <dict>
@@ -1765,7 +4970,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>support.class.language.myst</string>
+            <string>support.variable.language.myst</string>
           </dict>
           <key>5</key>
           <dict>
@@ -1818,7 +5023,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>support.class.language.myst</string>
+            <string>support.variable.language.myst</string>
           </dict>
           <key>5</key>
           <dict>
@@ -1871,7 +5076,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>support.class.language.myst</string>
+            <string>support.variable.language.myst</string>
           </dict>
           <key>5</key>
           <dict>
@@ -1924,7 +5129,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>support.class.language.myst</string>
+            <string>support.variable.language.myst</string>
           </dict>
           <key>5</key>
           <dict>
@@ -1977,7 +5182,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>support.class.language.myst</string>
+            <string>support.variable.language.myst</string>
           </dict>
           <key>5</key>
           <dict>
@@ -2034,7 +5239,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>support.class.language.myst</string>
+            <string>support.variable.language.myst</string>
           </dict>
           <key>5</key>
           <dict>
@@ -2087,7 +5292,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>support.class.language.myst</string>
+            <string>support.variable.language.myst</string>
           </dict>
           <key>5</key>
           <dict>
@@ -2140,7 +5345,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>support.class.language.myst</string>
+            <string>support.variable.language.myst</string>
           </dict>
           <key>5</key>
           <dict>
@@ -2193,7 +5398,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>support.class.language.myst</string>
+            <string>support.variable.language.myst</string>
           </dict>
           <key>5</key>
           <dict>
@@ -2246,7 +5451,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>support.class.language.myst</string>
+            <string>support.variable.language.myst</string>
           </dict>
           <key>5</key>
           <dict>
@@ -2299,7 +5504,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>support.class.language.myst</string>
+            <string>support.variable.language.myst</string>
           </dict>
           <key>5</key>
           <dict>
@@ -2352,7 +5557,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>support.class.language.myst</string>
+            <string>support.variable.language.myst</string>
           </dict>
           <key>5</key>
           <dict>
@@ -2405,7 +5610,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>support.class.language.myst</string>
+            <string>support.variable.language.myst</string>
           </dict>
           <key>5</key>
           <dict>
@@ -2458,7 +5663,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>support.class.language.myst</string>
+            <string>support.variable.language.myst</string>
           </dict>
           <key>5</key>
           <dict>
@@ -2511,7 +5716,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>support.class.language.myst</string>
+            <string>support.variable.language.myst</string>
           </dict>
           <key>5</key>
           <dict>
@@ -2564,7 +5769,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>support.class.language.myst</string>
+            <string>support.variable.language.myst</string>
           </dict>
           <key>5</key>
           <dict>
@@ -2617,7 +5822,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>support.class.language.myst</string>
+            <string>support.variable.language.myst</string>
           </dict>
           <key>5</key>
           <dict>
@@ -2670,7 +5875,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>support.class.language.myst</string>
+            <string>support.variable.language.myst</string>
           </dict>
           <key>5</key>
           <dict>
@@ -2723,7 +5928,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>support.class.language.myst</string>
+            <string>support.variable.language.myst</string>
           </dict>
           <key>5</key>
           <dict>
@@ -2776,7 +5981,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>support.class.language.myst</string>
+            <string>support.variable.language.myst</string>
           </dict>
           <key>5</key>
           <dict>
@@ -2829,7 +6034,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>support.class.language.myst</string>
+            <string>support.variable.language.myst</string>
           </dict>
           <key>5</key>
           <dict>
@@ -2882,7 +6087,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>support.class.language.myst</string>
+            <string>support.variable.language.myst</string>
           </dict>
           <key>5</key>
           <dict>
@@ -2935,7 +6140,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>support.class.language.myst</string>
+            <string>support.variable.language.myst</string>
           </dict>
           <key>5</key>
           <dict>
@@ -2988,7 +6193,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>support.class.language.myst</string>
+            <string>support.variable.language.myst</string>
           </dict>
           <key>5</key>
           <dict>
@@ -3041,7 +6246,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>support.class.language.myst</string>
+            <string>support.variable.language.myst</string>
           </dict>
           <key>5</key>
           <dict>
@@ -3094,7 +6299,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>support.class.language.myst</string>
+            <string>support.variable.language.myst</string>
           </dict>
           <key>5</key>
           <dict>
@@ -3147,7 +6352,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>support.class.language.myst</string>
+            <string>support.variable.language.myst</string>
           </dict>
           <key>5</key>
           <dict>
@@ -3200,7 +6405,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>support.class.language.myst</string>
+            <string>support.variable.language.myst</string>
           </dict>
           <key>5</key>
           <dict>
@@ -3253,7 +6458,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>support.class.language.myst</string>
+            <string>support.variable.language.myst</string>
           </dict>
           <key>5</key>
           <dict>
@@ -3306,7 +6511,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>support.class.language.myst</string>
+            <string>support.variable.language.myst</string>
           </dict>
           <key>5</key>
           <dict>
@@ -3359,7 +6564,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>support.class.language.myst</string>
+            <string>support.variable.language.myst</string>
           </dict>
           <key>5</key>
           <dict>
@@ -3412,7 +6617,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>support.class.language.myst</string>
+            <string>support.variable.language.myst</string>
           </dict>
           <key>5</key>
           <dict>
@@ -3465,7 +6670,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>support.class.language.myst</string>
+            <string>support.variable.language.myst</string>
           </dict>
           <key>5</key>
           <dict>
@@ -3518,7 +6723,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>support.class.language.myst</string>
+            <string>support.variable.language.myst</string>
           </dict>
           <key>5</key>
           <dict>
@@ -3571,7 +6776,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>support.class.language.myst</string>
+            <string>support.variable.language.myst</string>
           </dict>
           <key>5</key>
           <dict>
@@ -3624,7 +6829,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>support.class.language.myst</string>
+            <string>support.variable.language.myst</string>
           </dict>
           <key>5</key>
           <dict>
@@ -3677,7 +6882,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>support.class.language.myst</string>
+            <string>support.variable.language.myst</string>
           </dict>
           <key>5</key>
           <dict>
@@ -3730,7 +6935,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>support.class.language.myst</string>
+            <string>support.variable.language.myst</string>
           </dict>
           <key>5</key>
           <dict>
@@ -3783,7 +6988,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>support.class.language.myst</string>
+            <string>support.variable.language.myst</string>
           </dict>
           <key>5</key>
           <dict>
@@ -3836,7 +7041,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>support.class.language.myst</string>
+            <string>support.variable.language.myst</string>
           </dict>
           <key>5</key>
           <dict>
@@ -3889,7 +7094,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>support.class.language.myst</string>
+            <string>support.variable.language.myst</string>
           </dict>
           <key>5</key>
           <dict>
@@ -3942,7 +7147,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>support.class.language.myst</string>
+            <string>support.variable.language.myst</string>
           </dict>
           <key>5</key>
           <dict>
@@ -3995,7 +7200,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>support.class.language.myst</string>
+            <string>support.variable.language.myst</string>
           </dict>
           <key>5</key>
           <dict>
@@ -4048,7 +7253,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>support.class.language.myst</string>
+            <string>support.variable.language.myst</string>
           </dict>
           <key>5</key>
           <dict>
@@ -4101,7 +7306,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>support.class.language.myst</string>
+            <string>support.variable.language.myst</string>
           </dict>
           <key>5</key>
           <dict>
@@ -4154,7 +7359,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>support.class.language.myst</string>
+            <string>support.variable.language.myst</string>
           </dict>
           <key>5</key>
           <dict>

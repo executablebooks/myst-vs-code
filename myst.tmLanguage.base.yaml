@@ -457,15 +457,12 @@ repository:
     patterns:
     - {include: '#block'}
     while: (^|\G)\s*(>) ?
-  directive_block:
-    patterns:
-      - {include: '#directive_block_admonition'}
   directive_block_admonition:
     begin: (^|\G)(\s*)(`{3,}|~{3,})\{(attention|caution|danger|error|note|important|tip|hint|warning)\}\s*(?=([^`~]*)?$)
     beginCaptures:
       '3': {name: punctuation.definition.myst}
       '4': {name: support.class.directive.myst}
-      '5': {name: directive.block.attributes.myst}
+      '5': {name: support.variable.attributes.directive.myst}
     end: (^|\G)(\3|\s{0,3})(\4)\s*$
     endCaptures:
       '3': {name: punctuation.definition.myst}
@@ -485,6 +482,22 @@ repository:
     endCaptures:
       '3': {name: punctuation.definition.myst}
     name: markup.fenced_code.block.myst
+  directive_block_unknown:
+    begin: (^|\G)(\s*)(`{3,}|~{3,})\s*\{([a-zA-Z0-9\_\-\@]+)\}\s*(?=([^`~]*)?$)
+    beginCaptures:
+      '3': {name: punctuation.definition.myst}
+      '4': {name: support.class.directive.myst}
+      '5': {name: 'support.variable.language.myst'}
+    end: (^|\G)(\2|\s{0,3})(\3)\s*$
+    endCaptures:
+      '3': {name: punctuation.definition.myst}
+    name: markup.fenced_code.block.myst
+{{codeCellDefinitions}}
+  directive_block:
+    patterns:
+    - {include: '#directive_block_admonition'}
+    {{codeCellIncludes}}
+    - {include: '#directive_block_unknown'}
 {{languageDefinitions}}
   fenced_code_block:
     patterns:

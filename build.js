@@ -64,6 +64,17 @@ const languages = [
 	{ name: 'log', language: 'log', identifiers: ['log'], source: 'text.log' }
 ];
 
+
+const fencedCodeBlockInclude = (name) =>
+	`- { include: '#fenced_code_block_${name}' }`;
+
+
+const fencedCodeBlockIncludes = () =>
+languages
+	.map(language => fencedCodeBlockInclude(language.name))
+	.join('\n');
+
+
 const fencedCodeBlockDefinition = (name, identifiers, sourceScope, language, additionalContentName) => {
 	if (!Array.isArray(sourceScope)) {
 		sourceScope = [sourceScope];
@@ -88,7 +99,7 @@ const fencedCodeBlockDefinition = (name, identifiers, sourceScope, language, add
     (^|\\G)(\\2|\\s{0,3})(\\3)\\s*$
   beginCaptures:
     '3': {name: 'punctuation.definition.myst'}
-    '4': {name: 'support.class.language.myst'}
+    '4': {name: 'support.variable.language.myst'}
     '5': {name: 'fenced_code.block.language.attributes.myst'}
   endCaptures:
     '3': {name: 'punctuation.definition.myst'}
@@ -101,13 +112,6 @@ ${indent(4, scopes)}
 `;
 };
 
-const indent = (count, text) => {
-	const indent = new Array(count + 1).join('  ');
-	return text.replace(/^/gm, indent);
-};
-
-const fencedCodeBlockInclude = (name) =>
-	`- { include: '#fenced_code_block_${name}' }`;
 
 const fencedCodeBlockDefinitions = () =>
 	languages
@@ -115,9 +119,65 @@ const fencedCodeBlockDefinitions = () =>
 		.join('\n');
 
 
-const fencedCodeBlockIncludes = () =>
+const indent = (count, text) => {
+	const indent = new Array(count + 1).join('  ');
+	return text.replace(/^/gm, indent);
+};
+
+
+const codeCellBlockInclude = (name) =>
+	`- { include: '#code_cell_block_${name}' }`;
+
+
+const codeCellBlockIncludes = () =>
+languages
+	.map(language => codeCellBlockInclude(language.name))
+	.join('\n');
+
+	
+const codeCellBlockDefinition = (name, identifiers, sourceScope, language, additionalContentName) => {
+	if (!Array.isArray(sourceScope)) {
+		sourceScope = [sourceScope];
+	}
+
+	language = language || name
+
+	const scopes = sourceScope.map(scope =>
+		`- { include: '${scope}' }`).join('\n');
+
+	let contentName = `meta.embedded.block.${language}`;
+	if (additionalContentName) {
+		contentName += ` ${additionalContentName.join(' ')}`;
+	}
+
+	return `code_cell_block_${name}:
+  begin:
+    (^|\\G)(\\s*)(\`{3,}|~{3,})\\s*\\{(code-cell|code|code-block)\\}\\s+(?i:(${identifiers.join('|')})((\\s+|:|\\{)[^\`~]*)?$)
+
+  name:
+    markup.code_cell.block.myst
+  end:
+    (^|\\G)(\\2|\\s{0,3})(\\3)\\s*$
+  beginCaptures:
+    '3': {name: 'punctuation.definition.myst'}
+    '4': {name: 'support.class.directive.myst'}
+    '5': {name: 'support.variable.language.myst'}
+    '6': {name: 'directive.block.language.attributes.myst'}
+  endCaptures:
+    '3': {name: 'punctuation.definition.myst'}
+  patterns:
+    - begin: (^|\\G)(\\s*)(.*)
+      while: (^|\\G)(?!\\s*([\`~]{3,})\\s*$)
+      contentName: ${contentName}
+      patterns:
+${indent(4, scopes)}
+`;
+};
+
+
+const codeCellBlockDefinitions = () =>
 	languages
-		.map(language => fencedCodeBlockInclude(language.name))
+		.map(language => codeCellBlockDefinition(language.name, language.identifiers, language.source, language.language, language.additionalContentName))
 		.join('\n');
 
 
@@ -125,6 +185,8 @@ const buildGrammar = () => {
 	let text = fs.readFileSync(path.join(__dirname, 'myst.tmLanguage.base.yaml'), "utf8");
 	text = text.replace(/\s*\{\{languageIncludes\}\}/, '\n' + indent(2, fencedCodeBlockIncludes()))
 	text = text.replace(/\s*\{\{languageDefinitions\}\}/, '\n' + indent(1, fencedCodeBlockDefinitions()))
+	text = text.replace(/\s*\{\{codeCellIncludes\}\}/, '\n' + indent(2, codeCellBlockIncludes()))
+	text = text.replace(/\s*\{\{codeCellDefinitions\}\}/, '\n' + indent(1, codeCellBlockDefinitions()))
 
 	const grammar = yaml.safeLoad(text);
 	const out = plist.build(grammar);
