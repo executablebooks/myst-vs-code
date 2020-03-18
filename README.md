@@ -12,7 +12,7 @@ The main grammar is stored in `syntaxes/myst.tmLanguage`. This file is generated
 
 See [this guide on textmate bundles](https://macromates.com/manual/en/language_grammars) for guidance.
 
-## Building
+### Building
 
 To generate the main grammar:
 
@@ -21,7 +21,9 @@ $ npm install
 $ npm run build
 ```
 
-## Testing
+### Testing
+
+To launch a development version of the extension in VS Code, press `F5`.
 
 To run the grammar tests:
 
