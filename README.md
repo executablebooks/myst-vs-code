@@ -3,6 +3,7 @@
 This is the README for your extension "myst-highlight". After writing up a brief description, we recommend including the following sections.
 
 NOTE: see <https://github.com/microsoft/vscode-markdown-tm-grammar> for initial settings
+and https://marketplace.visualstudio.com/items?itemName=Togusa09.tmlanguage for tmllanguage syntax highlighting
 
 ## Features
 

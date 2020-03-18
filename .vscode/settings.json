@@ -1,0 +1,8 @@
+{
+    // "files.associations": {
+    //     "*.tmLanguage.yaml": "yaml-tmlanguage"
+    // },
+    "yaml.schemas": {
+        "tmlLanguage.schema.json": ["*.tmLanguage*.yaml"]
+    }
+}

@@ -2688,7 +2688,7 @@
             <array>
               <dict>
                 <key>include</key>
-                <string>text.html.myst</string>
+                <string>text.html.markdown</string>
               </dict>
             </array>
           </dict>

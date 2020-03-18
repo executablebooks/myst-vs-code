@@ -7,7 +7,7 @@
         "type": "git",
         "url": "https://github.com/ExecutableBookProject/myst-highlight.git"
     },
-    "license": "LICENSE",
+    "license": "MIT",
     "engines": {
         "vscode": "^1.43.0"
     },
@@ -39,7 +39,8 @@
     "devDependencies": {
         "js-yaml": "^3.13.1",
         "plist": "^3.0.1",
-        "vscode": "^1.1.36"
+        "vscode": "^1.1.36",
+        "minimist": ">=1.2.2"
     },
     "scripts": {
         "build": "node build",
