@@ -3500,6 +3500,59 @@
           </dict>
         </array>
       </dict>
+      <key>fenced_code_block_ipython</key>
+      <dict>
+        <key>begin</key>
+        <string>(^|\G)(\s*)(`{3,}|~{3,})\s*(?i:(ipython|ipython2|ipython3|\{\.ipython.+?\})((\s+|:|\{)[^`~]*)?$)</string>
+        <key>name</key>
+        <string>markup.fenced_code.block.myst</string>
+        <key>end</key>
+        <string>(^|\G)(\2|\s{0,3})(\3)\s*$</string>
+        <key>beginCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+          <key>4</key>
+          <dict>
+            <key>name</key>
+            <string>support.class.language.myst</string>
+          </dict>
+          <key>5</key>
+          <dict>
+            <key>name</key>
+            <string>fenced_code.block.language.attributes.myst</string>
+          </dict>
+        </dict>
+        <key>endCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+        </dict>
+        <key>patterns</key>
+        <array>
+          <dict>
+            <key>begin</key>
+            <string>(^|\G)(\s*)(.*)</string>
+            <key>while</key>
+            <string>(^|\G)(?!\s*([`~]{3,})\s*$)</string>
+            <key>contentName</key>
+            <string>meta.embedded.block.ipython</string>
+            <key>patterns</key>
+            <array>
+              <dict>
+                <key>include</key>
+                <string>source.python</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
       <key>fenced_code_block_regexp_python</key>
       <dict>
         <key>begin</key>
@@ -4291,6 +4344,10 @@
           <dict>
             <key>include</key>
             <string>#fenced_code_block_python</string>
+          </dict>
+          <dict>
+            <key>include</key>
+            <string>#fenced_code_block_ipython</string>
           </dict>
           <dict>
             <key>include</key>

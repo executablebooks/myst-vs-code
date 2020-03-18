@@ -1,10 +1,9 @@
 # myst-highlight README
 
-This is the README for your extension "myst-highlight". After writing up a brief description, we recommend including the following sections.
+This is the README for your extension "myst-highlight".
 
-- see <https://github.com/microsoft/vscode-markdown-tm-grammar> for initial settings
-- see https://macromates.com/manual/en/language_grammars for guidance
-- See https://marketplace.visualstudio.com/items?itemName=Togusa09.tmlanguage for tmllanguage syntax highlighting
+- Originally adapted from <https://github.com/microsoft/vscode-markdown-tm-grammar>, commit: 59a5962e4775bf96484bba64c5322422b555a40d
+- See https://macromates.com/manual/en/language_grammars for guidance
 
 ## Features
 
