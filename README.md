@@ -15,7 +15,8 @@ Originally adapted from [vscode-markdown-tm-grammar](https://github.com/microsof
 
 The main grammar is stored in `syntaxes/myst.tmLanguage`. This file is generated from `myst.tmLanguage.base.yaml`.
 
-See [this guide on textmate bundles](https://macromates.com/manual/en/language_grammars) for guidance.
+See [this guide on textmate bundles](https://macromates.com/manual/en/language_grammars) and
+[the VS Code guide](https://code.visualstudio.com/api/language-extensions/syntax-highlight-guide) for more help.
 
 ### Building
 
