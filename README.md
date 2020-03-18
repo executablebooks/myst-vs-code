@@ -1,9 +1,11 @@
 # myst-highlight-grammar
 
 [![VS Marketplace](https://vsmarketplacebadge.apphb.com/version/ExecutableBookProject.myst-highlight.svg "Current Release")](https://marketplace.visualstudio.com/items?itemName=ExecutableBookProject.myst-highlight)
-[![Build Status](https://travis-ci.org/ExecutableBookProject/myst-higlight-grammar.svg?branch=master)](https://travis-ci.org/ExecutableBookProject/myst-higlight-grammar)
+[![Build Status](https://travis-ci.org/ExecutableBookProject/myst-highlight-grammar.svg?branch=master)](https://travis-ci.org/ExecutableBookProject/myst-highlight-grammar)
 
 MyST (Markedly Structured Text) markdown's official Textmate grammar.
+
+<img width="500" alt="image" src="https://github.com/ExecutableBookProject/myst-highlight-grammar/blob/master/Screenshot.png">
 
 Originally adapted from [vscode-markdown-tm-grammar](https://github.com/microsoft/vscode-markdown-tm-grammar/tree/59a5962e4775bf96484bba64c5322422b555a40d).
 
