@@ -2,7 +2,7 @@
     "name": "myst-highlight",
     "displayName": "myst-highlight",
     "description": "The official syntax highlighter for the MyST Markdown format",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "repository": {
         "type": "git",
         "url": "https://github.com/ExecutableBookProject/myst-highlight-grammar.git"
