@@ -3,6 +3,6 @@
     //     "*.tmLanguage.yaml": "yaml-tmlanguage"
     // },
     "yaml.schemas": {
-        "tmlLanguage.schema.json": ["*.tmLanguage*.yaml"]
+        "tmlLanguage.schema.json": ["*.tmLanguage.base.yaml"]
     }
 }

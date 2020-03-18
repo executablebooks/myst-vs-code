@@ -8,6 +8,7 @@ repository:
   block:
     patterns:
     - {include: '#line-comment'}
+    - {include: '#block-break'}
     - {include: '#separator'}
     - {include: '#heading'}
     - {include: '#blockquote'}
@@ -17,19 +18,6 @@ repository:
     - {include: '#link-def'}
     - {include: '#html'}
     - {include: '#paragraph'}
-  blockquote:
-    begin: (^|\G)[ ]{0,3}(>) ?
-    captures:
-      '2': {name: punctuation.definition.quote.begin.myst}
-    name: markup.quote.myst
-    patterns:
-    - {include: '#block'}
-    while: (^|\G)\s*(>) ?
-{{languageDefinitions}}
-  fenced_code_block:
-    patterns:
-    {{languageIncludes}}
-    - {include: '#fenced_code_block_unknown'}
   fenced_code_block_unknown:
     begin: (^|\G)(\s*)(`{3,}|~{3,})\s*(?=([^`~]*)?$)
     beginCaptures:
@@ -185,6 +173,11 @@ repository:
       ]{4}|\t)'}
   separator: {match: '(^|\G)[ ]{0,3}([\*\-\_])([ ]{0,2}\2){2,}[ \t]*$\n?', name: meta.separator.myst}
   line-comment: {match: '(^|\G)[ ]{0,3}\%\s*(.*)', name: comment.line.percentage}
+  block-break:
+    match: '(?:^|\G)[ ]{0,3}(\+\+\++)\s*(.*)'
+    captures:
+      '1': {name: keyword.other.myst}
+      '2': {name: meta.raw.myst}  # TODO include source.json
   frontMatter:
     begin: \A-{3}\s*$
     contentName: meta.embedded.block.frontmatter
@@ -464,5 +457,18 @@ repository:
       '3': {name: punctuation.definition.raw.myst}
     match: (`+)([^`]|(?!(?<!`)\1(?!`))`)*+(\1)
     name: markup.inline.raw.string.myst
+  blockquote:
+    begin: (^|\G)[ ]{0,3}(>) ?
+    captures:
+      '2': {name: punctuation.definition.quote.begin.myst}
+    name: markup.quote.myst
+    patterns:
+    - {include: '#block'}
+    while: (^|\G)\s*(>) ?
+{{languageDefinitions}}
+  fenced_code_block:
+    patterns:
+    {{languageIncludes}}
+    - {include: '#fenced_code_block_unknown'}
 scopeName: text.html.myst
 uuid: 0A1D9874-B448-11D9-BD50-000D93B6E43D
