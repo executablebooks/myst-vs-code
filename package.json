@@ -23,20 +23,22 @@
     "contributes": {
         "languages": [
             {
-                "id": "myst",
+                "id": "markdown",
                 "aliases": [
-                    "MyST Markdown"
+                    "Markdown (MyST)"
                 ],
                 "extensions": [
                     ".myst",
-                    ".myst.md"
+                    ".myst.md",
+                    ".mnb",
+                    ".mystnb"
                 ],
                 "configuration": "./language-configuration.json"
             }
         ],
         "grammars": [
             {
-                "language": "myst",
+                "language": "markdown",
                 "scopeName": "text.html.myst",
                 "path": "./syntaxes/myst.tmLanguage",
                 "embeddedLanguages": {
