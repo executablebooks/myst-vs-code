@@ -130,10 +130,10 @@
           }
         },
         "dependencies": {
-          "begin": [ "end" ],
+          "begin": {"oneOf": [{"required": ["end"], "properties": {"end": {}}},{"required": ["while"], "properties": {"while": {}}}]},
           "end": [ "begin" ],
-          "contentName": [ "begin", "end" ],
-          "beginCaptures": [ "begin", "end" ],
+          "contentName": {"oneOf": [{"required": ["begin", "end"], "properties": {"begin": {}, "end": {}}},{"required": ["begin", "while"], "properties": {"begin": {}, "while": {}}}]},
+          "beginCaptures": {"oneOf": [{"required": ["begin", "end"], "properties": {"begin": {}, "end": {}}},{"required": ["begin", "while"], "properties": {"begin": {}, "while": {}}}]},
           "endCaptures": [ "begin", "end" ],
           "applyEndPatternLast": [ "end" ]
         }

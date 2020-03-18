@@ -13,20 +13,12 @@ repository:
     - {include: '#heading'}
     - {include: '#blockquote'}
     - {include: '#lists'}
+    - {include: '#directive_block'}
     - {include: '#fenced_code_block'}
     - {include: '#raw_block'}
     - {include: '#link-def'}
     - {include: '#html'}
     - {include: '#paragraph'}
-  fenced_code_block_unknown:
-    begin: (^|\G)(\s*)(`{3,}|~{3,})\s*(?=([^`~]*)?$)
-    beginCaptures:
-      '3': {name: punctuation.definition.myst}
-      '4': {name: fenced_code.block.language}
-    end: (^|\G)(\2|\s{0,3})(\3)\s*$
-    endCaptures:
-      '3': {name: punctuation.definition.myst}
-    name: markup.fenced_code.block.myst
   heading:
     match: (?:^|\G)[ ]{0,3}((#{1,6})\s+(?=[\S[^#]]).*?\s*(#{1,6})?)$\n?
     captures:
@@ -465,6 +457,34 @@ repository:
     patterns:
     - {include: '#block'}
     while: (^|\G)\s*(>) ?
+  directive_block:
+    patterns:
+      - {include: '#directive_block_admonition'}
+  directive_block_admonition:
+    begin: (^|\G)(\s*)(`{3,}|~{3,})\{(attention|caution|danger|error|note|important|tip|hint|warning)\}\s*(?=([^`~]*)?$)
+    beginCaptures:
+      '3': {name: punctuation.definition.myst}
+      '4': {name: support.class.directive.myst}
+      '5': {name: directive.block.attributes.myst}
+    end: (^|\G)(\3|\s{0,3})(\4)\s*$
+    endCaptures:
+      '3': {name: punctuation.definition.myst}
+    patterns:
+      - begin: (^|\G)(\s*)(.*)
+        while: (^|\G)(?!\s*([\`~]{3,})\s*$)
+        contentName: meta.embedded.block.myst
+        patterns:
+          - {include: $self}
+    name: markup.directive_code.block.myst
+  fenced_code_block_unknown:
+    begin: (^|\G)(\s*)(`{3,}|~{3,})\s*(?=([^`~]*)?$)
+    beginCaptures:
+      '3': {name: punctuation.definition.myst}
+      '4': {name: fenced_code.block.language}
+    end: (^|\G)(\2|\s{0,3})(\3)\s*$
+    endCaptures:
+      '3': {name: punctuation.definition.myst}
+    name: markup.fenced_code.block.myst
 {{languageDefinitions}}
   fenced_code_block:
     patterns:

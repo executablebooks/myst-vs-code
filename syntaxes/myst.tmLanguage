@@ -57,6 +57,10 @@
           </dict>
           <dict>
             <key>include</key>
+            <string>#directive_block</string>
+          </dict>
+          <dict>
+            <key>include</key>
             <string>#fenced_code_block</string>
           </dict>
           <dict>
@@ -76,36 +80,6 @@
             <string>#paragraph</string>
           </dict>
         </array>
-      </dict>
-      <key>fenced_code_block_unknown</key>
-      <dict>
-        <key>begin</key>
-        <string>(^|\G)(\s*)(`{3,}|~{3,})\s*(?=([^`~]*)?$)</string>
-        <key>beginCaptures</key>
-        <dict>
-          <key>3</key>
-          <dict>
-            <key>name</key>
-            <string>punctuation.definition.myst</string>
-          </dict>
-          <key>4</key>
-          <dict>
-            <key>name</key>
-            <string>fenced_code.block.language</string>
-          </dict>
-        </dict>
-        <key>end</key>
-        <string>(^|\G)(\2|\s{0,3})(\3)\s*$</string>
-        <key>endCaptures</key>
-        <dict>
-          <key>3</key>
-          <dict>
-            <key>name</key>
-            <string>punctuation.definition.myst</string>
-          </dict>
-        </dict>
-        <key>name</key>
-        <string>markup.fenced_code.block.myst</string>
       </dict>
       <key>heading</key>
       <dict>
@@ -1414,6 +1388,99 @@
         </array>
         <key>while</key>
         <string>(^|\G)\s*(&gt;) ?</string>
+      </dict>
+      <key>directive_block</key>
+      <dict>
+        <key>patterns</key>
+        <array>
+          <dict>
+            <key>include</key>
+            <string>#directive_block_admonition</string>
+          </dict>
+        </array>
+      </dict>
+      <key>directive_block_admonition</key>
+      <dict>
+        <key>begin</key>
+        <string>(^|\G)(\s*)(`{3,}|~{3,})\{(attention|caution|danger|error|note|important|tip|hint|warning)\}\s*(?=([^`~]*)?$)</string>
+        <key>beginCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+          <key>4</key>
+          <dict>
+            <key>name</key>
+            <string>support.class.directive.myst</string>
+          </dict>
+          <key>5</key>
+          <dict>
+            <key>name</key>
+            <string>directive.block.attributes.myst</string>
+          </dict>
+        </dict>
+        <key>end</key>
+        <string>(^|\G)(\3|\s{0,3})(\4)\s*$</string>
+        <key>endCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+        </dict>
+        <key>patterns</key>
+        <array>
+          <dict>
+            <key>begin</key>
+            <string>(^|\G)(\s*)(.*)</string>
+            <key>while</key>
+            <string>(^|\G)(?!\s*([\`~]{3,})\s*$)</string>
+            <key>contentName</key>
+            <string>meta.embedded.block.myst</string>
+            <key>patterns</key>
+            <array>
+              <dict>
+                <key>include</key>
+                <string>$self</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+        <key>name</key>
+        <string>markup.directive_code.block.myst</string>
+      </dict>
+      <key>fenced_code_block_unknown</key>
+      <dict>
+        <key>begin</key>
+        <string>(^|\G)(\s*)(`{3,}|~{3,})\s*(?=([^`~]*)?$)</string>
+        <key>beginCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+          <key>4</key>
+          <dict>
+            <key>name</key>
+            <string>fenced_code.block.language</string>
+          </dict>
+        </dict>
+        <key>end</key>
+        <string>(^|\G)(\2|\s{0,3})(\3)\s*$</string>
+        <key>endCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+        </dict>
+        <key>name</key>
+        <string>markup.fenced_code.block.myst</string>
       </dict>
       <key>fenced_code_block_css</key>
       <dict>
