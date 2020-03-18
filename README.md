@@ -1,68 +1,34 @@
-# myst-highlight README
+# myst-highlight-grammar
 
-This is the README for your extension "myst-highlight".
+[![Build Status](https://travis-ci.org/ExecutableBookProject/myst-higlight-grammar.svg?branch=master)](https://travis-ci.org/ExecutableBookProject/myst-higlight-grammar)
 
-- Originally adapted from <https://github.com/microsoft/vscode-markdown-tm-grammar>, commit: 59a5962e4775bf96484bba64c5322422b555a40d
-- See https://macromates.com/manual/en/language_grammars for guidance
+MyST (Markedly Structured Text) markdown's official Textmate grammar.
 
-## Features
+Originally adapted from [vscode-markdown-tm-grammar](https://github.com/microsoft/vscode-markdown-tm-grammar/tree/59a5962e4775bf96484bba64c5322422b555a40d).
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+## Contributing
 
-For example if there is an image subfolder under your extension project workspace:
+The main grammar is stored in `syntaxes/myst.tmLanguage`. This file is generated from `myst.tmLanguage.base.yaml`.
 
-\!\[feature X\]\(images/feature-x.png\)
+See [this guide on textmate bundles](https://macromates.com/manual/en/language_grammars) for guidance.
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+## Building
 
-## Requirements
+To generate the main grammar:
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+```bash
+$ npm install
+$ npm run build
+```
 
-## Extension Settings
+## Testing
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+To run the grammar tests:
 
-For example:
+```bash
+$ npm run test
+```
 
-This extension contributes the following settings:
+The test cases are stored as markdown files under `test/colorize-fixtures`. Grammar test results are stored under `test/colorize-results`, which are automatically generated from the fixtures.
 
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
------------------------------------------------------------------------------------------------------------
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+To test the grammar in VS Code, select the `Launch Extension` configuration in the VS Code debugger and run.
