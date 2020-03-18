@@ -1,0 +1,101 @@
+[
+	{
+		"c": "```",
+		"t": "text.html.myst markup.fenced_code.block.myst punctuation.definition.myst",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
+		"c": "markdown",
+		"t": "text.html.myst markup.fenced_code.block.myst fenced_code.block.language.myst",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
+		"c": "#",
+		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.markdown markup.heading.myst heading.1.myst punctuation.definition.heading.myst",
+		"r": {
+			"dark_plus": "markup.heading: #569CD6",
+			"light_plus": "markup.heading: #800000",
+			"dark_vs": "markup.heading: #569CD6",
+			"light_vs": "markup.heading: #800000",
+			"hc_black": "markup.heading: #6796E6"
+		}
+	},
+	{
+		"c": " ",
+		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.markdown markup.heading.myst heading.1.myst",
+		"r": {
+			"dark_plus": "markup.heading: #569CD6",
+			"light_plus": "markup.heading: #800000",
+			"dark_vs": "markup.heading: #569CD6",
+			"light_vs": "markup.heading: #800000",
+			"hc_black": "markup.heading: #6796E6"
+		}
+	},
+	{
+		"c": "markdown",
+		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.markdown markup.heading.myst heading.1.myst entity.name.section.myst",
+		"r": {
+			"dark_plus": "markup.heading: #569CD6",
+			"light_plus": "markup.heading: #800000",
+			"dark_vs": "markup.heading: #569CD6",
+			"light_vs": "markup.heading: #800000",
+			"hc_black": "markup.heading: #6796E6"
+		}
+	},
+	{
+		"c": "**",
+		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.markdown meta.paragraph.myst markup.bold.myst punctuation.definition.bold.myst",
+		"r": {
+			"dark_plus": "markup.bold: #569CD6",
+			"light_plus": "markup.bold: #000080",
+			"dark_vs": "markup.bold: #569CD6",
+			"light_vs": "markup.bold: #000080",
+			"hc_black": "meta.embedded: #FFFFFF"
+		}
+	},
+	{
+		"c": "markdown",
+		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.markdown meta.paragraph.myst markup.bold.myst",
+		"r": {
+			"dark_plus": "markup.bold: #569CD6",
+			"light_plus": "markup.bold: #000080",
+			"dark_vs": "markup.bold: #569CD6",
+			"light_vs": "markup.bold: #000080",
+			"hc_black": "meta.embedded: #FFFFFF"
+		}
+	},
+	{
+		"c": "**",
+		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.markdown meta.paragraph.myst markup.bold.myst punctuation.definition.bold.myst",
+		"r": {
+			"dark_plus": "markup.bold: #569CD6",
+			"light_plus": "markup.bold: #000080",
+			"dark_vs": "markup.bold: #569CD6",
+			"light_vs": "markup.bold: #000080",
+			"hc_black": "meta.embedded: #FFFFFF"
+		}
+	},
+	{
+		"c": "```",
+		"t": "text.html.myst markup.fenced_code.block.myst punctuation.definition.myst",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	}
+]
