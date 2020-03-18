@@ -5,7 +5,9 @@
 
 [MyST (Markedly Structured Text)](https://myst-parser.readthedocs.io) markdown's official Textmate grammar, and VS Code extension.
 
-This extnsion will override the syntax highlighting of
+**Important** This extension is still in alpha development, and may change in the future.
+
+This extension will override the syntax highlighting of
 markdown files and will also highlight `.myst`, `.mystnb` and `.mnb` files.
 
 <img width="500" alt="screenshot" src="https://raw.githubusercontent.com/ExecutableBookProject/myst-highlight-grammar/master/images/Screenshot.png">
