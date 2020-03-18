@@ -33,6 +33,10 @@
         <array>
           <dict>
             <key>include</key>
+            <string>#line-comment</string>
+          </dict>
+          <dict>
+            <key>include</key>
             <string>#separator</string>
           </dict>
           <dict>
@@ -3492,6 +3496,13 @@
         <string>(^|\G)[ ]{0,3}([\*\-\_])([ ]{0,2}\2){2,}[ \t]*$\n?</string>
         <key>name</key>
         <string>meta.separator.myst</string>
+      </dict>
+      <key>line-comment</key>
+      <dict>
+        <key>match</key>
+        <string>(^|\G)[ ]{0,3}\%\s*(.*)</string>
+        <key>name</key>
+        <string>comment.line.percentage</string>
       </dict>
       <key>frontMatter</key>
       <dict>

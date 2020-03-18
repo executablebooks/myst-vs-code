@@ -7,6 +7,7 @@ patterns:
 repository:
   block:
     patterns:
+    - {include: '#line-comment'}
     - {include: '#separator'}
     - {include: '#heading'}
     - {include: '#blockquote'}
@@ -183,6 +184,7 @@ repository:
   raw_block: {begin: '(^|\G)([ ]{4}|\t)', name: markup.raw.block.myst, while: '(^|\G)([
       ]{4}|\t)'}
   separator: {match: '(^|\G)[ ]{0,3}([\*\-\_])([ ]{0,2}\2){2,}[ \t]*$\n?', name: meta.separator.myst}
+  line-comment: {match: '(^|\G)[ ]{0,3}\%\s*(.*)', name: comment.line.percentage}
   frontMatter:
     begin: \A-{3}\s*$
     contentName: meta.embedded.block.frontmatter
