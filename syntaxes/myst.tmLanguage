@@ -1500,7 +1500,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>fenced_code.block.language.myst</string>
+            <string>support.class.language.myst</string>
           </dict>
           <key>5</key>
           <dict>
@@ -1553,7 +1553,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>fenced_code.block.language.myst</string>
+            <string>support.class.language.myst</string>
           </dict>
           <key>5</key>
           <dict>
@@ -1606,7 +1606,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>fenced_code.block.language.myst</string>
+            <string>support.class.language.myst</string>
           </dict>
           <key>5</key>
           <dict>
@@ -1659,7 +1659,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>fenced_code.block.language.myst</string>
+            <string>support.class.language.myst</string>
           </dict>
           <key>5</key>
           <dict>
@@ -1712,7 +1712,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>fenced_code.block.language.myst</string>
+            <string>support.class.language.myst</string>
           </dict>
           <key>5</key>
           <dict>
@@ -1765,7 +1765,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>fenced_code.block.language.myst</string>
+            <string>support.class.language.myst</string>
           </dict>
           <key>5</key>
           <dict>
@@ -1818,7 +1818,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>fenced_code.block.language.myst</string>
+            <string>support.class.language.myst</string>
           </dict>
           <key>5</key>
           <dict>
@@ -1871,7 +1871,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>fenced_code.block.language.myst</string>
+            <string>support.class.language.myst</string>
           </dict>
           <key>5</key>
           <dict>
@@ -1924,7 +1924,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>fenced_code.block.language.myst</string>
+            <string>support.class.language.myst</string>
           </dict>
           <key>5</key>
           <dict>
@@ -1977,7 +1977,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>fenced_code.block.language.myst</string>
+            <string>support.class.language.myst</string>
           </dict>
           <key>5</key>
           <dict>
@@ -2034,7 +2034,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>fenced_code.block.language.myst</string>
+            <string>support.class.language.myst</string>
           </dict>
           <key>5</key>
           <dict>
@@ -2087,7 +2087,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>fenced_code.block.language.myst</string>
+            <string>support.class.language.myst</string>
           </dict>
           <key>5</key>
           <dict>
@@ -2140,7 +2140,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>fenced_code.block.language.myst</string>
+            <string>support.class.language.myst</string>
           </dict>
           <key>5</key>
           <dict>
@@ -2193,7 +2193,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>fenced_code.block.language.myst</string>
+            <string>support.class.language.myst</string>
           </dict>
           <key>5</key>
           <dict>
@@ -2246,7 +2246,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>fenced_code.block.language.myst</string>
+            <string>support.class.language.myst</string>
           </dict>
           <key>5</key>
           <dict>
@@ -2299,7 +2299,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>fenced_code.block.language.myst</string>
+            <string>support.class.language.myst</string>
           </dict>
           <key>5</key>
           <dict>
@@ -2352,7 +2352,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>fenced_code.block.language.myst</string>
+            <string>support.class.language.myst</string>
           </dict>
           <key>5</key>
           <dict>
@@ -2405,7 +2405,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>fenced_code.block.language.myst</string>
+            <string>support.class.language.myst</string>
           </dict>
           <key>5</key>
           <dict>
@@ -2458,7 +2458,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>fenced_code.block.language.myst</string>
+            <string>support.class.language.myst</string>
           </dict>
           <key>5</key>
           <dict>
@@ -2511,7 +2511,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>fenced_code.block.language.myst</string>
+            <string>support.class.language.myst</string>
           </dict>
           <key>5</key>
           <dict>
@@ -2564,7 +2564,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>fenced_code.block.language.myst</string>
+            <string>support.class.language.myst</string>
           </dict>
           <key>5</key>
           <dict>
@@ -2617,7 +2617,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>fenced_code.block.language.myst</string>
+            <string>support.class.language.myst</string>
           </dict>
           <key>5</key>
           <dict>
@@ -2670,7 +2670,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>fenced_code.block.language.myst</string>
+            <string>support.class.language.myst</string>
           </dict>
           <key>5</key>
           <dict>
@@ -2723,7 +2723,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>fenced_code.block.language.myst</string>
+            <string>support.class.language.myst</string>
           </dict>
           <key>5</key>
           <dict>
@@ -2776,7 +2776,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>fenced_code.block.language.myst</string>
+            <string>support.class.language.myst</string>
           </dict>
           <key>5</key>
           <dict>
@@ -2829,7 +2829,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>fenced_code.block.language.myst</string>
+            <string>support.class.language.myst</string>
           </dict>
           <key>5</key>
           <dict>
@@ -2882,7 +2882,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>fenced_code.block.language.myst</string>
+            <string>support.class.language.myst</string>
           </dict>
           <key>5</key>
           <dict>
@@ -2935,7 +2935,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>fenced_code.block.language.myst</string>
+            <string>support.class.language.myst</string>
           </dict>
           <key>5</key>
           <dict>
@@ -2988,7 +2988,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>fenced_code.block.language.myst</string>
+            <string>support.class.language.myst</string>
           </dict>
           <key>5</key>
           <dict>
@@ -3041,7 +3041,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>fenced_code.block.language.myst</string>
+            <string>support.class.language.myst</string>
           </dict>
           <key>5</key>
           <dict>
@@ -3094,7 +3094,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>fenced_code.block.language.myst</string>
+            <string>support.class.language.myst</string>
           </dict>
           <key>5</key>
           <dict>
@@ -3147,7 +3147,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>fenced_code.block.language.myst</string>
+            <string>support.class.language.myst</string>
           </dict>
           <key>5</key>
           <dict>
@@ -3200,7 +3200,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>fenced_code.block.language.myst</string>
+            <string>support.class.language.myst</string>
           </dict>
           <key>5</key>
           <dict>
@@ -3253,7 +3253,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>fenced_code.block.language.myst</string>
+            <string>support.class.language.myst</string>
           </dict>
           <key>5</key>
           <dict>
@@ -3306,7 +3306,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>fenced_code.block.language.myst</string>
+            <string>support.class.language.myst</string>
           </dict>
           <key>5</key>
           <dict>
@@ -3359,7 +3359,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>fenced_code.block.language.myst</string>
+            <string>support.class.language.myst</string>
           </dict>
           <key>5</key>
           <dict>
@@ -3412,7 +3412,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>fenced_code.block.language.myst</string>
+            <string>support.class.language.myst</string>
           </dict>
           <key>5</key>
           <dict>
@@ -3465,7 +3465,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>fenced_code.block.language.myst</string>
+            <string>support.class.language.myst</string>
           </dict>
           <key>5</key>
           <dict>
@@ -3518,7 +3518,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>fenced_code.block.language.myst</string>
+            <string>support.class.language.myst</string>
           </dict>
           <key>5</key>
           <dict>
@@ -3571,7 +3571,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>fenced_code.block.language.myst</string>
+            <string>support.class.language.myst</string>
           </dict>
           <key>5</key>
           <dict>
@@ -3624,7 +3624,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>fenced_code.block.language.myst</string>
+            <string>support.class.language.myst</string>
           </dict>
           <key>5</key>
           <dict>
@@ -3677,7 +3677,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>fenced_code.block.language.myst</string>
+            <string>support.class.language.myst</string>
           </dict>
           <key>5</key>
           <dict>
@@ -3730,7 +3730,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>fenced_code.block.language.myst</string>
+            <string>support.class.language.myst</string>
           </dict>
           <key>5</key>
           <dict>
@@ -3783,7 +3783,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>fenced_code.block.language.myst</string>
+            <string>support.class.language.myst</string>
           </dict>
           <key>5</key>
           <dict>
@@ -3836,7 +3836,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>fenced_code.block.language.myst</string>
+            <string>support.class.language.myst</string>
           </dict>
           <key>5</key>
           <dict>
@@ -3889,7 +3889,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>fenced_code.block.language.myst</string>
+            <string>support.class.language.myst</string>
           </dict>
           <key>5</key>
           <dict>
@@ -3942,7 +3942,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>fenced_code.block.language.myst</string>
+            <string>support.class.language.myst</string>
           </dict>
           <key>5</key>
           <dict>
@@ -3995,7 +3995,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>fenced_code.block.language.myst</string>
+            <string>support.class.language.myst</string>
           </dict>
           <key>5</key>
           <dict>
@@ -4048,7 +4048,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>fenced_code.block.language.myst</string>
+            <string>support.class.language.myst</string>
           </dict>
           <key>5</key>
           <dict>
@@ -4101,7 +4101,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>fenced_code.block.language.myst</string>
+            <string>support.class.language.myst</string>
           </dict>
           <key>5</key>
           <dict>

@@ -12,13 +12,13 @@
 	},
 	{
 		"c": "log",
-		"t": "text.html.myst markup.fenced_code.block.myst fenced_code.block.language.myst",
+		"t": "text.html.myst markup.fenced_code.block.myst support.class.language.myst",
 		"r": {
-			"dark_plus": "default: #D4D4D4",
-			"light_plus": "default: #000000",
+			"dark_plus": "support.class: #4EC9B0",
+			"light_plus": "support.class: #267F99",
 			"dark_vs": "default: #D4D4D4",
 			"light_vs": "default: #000000",
-			"hc_black": "default: #FFFFFF"
+			"hc_black": "support.class: #4EC9B0"
 		}
 	},
 	{
