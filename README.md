@@ -3,7 +3,9 @@
 [![VS Marketplace](https://vsmarketplacebadge.apphb.com/version/ExecutableBookProject.myst-highlight.svg "Current Release")](https://marketplace.visualstudio.com/items?itemName=ExecutableBookProject.myst-highlight)
 [![Build Status](https://travis-ci.org/ExecutableBookProject/myst-highlight-grammar.svg?branch=master)](https://travis-ci.org/ExecutableBookProject/myst-highlight-grammar)
 
-MyST (Markedly Structured Text) markdown's official Textmate grammar.
+[MyST (Markedly Structured Text)](https://myst-parser.readthedocs.io) markdown's official Textmate grammar, and VS Code extension.
+
+Will automatically highlight `.myst` and `.myst.md`
 
 <img width="500" alt="image" src="https://github.com/ExecutableBookProject/myst-highlight-grammar/blob/master/Screenshot.png">
 
