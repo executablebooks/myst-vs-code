@@ -30,7 +30,7 @@
                     ".myst",
                     ".myst.md"
                 ],
-                "configuration": "./language-configuration.json",
+                "configuration": "./language-configuration.json"
             }
         ],
         "grammars": [
