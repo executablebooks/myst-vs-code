@@ -20,7 +20,6 @@ if __name__ == "__main__":
             }
             continue
         dname = data.get("name", None) or name
-        content = data.get("content", None) or "content"
         arguments = data.get("arguments", None)
         options = data.get("options", None)
 
@@ -36,7 +35,9 @@ if __name__ == "__main__":
             else:
                 body += [f":{l}" for l in lines] + [""]
 
-        body.append(f"${{0:{content}}}")
+        if data.get("content", True) is not False:
+            content = data.get("content", None) or "content"
+            body.append(f"${{0:{content}}}")
         body.append("``${1:`}")
         body.append("")
 

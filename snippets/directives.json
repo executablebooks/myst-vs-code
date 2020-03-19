@@ -83,6 +83,18 @@
       ""
     ]
   },
+  "directive-seealso": {
+    "description": "a seealso directive",
+    "prefix": [
+      "directive-seealso"
+    ],
+    "body": [
+      "``${1:`}{seealso}",
+      "${0:content}",
+      "``${1:`}",
+      ""
+    ]
+  },
   "directive-tip": {
     "description": "a tip directive",
     "prefix": [
@@ -103,6 +115,75 @@
     "body": [
       "``${1:`}{warning}",
       "${0:content}",
+      "``${1:`}",
+      ""
+    ]
+  },
+  "directive-toctree": {
+    "description": "a toctree directive",
+    "prefix": [
+      "directive-toctree"
+    ],
+    "body": [
+      "``${1:`}{toctree}",
+      "${0:content}",
+      "``${1:`}",
+      ""
+    ]
+  },
+  "directive-sidebar": {
+    "description": "a sidebar directive",
+    "prefix": [
+      "directive-sidebar"
+    ],
+    "body": [
+      "``${1:`}{sidebar} ${2:title}",
+      "${0:content}",
+      "``${1:`}",
+      ""
+    ]
+  },
+  "directive-topic": {
+    "description": "a topic directive",
+    "prefix": [
+      "directive-topic"
+    ],
+    "body": [
+      "``${1:`}{topic} ${2:title}",
+      "``${1:`}",
+      ""
+    ]
+  },
+  "directive-rubric": {
+    "description": "a rubric directive",
+    "prefix": [
+      "directive-rubric"
+    ],
+    "body": [
+      "``${1:`}{rubric} ${2:title}",
+      "``${1:`}",
+      ""
+    ]
+  },
+  "directive-image": {
+    "description": "a image directive",
+    "prefix": [
+      "directive-image"
+    ],
+    "body": [
+      "``${1:`}{image} ${2:path/to/image}",
+      "``${1:`}",
+      ""
+    ]
+  },
+  "directive-figure": {
+    "description": "a figure directive",
+    "prefix": [
+      "directive-figure"
+    ],
+    "body": [
+      "``${1:`}{figure} ${2:path/to/image}",
+      "${0:caption}",
       "``${1:`}",
       ""
     ]
