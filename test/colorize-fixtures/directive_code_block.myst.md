@@ -5,6 +5,14 @@ function greetings() {
 }
 ````
 
+````{code-cell} ipython3
+---
+tags: [hide-input,show-output]
+---
+def f(a):
+    print("hallo")
+````
+
 ````{unknown} ipython3
 def f(a):
     print("hallo")

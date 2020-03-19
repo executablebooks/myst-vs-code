@@ -419,6 +419,336 @@
 	},
 	{
 		"c": "````",
+		"t": "text.html.markdown markup.code_cell.block.myst punctuation.definition.myst",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
+		"c": "{",
+		"t": "text.html.markdown markup.code_cell.block.myst",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
+		"c": "code-cell",
+		"t": "text.html.markdown markup.code_cell.block.myst support.class.directive.myst",
+		"r": {
+			"dark_plus": "support.class: #4EC9B0",
+			"light_plus": "support.class: #267F99",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "support.class: #4EC9B0"
+		}
+	},
+	{
+		"c": "} ",
+		"t": "text.html.markdown markup.code_cell.block.myst",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
+		"c": "ipython3",
+		"t": "text.html.markdown markup.code_cell.block.myst support.variable.language.myst",
+		"r": {
+			"dark_plus": "support.variable: #9CDCFE",
+			"light_plus": "support.variable: #001080",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "support.variable: #9CDCFE"
+		}
+	},
+	{
+		"c": "---",
+		"t": "text.html.markdown markup.code_cell.block.myst meta.embedded.block.python",
+		"r": {
+			"dark_plus": "meta.embedded: #D4D4D4",
+			"light_plus": "meta.embedded: #000000",
+			"dark_vs": "meta.embedded: #D4D4D4",
+			"light_vs": "meta.embedded: #000000",
+			"hc_black": "meta.embedded: #FFFFFF"
+		}
+	},
+	{
+		"c": "tags",
+		"t": "text.html.markdown markup.code_cell.block.myst meta.embedded.block.python meta.embedded.block.options string.unquoted.plain.out.yaml entity.name.tag.yaml",
+		"r": {
+			"dark_plus": "entity.name.tag: #569CD6",
+			"light_plus": "entity.name.tag: #800000",
+			"dark_vs": "entity.name.tag: #569CD6",
+			"light_vs": "entity.name.tag: #800000",
+			"hc_black": "entity.name.tag: #569CD6"
+		}
+	},
+	{
+		"c": ":",
+		"t": "text.html.markdown markup.code_cell.block.myst meta.embedded.block.python meta.embedded.block.options punctuation.separator.key-value.mapping.yaml",
+		"r": {
+			"dark_plus": "meta.embedded: #D4D4D4",
+			"light_plus": "meta.embedded: #000000",
+			"dark_vs": "meta.embedded: #D4D4D4",
+			"light_vs": "meta.embedded: #000000",
+			"hc_black": "meta.embedded: #FFFFFF"
+		}
+	},
+	{
+		"c": " ",
+		"t": "text.html.markdown markup.code_cell.block.myst meta.embedded.block.python meta.embedded.block.options",
+		"r": {
+			"dark_plus": "meta.embedded: #D4D4D4",
+			"light_plus": "meta.embedded: #000000",
+			"dark_vs": "meta.embedded: #D4D4D4",
+			"light_vs": "meta.embedded: #000000",
+			"hc_black": "meta.embedded: #FFFFFF"
+		}
+	},
+	{
+		"c": "[",
+		"t": "text.html.markdown markup.code_cell.block.myst meta.embedded.block.python meta.embedded.block.options meta.flow-sequence.yaml punctuation.definition.sequence.begin.yaml",
+		"r": {
+			"dark_plus": "meta.embedded: #D4D4D4",
+			"light_plus": "meta.embedded: #000000",
+			"dark_vs": "meta.embedded: #D4D4D4",
+			"light_vs": "meta.embedded: #000000",
+			"hc_black": "meta.embedded: #FFFFFF"
+		}
+	},
+	{
+		"c": "hide-input",
+		"t": "text.html.markdown markup.code_cell.block.myst meta.embedded.block.python meta.embedded.block.options meta.flow-sequence.yaml string.unquoted.plain.in.yaml",
+		"r": {
+			"dark_plus": "string: #CE9178",
+			"light_plus": "string.unquoted.plain.in.yaml: #0000FF",
+			"dark_vs": "string: #CE9178",
+			"light_vs": "string.unquoted.plain.in.yaml: #0000FF",
+			"hc_black": "string: #CE9178"
+		}
+	},
+	{
+		"c": ",",
+		"t": "text.html.markdown markup.code_cell.block.myst meta.embedded.block.python meta.embedded.block.options meta.flow-sequence.yaml punctuation.separator.sequence.yaml",
+		"r": {
+			"dark_plus": "meta.embedded: #D4D4D4",
+			"light_plus": "meta.embedded: #000000",
+			"dark_vs": "meta.embedded: #D4D4D4",
+			"light_vs": "meta.embedded: #000000",
+			"hc_black": "meta.embedded: #FFFFFF"
+		}
+	},
+	{
+		"c": "show-output",
+		"t": "text.html.markdown markup.code_cell.block.myst meta.embedded.block.python meta.embedded.block.options meta.flow-sequence.yaml string.unquoted.plain.in.yaml",
+		"r": {
+			"dark_plus": "string: #CE9178",
+			"light_plus": "string.unquoted.plain.in.yaml: #0000FF",
+			"dark_vs": "string: #CE9178",
+			"light_vs": "string.unquoted.plain.in.yaml: #0000FF",
+			"hc_black": "string: #CE9178"
+		}
+	},
+	{
+		"c": "]",
+		"t": "text.html.markdown markup.code_cell.block.myst meta.embedded.block.python meta.embedded.block.options meta.flow-sequence.yaml punctuation.definition.sequence.end.yaml",
+		"r": {
+			"dark_plus": "meta.embedded: #D4D4D4",
+			"light_plus": "meta.embedded: #000000",
+			"dark_vs": "meta.embedded: #D4D4D4",
+			"light_vs": "meta.embedded: #000000",
+			"hc_black": "meta.embedded: #FFFFFF"
+		}
+	},
+	{
+		"c": "---",
+		"t": "text.html.markdown markup.code_cell.block.myst meta.embedded.block.python punctuation.options.myst",
+		"r": {
+			"dark_plus": "meta.embedded: #D4D4D4",
+			"light_plus": "meta.embedded: #000000",
+			"dark_vs": "meta.embedded: #D4D4D4",
+			"light_vs": "meta.embedded: #000000",
+			"hc_black": "meta.embedded: #FFFFFF"
+		}
+	},
+	{
+		"c": "def",
+		"t": "text.html.markdown markup.code_cell.block.myst meta.embedded.block.python meta.function.python storage.type.function.python",
+		"r": {
+			"dark_plus": "storage.type: #569CD6",
+			"light_plus": "storage.type: #0000FF",
+			"dark_vs": "storage.type: #569CD6",
+			"light_vs": "storage.type: #0000FF",
+			"hc_black": "storage.type: #569CD6"
+		}
+	},
+	{
+		"c": " ",
+		"t": "text.html.markdown markup.code_cell.block.myst meta.embedded.block.python meta.function.python",
+		"r": {
+			"dark_plus": "meta.embedded: #D4D4D4",
+			"light_plus": "meta.embedded: #000000",
+			"dark_vs": "meta.embedded: #D4D4D4",
+			"light_vs": "meta.embedded: #000000",
+			"hc_black": "meta.embedded: #FFFFFF"
+		}
+	},
+	{
+		"c": "f",
+		"t": "text.html.markdown markup.code_cell.block.myst meta.embedded.block.python meta.function.python entity.name.function.python",
+		"r": {
+			"dark_plus": "entity.name.function: #DCDCAA",
+			"light_plus": "entity.name.function: #795E26",
+			"dark_vs": "meta.embedded: #D4D4D4",
+			"light_vs": "meta.embedded: #000000",
+			"hc_black": "entity.name.function: #DCDCAA"
+		}
+	},
+	{
+		"c": "(",
+		"t": "text.html.markdown markup.code_cell.block.myst meta.embedded.block.python meta.function.python punctuation.definition.parameters.begin.python",
+		"r": {
+			"dark_plus": "meta.embedded: #D4D4D4",
+			"light_plus": "meta.embedded: #000000",
+			"dark_vs": "meta.embedded: #D4D4D4",
+			"light_vs": "meta.embedded: #000000",
+			"hc_black": "meta.embedded: #FFFFFF"
+		}
+	},
+	{
+		"c": "a",
+		"t": "text.html.markdown markup.code_cell.block.myst meta.embedded.block.python meta.function.python meta.function.parameters.python variable.parameter.function.python",
+		"r": {
+			"dark_plus": "variable: #9CDCFE",
+			"light_plus": "variable: #001080",
+			"dark_vs": "meta.embedded: #D4D4D4",
+			"light_vs": "meta.embedded: #000000",
+			"hc_black": "variable: #9CDCFE"
+		}
+	},
+	{
+		"c": ")",
+		"t": "text.html.markdown markup.code_cell.block.myst meta.embedded.block.python meta.function.python punctuation.definition.parameters.end.python",
+		"r": {
+			"dark_plus": "meta.embedded: #D4D4D4",
+			"light_plus": "meta.embedded: #000000",
+			"dark_vs": "meta.embedded: #D4D4D4",
+			"light_vs": "meta.embedded: #000000",
+			"hc_black": "meta.embedded: #FFFFFF"
+		}
+	},
+	{
+		"c": ":",
+		"t": "text.html.markdown markup.code_cell.block.myst meta.embedded.block.python meta.function.python punctuation.section.function.begin.python",
+		"r": {
+			"dark_plus": "meta.embedded: #D4D4D4",
+			"light_plus": "meta.embedded: #000000",
+			"dark_vs": "meta.embedded: #D4D4D4",
+			"light_vs": "meta.embedded: #000000",
+			"hc_black": "meta.embedded: #FFFFFF"
+		}
+	},
+	{
+		"c": "    ",
+		"t": "text.html.markdown markup.code_cell.block.myst meta.embedded.block.python",
+		"r": {
+			"dark_plus": "meta.embedded: #D4D4D4",
+			"light_plus": "meta.embedded: #000000",
+			"dark_vs": "meta.embedded: #D4D4D4",
+			"light_vs": "meta.embedded: #000000",
+			"hc_black": "meta.embedded: #FFFFFF"
+		}
+	},
+	{
+		"c": "print",
+		"t": "text.html.markdown markup.code_cell.block.myst meta.embedded.block.python keyword.other.python",
+		"r": {
+			"dark_plus": "keyword: #569CD6",
+			"light_plus": "keyword: #0000FF",
+			"dark_vs": "keyword: #569CD6",
+			"light_vs": "keyword: #0000FF",
+			"hc_black": "keyword: #569CD6"
+		}
+	},
+	{
+		"c": "(",
+		"t": "text.html.markdown markup.code_cell.block.myst meta.embedded.block.python",
+		"r": {
+			"dark_plus": "meta.embedded: #D4D4D4",
+			"light_plus": "meta.embedded: #000000",
+			"dark_vs": "meta.embedded: #D4D4D4",
+			"light_vs": "meta.embedded: #000000",
+			"hc_black": "meta.embedded: #FFFFFF"
+		}
+	},
+	{
+		"c": "\"",
+		"t": "text.html.markdown markup.code_cell.block.myst meta.embedded.block.python string.quoted.double.single-line.python punctuation.definition.string.begin.python",
+		"r": {
+			"dark_plus": "string: #CE9178",
+			"light_plus": "string: #A31515",
+			"dark_vs": "string: #CE9178",
+			"light_vs": "string: #A31515",
+			"hc_black": "string: #CE9178"
+		}
+	},
+	{
+		"c": "hallo",
+		"t": "text.html.markdown markup.code_cell.block.myst meta.embedded.block.python string.quoted.double.single-line.python",
+		"r": {
+			"dark_plus": "string: #CE9178",
+			"light_plus": "string: #A31515",
+			"dark_vs": "string: #CE9178",
+			"light_vs": "string: #A31515",
+			"hc_black": "string: #CE9178"
+		}
+	},
+	{
+		"c": "\"",
+		"t": "text.html.markdown markup.code_cell.block.myst meta.embedded.block.python string.quoted.double.single-line.python punctuation.definition.string.end.python",
+		"r": {
+			"dark_plus": "string: #CE9178",
+			"light_plus": "string: #A31515",
+			"dark_vs": "string: #CE9178",
+			"light_vs": "string: #A31515",
+			"hc_black": "string: #CE9178"
+		}
+	},
+	{
+		"c": ")",
+		"t": "text.html.markdown markup.code_cell.block.myst meta.embedded.block.python",
+		"r": {
+			"dark_plus": "meta.embedded: #D4D4D4",
+			"light_plus": "meta.embedded: #000000",
+			"dark_vs": "meta.embedded: #D4D4D4",
+			"light_vs": "meta.embedded: #000000",
+			"hc_black": "meta.embedded: #FFFFFF"
+		}
+	},
+	{
+		"c": "````",
+		"t": "text.html.markdown markup.code_cell.block.myst punctuation.definition.myst",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
+		"c": "````",
 		"t": "text.html.markdown markup.fenced_code.block.markdown punctuation.definition.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",

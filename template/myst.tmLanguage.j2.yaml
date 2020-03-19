@@ -71,11 +71,23 @@ repository:
     endCaptures:
       '3': {name: 'punctuation.definition.myst'}
     patterns:
-      # TODO initial YAML block
       - begin: (^|\G)(\s*)(.*)
         while: (^|\G)(?!\s*([\`~]{3,})\s*$)
         contentName: meta.embedded.block.{{ language.language }} {{ language.alias_name }}
         patterns:
+
+          # an optional initial YAML block
+          # TODO currently this can start anywhere in the directive content
+          - begin: (^|\G)(-{3})\s*$
+            beginCaptures:
+              '1': {name: 'punctuation.options.myst'}
+            end: (^|\G)(-{3})\s*$
+            endCaptures:
+              '2': {name: 'punctuation.options.myst'}
+            contentName: meta.embedded.block.options
+            patterns:
+              - {include: source.yaml}
+
           {%- for source in language.sources %}
           - {include: {{ source }}}
           {% endfor %}
