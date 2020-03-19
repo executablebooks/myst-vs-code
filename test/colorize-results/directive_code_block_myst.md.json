@@ -462,7 +462,7 @@
 		}
 	},
 	{
-		"c": "ipython3",
+		"c": "js",
 		"t": "text.html.markdown markup.code_cell.block.myst support.variable.language.myst",
 		"r": {
 			"dark_plus": "support.variable: #9CDCFE",
@@ -474,7 +474,7 @@
 	},
 	{
 		"c": "---",
-		"t": "text.html.markdown markup.code_cell.block.myst meta.embedded.block.python",
+		"t": "text.html.markdown markup.code_cell.block.myst meta.embedded.block.javascript",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -485,7 +485,7 @@
 	},
 	{
 		"c": "tags",
-		"t": "text.html.markdown markup.code_cell.block.myst meta.embedded.block.python meta.embedded.block.options string.unquoted.plain.out.yaml entity.name.tag.yaml",
+		"t": "text.html.markdown markup.code_cell.block.myst meta.embedded.block.javascript meta.embedded.block.options string.unquoted.plain.out.yaml entity.name.tag.yaml",
 		"r": {
 			"dark_plus": "entity.name.tag: #569CD6",
 			"light_plus": "entity.name.tag: #800000",
@@ -496,7 +496,7 @@
 	},
 	{
 		"c": ":",
-		"t": "text.html.markdown markup.code_cell.block.myst meta.embedded.block.python meta.embedded.block.options punctuation.separator.key-value.mapping.yaml",
+		"t": "text.html.markdown markup.code_cell.block.myst meta.embedded.block.javascript meta.embedded.block.options punctuation.separator.key-value.mapping.yaml",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -507,7 +507,7 @@
 	},
 	{
 		"c": " ",
-		"t": "text.html.markdown markup.code_cell.block.myst meta.embedded.block.python meta.embedded.block.options",
+		"t": "text.html.markdown markup.code_cell.block.myst meta.embedded.block.javascript meta.embedded.block.options",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -518,7 +518,7 @@
 	},
 	{
 		"c": "[",
-		"t": "text.html.markdown markup.code_cell.block.myst meta.embedded.block.python meta.embedded.block.options meta.flow-sequence.yaml punctuation.definition.sequence.begin.yaml",
+		"t": "text.html.markdown markup.code_cell.block.myst meta.embedded.block.javascript meta.embedded.block.options meta.flow-sequence.yaml punctuation.definition.sequence.begin.yaml",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -529,7 +529,7 @@
 	},
 	{
 		"c": "hide-input",
-		"t": "text.html.markdown markup.code_cell.block.myst meta.embedded.block.python meta.embedded.block.options meta.flow-sequence.yaml string.unquoted.plain.in.yaml",
+		"t": "text.html.markdown markup.code_cell.block.myst meta.embedded.block.javascript meta.embedded.block.options meta.flow-sequence.yaml string.unquoted.plain.in.yaml",
 		"r": {
 			"dark_plus": "string: #CE9178",
 			"light_plus": "string.unquoted.plain.in.yaml: #0000FF",
@@ -540,7 +540,7 @@
 	},
 	{
 		"c": ",",
-		"t": "text.html.markdown markup.code_cell.block.myst meta.embedded.block.python meta.embedded.block.options meta.flow-sequence.yaml punctuation.separator.sequence.yaml",
+		"t": "text.html.markdown markup.code_cell.block.myst meta.embedded.block.javascript meta.embedded.block.options meta.flow-sequence.yaml punctuation.separator.sequence.yaml",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -551,7 +551,7 @@
 	},
 	{
 		"c": "show-output",
-		"t": "text.html.markdown markup.code_cell.block.myst meta.embedded.block.python meta.embedded.block.options meta.flow-sequence.yaml string.unquoted.plain.in.yaml",
+		"t": "text.html.markdown markup.code_cell.block.myst meta.embedded.block.javascript meta.embedded.block.options meta.flow-sequence.yaml string.unquoted.plain.in.yaml",
 		"r": {
 			"dark_plus": "string: #CE9178",
 			"light_plus": "string.unquoted.plain.in.yaml: #0000FF",
@@ -562,7 +562,7 @@
 	},
 	{
 		"c": "]",
-		"t": "text.html.markdown markup.code_cell.block.myst meta.embedded.block.python meta.embedded.block.options meta.flow-sequence.yaml punctuation.definition.sequence.end.yaml",
+		"t": "text.html.markdown markup.code_cell.block.myst meta.embedded.block.javascript meta.embedded.block.options meta.flow-sequence.yaml punctuation.definition.sequence.end.yaml",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -573,7 +573,7 @@
 	},
 	{
 		"c": "---",
-		"t": "text.html.markdown markup.code_cell.block.myst meta.embedded.block.python punctuation.options.myst",
+		"t": "text.html.markdown markup.code_cell.block.myst meta.embedded.block.javascript punctuation.options.myst",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -583,8 +583,8 @@
 		}
 	},
 	{
-		"c": "def",
-		"t": "text.html.markdown markup.code_cell.block.myst meta.embedded.block.python meta.function.python storage.type.function.python",
+		"c": "function",
+		"t": "text.html.markdown markup.code_cell.block.myst meta.embedded.block.javascript meta.function.js storage.type.function.js",
 		"r": {
 			"dark_plus": "storage.type: #569CD6",
 			"light_plus": "storage.type: #0000FF",
@@ -595,7 +595,7 @@
 	},
 	{
 		"c": " ",
-		"t": "text.html.markdown markup.code_cell.block.myst meta.embedded.block.python meta.function.python",
+		"t": "text.html.markdown markup.code_cell.block.myst meta.embedded.block.javascript meta.function.js",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -605,8 +605,8 @@
 		}
 	},
 	{
-		"c": "f",
-		"t": "text.html.markdown markup.code_cell.block.myst meta.embedded.block.python meta.function.python entity.name.function.python",
+		"c": "greetings",
+		"t": "text.html.markdown markup.code_cell.block.myst meta.embedded.block.javascript meta.function.js meta.definition.function.js entity.name.function.js",
 		"r": {
 			"dark_plus": "entity.name.function: #DCDCAA",
 			"light_plus": "entity.name.function: #795E26",
@@ -617,29 +617,18 @@
 	},
 	{
 		"c": "(",
-		"t": "text.html.markdown markup.code_cell.block.myst meta.embedded.block.python meta.function.python punctuation.definition.parameters.begin.python",
+		"t": "text.html.markdown markup.code_cell.block.myst meta.embedded.block.javascript meta.function.js meta.parameters.js punctuation.definition.parameters.begin.js",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
 			"dark_vs": "meta.embedded: #D4D4D4",
 			"light_vs": "meta.embedded: #000000",
 			"hc_black": "meta.embedded: #FFFFFF"
-		}
-	},
-	{
-		"c": "a",
-		"t": "text.html.markdown markup.code_cell.block.myst meta.embedded.block.python meta.function.python meta.function.parameters.python variable.parameter.function.python",
-		"r": {
-			"dark_plus": "variable: #9CDCFE",
-			"light_plus": "variable: #001080",
-			"dark_vs": "meta.embedded: #D4D4D4",
-			"light_vs": "meta.embedded: #000000",
-			"hc_black": "variable: #9CDCFE"
 		}
 	},
 	{
 		"c": ")",
-		"t": "text.html.markdown markup.code_cell.block.myst meta.embedded.block.python meta.function.python punctuation.definition.parameters.end.python",
+		"t": "text.html.markdown markup.code_cell.block.myst meta.embedded.block.javascript meta.function.js meta.parameters.js punctuation.definition.parameters.end.js",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -649,8 +638,8 @@
 		}
 	},
 	{
-		"c": ":",
-		"t": "text.html.markdown markup.code_cell.block.myst meta.embedded.block.python meta.function.python punctuation.section.function.begin.python",
+		"c": " ",
+		"t": "text.html.markdown markup.code_cell.block.myst meta.embedded.block.javascript meta.function.js",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -660,8 +649,8 @@
 		}
 	},
 	{
-		"c": "    ",
-		"t": "text.html.markdown markup.code_cell.block.myst meta.embedded.block.python",
+		"c": "{",
+		"t": "text.html.markdown markup.code_cell.block.myst meta.embedded.block.javascript meta.function.js meta.block.js punctuation.definition.block.js",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -671,19 +660,52 @@
 		}
 	},
 	{
-		"c": "print",
-		"t": "text.html.markdown markup.code_cell.block.myst meta.embedded.block.python keyword.other.python",
+		"c": "  ",
+		"t": "text.html.markdown markup.code_cell.block.myst meta.embedded.block.javascript meta.function.js meta.block.js",
 		"r": {
-			"dark_plus": "keyword: #569CD6",
-			"light_plus": "keyword: #0000FF",
-			"dark_vs": "keyword: #569CD6",
-			"light_vs": "keyword: #0000FF",
-			"hc_black": "keyword: #569CD6"
+			"dark_plus": "meta.embedded: #D4D4D4",
+			"light_plus": "meta.embedded: #000000",
+			"dark_vs": "meta.embedded: #D4D4D4",
+			"light_vs": "meta.embedded: #000000",
+			"hc_black": "meta.embedded: #FFFFFF"
+		}
+	},
+	{
+		"c": "console",
+		"t": "text.html.markdown markup.code_cell.block.myst meta.embedded.block.javascript meta.function.js meta.block.js meta.function-call.js support.class.console.js",
+		"r": {
+			"dark_plus": "support.class: #4EC9B0",
+			"light_plus": "support.class: #267F99",
+			"dark_vs": "meta.embedded: #D4D4D4",
+			"light_vs": "meta.embedded: #000000",
+			"hc_black": "support.class: #4EC9B0"
+		}
+	},
+	{
+		"c": ".",
+		"t": "text.html.markdown markup.code_cell.block.myst meta.embedded.block.javascript meta.function.js meta.block.js meta.function-call.js punctuation.accessor.js",
+		"r": {
+			"dark_plus": "meta.embedded: #D4D4D4",
+			"light_plus": "meta.embedded: #000000",
+			"dark_vs": "meta.embedded: #D4D4D4",
+			"light_vs": "meta.embedded: #000000",
+			"hc_black": "meta.embedded: #FFFFFF"
+		}
+	},
+	{
+		"c": "log",
+		"t": "text.html.markdown markup.code_cell.block.myst meta.embedded.block.javascript meta.function.js meta.block.js meta.function-call.js support.function.console.js",
+		"r": {
+			"dark_plus": "support.function: #DCDCAA",
+			"light_plus": "support.function: #795E26",
+			"dark_vs": "meta.embedded: #D4D4D4",
+			"light_vs": "meta.embedded: #000000",
+			"hc_black": "support.function: #DCDCAA"
 		}
 	},
 	{
 		"c": "(",
-		"t": "text.html.markdown markup.code_cell.block.myst meta.embedded.block.python",
+		"t": "text.html.markdown markup.code_cell.block.myst meta.embedded.block.javascript meta.function.js meta.block.js meta.brace.round.js",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -694,7 +716,7 @@
 	},
 	{
 		"c": "\"",
-		"t": "text.html.markdown markup.code_cell.block.myst meta.embedded.block.python string.quoted.double.single-line.python punctuation.definition.string.begin.python",
+		"t": "text.html.markdown markup.code_cell.block.myst meta.embedded.block.javascript meta.function.js meta.block.js string.quoted.double.js punctuation.definition.string.begin.js",
 		"r": {
 			"dark_plus": "string: #CE9178",
 			"light_plus": "string: #A31515",
@@ -704,8 +726,8 @@
 		}
 	},
 	{
-		"c": "hallo",
-		"t": "text.html.markdown markup.code_cell.block.myst meta.embedded.block.python string.quoted.double.single-line.python",
+		"c": "Hello world!",
+		"t": "text.html.markdown markup.code_cell.block.myst meta.embedded.block.javascript meta.function.js meta.block.js string.quoted.double.js",
 		"r": {
 			"dark_plus": "string: #CE9178",
 			"light_plus": "string: #A31515",
@@ -716,7 +738,7 @@
 	},
 	{
 		"c": "\"",
-		"t": "text.html.markdown markup.code_cell.block.myst meta.embedded.block.python string.quoted.double.single-line.python punctuation.definition.string.end.python",
+		"t": "text.html.markdown markup.code_cell.block.myst meta.embedded.block.javascript meta.function.js meta.block.js string.quoted.double.js punctuation.definition.string.end.js",
 		"r": {
 			"dark_plus": "string: #CE9178",
 			"light_plus": "string: #A31515",
@@ -727,7 +749,18 @@
 	},
 	{
 		"c": ")",
-		"t": "text.html.markdown markup.code_cell.block.myst meta.embedded.block.python",
+		"t": "text.html.markdown markup.code_cell.block.myst meta.embedded.block.javascript meta.function.js meta.block.js meta.brace.round.js",
+		"r": {
+			"dark_plus": "meta.embedded: #D4D4D4",
+			"light_plus": "meta.embedded: #000000",
+			"dark_vs": "meta.embedded: #D4D4D4",
+			"light_vs": "meta.embedded: #000000",
+			"hc_black": "meta.embedded: #FFFFFF"
+		}
+	},
+	{
+		"c": "}",
+		"t": "text.html.markdown markup.code_cell.block.myst meta.embedded.block.javascript meta.function.js meta.block.js punctuation.definition.block.js",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",

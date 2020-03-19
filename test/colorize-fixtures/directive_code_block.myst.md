@@ -5,12 +5,13 @@ function greetings() {
 }
 ````
 
-````{code-cell} ipython3
+````{code-cell} js
 ---
 tags: [hide-input,show-output]
 ---
-def f(a):
-    print("hallo")
+function greetings() {
+  console.log("Hello world!")
+}
 ````
 
 ````{unknown} ipython3
