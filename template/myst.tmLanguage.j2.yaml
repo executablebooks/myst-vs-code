@@ -9,6 +9,7 @@ patterns:
   - { include: "#role_span" }
   - { include: "#directive-admonitions" }
   - { include: "#directive-code" }
+  - { include: "#directive-default" }
 
 repository:
   line_comment:
@@ -92,3 +93,15 @@ repository:
           - {include: {{ source }}}
           {% endfor %}
   {% endfor %}
+
+  directive-default:
+    begin: (^|\G)(\s*)(\`{3,}|~{3,})\s*\{([\:\-\_0-9a-zA-A]+)\}\s*(?=([^`~]*)?$)
+    name: markup.directive.unknown.myst
+    end: (^|\G)(\2|\s{0,3})(\3)\s*$
+    beginCaptures:
+      '3': {name: 'punctuation.definition.myst'}
+      '4': {name: 'support.class.directive.myst'}
+      '5': {name: 'meta.raw.attribute.myst'}
+      '6': {name: 'directive.block.language.attributes.myst'}
+    endCaptures:
+      '3': {name: 'punctuation.definition.myst'}
