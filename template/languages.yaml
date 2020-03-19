@@ -5,6 +5,7 @@
   name: css
   sources:
     - source.css
+  allow_yaml: true
 - identifiers:
     - html
     - htm
@@ -31,6 +32,7 @@
   name: java
   sources:
     - source.java
+  allow_yaml: true
 - identifiers:
     - lua
   language: lua
@@ -253,6 +255,7 @@
   name: js
   sources:
     - source.js
+  allow_yaml: true
 - identifiers:
     - regexp
   name: js_regexp
@@ -346,6 +349,7 @@
   name: python
   sources:
     - source.python
+  allow_yaml: true
 - identifiers:
     - ipython
     - ipython2
@@ -355,6 +359,7 @@
   name: ipython
   sources:
     - source.python
+  allow_yaml: true
 - identifiers:
     - re
   name: regexp_python
@@ -398,6 +403,7 @@
   name: ts
   sources:
     - source.ts
+  allow_yaml: true
 - identifiers:
     - tsx
   language: typescriptreact

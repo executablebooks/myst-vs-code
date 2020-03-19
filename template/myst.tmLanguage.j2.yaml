@@ -86,7 +86,9 @@ repository:
         patterns:
 
           # an optional initial YAML block
-          # TODO currently this can start anywhere in the directive content
+          # TODO currently this can start anywhere in the directive content,
+          # therefore, for now, we restrict it to only languages that it would not affect
+          {% if language.allow_yaml %}
           - begin: (^|\G)(-{3})\s*$
             beginCaptures:
               '1': {name: 'punctuation.options.myst'}
@@ -96,6 +98,7 @@ repository:
             contentName: meta.embedded.block.options
             patterns:
               - {include: source.yaml}
+          {% endif %}
 
           {%- for source in language.sources %}
           - {include: {{ source }}}

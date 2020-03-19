@@ -517,37 +517,6 @@
 					<key>patterns</key>
 					<array>
 						<dict>
-							<key>begin</key>
-							<string>(^|\G)(-{3})\s*$</string>
-							<key>beginCaptures</key>
-							<dict>
-								<key>1</key>
-								<dict>
-									<key>name</key>
-									<string>punctuation.options.myst</string>
-								</dict>
-							</dict>
-							<key>end</key>
-							<string>(^|\G)(-{3})\s*$</string>
-							<key>endCaptures</key>
-							<dict>
-								<key>2</key>
-								<dict>
-									<key>name</key>
-									<string>punctuation.options.myst</string>
-								</dict>
-							</dict>
-							<key>contentName</key>
-							<string>meta.embedded.block.options</string>
-							<key>patterns</key>
-							<array>
-								<dict>
-									<key>include</key>
-									<string>source.yaml</string>
-								</dict>
-							</array>
-						</dict>
-						<dict>
 							<key>include</key>
 							<string>text.html.basic</string>
 						</dict>
@@ -600,37 +569,6 @@
 					<string>meta.embedded.block.ini</string>
 					<key>patterns</key>
 					<array>
-						<dict>
-							<key>begin</key>
-							<string>(^|\G)(-{3})\s*$</string>
-							<key>beginCaptures</key>
-							<dict>
-								<key>1</key>
-								<dict>
-									<key>name</key>
-									<string>punctuation.options.myst</string>
-								</dict>
-							</dict>
-							<key>end</key>
-							<string>(^|\G)(-{3})\s*$</string>
-							<key>endCaptures</key>
-							<dict>
-								<key>2</key>
-								<dict>
-									<key>name</key>
-									<string>punctuation.options.myst</string>
-								</dict>
-							</dict>
-							<key>contentName</key>
-							<string>meta.embedded.block.options</string>
-							<key>patterns</key>
-							<array>
-								<dict>
-									<key>include</key>
-									<string>source.yaml</string>
-								</dict>
-							</array>
-						</dict>
 						<dict>
 							<key>include</key>
 							<string>source.ini</string>
@@ -769,37 +707,6 @@
 					<key>patterns</key>
 					<array>
 						<dict>
-							<key>begin</key>
-							<string>(^|\G)(-{3})\s*$</string>
-							<key>beginCaptures</key>
-							<dict>
-								<key>1</key>
-								<dict>
-									<key>name</key>
-									<string>punctuation.options.myst</string>
-								</dict>
-							</dict>
-							<key>end</key>
-							<string>(^|\G)(-{3})\s*$</string>
-							<key>endCaptures</key>
-							<dict>
-								<key>2</key>
-								<dict>
-									<key>name</key>
-									<string>punctuation.options.myst</string>
-								</dict>
-							</dict>
-							<key>contentName</key>
-							<string>meta.embedded.block.options</string>
-							<key>patterns</key>
-							<array>
-								<dict>
-									<key>include</key>
-									<string>source.yaml</string>
-								</dict>
-							</array>
-						</dict>
-						<dict>
 							<key>include</key>
 							<string>source.lua</string>
 						</dict>
@@ -852,37 +759,6 @@
 					<string>meta.embedded.block.makefile</string>
 					<key>patterns</key>
 					<array>
-						<dict>
-							<key>begin</key>
-							<string>(^|\G)(-{3})\s*$</string>
-							<key>beginCaptures</key>
-							<dict>
-								<key>1</key>
-								<dict>
-									<key>name</key>
-									<string>punctuation.options.myst</string>
-								</dict>
-							</dict>
-							<key>end</key>
-							<string>(^|\G)(-{3})\s*$</string>
-							<key>endCaptures</key>
-							<dict>
-								<key>2</key>
-								<dict>
-									<key>name</key>
-									<string>punctuation.options.myst</string>
-								</dict>
-							</dict>
-							<key>contentName</key>
-							<string>meta.embedded.block.options</string>
-							<key>patterns</key>
-							<array>
-								<dict>
-									<key>include</key>
-									<string>source.yaml</string>
-								</dict>
-							</array>
-						</dict>
 						<dict>
 							<key>include</key>
 							<string>source.makefile</string>
@@ -937,37 +813,6 @@
 					<key>patterns</key>
 					<array>
 						<dict>
-							<key>begin</key>
-							<string>(^|\G)(-{3})\s*$</string>
-							<key>beginCaptures</key>
-							<dict>
-								<key>1</key>
-								<dict>
-									<key>name</key>
-									<string>punctuation.options.myst</string>
-								</dict>
-							</dict>
-							<key>end</key>
-							<string>(^|\G)(-{3})\s*$</string>
-							<key>endCaptures</key>
-							<dict>
-								<key>2</key>
-								<dict>
-									<key>name</key>
-									<string>punctuation.options.myst</string>
-								</dict>
-							</dict>
-							<key>contentName</key>
-							<string>meta.embedded.block.options</string>
-							<key>patterns</key>
-							<array>
-								<dict>
-									<key>include</key>
-									<string>source.yaml</string>
-								</dict>
-							</array>
-						</dict>
-						<dict>
 							<key>include</key>
 							<string>source.perl</string>
 						</dict>
@@ -1020,37 +865,6 @@
 					<string>meta.embedded.block.r</string>
 					<key>patterns</key>
 					<array>
-						<dict>
-							<key>begin</key>
-							<string>(^|\G)(-{3})\s*$</string>
-							<key>beginCaptures</key>
-							<dict>
-								<key>1</key>
-								<dict>
-									<key>name</key>
-									<string>punctuation.options.myst</string>
-								</dict>
-							</dict>
-							<key>end</key>
-							<string>(^|\G)(-{3})\s*$</string>
-							<key>endCaptures</key>
-							<dict>
-								<key>2</key>
-								<dict>
-									<key>name</key>
-									<string>punctuation.options.myst</string>
-								</dict>
-							</dict>
-							<key>contentName</key>
-							<string>meta.embedded.block.options</string>
-							<key>patterns</key>
-							<array>
-								<dict>
-									<key>include</key>
-									<string>source.yaml</string>
-								</dict>
-							</array>
-						</dict>
 						<dict>
 							<key>include</key>
 							<string>source.r</string>
@@ -1105,37 +919,6 @@
 					<key>patterns</key>
 					<array>
 						<dict>
-							<key>begin</key>
-							<string>(^|\G)(-{3})\s*$</string>
-							<key>beginCaptures</key>
-							<dict>
-								<key>1</key>
-								<dict>
-									<key>name</key>
-									<string>punctuation.options.myst</string>
-								</dict>
-							</dict>
-							<key>end</key>
-							<string>(^|\G)(-{3})\s*$</string>
-							<key>endCaptures</key>
-							<dict>
-								<key>2</key>
-								<dict>
-									<key>name</key>
-									<string>punctuation.options.myst</string>
-								</dict>
-							</dict>
-							<key>contentName</key>
-							<string>meta.embedded.block.options</string>
-							<key>patterns</key>
-							<array>
-								<dict>
-									<key>include</key>
-									<string>source.yaml</string>
-								</dict>
-							</array>
-						</dict>
-						<dict>
 							<key>include</key>
 							<string>source.ruby</string>
 						</dict>
@@ -1188,37 +971,6 @@
 					<string>meta.embedded.block.php</string>
 					<key>patterns</key>
 					<array>
-						<dict>
-							<key>begin</key>
-							<string>(^|\G)(-{3})\s*$</string>
-							<key>beginCaptures</key>
-							<dict>
-								<key>1</key>
-								<dict>
-									<key>name</key>
-									<string>punctuation.options.myst</string>
-								</dict>
-							</dict>
-							<key>end</key>
-							<string>(^|\G)(-{3})\s*$</string>
-							<key>endCaptures</key>
-							<dict>
-								<key>2</key>
-								<dict>
-									<key>name</key>
-									<string>punctuation.options.myst</string>
-								</dict>
-							</dict>
-							<key>contentName</key>
-							<string>meta.embedded.block.options</string>
-							<key>patterns</key>
-							<array>
-								<dict>
-									<key>include</key>
-									<string>source.yaml</string>
-								</dict>
-							</array>
-						</dict>
 						<dict>
 							<key>include</key>
 							<string>text.html.basic</string>
@@ -1277,37 +1029,6 @@
 					<key>patterns</key>
 					<array>
 						<dict>
-							<key>begin</key>
-							<string>(^|\G)(-{3})\s*$</string>
-							<key>beginCaptures</key>
-							<dict>
-								<key>1</key>
-								<dict>
-									<key>name</key>
-									<string>punctuation.options.myst</string>
-								</dict>
-							</dict>
-							<key>end</key>
-							<string>(^|\G)(-{3})\s*$</string>
-							<key>endCaptures</key>
-							<dict>
-								<key>2</key>
-								<dict>
-									<key>name</key>
-									<string>punctuation.options.myst</string>
-								</dict>
-							</dict>
-							<key>contentName</key>
-							<string>meta.embedded.block.options</string>
-							<key>patterns</key>
-							<array>
-								<dict>
-									<key>include</key>
-									<string>source.yaml</string>
-								</dict>
-							</array>
-						</dict>
-						<dict>
 							<key>include</key>
 							<string>source.sql</string>
 						</dict>
@@ -1360,37 +1081,6 @@
 					<string>meta.embedded.block.vs_net</string>
 					<key>patterns</key>
 					<array>
-						<dict>
-							<key>begin</key>
-							<string>(^|\G)(-{3})\s*$</string>
-							<key>beginCaptures</key>
-							<dict>
-								<key>1</key>
-								<dict>
-									<key>name</key>
-									<string>punctuation.options.myst</string>
-								</dict>
-							</dict>
-							<key>end</key>
-							<string>(^|\G)(-{3})\s*$</string>
-							<key>endCaptures</key>
-							<dict>
-								<key>2</key>
-								<dict>
-									<key>name</key>
-									<string>punctuation.options.myst</string>
-								</dict>
-							</dict>
-							<key>contentName</key>
-							<string>meta.embedded.block.options</string>
-							<key>patterns</key>
-							<array>
-								<dict>
-									<key>include</key>
-									<string>source.yaml</string>
-								</dict>
-							</array>
-						</dict>
 						<dict>
 							<key>include</key>
 							<string>source.asp.vb.net</string>
@@ -1445,37 +1135,6 @@
 					<key>patterns</key>
 					<array>
 						<dict>
-							<key>begin</key>
-							<string>(^|\G)(-{3})\s*$</string>
-							<key>beginCaptures</key>
-							<dict>
-								<key>1</key>
-								<dict>
-									<key>name</key>
-									<string>punctuation.options.myst</string>
-								</dict>
-							</dict>
-							<key>end</key>
-							<string>(^|\G)(-{3})\s*$</string>
-							<key>endCaptures</key>
-							<dict>
-								<key>2</key>
-								<dict>
-									<key>name</key>
-									<string>punctuation.options.myst</string>
-								</dict>
-							</dict>
-							<key>contentName</key>
-							<string>meta.embedded.block.options</string>
-							<key>patterns</key>
-							<array>
-								<dict>
-									<key>include</key>
-									<string>source.yaml</string>
-								</dict>
-							</array>
-						</dict>
-						<dict>
 							<key>include</key>
 							<string>text.xml</string>
 						</dict>
@@ -1528,37 +1187,6 @@
 					<string>meta.embedded.block.xsl</string>
 					<key>patterns</key>
 					<array>
-						<dict>
-							<key>begin</key>
-							<string>(^|\G)(-{3})\s*$</string>
-							<key>beginCaptures</key>
-							<dict>
-								<key>1</key>
-								<dict>
-									<key>name</key>
-									<string>punctuation.options.myst</string>
-								</dict>
-							</dict>
-							<key>end</key>
-							<string>(^|\G)(-{3})\s*$</string>
-							<key>endCaptures</key>
-							<dict>
-								<key>2</key>
-								<dict>
-									<key>name</key>
-									<string>punctuation.options.myst</string>
-								</dict>
-							</dict>
-							<key>contentName</key>
-							<string>meta.embedded.block.options</string>
-							<key>patterns</key>
-							<array>
-								<dict>
-									<key>include</key>
-									<string>source.yaml</string>
-								</dict>
-							</array>
-						</dict>
 						<dict>
 							<key>include</key>
 							<string>text.xml.xsl</string>
@@ -1613,37 +1241,6 @@
 					<key>patterns</key>
 					<array>
 						<dict>
-							<key>begin</key>
-							<string>(^|\G)(-{3})\s*$</string>
-							<key>beginCaptures</key>
-							<dict>
-								<key>1</key>
-								<dict>
-									<key>name</key>
-									<string>punctuation.options.myst</string>
-								</dict>
-							</dict>
-							<key>end</key>
-							<string>(^|\G)(-{3})\s*$</string>
-							<key>endCaptures</key>
-							<dict>
-								<key>2</key>
-								<dict>
-									<key>name</key>
-									<string>punctuation.options.myst</string>
-								</dict>
-							</dict>
-							<key>contentName</key>
-							<string>meta.embedded.block.options</string>
-							<key>patterns</key>
-							<array>
-								<dict>
-									<key>include</key>
-									<string>source.yaml</string>
-								</dict>
-							</array>
-						</dict>
-						<dict>
 							<key>include</key>
 							<string>source.yaml</string>
 						</dict>
@@ -1696,37 +1293,6 @@
 					<string>meta.embedded.block.dosbatch</string>
 					<key>patterns</key>
 					<array>
-						<dict>
-							<key>begin</key>
-							<string>(^|\G)(-{3})\s*$</string>
-							<key>beginCaptures</key>
-							<dict>
-								<key>1</key>
-								<dict>
-									<key>name</key>
-									<string>punctuation.options.myst</string>
-								</dict>
-							</dict>
-							<key>end</key>
-							<string>(^|\G)(-{3})\s*$</string>
-							<key>endCaptures</key>
-							<dict>
-								<key>2</key>
-								<dict>
-									<key>name</key>
-									<string>punctuation.options.myst</string>
-								</dict>
-							</dict>
-							<key>contentName</key>
-							<string>meta.embedded.block.options</string>
-							<key>patterns</key>
-							<array>
-								<dict>
-									<key>include</key>
-									<string>source.yaml</string>
-								</dict>
-							</array>
-						</dict>
 						<dict>
 							<key>include</key>
 							<string>source.batchfile</string>
@@ -1781,37 +1347,6 @@
 					<key>patterns</key>
 					<array>
 						<dict>
-							<key>begin</key>
-							<string>(^|\G)(-{3})\s*$</string>
-							<key>beginCaptures</key>
-							<dict>
-								<key>1</key>
-								<dict>
-									<key>name</key>
-									<string>punctuation.options.myst</string>
-								</dict>
-							</dict>
-							<key>end</key>
-							<string>(^|\G)(-{3})\s*$</string>
-							<key>endCaptures</key>
-							<dict>
-								<key>2</key>
-								<dict>
-									<key>name</key>
-									<string>punctuation.options.myst</string>
-								</dict>
-							</dict>
-							<key>contentName</key>
-							<string>meta.embedded.block.options</string>
-							<key>patterns</key>
-							<array>
-								<dict>
-									<key>include</key>
-									<string>source.yaml</string>
-								</dict>
-							</array>
-						</dict>
-						<dict>
 							<key>include</key>
 							<string>source.clojure</string>
 						</dict>
@@ -1864,37 +1399,6 @@
 					<string>meta.embedded.block.coffee</string>
 					<key>patterns</key>
 					<array>
-						<dict>
-							<key>begin</key>
-							<string>(^|\G)(-{3})\s*$</string>
-							<key>beginCaptures</key>
-							<dict>
-								<key>1</key>
-								<dict>
-									<key>name</key>
-									<string>punctuation.options.myst</string>
-								</dict>
-							</dict>
-							<key>end</key>
-							<string>(^|\G)(-{3})\s*$</string>
-							<key>endCaptures</key>
-							<dict>
-								<key>2</key>
-								<dict>
-									<key>name</key>
-									<string>punctuation.options.myst</string>
-								</dict>
-							</dict>
-							<key>contentName</key>
-							<string>meta.embedded.block.options</string>
-							<key>patterns</key>
-							<array>
-								<dict>
-									<key>include</key>
-									<string>source.yaml</string>
-								</dict>
-							</array>
-						</dict>
 						<dict>
 							<key>include</key>
 							<string>source.coffee</string>
@@ -1949,37 +1453,6 @@
 					<key>patterns</key>
 					<array>
 						<dict>
-							<key>begin</key>
-							<string>(^|\G)(-{3})\s*$</string>
-							<key>beginCaptures</key>
-							<dict>
-								<key>1</key>
-								<dict>
-									<key>name</key>
-									<string>punctuation.options.myst</string>
-								</dict>
-							</dict>
-							<key>end</key>
-							<string>(^|\G)(-{3})\s*$</string>
-							<key>endCaptures</key>
-							<dict>
-								<key>2</key>
-								<dict>
-									<key>name</key>
-									<string>punctuation.options.myst</string>
-								</dict>
-							</dict>
-							<key>contentName</key>
-							<string>meta.embedded.block.options</string>
-							<key>patterns</key>
-							<array>
-								<dict>
-									<key>include</key>
-									<string>source.yaml</string>
-								</dict>
-							</array>
-						</dict>
-						<dict>
 							<key>include</key>
 							<string>source.c</string>
 						</dict>
@@ -2032,37 +1505,6 @@
 					<string>meta.embedded.block.cpp source.cpp</string>
 					<key>patterns</key>
 					<array>
-						<dict>
-							<key>begin</key>
-							<string>(^|\G)(-{3})\s*$</string>
-							<key>beginCaptures</key>
-							<dict>
-								<key>1</key>
-								<dict>
-									<key>name</key>
-									<string>punctuation.options.myst</string>
-								</dict>
-							</dict>
-							<key>end</key>
-							<string>(^|\G)(-{3})\s*$</string>
-							<key>endCaptures</key>
-							<dict>
-								<key>2</key>
-								<dict>
-									<key>name</key>
-									<string>punctuation.options.myst</string>
-								</dict>
-							</dict>
-							<key>contentName</key>
-							<string>meta.embedded.block.options</string>
-							<key>patterns</key>
-							<array>
-								<dict>
-									<key>include</key>
-									<string>source.yaml</string>
-								</dict>
-							</array>
-						</dict>
 						<dict>
 							<key>include</key>
 							<string>source.cpp</string>
@@ -2117,37 +1559,6 @@
 					<key>patterns</key>
 					<array>
 						<dict>
-							<key>begin</key>
-							<string>(^|\G)(-{3})\s*$</string>
-							<key>beginCaptures</key>
-							<dict>
-								<key>1</key>
-								<dict>
-									<key>name</key>
-									<string>punctuation.options.myst</string>
-								</dict>
-							</dict>
-							<key>end</key>
-							<string>(^|\G)(-{3})\s*$</string>
-							<key>endCaptures</key>
-							<dict>
-								<key>2</key>
-								<dict>
-									<key>name</key>
-									<string>punctuation.options.myst</string>
-								</dict>
-							</dict>
-							<key>contentName</key>
-							<string>meta.embedded.block.options</string>
-							<key>patterns</key>
-							<array>
-								<dict>
-									<key>include</key>
-									<string>source.yaml</string>
-								</dict>
-							</array>
-						</dict>
-						<dict>
 							<key>include</key>
 							<string>source.diff</string>
 						</dict>
@@ -2200,37 +1611,6 @@
 					<string>meta.embedded.block.dockerfile</string>
 					<key>patterns</key>
 					<array>
-						<dict>
-							<key>begin</key>
-							<string>(^|\G)(-{3})\s*$</string>
-							<key>beginCaptures</key>
-							<dict>
-								<key>1</key>
-								<dict>
-									<key>name</key>
-									<string>punctuation.options.myst</string>
-								</dict>
-							</dict>
-							<key>end</key>
-							<string>(^|\G)(-{3})\s*$</string>
-							<key>endCaptures</key>
-							<dict>
-								<key>2</key>
-								<dict>
-									<key>name</key>
-									<string>punctuation.options.myst</string>
-								</dict>
-							</dict>
-							<key>contentName</key>
-							<string>meta.embedded.block.options</string>
-							<key>patterns</key>
-							<array>
-								<dict>
-									<key>include</key>
-									<string>source.yaml</string>
-								</dict>
-							</array>
-						</dict>
 						<dict>
 							<key>include</key>
 							<string>source.dockerfile</string>
@@ -2285,37 +1665,6 @@
 					<key>patterns</key>
 					<array>
 						<dict>
-							<key>begin</key>
-							<string>(^|\G)(-{3})\s*$</string>
-							<key>beginCaptures</key>
-							<dict>
-								<key>1</key>
-								<dict>
-									<key>name</key>
-									<string>punctuation.options.myst</string>
-								</dict>
-							</dict>
-							<key>end</key>
-							<string>(^|\G)(-{3})\s*$</string>
-							<key>endCaptures</key>
-							<dict>
-								<key>2</key>
-								<dict>
-									<key>name</key>
-									<string>punctuation.options.myst</string>
-								</dict>
-							</dict>
-							<key>contentName</key>
-							<string>meta.embedded.block.options</string>
-							<key>patterns</key>
-							<array>
-								<dict>
-									<key>include</key>
-									<string>source.yaml</string>
-								</dict>
-							</array>
-						</dict>
-						<dict>
 							<key>include</key>
 							<string>text.git-commit</string>
 						</dict>
@@ -2368,37 +1717,6 @@
 					<string>meta.embedded.block.</string>
 					<key>patterns</key>
 					<array>
-						<dict>
-							<key>begin</key>
-							<string>(^|\G)(-{3})\s*$</string>
-							<key>beginCaptures</key>
-							<dict>
-								<key>1</key>
-								<dict>
-									<key>name</key>
-									<string>punctuation.options.myst</string>
-								</dict>
-							</dict>
-							<key>end</key>
-							<string>(^|\G)(-{3})\s*$</string>
-							<key>endCaptures</key>
-							<dict>
-								<key>2</key>
-								<dict>
-									<key>name</key>
-									<string>punctuation.options.myst</string>
-								</dict>
-							</dict>
-							<key>contentName</key>
-							<string>meta.embedded.block.options</string>
-							<key>patterns</key>
-							<array>
-								<dict>
-									<key>include</key>
-									<string>source.yaml</string>
-								</dict>
-							</array>
-						</dict>
 						<dict>
 							<key>include</key>
 							<string>text.git-rebase</string>
@@ -2453,37 +1771,6 @@
 					<key>patterns</key>
 					<array>
 						<dict>
-							<key>begin</key>
-							<string>(^|\G)(-{3})\s*$</string>
-							<key>beginCaptures</key>
-							<dict>
-								<key>1</key>
-								<dict>
-									<key>name</key>
-									<string>punctuation.options.myst</string>
-								</dict>
-							</dict>
-							<key>end</key>
-							<string>(^|\G)(-{3})\s*$</string>
-							<key>endCaptures</key>
-							<dict>
-								<key>2</key>
-								<dict>
-									<key>name</key>
-									<string>punctuation.options.myst</string>
-								</dict>
-							</dict>
-							<key>contentName</key>
-							<string>meta.embedded.block.options</string>
-							<key>patterns</key>
-							<array>
-								<dict>
-									<key>include</key>
-									<string>source.yaml</string>
-								</dict>
-							</array>
-						</dict>
-						<dict>
 							<key>include</key>
 							<string>source.go</string>
 						</dict>
@@ -2537,37 +1824,6 @@
 					<key>patterns</key>
 					<array>
 						<dict>
-							<key>begin</key>
-							<string>(^|\G)(-{3})\s*$</string>
-							<key>beginCaptures</key>
-							<dict>
-								<key>1</key>
-								<dict>
-									<key>name</key>
-									<string>punctuation.options.myst</string>
-								</dict>
-							</dict>
-							<key>end</key>
-							<string>(^|\G)(-{3})\s*$</string>
-							<key>endCaptures</key>
-							<dict>
-								<key>2</key>
-								<dict>
-									<key>name</key>
-									<string>punctuation.options.myst</string>
-								</dict>
-							</dict>
-							<key>contentName</key>
-							<string>meta.embedded.block.options</string>
-							<key>patterns</key>
-							<array>
-								<dict>
-									<key>include</key>
-									<string>source.yaml</string>
-								</dict>
-							</array>
-						</dict>
-						<dict>
 							<key>include</key>
 							<string>source.groovy</string>
 						</dict>
@@ -2620,37 +1876,6 @@
 					<string>meta.embedded.block.pug</string>
 					<key>patterns</key>
 					<array>
-						<dict>
-							<key>begin</key>
-							<string>(^|\G)(-{3})\s*$</string>
-							<key>beginCaptures</key>
-							<dict>
-								<key>1</key>
-								<dict>
-									<key>name</key>
-									<string>punctuation.options.myst</string>
-								</dict>
-							</dict>
-							<key>end</key>
-							<string>(^|\G)(-{3})\s*$</string>
-							<key>endCaptures</key>
-							<dict>
-								<key>2</key>
-								<dict>
-									<key>name</key>
-									<string>punctuation.options.myst</string>
-								</dict>
-							</dict>
-							<key>contentName</key>
-							<string>meta.embedded.block.options</string>
-							<key>patterns</key>
-							<array>
-								<dict>
-									<key>include</key>
-									<string>source.yaml</string>
-								</dict>
-							</array>
-						</dict>
 						<dict>
 							<key>include</key>
 							<string>text.pug</string>
@@ -2789,37 +2014,6 @@
 					<key>patterns</key>
 					<array>
 						<dict>
-							<key>begin</key>
-							<string>(^|\G)(-{3})\s*$</string>
-							<key>beginCaptures</key>
-							<dict>
-								<key>1</key>
-								<dict>
-									<key>name</key>
-									<string>punctuation.options.myst</string>
-								</dict>
-							</dict>
-							<key>end</key>
-							<string>(^|\G)(-{3})\s*$</string>
-							<key>endCaptures</key>
-							<dict>
-								<key>2</key>
-								<dict>
-									<key>name</key>
-									<string>punctuation.options.myst</string>
-								</dict>
-							</dict>
-							<key>contentName</key>
-							<string>meta.embedded.block.options</string>
-							<key>patterns</key>
-							<array>
-								<dict>
-									<key>include</key>
-									<string>source.yaml</string>
-								</dict>
-							</array>
-						</dict>
-						<dict>
 							<key>include</key>
 							<string>source.js.regexp</string>
 						</dict>
@@ -2872,37 +2066,6 @@
 					<string>meta.embedded.block.json</string>
 					<key>patterns</key>
 					<array>
-						<dict>
-							<key>begin</key>
-							<string>(^|\G)(-{3})\s*$</string>
-							<key>beginCaptures</key>
-							<dict>
-								<key>1</key>
-								<dict>
-									<key>name</key>
-									<string>punctuation.options.myst</string>
-								</dict>
-							</dict>
-							<key>end</key>
-							<string>(^|\G)(-{3})\s*$</string>
-							<key>endCaptures</key>
-							<dict>
-								<key>2</key>
-								<dict>
-									<key>name</key>
-									<string>punctuation.options.myst</string>
-								</dict>
-							</dict>
-							<key>contentName</key>
-							<string>meta.embedded.block.options</string>
-							<key>patterns</key>
-							<array>
-								<dict>
-									<key>include</key>
-									<string>source.yaml</string>
-								</dict>
-							</array>
-						</dict>
 						<dict>
 							<key>include</key>
 							<string>source.json</string>
@@ -2957,37 +2120,6 @@
 					<key>patterns</key>
 					<array>
 						<dict>
-							<key>begin</key>
-							<string>(^|\G)(-{3})\s*$</string>
-							<key>beginCaptures</key>
-							<dict>
-								<key>1</key>
-								<dict>
-									<key>name</key>
-									<string>punctuation.options.myst</string>
-								</dict>
-							</dict>
-							<key>end</key>
-							<string>(^|\G)(-{3})\s*$</string>
-							<key>endCaptures</key>
-							<dict>
-								<key>2</key>
-								<dict>
-									<key>name</key>
-									<string>punctuation.options.myst</string>
-								</dict>
-							</dict>
-							<key>contentName</key>
-							<string>meta.embedded.block.options</string>
-							<key>patterns</key>
-							<array>
-								<dict>
-									<key>include</key>
-									<string>source.yaml</string>
-								</dict>
-							</array>
-						</dict>
-						<dict>
 							<key>include</key>
 							<string>source.json.comments</string>
 						</dict>
@@ -3040,37 +2172,6 @@
 					<string>meta.embedded.block.less</string>
 					<key>patterns</key>
 					<array>
-						<dict>
-							<key>begin</key>
-							<string>(^|\G)(-{3})\s*$</string>
-							<key>beginCaptures</key>
-							<dict>
-								<key>1</key>
-								<dict>
-									<key>name</key>
-									<string>punctuation.options.myst</string>
-								</dict>
-							</dict>
-							<key>end</key>
-							<string>(^|\G)(-{3})\s*$</string>
-							<key>endCaptures</key>
-							<dict>
-								<key>2</key>
-								<dict>
-									<key>name</key>
-									<string>punctuation.options.myst</string>
-								</dict>
-							</dict>
-							<key>contentName</key>
-							<string>meta.embedded.block.options</string>
-							<key>patterns</key>
-							<array>
-								<dict>
-									<key>include</key>
-									<string>source.yaml</string>
-								</dict>
-							</array>
-						</dict>
 						<dict>
 							<key>include</key>
 							<string>source.css.less</string>
@@ -3125,37 +2226,6 @@
 					<key>patterns</key>
 					<array>
 						<dict>
-							<key>begin</key>
-							<string>(^|\G)(-{3})\s*$</string>
-							<key>beginCaptures</key>
-							<dict>
-								<key>1</key>
-								<dict>
-									<key>name</key>
-									<string>punctuation.options.myst</string>
-								</dict>
-							</dict>
-							<key>end</key>
-							<string>(^|\G)(-{3})\s*$</string>
-							<key>endCaptures</key>
-							<dict>
-								<key>2</key>
-								<dict>
-									<key>name</key>
-									<string>punctuation.options.myst</string>
-								</dict>
-							</dict>
-							<key>contentName</key>
-							<string>meta.embedded.block.options</string>
-							<key>patterns</key>
-							<array>
-								<dict>
-									<key>include</key>
-									<string>source.yaml</string>
-								</dict>
-							</array>
-						</dict>
-						<dict>
 							<key>include</key>
 							<string>source.objc</string>
 						</dict>
@@ -3208,37 +2278,6 @@
 					<string>meta.embedded.block.swift</string>
 					<key>patterns</key>
 					<array>
-						<dict>
-							<key>begin</key>
-							<string>(^|\G)(-{3})\s*$</string>
-							<key>beginCaptures</key>
-							<dict>
-								<key>1</key>
-								<dict>
-									<key>name</key>
-									<string>punctuation.options.myst</string>
-								</dict>
-							</dict>
-							<key>end</key>
-							<string>(^|\G)(-{3})\s*$</string>
-							<key>endCaptures</key>
-							<dict>
-								<key>2</key>
-								<dict>
-									<key>name</key>
-									<string>punctuation.options.myst</string>
-								</dict>
-							</dict>
-							<key>contentName</key>
-							<string>meta.embedded.block.options</string>
-							<key>patterns</key>
-							<array>
-								<dict>
-									<key>include</key>
-									<string>source.yaml</string>
-								</dict>
-							</array>
-						</dict>
 						<dict>
 							<key>include</key>
 							<string>source.swift</string>
@@ -3293,37 +2332,6 @@
 					<key>patterns</key>
 					<array>
 						<dict>
-							<key>begin</key>
-							<string>(^|\G)(-{3})\s*$</string>
-							<key>beginCaptures</key>
-							<dict>
-								<key>1</key>
-								<dict>
-									<key>name</key>
-									<string>punctuation.options.myst</string>
-								</dict>
-							</dict>
-							<key>end</key>
-							<string>(^|\G)(-{3})\s*$</string>
-							<key>endCaptures</key>
-							<dict>
-								<key>2</key>
-								<dict>
-									<key>name</key>
-									<string>punctuation.options.myst</string>
-								</dict>
-							</dict>
-							<key>contentName</key>
-							<string>meta.embedded.block.options</string>
-							<key>patterns</key>
-							<array>
-								<dict>
-									<key>include</key>
-									<string>source.yaml</string>
-								</dict>
-							</array>
-						</dict>
-						<dict>
 							<key>include</key>
 							<string>source.css.scss</string>
 						</dict>
@@ -3377,37 +2385,6 @@
 					<key>patterns</key>
 					<array>
 						<dict>
-							<key>begin</key>
-							<string>(^|\G)(-{3})\s*$</string>
-							<key>beginCaptures</key>
-							<dict>
-								<key>1</key>
-								<dict>
-									<key>name</key>
-									<string>punctuation.options.myst</string>
-								</dict>
-							</dict>
-							<key>end</key>
-							<string>(^|\G)(-{3})\s*$</string>
-							<key>endCaptures</key>
-							<dict>
-								<key>2</key>
-								<dict>
-									<key>name</key>
-									<string>punctuation.options.myst</string>
-								</dict>
-							</dict>
-							<key>contentName</key>
-							<string>meta.embedded.block.options</string>
-							<key>patterns</key>
-							<array>
-								<dict>
-									<key>include</key>
-									<string>source.yaml</string>
-								</dict>
-							</array>
-						</dict>
-						<dict>
 							<key>include</key>
 							<string>source.perl.6</string>
 						</dict>
@@ -3460,37 +2437,6 @@
 					<string>meta.embedded.block.powershell</string>
 					<key>patterns</key>
 					<array>
-						<dict>
-							<key>begin</key>
-							<string>(^|\G)(-{3})\s*$</string>
-							<key>beginCaptures</key>
-							<dict>
-								<key>1</key>
-								<dict>
-									<key>name</key>
-									<string>punctuation.options.myst</string>
-								</dict>
-							</dict>
-							<key>end</key>
-							<string>(^|\G)(-{3})\s*$</string>
-							<key>endCaptures</key>
-							<dict>
-								<key>2</key>
-								<dict>
-									<key>name</key>
-									<string>punctuation.options.myst</string>
-								</dict>
-							</dict>
-							<key>contentName</key>
-							<string>meta.embedded.block.options</string>
-							<key>patterns</key>
-							<array>
-								<dict>
-									<key>include</key>
-									<string>source.yaml</string>
-								</dict>
-							</array>
-						</dict>
 						<dict>
 							<key>include</key>
 							<string>source.powershell</string>
@@ -3713,37 +2659,6 @@
 					<key>patterns</key>
 					<array>
 						<dict>
-							<key>begin</key>
-							<string>(^|\G)(-{3})\s*$</string>
-							<key>beginCaptures</key>
-							<dict>
-								<key>1</key>
-								<dict>
-									<key>name</key>
-									<string>punctuation.options.myst</string>
-								</dict>
-							</dict>
-							<key>end</key>
-							<string>(^|\G)(-{3})\s*$</string>
-							<key>endCaptures</key>
-							<dict>
-								<key>2</key>
-								<dict>
-									<key>name</key>
-									<string>punctuation.options.myst</string>
-								</dict>
-							</dict>
-							<key>contentName</key>
-							<string>meta.embedded.block.options</string>
-							<key>patterns</key>
-							<array>
-								<dict>
-									<key>include</key>
-									<string>source.yaml</string>
-								</dict>
-							</array>
-						</dict>
-						<dict>
 							<key>include</key>
 							<string>source.regexp.python</string>
 						</dict>
@@ -3796,37 +2711,6 @@
 					<string>meta.embedded.block.rust</string>
 					<key>patterns</key>
 					<array>
-						<dict>
-							<key>begin</key>
-							<string>(^|\G)(-{3})\s*$</string>
-							<key>beginCaptures</key>
-							<dict>
-								<key>1</key>
-								<dict>
-									<key>name</key>
-									<string>punctuation.options.myst</string>
-								</dict>
-							</dict>
-							<key>end</key>
-							<string>(^|\G)(-{3})\s*$</string>
-							<key>endCaptures</key>
-							<dict>
-								<key>2</key>
-								<dict>
-									<key>name</key>
-									<string>punctuation.options.myst</string>
-								</dict>
-							</dict>
-							<key>contentName</key>
-							<string>meta.embedded.block.options</string>
-							<key>patterns</key>
-							<array>
-								<dict>
-									<key>include</key>
-									<string>source.yaml</string>
-								</dict>
-							</array>
-						</dict>
 						<dict>
 							<key>include</key>
 							<string>source.rust</string>
@@ -3881,37 +2765,6 @@
 					<key>patterns</key>
 					<array>
 						<dict>
-							<key>begin</key>
-							<string>(^|\G)(-{3})\s*$</string>
-							<key>beginCaptures</key>
-							<dict>
-								<key>1</key>
-								<dict>
-									<key>name</key>
-									<string>punctuation.options.myst</string>
-								</dict>
-							</dict>
-							<key>end</key>
-							<string>(^|\G)(-{3})\s*$</string>
-							<key>endCaptures</key>
-							<dict>
-								<key>2</key>
-								<dict>
-									<key>name</key>
-									<string>punctuation.options.myst</string>
-								</dict>
-							</dict>
-							<key>contentName</key>
-							<string>meta.embedded.block.options</string>
-							<key>patterns</key>
-							<array>
-								<dict>
-									<key>include</key>
-									<string>source.yaml</string>
-								</dict>
-							</array>
-						</dict>
-						<dict>
 							<key>include</key>
 							<string>source.scala</string>
 						</dict>
@@ -3964,37 +2817,6 @@
 					<string>meta.embedded.block.shellscript</string>
 					<key>patterns</key>
 					<array>
-						<dict>
-							<key>begin</key>
-							<string>(^|\G)(-{3})\s*$</string>
-							<key>beginCaptures</key>
-							<dict>
-								<key>1</key>
-								<dict>
-									<key>name</key>
-									<string>punctuation.options.myst</string>
-								</dict>
-							</dict>
-							<key>end</key>
-							<string>(^|\G)(-{3})\s*$</string>
-							<key>endCaptures</key>
-							<dict>
-								<key>2</key>
-								<dict>
-									<key>name</key>
-									<string>punctuation.options.myst</string>
-								</dict>
-							</dict>
-							<key>contentName</key>
-							<string>meta.embedded.block.options</string>
-							<key>patterns</key>
-							<array>
-								<dict>
-									<key>include</key>
-									<string>source.yaml</string>
-								</dict>
-							</array>
-						</dict>
 						<dict>
 							<key>include</key>
 							<string>source.shell</string>
@@ -4133,37 +2955,6 @@
 					<key>patterns</key>
 					<array>
 						<dict>
-							<key>begin</key>
-							<string>(^|\G)(-{3})\s*$</string>
-							<key>beginCaptures</key>
-							<dict>
-								<key>1</key>
-								<dict>
-									<key>name</key>
-									<string>punctuation.options.myst</string>
-								</dict>
-							</dict>
-							<key>end</key>
-							<string>(^|\G)(-{3})\s*$</string>
-							<key>endCaptures</key>
-							<dict>
-								<key>2</key>
-								<dict>
-									<key>name</key>
-									<string>punctuation.options.myst</string>
-								</dict>
-							</dict>
-							<key>contentName</key>
-							<string>meta.embedded.block.options</string>
-							<key>patterns</key>
-							<array>
-								<dict>
-									<key>include</key>
-									<string>source.yaml</string>
-								</dict>
-							</array>
-						</dict>
-						<dict>
 							<key>include</key>
 							<string>source.tsx</string>
 						</dict>
@@ -4216,37 +3007,6 @@
 					<string>meta.embedded.block.csharp</string>
 					<key>patterns</key>
 					<array>
-						<dict>
-							<key>begin</key>
-							<string>(^|\G)(-{3})\s*$</string>
-							<key>beginCaptures</key>
-							<dict>
-								<key>1</key>
-								<dict>
-									<key>name</key>
-									<string>punctuation.options.myst</string>
-								</dict>
-							</dict>
-							<key>end</key>
-							<string>(^|\G)(-{3})\s*$</string>
-							<key>endCaptures</key>
-							<dict>
-								<key>2</key>
-								<dict>
-									<key>name</key>
-									<string>punctuation.options.myst</string>
-								</dict>
-							</dict>
-							<key>contentName</key>
-							<string>meta.embedded.block.options</string>
-							<key>patterns</key>
-							<array>
-								<dict>
-									<key>include</key>
-									<string>source.yaml</string>
-								</dict>
-							</array>
-						</dict>
 						<dict>
 							<key>include</key>
 							<string>source.cs</string>
@@ -4301,37 +3061,6 @@
 					<key>patterns</key>
 					<array>
 						<dict>
-							<key>begin</key>
-							<string>(^|\G)(-{3})\s*$</string>
-							<key>beginCaptures</key>
-							<dict>
-								<key>1</key>
-								<dict>
-									<key>name</key>
-									<string>punctuation.options.myst</string>
-								</dict>
-							</dict>
-							<key>end</key>
-							<string>(^|\G)(-{3})\s*$</string>
-							<key>endCaptures</key>
-							<dict>
-								<key>2</key>
-								<dict>
-									<key>name</key>
-									<string>punctuation.options.myst</string>
-								</dict>
-							</dict>
-							<key>contentName</key>
-							<string>meta.embedded.block.options</string>
-							<key>patterns</key>
-							<array>
-								<dict>
-									<key>include</key>
-									<string>source.yaml</string>
-								</dict>
-							</array>
-						</dict>
-						<dict>
 							<key>include</key>
 							<string>source.fsharp</string>
 						</dict>
@@ -4384,37 +3113,6 @@
 					<string>meta.embedded.block.dart</string>
 					<key>patterns</key>
 					<array>
-						<dict>
-							<key>begin</key>
-							<string>(^|\G)(-{3})\s*$</string>
-							<key>beginCaptures</key>
-							<dict>
-								<key>1</key>
-								<dict>
-									<key>name</key>
-									<string>punctuation.options.myst</string>
-								</dict>
-							</dict>
-							<key>end</key>
-							<string>(^|\G)(-{3})\s*$</string>
-							<key>endCaptures</key>
-							<dict>
-								<key>2</key>
-								<dict>
-									<key>name</key>
-									<string>punctuation.options.myst</string>
-								</dict>
-							</dict>
-							<key>contentName</key>
-							<string>meta.embedded.block.options</string>
-							<key>patterns</key>
-							<array>
-								<dict>
-									<key>include</key>
-									<string>source.yaml</string>
-								</dict>
-							</array>
-						</dict>
 						<dict>
 							<key>include</key>
 							<string>source.dart</string>
@@ -4469,37 +3167,6 @@
 					<key>patterns</key>
 					<array>
 						<dict>
-							<key>begin</key>
-							<string>(^|\G)(-{3})\s*$</string>
-							<key>beginCaptures</key>
-							<dict>
-								<key>1</key>
-								<dict>
-									<key>name</key>
-									<string>punctuation.options.myst</string>
-								</dict>
-							</dict>
-							<key>end</key>
-							<string>(^|\G)(-{3})\s*$</string>
-							<key>endCaptures</key>
-							<dict>
-								<key>2</key>
-								<dict>
-									<key>name</key>
-									<string>punctuation.options.myst</string>
-								</dict>
-							</dict>
-							<key>contentName</key>
-							<string>meta.embedded.block.options</string>
-							<key>patterns</key>
-							<array>
-								<dict>
-									<key>include</key>
-									<string>source.yaml</string>
-								</dict>
-							</array>
-						</dict>
-						<dict>
 							<key>include</key>
 							<string>text.html.handlebars</string>
 						</dict>
@@ -4553,37 +3220,6 @@
 					<key>patterns</key>
 					<array>
 						<dict>
-							<key>begin</key>
-							<string>(^|\G)(-{3})\s*$</string>
-							<key>beginCaptures</key>
-							<dict>
-								<key>1</key>
-								<dict>
-									<key>name</key>
-									<string>punctuation.options.myst</string>
-								</dict>
-							</dict>
-							<key>end</key>
-							<string>(^|\G)(-{3})\s*$</string>
-							<key>endCaptures</key>
-							<dict>
-								<key>2</key>
-								<dict>
-									<key>name</key>
-									<string>punctuation.options.myst</string>
-								</dict>
-							</dict>
-							<key>contentName</key>
-							<string>meta.embedded.block.options</string>
-							<key>patterns</key>
-							<array>
-								<dict>
-									<key>include</key>
-									<string>source.yaml</string>
-								</dict>
-							</array>
-						</dict>
-						<dict>
 							<key>include</key>
 							<string>text.html.markdown</string>
 						</dict>
@@ -4636,37 +3272,6 @@
 					<string>meta.embedded.block.log</string>
 					<key>patterns</key>
 					<array>
-						<dict>
-							<key>begin</key>
-							<string>(^|\G)(-{3})\s*$</string>
-							<key>beginCaptures</key>
-							<dict>
-								<key>1</key>
-								<dict>
-									<key>name</key>
-									<string>punctuation.options.myst</string>
-								</dict>
-							</dict>
-							<key>end</key>
-							<string>(^|\G)(-{3})\s*$</string>
-							<key>endCaptures</key>
-							<dict>
-								<key>2</key>
-								<dict>
-									<key>name</key>
-									<string>punctuation.options.myst</string>
-								</dict>
-							</dict>
-							<key>contentName</key>
-							<string>meta.embedded.block.options</string>
-							<key>patterns</key>
-							<array>
-								<dict>
-									<key>include</key>
-									<string>source.yaml</string>
-								</dict>
-							</array>
-						</dict>
 						<dict>
 							<key>include</key>
 							<string>text.log</string>
