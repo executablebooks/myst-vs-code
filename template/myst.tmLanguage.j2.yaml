@@ -17,10 +17,18 @@ repository:
     name: comment.line.percentage.myst
 
   block_break:
-    match: '(?:^|\G)[ ]{0,3}(\+\+\++)\s*(.*)'
+    match: '(?:^|\G)[ ]{0,3}(\+\+\++)\s*(.*)\s*'
     captures:
       "1": { name: keyword.other.block_break.myst }
-      "2": { name: markup.inline.raw.string.block_break.myst } # TODO capture JSON?
+      "2": 
+        name: markup.attributes.block_break.myst
+        patterns:
+          - begin: \{
+            end: \}
+            name: meta.embedded.json
+            patterns:
+              - {include: source.json}
+
 
   target_block:
     match: '(?:^|\G)[ ]{0,3}\((.+?)\)(\=)'
