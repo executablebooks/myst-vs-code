@@ -3,17 +3,18 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 // @ts-check
-'use strict';
+// 'use strict';
 
 const assert = require('assert');
 const { commands, Uri } = require('vscode');
-const { join, basename, normalize, dirname } = require('path');
-const fs = require('fs');
+const { join, basename, dirname } = require('path');
+import * as fs from 'fs';
 
-function assertUnchangedTokens(testFixurePath, done) {
+
+function assertUnchangedTokens(testFixurePath: string, done: MochaDone) {
     let fileName = basename(testFixurePath);
 
-    return commands.executeCommand('_workbench.captureSyntaxTokens', Uri.file(testFixurePath)).then(data => {
+    return commands.executeCommand('_workbench.captureSyntaxTokens', Uri.file(testFixurePath)).then((data: any) => {
         try {
             let resultsFolderPath = join(dirname(dirname(testFixurePath)), 'colorize-results');
             if (!fs.existsSync(resultsFolderPath)) {
@@ -49,7 +50,7 @@ function assertUnchangedTokens(testFixurePath, done) {
     }, done);
 }
 
-function hasThemeChange(d, p) {
+function hasThemeChange(d: { [key: string]: any }, p: { [key: string]: any }) {
     let keys = Object.keys(d);
     for (let key of keys) {
         if (d[key] !== p[key]) {
@@ -57,10 +58,12 @@ function hasThemeChange(d, p) {
         }
     }
     return false;
-};
+}
 
 suite('colorization', () => {
-    let extensionColorizeFixturePath = join(__dirname, 'colorize-fixtures');
+    // We place the test files in this lower level FoldingRange, so that when this file is compiled to out/test/,
+    // it still finds thems
+    let extensionColorizeFixturePath = join(__dirname, '../../test_static/colorize-fixtures');
     if (fs.existsSync(extensionColorizeFixturePath)) {
         let fixturesFiles = fs.readdirSync(extensionColorizeFixturePath);
         fixturesFiles.forEach(fixturesFile => {
