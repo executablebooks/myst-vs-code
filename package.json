@@ -45,7 +45,7 @@
             }
         ]
     },
-    "main": "./out/extension",
+
     "devDependencies": {
         "@types/mocha": "^2.2.42",
         "@types/node": "^8.10.25",
