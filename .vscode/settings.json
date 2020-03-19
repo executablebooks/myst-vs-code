@@ -3,6 +3,7 @@
     //     "*.tmLanguage.yaml": "yaml-tmlanguage"
     // },
     "yaml.schemas": {
-        "tmlLanguage.schema.json": ["*.tmLanguage.base.yaml"]
-    }
+        "tmlLanguage.schema.json": ["*.tmLanguage.j2.yaml"]
+    },
+    "python.formatting.provider": "black"
 }
