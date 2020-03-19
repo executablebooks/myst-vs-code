@@ -16,6 +16,10 @@ Embedded code blocks/cells can be utilised in their native language:
 
 <img width="500" alt="screenshot" src="https://raw.githubusercontent.com/ExecutableBookProject/myst-highlight-grammar/master/images/embedded-code.gif">
 
+Snippet completions are available for a number of Sphinx directives:
+
+<img width="500" alt="screenshot" src="https://raw.githubusercontent.com/ExecutableBookProject/myst-highlight-grammar/master/images/snippet-completion.gif">
+
 ## Contributing
 
 The main grammar is stored in `syntaxes/myst.tmLanguage`. This file is generated from `myst.tmLanguage.base.yaml`.
