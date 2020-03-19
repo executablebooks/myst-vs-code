@@ -9,6 +9,7 @@
     },
     "homepage": "https://github.com/ExecutableBookProject/myst-highlight-grammar/blob/master/README.md",
     "publisher": "ExecutableBookProject",
+    "keywords": ["markdown", "myst"],
     "authors": [
         "Chris Sewell"
     ],
