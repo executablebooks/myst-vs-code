@@ -1,7 +1,7 @@
 [
 	{
 		"c": "```",
-		"t": "text.html.myst markup.fenced_code.block.myst punctuation.definition.myst",
+		"t": "text.html.markdown markup.fenced_code.block.markdown punctuation.definition.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -12,18 +12,18 @@
 	},
 	{
 		"c": "js",
-		"t": "text.html.myst markup.fenced_code.block.myst support.variable.language.myst",
+		"t": "text.html.markdown markup.fenced_code.block.markdown fenced_code.block.language.markdown",
 		"r": {
-			"dark_plus": "support.variable: #9CDCFE",
-			"light_plus": "support.variable: #001080",
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
 			"dark_vs": "default: #D4D4D4",
 			"light_vs": "default: #000000",
-			"hc_black": "support.variable: #9CDCFE"
+			"hc_black": "default: #FFFFFF"
 		}
 	},
 	{
 		"c": ":title=greet.js",
-		"t": "text.html.myst markup.fenced_code.block.myst fenced_code.block.language.attributes.myst",
+		"t": "text.html.markdown markup.fenced_code.block.markdown fenced_code.block.language.attributes.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -34,7 +34,7 @@
 	},
 	{
 		"c": "# ",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.javascript",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.javascript",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -45,7 +45,7 @@
 	},
 	{
 		"c": "Testing",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.javascript variable.other.readwrite.js",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.javascript variable.other.readwrite.js",
 		"r": {
 			"dark_plus": "variable: #9CDCFE",
 			"light_plus": "variable: #001080",
@@ -56,7 +56,7 @@
 	},
 	{
 		"c": " ",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.javascript",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.javascript",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -67,7 +67,7 @@
 	},
 	{
 		"c": "code",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.javascript variable.other.readwrite.js",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.javascript variable.other.readwrite.js",
 		"r": {
 			"dark_plus": "variable: #9CDCFE",
 			"light_plus": "variable: #001080",
@@ -78,7 +78,7 @@
 	},
 	{
 		"c": " ",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.javascript",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.javascript",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -89,7 +89,7 @@
 	},
 	{
 		"c": "fence",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.javascript variable.other.readwrite.js",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.javascript variable.other.readwrite.js",
 		"r": {
 			"dark_plus": "variable: #9CDCFE",
 			"light_plus": "variable: #001080",
@@ -100,7 +100,7 @@
 	},
 	{
 		"c": " ",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.javascript",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.javascript",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -111,7 +111,7 @@
 	},
 	{
 		"c": "with",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.javascript keyword.control.with.js",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.javascript keyword.control.with.js",
 		"r": {
 			"dark_plus": "keyword.control: #C586C0",
 			"light_plus": "keyword.control: #AF00DB",
@@ -122,7 +122,7 @@
 	},
 	{
 		"c": " ",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.javascript",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.javascript",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -133,7 +133,7 @@
 	},
 	{
 		"c": "file",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.javascript variable.other.readwrite.js",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.javascript variable.other.readwrite.js",
 		"r": {
 			"dark_plus": "variable: #9CDCFE",
 			"light_plus": "variable: #001080",
@@ -144,7 +144,7 @@
 	},
 	{
 		"c": " ",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.javascript",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.javascript",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -155,7 +155,7 @@
 	},
 	{
 		"c": "name",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.javascript variable.other.readwrite.js",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.javascript variable.other.readwrite.js",
 		"r": {
 			"dark_plus": "variable: #9CDCFE",
 			"light_plus": "variable: #001080",
@@ -166,7 +166,7 @@
 	},
 	{
 		"c": " ",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.javascript",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.javascript",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -177,7 +177,7 @@
 	},
 	{
 		"c": "attribute",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.javascript variable.other.readwrite.js",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.javascript variable.other.readwrite.js",
 		"r": {
 			"dark_plus": "variable: #9CDCFE",
 			"light_plus": "variable: #001080",
@@ -188,7 +188,7 @@
 	},
 	{
 		"c": ".",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.javascript punctuation.accessor.js",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.javascript punctuation.accessor.js",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -199,7 +199,7 @@
 	},
 	{
 		"c": "function",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.javascript meta.function.js storage.type.function.js",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.javascript meta.function.js storage.type.function.js",
 		"r": {
 			"dark_plus": "storage.type: #569CD6",
 			"light_plus": "storage.type: #0000FF",
@@ -210,7 +210,7 @@
 	},
 	{
 		"c": " ",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.javascript meta.function.js",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.javascript meta.function.js",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -221,7 +221,7 @@
 	},
 	{
 		"c": "greetings",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.javascript meta.function.js meta.definition.function.js entity.name.function.js",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.javascript meta.function.js meta.definition.function.js entity.name.function.js",
 		"r": {
 			"dark_plus": "entity.name.function: #DCDCAA",
 			"light_plus": "entity.name.function: #795E26",
@@ -232,7 +232,7 @@
 	},
 	{
 		"c": "(",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.javascript meta.function.js meta.parameters.js punctuation.definition.parameters.begin.js",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.javascript meta.function.js meta.parameters.js punctuation.definition.parameters.begin.js",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -243,7 +243,7 @@
 	},
 	{
 		"c": ")",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.javascript meta.function.js meta.parameters.js punctuation.definition.parameters.end.js",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.javascript meta.function.js meta.parameters.js punctuation.definition.parameters.end.js",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -254,7 +254,7 @@
 	},
 	{
 		"c": " ",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.javascript meta.function.js",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.javascript meta.function.js",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -265,7 +265,7 @@
 	},
 	{
 		"c": "{",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.javascript meta.function.js meta.block.js punctuation.definition.block.js",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.javascript meta.function.js meta.block.js punctuation.definition.block.js",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -276,7 +276,7 @@
 	},
 	{
 		"c": "  ",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.javascript meta.function.js meta.block.js",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.javascript meta.function.js meta.block.js",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -287,7 +287,7 @@
 	},
 	{
 		"c": "console",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.javascript meta.function.js meta.block.js meta.function-call.js support.class.console.js",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.javascript meta.function.js meta.block.js meta.function-call.js support.class.console.js",
 		"r": {
 			"dark_plus": "support.class: #4EC9B0",
 			"light_plus": "support.class: #267F99",
@@ -298,7 +298,7 @@
 	},
 	{
 		"c": ".",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.javascript meta.function.js meta.block.js meta.function-call.js punctuation.accessor.js",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.javascript meta.function.js meta.block.js meta.function-call.js punctuation.accessor.js",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -309,7 +309,7 @@
 	},
 	{
 		"c": "log",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.javascript meta.function.js meta.block.js meta.function-call.js support.function.console.js",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.javascript meta.function.js meta.block.js meta.function-call.js support.function.console.js",
 		"r": {
 			"dark_plus": "support.function: #DCDCAA",
 			"light_plus": "support.function: #795E26",
@@ -320,7 +320,7 @@
 	},
 	{
 		"c": "(",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.javascript meta.function.js meta.block.js meta.brace.round.js",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.javascript meta.function.js meta.block.js meta.brace.round.js",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -331,7 +331,7 @@
 	},
 	{
 		"c": "\"",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.javascript meta.function.js meta.block.js string.quoted.double.js punctuation.definition.string.begin.js",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.javascript meta.function.js meta.block.js string.quoted.double.js punctuation.definition.string.begin.js",
 		"r": {
 			"dark_plus": "string: #CE9178",
 			"light_plus": "string: #A31515",
@@ -342,7 +342,7 @@
 	},
 	{
 		"c": "Hello world!",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.javascript meta.function.js meta.block.js string.quoted.double.js",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.javascript meta.function.js meta.block.js string.quoted.double.js",
 		"r": {
 			"dark_plus": "string: #CE9178",
 			"light_plus": "string: #A31515",
@@ -353,7 +353,7 @@
 	},
 	{
 		"c": "\"",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.javascript meta.function.js meta.block.js string.quoted.double.js punctuation.definition.string.end.js",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.javascript meta.function.js meta.block.js string.quoted.double.js punctuation.definition.string.end.js",
 		"r": {
 			"dark_plus": "string: #CE9178",
 			"light_plus": "string: #A31515",
@@ -364,7 +364,7 @@
 	},
 	{
 		"c": ")",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.javascript meta.function.js meta.block.js meta.brace.round.js",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.javascript meta.function.js meta.block.js meta.brace.round.js",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -375,7 +375,7 @@
 	},
 	{
 		"c": "}",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.javascript meta.function.js meta.block.js punctuation.definition.block.js",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.javascript meta.function.js meta.block.js punctuation.definition.block.js",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -386,7 +386,7 @@
 	},
 	{
 		"c": "```",
-		"t": "text.html.myst markup.fenced_code.block.myst punctuation.definition.myst",
+		"t": "text.html.markdown markup.fenced_code.block.markdown punctuation.definition.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",

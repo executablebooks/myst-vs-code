@@ -1,7 +1,7 @@
 [
 	{
 		"c": "[",
-		"t": "text.html.myst meta.paragraph.myst meta.link.reference.myst punctuation.definition.string.begin.myst",
+		"t": "text.html.markdown meta.paragraph.markdown meta.link.reference.markdown punctuation.definition.string.begin.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -12,7 +12,7 @@
 	},
 	{
 		"c": "link1",
-		"t": "text.html.myst meta.paragraph.myst meta.link.reference.myst string.other.link.title.myst",
+		"t": "text.html.markdown meta.paragraph.markdown meta.link.reference.markdown string.other.link.title.markdown",
 		"r": {
 			"dark_plus": "string: #CE9178",
 			"light_plus": "string: #A31515",
@@ -23,7 +23,7 @@
 	},
 	{
 		"c": "]",
-		"t": "text.html.myst meta.paragraph.myst meta.link.reference.myst punctuation.definition.string.end.myst",
+		"t": "text.html.markdown meta.paragraph.markdown meta.link.reference.markdown punctuation.definition.string.end.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -34,7 +34,7 @@
 	},
 	{
 		"c": "[",
-		"t": "text.html.myst meta.paragraph.myst meta.link.reference.myst punctuation.definition.constant.begin.myst",
+		"t": "text.html.markdown meta.paragraph.markdown meta.link.reference.markdown punctuation.definition.constant.begin.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -45,7 +45,7 @@
 	},
 	{
 		"c": "ref1",
-		"t": "text.html.myst meta.paragraph.myst meta.link.reference.myst constant.other.reference.link.myst",
+		"t": "text.html.markdown meta.paragraph.markdown meta.link.reference.markdown constant.other.reference.link.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -56,7 +56,7 @@
 	},
 	{
 		"c": "]",
-		"t": "text.html.myst meta.paragraph.myst meta.link.reference.myst punctuation.definition.constant.end.myst",
+		"t": "text.html.markdown meta.paragraph.markdown meta.link.reference.markdown punctuation.definition.constant.end.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -67,7 +67,7 @@
 	},
 	{
 		"c": " ",
-		"t": "text.html.myst meta.paragraph.myst",
+		"t": "text.html.markdown meta.paragraph.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -78,7 +78,7 @@
 	},
 	{
 		"c": "[",
-		"t": "text.html.myst meta.paragraph.myst meta.link.reference.myst punctuation.definition.string.begin.myst",
+		"t": "text.html.markdown meta.paragraph.markdown meta.link.reference.markdown punctuation.definition.string.begin.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -89,7 +89,7 @@
 	},
 	{
 		"c": "link2",
-		"t": "text.html.myst meta.paragraph.myst meta.link.reference.myst string.other.link.title.myst",
+		"t": "text.html.markdown meta.paragraph.markdown meta.link.reference.markdown string.other.link.title.markdown",
 		"r": {
 			"dark_plus": "string: #CE9178",
 			"light_plus": "string: #A31515",
@@ -100,7 +100,7 @@
 	},
 	{
 		"c": "]",
-		"t": "text.html.myst meta.paragraph.myst meta.link.reference.myst punctuation.definition.string.end.myst",
+		"t": "text.html.markdown meta.paragraph.markdown meta.link.reference.markdown punctuation.definition.string.end.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -111,7 +111,7 @@
 	},
 	{
 		"c": "[",
-		"t": "text.html.myst meta.paragraph.myst meta.link.reference.myst punctuation.definition.constant.begin.myst",
+		"t": "text.html.markdown meta.paragraph.markdown meta.link.reference.markdown punctuation.definition.constant.begin.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -122,7 +122,7 @@
 	},
 	{
 		"c": "ref-2",
-		"t": "text.html.myst meta.paragraph.myst meta.link.reference.myst constant.other.reference.link.myst",
+		"t": "text.html.markdown meta.paragraph.markdown meta.link.reference.markdown constant.other.reference.link.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -133,7 +133,7 @@
 	},
 	{
 		"c": "]",
-		"t": "text.html.myst meta.paragraph.myst meta.link.reference.myst punctuation.definition.constant.end.myst",
+		"t": "text.html.markdown meta.paragraph.markdown meta.link.reference.markdown punctuation.definition.constant.end.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -144,7 +144,7 @@
 	},
 	{
 		"c": "[",
-		"t": "text.html.myst meta.paragraph.myst meta.link.reference.myst punctuation.definition.string.begin.myst",
+		"t": "text.html.markdown meta.paragraph.markdown meta.link.reference.markdown punctuation.definition.string.begin.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -155,7 +155,7 @@
 	},
 	{
 		"c": "link3",
-		"t": "text.html.myst meta.paragraph.myst meta.link.reference.myst string.other.link.title.myst",
+		"t": "text.html.markdown meta.paragraph.markdown meta.link.reference.markdown string.other.link.title.markdown",
 		"r": {
 			"dark_plus": "string: #CE9178",
 			"light_plus": "string: #A31515",
@@ -166,7 +166,7 @@
 	},
 	{
 		"c": "]",
-		"t": "text.html.myst meta.paragraph.myst meta.link.reference.myst punctuation.definition.string.end.myst",
+		"t": "text.html.markdown meta.paragraph.markdown meta.link.reference.markdown punctuation.definition.string.end.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -177,7 +177,7 @@
 	},
 	{
 		"c": "[",
-		"t": "text.html.myst meta.paragraph.myst meta.link.reference.myst punctuation.definition.constant.begin.myst",
+		"t": "text.html.markdown meta.paragraph.markdown meta.link.reference.markdown punctuation.definition.constant.begin.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -188,7 +188,7 @@
 	},
 	{
 		"c": "ref_3",
-		"t": "text.html.myst meta.paragraph.myst meta.link.reference.myst constant.other.reference.link.myst",
+		"t": "text.html.markdown meta.paragraph.markdown meta.link.reference.markdown constant.other.reference.link.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -199,7 +199,7 @@
 	},
 	{
 		"c": "]",
-		"t": "text.html.myst meta.paragraph.myst meta.link.reference.myst punctuation.definition.constant.end.myst",
+		"t": "text.html.markdown meta.paragraph.markdown meta.link.reference.markdown punctuation.definition.constant.end.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -210,7 +210,7 @@
 	},
 	{
 		"c": "[",
-		"t": "text.html.myst meta.paragraph.myst meta.link.reference.myst punctuation.definition.string.begin.myst",
+		"t": "text.html.markdown meta.paragraph.markdown meta.link.reference.markdown punctuation.definition.string.begin.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -221,7 +221,7 @@
 	},
 	{
 		"c": "link4",
-		"t": "text.html.myst meta.paragraph.myst meta.link.reference.myst string.other.link.title.myst",
+		"t": "text.html.markdown meta.paragraph.markdown meta.link.reference.markdown string.other.link.title.markdown",
 		"r": {
 			"dark_plus": "string: #CE9178",
 			"light_plus": "string: #A31515",
@@ -232,7 +232,7 @@
 	},
 	{
 		"c": "]",
-		"t": "text.html.myst meta.paragraph.myst meta.link.reference.myst punctuation.definition.string.end.myst",
+		"t": "text.html.markdown meta.paragraph.markdown meta.link.reference.markdown punctuation.definition.string.end.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -243,7 +243,7 @@
 	},
 	{
 		"c": "[",
-		"t": "text.html.myst meta.paragraph.myst meta.link.reference.myst punctuation.definition.constant.begin.myst",
+		"t": "text.html.markdown meta.paragraph.markdown meta.link.reference.markdown punctuation.definition.constant.begin.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -254,7 +254,7 @@
 	},
 	{
 		"c": "ref 4",
-		"t": "text.html.myst meta.paragraph.myst meta.link.reference.myst constant.other.reference.link.myst",
+		"t": "text.html.markdown meta.paragraph.markdown meta.link.reference.markdown constant.other.reference.link.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -265,7 +265,7 @@
 	},
 	{
 		"c": "]",
-		"t": "text.html.myst meta.paragraph.myst meta.link.reference.myst punctuation.definition.constant.end.myst",
+		"t": "text.html.markdown meta.paragraph.markdown meta.link.reference.markdown punctuation.definition.constant.end.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -276,7 +276,7 @@
 	},
 	{
 		"c": "[",
-		"t": "text.html.myst meta.paragraph.myst meta.link.reference.myst punctuation.definition.string.begin.myst",
+		"t": "text.html.markdown meta.paragraph.markdown meta.link.reference.markdown punctuation.definition.string.begin.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -287,7 +287,7 @@
 	},
 	{
 		"c": "link5",
-		"t": "text.html.myst meta.paragraph.myst meta.link.reference.myst string.other.link.title.myst",
+		"t": "text.html.markdown meta.paragraph.markdown meta.link.reference.markdown string.other.link.title.markdown",
 		"r": {
 			"dark_plus": "string: #CE9178",
 			"light_plus": "string: #A31515",
@@ -298,7 +298,7 @@
 	},
 	{
 		"c": "]",
-		"t": "text.html.myst meta.paragraph.myst meta.link.reference.myst punctuation.definition.string.end.myst",
+		"t": "text.html.markdown meta.paragraph.markdown meta.link.reference.markdown punctuation.definition.string.end.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -309,7 +309,7 @@
 	},
 	{
 		"c": "[",
-		"t": "text.html.myst meta.paragraph.myst meta.link.reference.myst punctuation.definition.constant.begin.myst",
+		"t": "text.html.markdown meta.paragraph.markdown meta.link.reference.markdown punctuation.definition.constant.begin.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -320,7 +320,7 @@
 	},
 	{
 		"c": "ref5.0",
-		"t": "text.html.myst meta.paragraph.myst meta.link.reference.myst constant.other.reference.link.myst",
+		"t": "text.html.markdown meta.paragraph.markdown meta.link.reference.markdown constant.other.reference.link.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -331,7 +331,7 @@
 	},
 	{
 		"c": "]",
-		"t": "text.html.myst meta.paragraph.myst meta.link.reference.myst punctuation.definition.constant.end.myst",
+		"t": "text.html.markdown meta.paragraph.markdown meta.link.reference.markdown punctuation.definition.constant.end.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -342,7 +342,7 @@
 	},
 	{
 		"c": "[",
-		"t": "text.html.myst meta.paragraph.myst meta.link.reference.myst punctuation.definition.string.begin.myst",
+		"t": "text.html.markdown meta.paragraph.markdown meta.link.reference.markdown punctuation.definition.string.begin.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -353,7 +353,7 @@
 	},
 	{
 		"c": "link6",
-		"t": "text.html.myst meta.paragraph.myst meta.link.reference.myst string.other.link.title.myst",
+		"t": "text.html.markdown meta.paragraph.markdown meta.link.reference.markdown string.other.link.title.markdown",
 		"r": {
 			"dark_plus": "string: #CE9178",
 			"light_plus": "string: #A31515",
@@ -364,7 +364,7 @@
 	},
 	{
 		"c": "]",
-		"t": "text.html.myst meta.paragraph.myst meta.link.reference.myst punctuation.definition.string.end.myst",
+		"t": "text.html.markdown meta.paragraph.markdown meta.link.reference.markdown punctuation.definition.string.end.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -375,7 +375,7 @@
 	},
 	{
 		"c": "[",
-		"t": "text.html.myst meta.link.reference.def.myst punctuation.definition.constant.myst",
+		"t": "text.html.markdown meta.link.reference.def.markdown punctuation.definition.constant.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -386,7 +386,7 @@
 	},
 	{
 		"c": "ref1",
-		"t": "text.html.myst meta.link.reference.def.myst constant.other.reference.link.myst",
+		"t": "text.html.markdown meta.link.reference.def.markdown constant.other.reference.link.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -397,7 +397,7 @@
 	},
 	{
 		"c": "]",
-		"t": "text.html.myst meta.link.reference.def.myst punctuation.definition.constant.myst",
+		"t": "text.html.markdown meta.link.reference.def.markdown punctuation.definition.constant.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -408,7 +408,7 @@
 	},
 	{
 		"c": ":",
-		"t": "text.html.myst meta.link.reference.def.myst punctuation.separator.key-value.myst",
+		"t": "text.html.markdown meta.link.reference.def.markdown punctuation.separator.key-value.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -419,7 +419,7 @@
 	},
 	{
 		"c": " ",
-		"t": "text.html.myst meta.link.reference.def.myst",
+		"t": "text.html.markdown meta.link.reference.def.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -430,7 +430,7 @@
 	},
 	{
 		"c": "http://localhost/",
-		"t": "text.html.myst meta.link.reference.def.myst markup.underline.link.myst",
+		"t": "text.html.markdown meta.link.reference.def.markdown markup.underline.link.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -441,7 +441,7 @@
 	},
 	{
 		"c": "[",
-		"t": "text.html.myst meta.link.reference.def.myst punctuation.definition.constant.myst",
+		"t": "text.html.markdown meta.link.reference.def.markdown punctuation.definition.constant.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -452,7 +452,7 @@
 	},
 	{
 		"c": "ref-2",
-		"t": "text.html.myst meta.link.reference.def.myst constant.other.reference.link.myst",
+		"t": "text.html.markdown meta.link.reference.def.markdown constant.other.reference.link.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -463,7 +463,7 @@
 	},
 	{
 		"c": "]",
-		"t": "text.html.myst meta.link.reference.def.myst punctuation.definition.constant.myst",
+		"t": "text.html.markdown meta.link.reference.def.markdown punctuation.definition.constant.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -474,7 +474,7 @@
 	},
 	{
 		"c": ":",
-		"t": "text.html.myst meta.link.reference.def.myst punctuation.separator.key-value.myst",
+		"t": "text.html.markdown meta.link.reference.def.markdown punctuation.separator.key-value.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -485,7 +485,7 @@
 	},
 	{
 		"c": " ",
-		"t": "text.html.myst meta.link.reference.def.myst",
+		"t": "text.html.markdown meta.link.reference.def.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -496,7 +496,7 @@
 	},
 	{
 		"c": "http://localhost/",
-		"t": "text.html.myst meta.link.reference.def.myst markup.underline.link.myst",
+		"t": "text.html.markdown meta.link.reference.def.markdown markup.underline.link.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -507,7 +507,7 @@
 	},
 	{
 		"c": "[",
-		"t": "text.html.myst meta.link.reference.def.myst punctuation.definition.constant.myst",
+		"t": "text.html.markdown meta.link.reference.def.markdown punctuation.definition.constant.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -518,7 +518,7 @@
 	},
 	{
 		"c": "ref_3",
-		"t": "text.html.myst meta.link.reference.def.myst constant.other.reference.link.myst",
+		"t": "text.html.markdown meta.link.reference.def.markdown constant.other.reference.link.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -529,7 +529,7 @@
 	},
 	{
 		"c": "]",
-		"t": "text.html.myst meta.link.reference.def.myst punctuation.definition.constant.myst",
+		"t": "text.html.markdown meta.link.reference.def.markdown punctuation.definition.constant.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -540,7 +540,7 @@
 	},
 	{
 		"c": ":",
-		"t": "text.html.myst meta.link.reference.def.myst punctuation.separator.key-value.myst",
+		"t": "text.html.markdown meta.link.reference.def.markdown punctuation.separator.key-value.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -551,7 +551,7 @@
 	},
 	{
 		"c": " ",
-		"t": "text.html.myst meta.link.reference.def.myst",
+		"t": "text.html.markdown meta.link.reference.def.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -562,7 +562,7 @@
 	},
 	{
 		"c": "http://localhost/",
-		"t": "text.html.myst meta.link.reference.def.myst markup.underline.link.myst",
+		"t": "text.html.markdown meta.link.reference.def.markdown markup.underline.link.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -573,7 +573,7 @@
 	},
 	{
 		"c": "[",
-		"t": "text.html.myst meta.link.reference.def.myst punctuation.definition.constant.myst",
+		"t": "text.html.markdown meta.link.reference.def.markdown punctuation.definition.constant.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -584,7 +584,7 @@
 	},
 	{
 		"c": "ref 4",
-		"t": "text.html.myst meta.link.reference.def.myst constant.other.reference.link.myst",
+		"t": "text.html.markdown meta.link.reference.def.markdown constant.other.reference.link.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -595,7 +595,7 @@
 	},
 	{
 		"c": "]",
-		"t": "text.html.myst meta.link.reference.def.myst punctuation.definition.constant.myst",
+		"t": "text.html.markdown meta.link.reference.def.markdown punctuation.definition.constant.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -606,7 +606,7 @@
 	},
 	{
 		"c": ":",
-		"t": "text.html.myst meta.link.reference.def.myst punctuation.separator.key-value.myst",
+		"t": "text.html.markdown meta.link.reference.def.markdown punctuation.separator.key-value.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -617,7 +617,7 @@
 	},
 	{
 		"c": " ",
-		"t": "text.html.myst meta.link.reference.def.myst",
+		"t": "text.html.markdown meta.link.reference.def.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -628,7 +628,7 @@
 	},
 	{
 		"c": "http://localhost/",
-		"t": "text.html.myst meta.link.reference.def.myst markup.underline.link.myst",
+		"t": "text.html.markdown meta.link.reference.def.markdown markup.underline.link.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -639,7 +639,7 @@
 	},
 	{
 		"c": "[",
-		"t": "text.html.myst meta.link.reference.def.myst punctuation.definition.constant.myst",
+		"t": "text.html.markdown meta.link.reference.def.markdown punctuation.definition.constant.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -650,7 +650,7 @@
 	},
 	{
 		"c": "ref5.0",
-		"t": "text.html.myst meta.link.reference.def.myst constant.other.reference.link.myst",
+		"t": "text.html.markdown meta.link.reference.def.markdown constant.other.reference.link.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -661,7 +661,7 @@
 	},
 	{
 		"c": "]",
-		"t": "text.html.myst meta.link.reference.def.myst punctuation.definition.constant.myst",
+		"t": "text.html.markdown meta.link.reference.def.markdown punctuation.definition.constant.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -672,7 +672,7 @@
 	},
 	{
 		"c": ":",
-		"t": "text.html.myst meta.link.reference.def.myst punctuation.separator.key-value.myst",
+		"t": "text.html.markdown meta.link.reference.def.markdown punctuation.separator.key-value.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -683,7 +683,7 @@
 	},
 	{
 		"c": " ",
-		"t": "text.html.myst meta.link.reference.def.myst",
+		"t": "text.html.markdown meta.link.reference.def.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -694,7 +694,7 @@
 	},
 	{
 		"c": "http://localhost/",
-		"t": "text.html.myst meta.link.reference.def.myst markup.underline.link.myst",
+		"t": "text.html.markdown meta.link.reference.def.markdown markup.underline.link.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -705,7 +705,7 @@
 	},
 	{
 		"c": "[",
-		"t": "text.html.myst meta.link.reference.def.myst punctuation.definition.constant.myst",
+		"t": "text.html.markdown meta.link.reference.def.markdown punctuation.definition.constant.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -716,7 +716,7 @@
 	},
 	{
 		"c": "link6",
-		"t": "text.html.myst meta.link.reference.def.myst constant.other.reference.link.myst",
+		"t": "text.html.markdown meta.link.reference.def.markdown constant.other.reference.link.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -727,7 +727,7 @@
 	},
 	{
 		"c": "]",
-		"t": "text.html.myst meta.link.reference.def.myst punctuation.definition.constant.myst",
+		"t": "text.html.markdown meta.link.reference.def.markdown punctuation.definition.constant.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -738,7 +738,7 @@
 	},
 	{
 		"c": ":",
-		"t": "text.html.myst meta.link.reference.def.myst punctuation.separator.key-value.myst",
+		"t": "text.html.markdown meta.link.reference.def.markdown punctuation.separator.key-value.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -749,7 +749,7 @@
 	},
 	{
 		"c": " ",
-		"t": "text.html.myst meta.link.reference.def.myst",
+		"t": "text.html.markdown meta.link.reference.def.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -760,7 +760,7 @@
 	},
 	{
 		"c": "http://localhost/",
-		"t": "text.html.myst meta.link.reference.def.myst markup.underline.link.myst",
+		"t": "text.html.markdown meta.link.reference.def.markdown markup.underline.link.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",

@@ -1,7 +1,7 @@
 [
 	{
 		"c": "[",
-		"t": "text.html.myst meta.paragraph.myst meta.link.reference.myst punctuation.definition.string.begin.myst",
+		"t": "text.html.markdown meta.paragraph.markdown meta.link.reference.markdown punctuation.definition.string.begin.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -12,7 +12,7 @@
 	},
 	{
 		"c": "Promise",
-		"t": "text.html.myst meta.paragraph.myst meta.link.reference.myst string.other.link.title.myst",
+		"t": "text.html.markdown meta.paragraph.markdown meta.link.reference.markdown string.other.link.title.markdown",
 		"r": {
 			"dark_plus": "string: #CE9178",
 			"light_plus": "string: #A31515",
@@ -23,7 +23,7 @@
 	},
 	{
 		"c": "]",
-		"t": "text.html.myst meta.paragraph.myst meta.link.reference.myst punctuation.definition.string.end.myst",
+		"t": "text.html.markdown meta.paragraph.markdown meta.link.reference.markdown punctuation.definition.string.end.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -34,7 +34,7 @@
 	},
 	{
 		"c": " objects have a ",
-		"t": "text.html.myst meta.paragraph.myst",
+		"t": "text.html.markdown meta.paragraph.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -45,7 +45,7 @@
 	},
 	{
 		"c": "[",
-		"t": "text.html.myst meta.paragraph.myst meta.link.reference.myst punctuation.definition.string.begin.myst",
+		"t": "text.html.markdown meta.paragraph.markdown meta.link.reference.markdown punctuation.definition.string.begin.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -56,7 +56,7 @@
 	},
 	{
 		"c": "then",
-		"t": "text.html.myst meta.paragraph.myst meta.link.reference.myst string.other.link.title.myst",
+		"t": "text.html.markdown meta.paragraph.markdown meta.link.reference.markdown string.other.link.title.markdown",
 		"r": {
 			"dark_plus": "string: #CE9178",
 			"light_plus": "string: #A31515",
@@ -67,7 +67,7 @@
 	},
 	{
 		"c": "]",
-		"t": "text.html.myst meta.paragraph.myst meta.link.reference.myst punctuation.definition.string.end.myst",
+		"t": "text.html.markdown meta.paragraph.markdown meta.link.reference.markdown punctuation.definition.string.end.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -78,7 +78,7 @@
 	},
 	{
 		"c": "[",
-		"t": "text.html.myst meta.link.reference.def.myst punctuation.definition.constant.myst",
+		"t": "text.html.markdown meta.link.reference.def.markdown punctuation.definition.constant.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -89,7 +89,7 @@
 	},
 	{
 		"c": "Promise",
-		"t": "text.html.myst meta.link.reference.def.myst constant.other.reference.link.myst",
+		"t": "text.html.markdown meta.link.reference.def.markdown constant.other.reference.link.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -100,7 +100,7 @@
 	},
 	{
 		"c": "]",
-		"t": "text.html.myst meta.link.reference.def.myst punctuation.definition.constant.myst",
+		"t": "text.html.markdown meta.link.reference.def.markdown punctuation.definition.constant.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -111,7 +111,7 @@
 	},
 	{
 		"c": ":",
-		"t": "text.html.myst meta.link.reference.def.myst punctuation.separator.key-value.myst",
+		"t": "text.html.markdown meta.link.reference.def.markdown punctuation.separator.key-value.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -122,7 +122,7 @@
 	},
 	{
 		"c": " ",
-		"t": "text.html.myst meta.link.reference.def.myst",
+		"t": "text.html.markdown meta.link.reference.def.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -133,7 +133,7 @@
 	},
 	{
 		"c": "https://msdn.microsoft.com/library/windows/apps/BR211867",
-		"t": "text.html.myst meta.link.reference.def.myst markup.underline.link.myst",
+		"t": "text.html.markdown meta.link.reference.def.markdown markup.underline.link.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -144,7 +144,7 @@
 	},
 	{
 		"c": "[",
-		"t": "text.html.myst meta.link.reference.def.myst punctuation.definition.constant.myst",
+		"t": "text.html.markdown meta.link.reference.def.markdown punctuation.definition.constant.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -155,7 +155,7 @@
 	},
 	{
 		"c": "then",
-		"t": "text.html.myst meta.link.reference.def.myst constant.other.reference.link.myst",
+		"t": "text.html.markdown meta.link.reference.def.markdown constant.other.reference.link.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -166,7 +166,7 @@
 	},
 	{
 		"c": "]",
-		"t": "text.html.myst meta.link.reference.def.myst punctuation.definition.constant.myst",
+		"t": "text.html.markdown meta.link.reference.def.markdown punctuation.definition.constant.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -177,7 +177,7 @@
 	},
 	{
 		"c": ":",
-		"t": "text.html.myst meta.link.reference.def.myst punctuation.separator.key-value.myst",
+		"t": "text.html.markdown meta.link.reference.def.markdown punctuation.separator.key-value.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -188,7 +188,7 @@
 	},
 	{
 		"c": " ",
-		"t": "text.html.myst meta.link.reference.def.myst",
+		"t": "text.html.markdown meta.link.reference.def.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -199,7 +199,7 @@
 	},
 	{
 		"c": "https://msdn.microsoft.com/library/windows/apps/BR229728",
-		"t": "text.html.myst meta.link.reference.def.myst markup.underline.link.myst",
+		"t": "text.html.markdown meta.link.reference.def.markdown markup.underline.link.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",

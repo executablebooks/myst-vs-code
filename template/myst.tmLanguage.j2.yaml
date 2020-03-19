@@ -1,0 +1,94 @@
+# this is a jinja tamplated YAML file, for building the language extension
+name: MyST Markdown
+scopeName: text.myst.injection
+injectionSelector: L:text.html.markdown
+patterns:
+  - { include: "#line_comment" }
+  - { include: "#block_break" }
+  - { include: "#target_block" }
+  - { include: "#role_span" }
+  - { include: "#directive-admonitions" }
+  - { include: "#directive-code" }
+
+repository:
+  line_comment:
+    match: '(^|\G)[ ]{0,3}\%\s*(.*)'
+    name: comment.line.percentage.myst
+
+  block_break:
+    match: '(?:^|\G)[ ]{0,3}(\+\+\++)\s*(.*)'
+    captures:
+      "1": { name: keyword.other.block_break.myst }
+      "2": { name: meta.raw.block_break.myst } # TODO capture JSON?
+
+  target_block:
+    match: '(?:^|\G)[ ]{0,3}\((.+?)\)(\=)'
+    captures:
+      "1": { name: support.variable.target.myst }
+      "2": { name: punctuation.target.myst }
+
+  role_span:
+    match: '(?<!\\|`)(?:\\\\)*{([\:\-\_0-9a-zA-A]*)}(`+)(?!`)(.+?)(?<!`)\2(?!`)'
+    captures:
+      "1": { name: support.function.role.myst }
+      "3": { name: support.variable.role.myst }
+
+  directive-admonitions:
+    comment: These are directive blocks, whereby the content, should be treated as markdown
+    begin: (^|\G)(\s*)(`{3,}|~{3,})\{({{ admonition_classes|join('|') }})\}\s*(?=([^`~]*)?$)
+    beginCaptures:
+      "3": { name: punctuation.definition.myst }
+      "4": { name: support.class.directive.myst }
+      "5": { name: support.variable.directive.attribute.myst }
+    end: (^|\G)(\2|\s{0,3})(\3)\s*$
+    endCaptures:
+      "3": { name: punctuation.definition.myst }
+    patterns:
+      - begin: (^|\G)(\s*)(.*)
+        while: (^|\G)(?!\s*([\`~]{3,})\s*$)
+        contentName: meta.embedded.block.markdown
+        patterns:
+          - { include: text.html.markdown }
+    name: markup.directive.admonition.myst
+
+  directive-code:
+    comment: These are directive blocks containing code
+    patterns:
+      {%- for language in languages %}
+      - {include: '#directive-code-{{ language.name }}'}
+      {% endfor %}
+
+  {% for language in languages %}
+  directive-code-{{ language.name }}:
+    begin: (^|\G)(\s*)(\`{3,}|~{3,})\s*\{({{ code_classes|join('|') }})\}\s*(?i:({{ language.identifiers|join('|') }})((\s+|:|\{)[^\`~]*)?$)
+    name: markup.code_cell.block.myst
+    end: (^|\G)(\2|\s{0,3})(\3)\s*$
+    beginCaptures:
+      '3': {name: 'punctuation.definition.myst'}
+      '4': {name: 'support.class.directive.myst'}
+      '5': {name: 'support.variable.language.myst'}
+      '6': {name: 'directive.block.language.attributes.myst'}
+    endCaptures:
+      '3': {name: 'punctuation.definition.myst'}
+    patterns:
+      - begin: (^|\G)(\s*)(.*)
+        while: (^|\G)(?!\s*([\`~]{3,})\s*$)
+        contentName: meta.embedded.block.{{ language.language }} {{ language.alias_name }}
+        patterns:
+
+          # an optional initial YAML block
+          # TODO currently this can start anywhere in the directive content
+          - begin: (^|\G)(-{3})\s*$
+            beginCaptures:
+              '1': {name: 'punctuation.options.myst'}
+            end: (^|\G)(-{3})\s*$
+            endCaptures:
+              '2': {name: 'punctuation.options.myst'}
+            contentName: meta.embedded.block.options
+            patterns:
+              - {include: source.yaml}
+
+          {%- for source in language.sources %}
+          - {include: {{ source }}}
+          {% endfor %}
+  {% endfor %}

@@ -1,0 +1,14 @@
+admonition_classes:
+  - attention
+  - caution
+  - danger
+  - error
+  - important
+  - hint
+  - note
+  - tip
+  - warning
+code_classes:
+  - code
+  - code-block
+  - code-cell

@@ -1,7 +1,7 @@
 [
 	{
 		"c": "---",
-		"t": "text.html.myst",
+		"t": "text.html.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -12,7 +12,7 @@
 	},
 	{
 		"c": "title",
-		"t": "text.html.myst meta.embedded.block.frontmatter string.unquoted.plain.out.yaml entity.name.tag.yaml",
+		"t": "text.html.markdown meta.embedded.block.frontmatter string.unquoted.plain.out.yaml entity.name.tag.yaml",
 		"r": {
 			"dark_plus": "entity.name.tag: #569CD6",
 			"light_plus": "entity.name.tag: #800000",
@@ -23,7 +23,7 @@
 	},
 	{
 		"c": ":",
-		"t": "text.html.myst meta.embedded.block.frontmatter punctuation.separator.key-value.mapping.yaml",
+		"t": "text.html.markdown meta.embedded.block.frontmatter punctuation.separator.key-value.mapping.yaml",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -34,7 +34,7 @@
 	},
 	{
 		"c": " ",
-		"t": "text.html.myst meta.embedded.block.frontmatter",
+		"t": "text.html.markdown meta.embedded.block.frontmatter",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -45,7 +45,7 @@
 	},
 	{
 		"c": "Best Article Ever",
-		"t": "text.html.myst meta.embedded.block.frontmatter string.unquoted.plain.out.yaml",
+		"t": "text.html.markdown meta.embedded.block.frontmatter string.unquoted.plain.out.yaml",
 		"r": {
 			"dark_plus": "string: #CE9178",
 			"light_plus": "string.unquoted.plain.out.yaml: #0000FF",
@@ -56,7 +56,7 @@
 	},
 	{
 		"c": "author",
-		"t": "text.html.myst meta.embedded.block.frontmatter string.unquoted.plain.out.yaml entity.name.tag.yaml",
+		"t": "text.html.markdown meta.embedded.block.frontmatter string.unquoted.plain.out.yaml entity.name.tag.yaml",
 		"r": {
 			"dark_plus": "entity.name.tag: #569CD6",
 			"light_plus": "entity.name.tag: #800000",
@@ -67,7 +67,7 @@
 	},
 	{
 		"c": ":",
-		"t": "text.html.myst meta.embedded.block.frontmatter punctuation.separator.key-value.mapping.yaml",
+		"t": "text.html.markdown meta.embedded.block.frontmatter punctuation.separator.key-value.mapping.yaml",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -78,7 +78,7 @@
 	},
 	{
 		"c": " ",
-		"t": "text.html.myst meta.embedded.block.frontmatter",
+		"t": "text.html.markdown meta.embedded.block.frontmatter",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -89,7 +89,7 @@
 	},
 	{
 		"c": "Great Writer",
-		"t": "text.html.myst meta.embedded.block.frontmatter string.unquoted.plain.out.yaml",
+		"t": "text.html.markdown meta.embedded.block.frontmatter string.unquoted.plain.out.yaml",
 		"r": {
 			"dark_plus": "string: #CE9178",
 			"light_plus": "string.unquoted.plain.out.yaml: #0000FF",
@@ -100,7 +100,7 @@
 	},
 	{
 		"c": "---",
-		"t": "text.html.myst",
+		"t": "text.html.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -111,7 +111,7 @@
 	},
 	{
 		"c": "#",
-		"t": "text.html.myst markup.heading.myst heading.1.myst punctuation.definition.heading.myst",
+		"t": "text.html.markdown markup.heading.markdown heading.1.markdown punctuation.definition.heading.markdown",
 		"r": {
 			"dark_plus": "markup.heading: #569CD6",
 			"light_plus": "markup.heading: #800000",
@@ -122,7 +122,7 @@
 	},
 	{
 		"c": " ",
-		"t": "text.html.myst markup.heading.myst heading.1.myst",
+		"t": "text.html.markdown markup.heading.markdown heading.1.markdown",
 		"r": {
 			"dark_plus": "markup.heading: #569CD6",
 			"light_plus": "markup.heading: #800000",
@@ -133,7 +133,7 @@
 	},
 	{
 		"c": "a",
-		"t": "text.html.myst markup.heading.myst heading.1.myst entity.name.section.myst",
+		"t": "text.html.markdown markup.heading.markdown heading.1.markdown entity.name.section.markdown",
 		"r": {
 			"dark_plus": "markup.heading: #569CD6",
 			"light_plus": "markup.heading: #800000",

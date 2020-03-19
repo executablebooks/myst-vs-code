@@ -1,7 +1,7 @@
 [
 	{
 		"c": "++",
-		"t": "text.html.myst meta.paragraph.myst",
+		"t": "text.html.markdown meta.paragraph.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -12,7 +12,7 @@
 	},
 	{
 		"c": "+++",
-		"t": "text.html.myst keyword.other.myst",
+		"t": "text.html.markdown keyword.other.block_break.myst",
 		"r": {
 			"dark_plus": "keyword: #569CD6",
 			"light_plus": "keyword: #0000FF",
@@ -23,7 +23,7 @@
 	},
 	{
 		"c": "+++",
-		"t": "text.html.myst keyword.other.myst",
+		"t": "text.html.markdown keyword.other.block_break.myst",
 		"r": {
 			"dark_plus": "keyword: #569CD6",
 			"light_plus": "keyword: #0000FF",
@@ -34,7 +34,7 @@
 	},
 	{
 		"c": " ",
-		"t": "text.html.myst",
+		"t": "text.html.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -45,7 +45,7 @@
 	},
 	{
 		"c": "abc",
-		"t": "text.html.myst meta.raw.myst",
+		"t": "text.html.markdown meta.raw.block_break.myst",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -56,7 +56,7 @@
 	},
 	{
 		"c": "++++",
-		"t": "text.html.myst keyword.other.myst",
+		"t": "text.html.markdown keyword.other.block_break.myst",
 		"r": {
 			"dark_plus": "keyword: #569CD6",
 			"light_plus": "keyword: #0000FF",
@@ -67,7 +67,7 @@
 	},
 	{
 		"c": " ",
-		"t": "text.html.myst",
+		"t": "text.html.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -78,7 +78,18 @@
 	},
 	{
 		"c": "xyz",
-		"t": "text.html.myst meta.raw.myst",
+		"t": "text.html.markdown meta.raw.block_break.myst",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
+		"c": "this should be normal",
+		"t": "text.html.markdown meta.paragraph.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",

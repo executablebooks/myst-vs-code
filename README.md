@@ -3,20 +3,18 @@
 [![VS Marketplace](https://vsmarketplacebadge.apphb.com/version/ExecutableBookProject.myst-highlight.svg "Current Release")](https://marketplace.visualstudio.com/items?itemName=ExecutableBookProject.myst-highlight)
 [![Build Status](https://travis-ci.org/ExecutableBookProject/myst-highlight-grammar.svg?branch=master)](https://travis-ci.org/ExecutableBookProject/myst-highlight-grammar)
 
-[MyST (Markedly Structured Text)](https://myst-parser.readthedocs.io) markdown's official Textmate grammar, and VS Code extension.
+[MyST (Markedly Structured Text)](https://myst-parser.readthedocs.io) official Textmate grammar, and VS Code extension, for extending the markdown language.
+
+This extension injects additional elements into the base markdown syntax highlighting grammar,
+and will also highlight `.myst`, `.mystnb` and `.mnb` files.
 
 **Important** This extension is still in alpha development, and may change in the future.
-
-This extension will override the syntax highlighting of
-markdown files and will also highlight `.myst`, `.mystnb` and `.mnb` files.
 
 <img width="500" alt="screenshot" src="https://raw.githubusercontent.com/ExecutableBookProject/myst-highlight-grammar/master/images/Screenshot.png">
 
 Embedded code blocks/cells can be utilised in their native language:
 
 <img width="500" alt="screenshot" src="https://raw.githubusercontent.com/ExecutableBookProject/myst-highlight-grammar/master/images/embedded-code.gif">
-
-Originally adapted from [vscode-markdown-tm-grammar](https://github.com/microsoft/vscode-markdown-tm-grammar/tree/59a5962e4775bf96484bba64c5322422b555a40d).
 
 ## Contributing
 
@@ -27,11 +25,21 @@ See [this guide on textmate bundles](https://macromates.com/manual/en/language_g
 
 ### Building
 
-To generate the main grammar:
+The grammar is written as a [jinja template](https://jinja.palletsprojects.com) YAML file,
+with the templates and default variables stored in `template/`
+
+To generate the main grammar with javascript:
 
 ```bash
 $ npm install
 $ npm run build
+```
+
+or with python:
+
+```bash
+$ pip install yaml jinja2
+$ python build.py
 ```
 
 ### Testing
@@ -55,3 +63,7 @@ See: https://code.visualstudio.com/api/working-with-extensions/publishing-extens
 ```console
 $ vsce publish minor
 ```
+
+## Acknowledgements
+
+Testing originally adapted from [vscode-markdown-tm-grammar](https://github.com/microsoft/vscode-markdown-tm-grammar/tree/59a5962e4775bf96484bba64c5322422b555a40d).

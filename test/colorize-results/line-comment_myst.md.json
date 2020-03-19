@@ -1,7 +1,7 @@
 [
 	{
 		"c": "% abc",
-		"t": "text.html.myst comment.line.percentage",
+		"t": "text.html.markdown comment.line.percentage.myst",
 		"r": {
 			"dark_plus": "comment: #6A9955",
 			"light_plus": "comment: #008000",
@@ -12,7 +12,7 @@
 	},
 	{
 		"c": "% cde",
-		"t": "text.html.myst comment.line.percentage",
+		"t": "text.html.markdown comment.line.percentage.myst",
 		"r": {
 			"dark_plus": "comment: #6A9955",
 			"light_plus": "comment: #008000",
@@ -23,7 +23,7 @@
 	},
 	{
 		"c": "% xyz",
-		"t": "text.html.myst comment.line.percentage",
+		"t": "text.html.markdown comment.line.percentage.myst",
 		"r": {
 			"dark_plus": "comment: #6A9955",
 			"light_plus": "comment: #008000",
