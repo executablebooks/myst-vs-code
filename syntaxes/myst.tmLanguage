@@ -20,6 +20,14 @@
 		</dict>
 		<dict>
 			<key>include</key>
+			<string>#target_block</string>
+		</dict>
+		<dict>
+			<key>include</key>
+			<string>#role_span</string>
+		</dict>
+		<dict>
+			<key>include</key>
 			<string>#directive-admonitions</string>
 		</dict>
 		<dict>
@@ -51,6 +59,42 @@
 				<dict>
 					<key>name</key>
 					<string>meta.raw.block_break.myst</string>
+				</dict>
+			</dict>
+		</dict>
+		<key>target_block</key>
+		<dict>
+			<key>match</key>
+			<string>(?:^|\G)[ ]{0,3}\((.+?)\)(\=)</string>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>support.variable.target.myst</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.target.myst</string>
+				</dict>
+			</dict>
+		</dict>
+		<key>role_span</key>
+		<dict>
+			<key>match</key>
+			<string>(?&lt;!\\|`)(?:\\\\)*{([\:\-\_0-9a-zA-A]*)}(`+)(?!`)(.+?)(?&lt;!`)\2(?!`)</string>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>support.function.role.myst</string>
+				</dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
+					<string>support.variable.role.myst</string>
 				</dict>
 			</dict>
 		</dict>

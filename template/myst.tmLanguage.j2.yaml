@@ -5,6 +5,8 @@ injectionSelector: L:text.html.markdown
 patterns:
   - { include: "#line_comment" }
   - { include: "#block_break" }
+  - { include: "#target_block" }
+  - { include: "#role_span" }
   - { include: "#directive-admonitions" }
   - { include: "#directive-code" }
 
@@ -17,7 +19,19 @@ repository:
     match: '(?:^|\G)[ ]{0,3}(\+\+\++)\s*(.*)'
     captures:
       "1": { name: keyword.other.block_break.myst }
-      "2": { name: meta.raw.block_break.myst } # TODO include JSON?
+      "2": { name: meta.raw.block_break.myst } # TODO capture JSON?
+
+  target_block:
+    match: '(?:^|\G)[ ]{0,3}\((.+?)\)(\=)'
+    captures:
+      "1": { name: support.variable.target.myst }
+      "2": { name: punctuation.target.myst }
+
+  role_span:
+    match: '(?<!\\|`)(?:\\\\)*{([\:\-\_0-9a-zA-A]*)}(`+)(?!`)(.+?)(?<!`)\2(?!`)'
+    captures:
+      "1": { name: support.function.role.myst }
+      "3": { name: support.variable.role.myst }
 
   directive-admonitions:
     comment: These are directive blocks, whereby the content, should be treated as markdown
