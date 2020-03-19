@@ -105,7 +105,7 @@
 		<key>role_span</key>
 		<dict>
 			<key>match</key>
-			<string>(?&lt;!\\|`)(?:\\\\)*{([\:\-\_0-9a-zA-A]*)}(`+)(?!`)(.+?)(?&lt;!`)\2(?!`)</string>
+			<string>(?&lt;!\\)(?:\\\\)*{([\:\-\_0-9a-zA-A]*)}(`+)(?!`)(.+?)(?&lt;!`)\2(?!`)</string>
 			<key>captures</key>
 			<dict>
 				<key>1</key>
@@ -116,7 +116,7 @@
 				<key>3</key>
 				<dict>
 					<key>name</key>
-					<string>support.variable.role.myst</string>
+					<string>markup.inline.raw.string.role.myst</string>
 				</dict>
 			</dict>
 		</dict>
