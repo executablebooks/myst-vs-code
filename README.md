@@ -8,6 +8,8 @@
 This extension injects additional elements into the base markdown syntax highlighting grammar,
 and will also highlight `.myst`, `.mystnb` and `.mnb` files.
 
+**Important** This extension is still in alpha development, and may change in the future.
+
 <img width="500" alt="screenshot" src="https://raw.githubusercontent.com/ExecutableBookProject/myst-highlight-grammar/master/images/Screenshot.png">
 
 Embedded code blocks/cells can be utilised in their native language:
