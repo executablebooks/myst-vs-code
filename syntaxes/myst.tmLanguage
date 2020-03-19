@@ -2449,7 +2449,6 @@
 		<dict>
 			<key>begin</key>
 			<string>(^|\G)(\s*)(\`{3,}|~{3,})\s*\{(code|code-block|code-cell)\}\s*(?i:(python|py|py3|rpy|pyw|cpy|SConstruct|Sconstruct|sconstruct|SConscript|gyp|gypi|\{\.python.+?\})((\s+|:|\{)[^\`~]*)?$)</string>
-			<string>(^|\G)(\s*)(\`{3,}|~{3,})\s*\{(code|code-block|code-cell)\}\s*(?i:(python|python2|python3|py|py3|rpy|pyw|cpy|SConstruct|Sconstruct|sconstruct|SConscript|gyp|gypi|\{\.python.+?\})((\s+|:|\{)[^\`~]*)?$)</string>
 			<key>name</key>
 			<string>markup.directive.code.myst</string>
 			<key>end</key>
