@@ -13,11 +13,16 @@ on: [push, pull_request]
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    name: "${{ matrix.code-version }}/${{ matrix.os }})"
+    runs-on: ${{ matrix.os }}
 
     strategy:
       matrix:
+        os: [ubuntu-latest]
         node-version: [10.x]
+        include:
+          - code-version: stable
+          # - code-version: insiders
 
     steps:
     - uses: actions/checkout@v2
