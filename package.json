@@ -1,7 +1,7 @@
 {
     "name": "myst-highlight",
-    "displayName": "myst-highlight",
-    "description": "The official syntax highlighter for the MyST Markdown format",
+    "displayName": "MyST-Highlight",
+    "description": "The official Markdown syntax extension for MyST (Markedly Structured Text)",
     "version": "0.3.0",
     "repository": {
         "type": "git",
