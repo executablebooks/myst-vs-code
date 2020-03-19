@@ -1,7 +1,7 @@
 # this is a jinja tamplated YAML file, for building the language extension
 name: MyST Markdown
 scopeName: text.myst.injection
-injectionSelector: L:text.html.markdown
+injectionSelector: L:(text.html.markdown -markup.fenced_code.block -markup.inserted.math -markup.directive.code -markup.directive.unknown)
 patterns:
   - { include: "#line_comment" }
   - { include: "#block_break" }
@@ -20,7 +20,7 @@ repository:
     match: '(?:^|\G)[ ]{0,3}(\+\+\++)\s*(.*)'
     captures:
       "1": { name: keyword.other.block_break.myst }
-      "2": { name: meta.raw.block_break.myst } # TODO capture JSON?
+      "2": { name: markup.inline.raw.string.block_break.myst } # TODO capture JSON?
 
   target_block:
     match: '(?:^|\G)[ ]{0,3}\((.+?)\)(\=)'
@@ -40,7 +40,7 @@ repository:
     beginCaptures:
       "3": { name: punctuation.definition.myst }
       "4": { name: support.class.directive.myst }
-      "5": { name: support.variable.directive.attribute.myst }
+      "5": { name: markup.inline.raw.string.attribute.myst }
     end: (^|\G)(\2|\s{0,3})(\3)\s*$
     endCaptures:
       "3": { name: punctuation.definition.myst }
@@ -62,13 +62,13 @@ repository:
   {% for language in languages %}
   directive-code-{{ language.name }}:
     begin: (^|\G)(\s*)(\`{3,}|~{3,})\s*\{({{ code_classes|join('|') }})\}\s*(?i:({{ language.identifiers|join('|') }})((\s+|:|\{)[^\`~]*)?$)
-    name: markup.code_cell.block.myst
+    name: markup.directive.code.myst
     end: (^|\G)(\2|\s{0,3})(\3)\s*$
     beginCaptures:
       '3': {name: 'punctuation.definition.myst'}
       '4': {name: 'support.class.directive.myst'}
       '5': {name: 'support.variable.language.myst'}
-      '6': {name: 'directive.block.language.attributes.myst'}
+      # '6': {name: 'markup.inline.raw.string.attributes.myst'}
     endCaptures:
       '3': {name: 'punctuation.definition.myst'}
     patterns:
@@ -101,7 +101,7 @@ repository:
     beginCaptures:
       '3': {name: 'punctuation.definition.myst'}
       '4': {name: 'support.class.directive.myst'}
-      '5': {name: 'meta.raw.attribute.myst'}
-      '6': {name: 'directive.block.language.attributes.myst'}
+      '5': {name: 'markup.inline.raw.string.attribute.myst'}
     endCaptures:
       '3': {name: 'punctuation.definition.myst'}
+    contentName: markup.raw.content.myst
