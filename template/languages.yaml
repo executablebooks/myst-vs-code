@@ -333,6 +333,8 @@
     - source.powershell
 - identifiers:
     - python
+    - python2
+    - python3
     - py
     - py3
     - rpy
