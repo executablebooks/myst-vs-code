@@ -1,0 +1,19 @@
+attention: null
+caution: null
+danger: null
+error: null
+important: null
+hint: null
+note: null
+tip: null
+warning: null
+
+code:
+  arguments: python
+code-block:
+  arguments: python
+code-cell:
+  arguments: ipython
+  options: {"tags": []}
+raw-cell:
+  options: {"raw_mimetype": "text/plain"}

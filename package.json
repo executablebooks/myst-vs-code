@@ -37,6 +37,12 @@
                     "meta.embedded.block.ipython": "source.python"
                 }
             }
+        ],
+        "snippets": [
+            {
+                "language": "markdown",
+                "path": "snippets/directives.json"
+            }
         ]
     },
     "devDependencies": {
