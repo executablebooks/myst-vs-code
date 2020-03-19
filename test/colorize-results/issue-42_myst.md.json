@@ -1,7 +1,7 @@
 [
 	{
 		"c": "```",
-		"t": "text.html.myst markup.fenced_code.block.myst punctuation.definition.myst",
+		"t": "text.html.markdown markup.fenced_code.block.markdown punctuation.definition.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -12,18 +12,18 @@
 	},
 	{
 		"c": "swift",
-		"t": "text.html.myst markup.fenced_code.block.myst support.variable.language.myst",
+		"t": "text.html.markdown markup.fenced_code.block.markdown fenced_code.block.language.markdown",
 		"r": {
-			"dark_plus": "support.variable: #9CDCFE",
-			"light_plus": "support.variable: #001080",
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
 			"dark_vs": "default: #D4D4D4",
 			"light_vs": "default: #000000",
-			"hc_black": "support.variable: #9CDCFE"
+			"hc_black": "default: #FFFFFF"
 		}
 	},
 	{
 		"c": "/**",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.swift comment.block.documentation.swift punctuation.definition.comment.begin.swift",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.swift comment.block.documentation.swift punctuation.definition.comment.begin.swift",
 		"r": {
 			"dark_plus": "comment: #6A9955",
 			"light_plus": "comment: #008000",
@@ -34,7 +34,7 @@
 	},
 	{
 		"c": " Returns a dictionary with the count for each element.",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.swift comment.block.documentation.swift",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.swift comment.block.documentation.swift",
 		"r": {
 			"dark_plus": "comment: #6A9955",
 			"light_plus": "comment: #008000",
@@ -45,7 +45,7 @@
 	},
 	{
 		"c": " - Parameter sequence: The sequence to count",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.swift comment.block.documentation.swift",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.swift comment.block.documentation.swift",
 		"r": {
 			"dark_plus": "comment: #6A9955",
 			"light_plus": "comment: #008000",
@@ -56,7 +56,7 @@
 	},
 	{
 		"c": " - Returns: A dictionary with counts keyed by element",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.swift comment.block.documentation.swift",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.swift comment.block.documentation.swift",
 		"r": {
 			"dark_plus": "comment: #6A9955",
 			"light_plus": "comment: #008000",
@@ -67,7 +67,7 @@
 	},
 	{
 		"c": " ",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.swift comment.block.documentation.swift",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.swift comment.block.documentation.swift",
 		"r": {
 			"dark_plus": "comment: #6A9955",
 			"light_plus": "comment: #008000",
@@ -78,7 +78,7 @@
 	},
 	{
 		"c": "*/",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.swift comment.block.documentation.swift punctuation.definition.comment.end.swift",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.swift comment.block.documentation.swift punctuation.definition.comment.end.swift",
 		"r": {
 			"dark_plus": "comment: #6A9955",
 			"light_plus": "comment: #008000",
@@ -89,7 +89,7 @@
 	},
 	{
 		"c": "@",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.swift meta.attribute.available.swift storage.modifier.attribute.swift punctuation.definition.attribute.swift",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.swift meta.attribute.available.swift storage.modifier.attribute.swift punctuation.definition.attribute.swift",
 		"r": {
 			"dark_plus": "storage.modifier: #569CD6",
 			"light_plus": "storage.modifier: #0000FF",
@@ -100,7 +100,7 @@
 	},
 	{
 		"c": "available",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.swift meta.attribute.available.swift storage.modifier.attribute.swift",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.swift meta.attribute.available.swift storage.modifier.attribute.swift",
 		"r": {
 			"dark_plus": "storage.modifier: #569CD6",
 			"light_plus": "storage.modifier: #0000FF",
@@ -111,7 +111,7 @@
 	},
 	{
 		"c": "(",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.swift meta.attribute.available.swift punctuation.definition.arguments.begin.swift",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.swift meta.attribute.available.swift punctuation.definition.arguments.begin.swift",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -122,7 +122,7 @@
 	},
 	{
 		"c": "swift",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.swift meta.attribute.available.swift keyword.other.platform.os.swift",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.swift meta.attribute.available.swift keyword.other.platform.os.swift",
 		"r": {
 			"dark_plus": "keyword: #569CD6",
 			"light_plus": "keyword: #0000FF",
@@ -133,7 +133,7 @@
 	},
 	{
 		"c": " ",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.swift meta.attribute.available.swift",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.swift meta.attribute.available.swift",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -144,7 +144,7 @@
 	},
 	{
 		"c": "4.0",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.swift meta.attribute.available.swift constant.numeric.swift",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.swift meta.attribute.available.swift constant.numeric.swift",
 		"r": {
 			"dark_plus": "constant.numeric: #B5CEA8",
 			"light_plus": "constant.numeric: #098658",
@@ -155,7 +155,7 @@
 	},
 	{
 		"c": ")",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.swift meta.attribute.available.swift punctuation.definition.arguments.end.swift",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.swift meta.attribute.available.swift punctuation.definition.arguments.end.swift",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -166,7 +166,7 @@
 	},
 	{
 		"c": "func",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.swift meta.definition.function.swift storage.type.function.swift",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.swift meta.definition.function.swift storage.type.function.swift",
 		"r": {
 			"dark_plus": "storage.type: #569CD6",
 			"light_plus": "storage.type: #0000FF",
@@ -177,7 +177,7 @@
 	},
 	{
 		"c": " ",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.swift meta.definition.function.swift",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.swift meta.definition.function.swift",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -188,7 +188,7 @@
 	},
 	{
 		"c": "counts",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.swift meta.definition.function.swift entity.name.function.swift",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.swift meta.definition.function.swift entity.name.function.swift",
 		"r": {
 			"dark_plus": "entity.name.function: #DCDCAA",
 			"light_plus": "entity.name.function: #795E26",
@@ -199,7 +199,7 @@
 	},
 	{
 		"c": "<",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.swift meta.definition.function.swift meta.generic-parameter-clause.swift punctuation.separator.generic-parameter-clause.begin.swift",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.swift meta.definition.function.swift meta.generic-parameter-clause.swift punctuation.separator.generic-parameter-clause.begin.swift",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -210,7 +210,7 @@
 	},
 	{
 		"c": "S",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.swift meta.definition.function.swift meta.generic-parameter-clause.swift variable.language.generic-parameter.swift",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.swift meta.definition.function.swift meta.generic-parameter-clause.swift variable.language.generic-parameter.swift",
 		"r": {
 			"dark_plus": "variable.language: #569CD6",
 			"light_plus": "variable.language: #0000FF",
@@ -221,7 +221,7 @@
 	},
 	{
 		"c": ":",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.swift meta.definition.function.swift meta.generic-parameter-clause.swift meta.generic-parameter-constraint.swift punctuation.separator.generic-parameter-constraint.swift",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.swift meta.definition.function.swift meta.generic-parameter-clause.swift meta.generic-parameter-constraint.swift punctuation.separator.generic-parameter-constraint.swift",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -232,7 +232,7 @@
 	},
 	{
 		"c": " ",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.swift meta.definition.function.swift meta.generic-parameter-clause.swift meta.generic-parameter-constraint.swift",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.swift meta.definition.function.swift meta.generic-parameter-clause.swift meta.generic-parameter-constraint.swift",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -243,7 +243,7 @@
 	},
 	{
 		"c": "Sequence",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.swift meta.definition.function.swift meta.generic-parameter-clause.swift meta.generic-parameter-constraint.swift entity.other.inherited-class.swift meta.type-name.swift support.type.swift",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.swift meta.definition.function.swift meta.generic-parameter-clause.swift meta.generic-parameter-constraint.swift entity.other.inherited-class.swift meta.type-name.swift support.type.swift",
 		"r": {
 			"dark_plus": "support.type: #4EC9B0",
 			"light_plus": "support.type: #267F99",
@@ -254,7 +254,7 @@
 	},
 	{
 		"c": ">",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.swift meta.definition.function.swift meta.generic-parameter-clause.swift punctuation.separator.generic-parameter-clause.end.swift",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.swift meta.definition.function.swift meta.generic-parameter-clause.swift punctuation.separator.generic-parameter-clause.end.swift",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -265,7 +265,7 @@
 	},
 	{
 		"c": "(",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.swift meta.definition.function.swift meta.parameter-clause.swift punctuation.definition.parameters.begin.swift",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.swift meta.definition.function.swift meta.parameter-clause.swift punctuation.definition.parameters.begin.swift",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -276,7 +276,7 @@
 	},
 	{
 		"c": "for",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.swift meta.definition.function.swift meta.parameter-clause.swift entity.name.function.swift",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.swift meta.definition.function.swift meta.parameter-clause.swift entity.name.function.swift",
 		"r": {
 			"dark_plus": "entity.name.function: #DCDCAA",
 			"light_plus": "entity.name.function: #795E26",
@@ -287,7 +287,7 @@
 	},
 	{
 		"c": " ",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.swift meta.definition.function.swift meta.parameter-clause.swift",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.swift meta.definition.function.swift meta.parameter-clause.swift",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -298,7 +298,7 @@
 	},
 	{
 		"c": "sequence",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.swift meta.definition.function.swift meta.parameter-clause.swift variable.parameter.function.swift",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.swift meta.definition.function.swift meta.parameter-clause.swift variable.parameter.function.swift",
 		"r": {
 			"dark_plus": "variable: #9CDCFE",
 			"light_plus": "variable: #001080",
@@ -309,7 +309,7 @@
 	},
 	{
 		"c": ": S",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.swift meta.definition.function.swift meta.parameter-clause.swift",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.swift meta.definition.function.swift meta.parameter-clause.swift",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -320,7 +320,7 @@
 	},
 	{
 		"c": ")",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.swift meta.definition.function.swift meta.parameter-clause.swift punctuation.definition.parameters.end.swift",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.swift meta.definition.function.swift meta.parameter-clause.swift punctuation.definition.parameters.end.swift",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -331,7 +331,7 @@
 	},
 	{
 		"c": " ",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.swift meta.definition.function.swift",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.swift meta.definition.function.swift",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -342,7 +342,7 @@
 	},
 	{
 		"c": "->",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.swift meta.definition.function.swift meta.function-result.swift keyword.operator.function-result.swift",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.swift meta.definition.function.swift meta.function-result.swift keyword.operator.function-result.swift",
 		"r": {
 			"dark_plus": "keyword.operator: #D4D4D4",
 			"light_plus": "keyword.operator: #000000",
@@ -353,7 +353,7 @@
 	},
 	{
 		"c": " ",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.swift meta.definition.function.swift meta.function-result.swift",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.swift meta.definition.function.swift meta.function-result.swift",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -364,7 +364,7 @@
 	},
 	{
 		"c": "[",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.swift meta.definition.function.swift meta.function-result.swift punctuation.section.collection-type.begin.swift",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.swift meta.definition.function.swift meta.function-result.swift punctuation.section.collection-type.begin.swift",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -375,7 +375,7 @@
 	},
 	{
 		"c": "S.",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.swift meta.definition.function.swift meta.function-result.swift",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.swift meta.definition.function.swift meta.function-result.swift",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -386,7 +386,7 @@
 	},
 	{
 		"c": "Element",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.swift meta.definition.function.swift meta.function-result.swift support.type.swift",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.swift meta.definition.function.swift meta.function-result.swift support.type.swift",
 		"r": {
 			"dark_plus": "support.type: #4EC9B0",
 			"light_plus": "support.type: #267F99",
@@ -397,7 +397,7 @@
 	},
 	{
 		"c": ":",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.swift meta.definition.function.swift meta.function-result.swift punctuation.separator.key-value.swift",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.swift meta.definition.function.swift meta.function-result.swift punctuation.separator.key-value.swift",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -408,7 +408,7 @@
 	},
 	{
 		"c": " ",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.swift meta.definition.function.swift meta.function-result.swift",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.swift meta.definition.function.swift meta.function-result.swift",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -419,7 +419,7 @@
 	},
 	{
 		"c": "Int",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.swift meta.definition.function.swift meta.function-result.swift support.type.swift",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.swift meta.definition.function.swift meta.function-result.swift support.type.swift",
 		"r": {
 			"dark_plus": "support.type: #4EC9B0",
 			"light_plus": "support.type: #267F99",
@@ -430,7 +430,7 @@
 	},
 	{
 		"c": "]",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.swift meta.definition.function.swift meta.function-result.swift punctuation.section.collection-type.end.swift",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.swift meta.definition.function.swift meta.function-result.swift punctuation.section.collection-type.end.swift",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -441,7 +441,7 @@
 	},
 	{
 		"c": "    ",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.swift",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.swift",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -452,7 +452,7 @@
 	},
 	{
 		"c": "where",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.swift keyword.control.branch.swift",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.swift keyword.control.branch.swift",
 		"r": {
 			"dark_plus": "keyword.control: #C586C0",
 			"light_plus": "keyword.control: #AF00DB",
@@ -463,7 +463,7 @@
 	},
 	{
 		"c": " S.",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.swift",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.swift",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -474,7 +474,7 @@
 	},
 	{
 		"c": "Element",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.swift support.type.swift",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.swift support.type.swift",
 		"r": {
 			"dark_plus": "support.type: #4EC9B0",
 			"light_plus": "support.type: #267F99",
@@ -485,7 +485,7 @@
 	},
 	{
 		"c": ":",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.swift keyword.operator.ternary.swift",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.swift keyword.operator.ternary.swift",
 		"r": {
 			"dark_plus": "keyword.operator: #D4D4D4",
 			"light_plus": "keyword.operator: #000000",
@@ -496,7 +496,7 @@
 	},
 	{
 		"c": " ",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.swift",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.swift",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -507,7 +507,7 @@
 	},
 	{
 		"c": "Hashable",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.swift support.type.swift",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.swift support.type.swift",
 		"r": {
 			"dark_plus": "support.type: #4EC9B0",
 			"light_plus": "support.type: #267F99",
@@ -518,7 +518,7 @@
 	},
 	{
 		"c": "{",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.swift punctuation.section.scope.begin.swift",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.swift punctuation.section.scope.begin.swift",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -529,7 +529,7 @@
 	},
 	{
 		"c": "    ",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.swift",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.swift",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -540,7 +540,7 @@
 	},
 	{
 		"c": "var",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.swift keyword.other.declaration-specifier.swift",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.swift keyword.other.declaration-specifier.swift",
 		"r": {
 			"dark_plus": "keyword: #569CD6",
 			"light_plus": "keyword: #0000FF",
@@ -551,7 +551,7 @@
 	},
 	{
 		"c": " counts",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.swift",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.swift",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -562,7 +562,7 @@
 	},
 	{
 		"c": ":",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.swift keyword.operator.ternary.swift",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.swift keyword.operator.ternary.swift",
 		"r": {
 			"dark_plus": "keyword.operator: #D4D4D4",
 			"light_plus": "keyword.operator: #000000",
@@ -573,7 +573,7 @@
 	},
 	{
 		"c": " [S.",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.swift",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.swift",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -584,7 +584,7 @@
 	},
 	{
 		"c": "Element",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.swift support.type.swift",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.swift support.type.swift",
 		"r": {
 			"dark_plus": "support.type: #4EC9B0",
 			"light_plus": "support.type: #267F99",
@@ -595,7 +595,7 @@
 	},
 	{
 		"c": ":",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.swift keyword.operator.ternary.swift",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.swift keyword.operator.ternary.swift",
 		"r": {
 			"dark_plus": "keyword.operator: #D4D4D4",
 			"light_plus": "keyword.operator: #000000",
@@ -606,7 +606,7 @@
 	},
 	{
 		"c": " ",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.swift",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.swift",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -617,7 +617,7 @@
 	},
 	{
 		"c": "Int",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.swift support.type.swift",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.swift support.type.swift",
 		"r": {
 			"dark_plus": "support.type: #4EC9B0",
 			"light_plus": "support.type: #267F99",
@@ -628,7 +628,7 @@
 	},
 	{
 		"c": "] ",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.swift",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.swift",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -639,7 +639,7 @@
 	},
 	{
 		"c": "=",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.swift keyword.operator.custom.infix.swift",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.swift keyword.operator.custom.infix.swift",
 		"r": {
 			"dark_plus": "keyword.operator: #D4D4D4",
 			"light_plus": "keyword.operator: #000000",
@@ -650,7 +650,7 @@
 	},
 	{
 		"c": " [",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.swift",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.swift",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -661,7 +661,7 @@
 	},
 	{
 		"c": ":",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.swift keyword.operator.ternary.swift",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.swift keyword.operator.ternary.swift",
 		"r": {
 			"dark_plus": "keyword.operator: #D4D4D4",
 			"light_plus": "keyword.operator: #000000",
@@ -672,7 +672,7 @@
 	},
 	{
 		"c": "]",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.swift",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.swift",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -683,7 +683,7 @@
 	},
 	{
 		"c": "    ",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.swift",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.swift",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -694,7 +694,7 @@
 	},
 	{
 		"c": "for",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.swift keyword.control.loop.swift",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.swift keyword.control.loop.swift",
 		"r": {
 			"dark_plus": "keyword.control: #C586C0",
 			"light_plus": "keyword.control: #AF00DB",
@@ -705,7 +705,7 @@
 	},
 	{
 		"c": " element ",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.swift",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.swift",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -716,7 +716,7 @@
 	},
 	{
 		"c": "in",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.swift keyword.control.loop.swift",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.swift keyword.control.loop.swift",
 		"r": {
 			"dark_plus": "keyword.control: #C586C0",
 			"light_plus": "keyword.control: #AF00DB",
@@ -727,7 +727,7 @@
 	},
 	{
 		"c": " sequence ",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.swift",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.swift",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -738,7 +738,7 @@
 	},
 	{
 		"c": "{",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.swift punctuation.section.scope.begin.swift",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.swift punctuation.section.scope.begin.swift",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -749,7 +749,7 @@
 	},
 	{
 		"c": "        counts",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.swift",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.swift",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -760,7 +760,7 @@
 	},
 	{
 		"c": "[",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.swift meta.subscript-expression.swift punctuation.definition.arguments.begin.swift",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.swift meta.subscript-expression.swift punctuation.definition.arguments.begin.swift",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -771,7 +771,7 @@
 	},
 	{
 		"c": "element, ",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.swift meta.subscript-expression.swift",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.swift meta.subscript-expression.swift",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -782,7 +782,7 @@
 	},
 	{
 		"c": "default",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.swift meta.subscript-expression.swift support.function.any-method.swift",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.swift meta.subscript-expression.swift support.function.any-method.swift",
 		"r": {
 			"dark_plus": "support.function: #DCDCAA",
 			"light_plus": "support.function: #795E26",
@@ -793,7 +793,7 @@
 	},
 	{
 		"c": ":",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.swift meta.subscript-expression.swift punctuation.separator.argument-label.swift",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.swift meta.subscript-expression.swift punctuation.separator.argument-label.swift",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -804,7 +804,7 @@
 	},
 	{
 		"c": " ",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.swift meta.subscript-expression.swift",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.swift meta.subscript-expression.swift",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -815,7 +815,7 @@
 	},
 	{
 		"c": "0",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.swift meta.subscript-expression.swift constant.numeric.integer.decimal.swift",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.swift meta.subscript-expression.swift constant.numeric.integer.decimal.swift",
 		"r": {
 			"dark_plus": "constant.numeric: #B5CEA8",
 			"light_plus": "constant.numeric: #098658",
@@ -826,7 +826,7 @@
 	},
 	{
 		"c": "]",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.swift meta.subscript-expression.swift punctuation.definition.arguments.end.swift",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.swift meta.subscript-expression.swift punctuation.definition.arguments.end.swift",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -837,7 +837,7 @@
 	},
 	{
 		"c": " ",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.swift",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.swift",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -848,7 +848,7 @@
 	},
 	{
 		"c": "+=",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.swift keyword.operator.custom.infix.swift",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.swift keyword.operator.custom.infix.swift",
 		"r": {
 			"dark_plus": "keyword.operator: #D4D4D4",
 			"light_plus": "keyword.operator: #000000",
@@ -859,7 +859,7 @@
 	},
 	{
 		"c": " ",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.swift",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.swift",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -870,7 +870,7 @@
 	},
 	{
 		"c": "1",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.swift constant.numeric.integer.decimal.swift",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.swift constant.numeric.integer.decimal.swift",
 		"r": {
 			"dark_plus": "constant.numeric: #B5CEA8",
 			"light_plus": "constant.numeric: #098658",
@@ -881,7 +881,7 @@
 	},
 	{
 		"c": "    ",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.swift",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.swift",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -892,7 +892,7 @@
 	},
 	{
 		"c": "}",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.swift punctuation.section.scope.end.swift",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.swift punctuation.section.scope.end.swift",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -903,7 +903,7 @@
 	},
 	{
 		"c": "    ",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.swift",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.swift",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -914,7 +914,7 @@
 	},
 	{
 		"c": "return",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.swift keyword.control.transfer.swift",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.swift keyword.control.transfer.swift",
 		"r": {
 			"dark_plus": "keyword.control: #C586C0",
 			"light_plus": "keyword.control: #AF00DB",
@@ -925,7 +925,7 @@
 	},
 	{
 		"c": " counts",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.swift",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.swift",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -936,7 +936,7 @@
 	},
 	{
 		"c": "}",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.swift punctuation.section.scope.end.swift",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.swift punctuation.section.scope.end.swift",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -947,7 +947,7 @@
 	},
 	{
 		"c": "counts",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.swift meta.function-call.swift support.function.any-method.swift",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.swift meta.function-call.swift support.function.any-method.swift",
 		"r": {
 			"dark_plus": "support.function: #DCDCAA",
 			"light_plus": "support.function: #795E26",
@@ -958,7 +958,7 @@
 	},
 	{
 		"c": "(",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.swift meta.function-call.swift punctuation.definition.arguments.begin.swift",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.swift meta.function-call.swift punctuation.definition.arguments.begin.swift",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -969,7 +969,7 @@
 	},
 	{
 		"c": "for",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.swift meta.function-call.swift support.function.any-method.swift",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.swift meta.function-call.swift support.function.any-method.swift",
 		"r": {
 			"dark_plus": "support.function: #DCDCAA",
 			"light_plus": "support.function: #795E26",
@@ -980,7 +980,7 @@
 	},
 	{
 		"c": ":",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.swift meta.function-call.swift punctuation.separator.argument-label.swift",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.swift meta.function-call.swift punctuation.separator.argument-label.swift",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -991,7 +991,7 @@
 	},
 	{
 		"c": " ",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.swift meta.function-call.swift",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.swift meta.function-call.swift",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -1002,7 +1002,7 @@
 	},
 	{
 		"c": "\"",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.swift meta.function-call.swift string.quoted.double.single-line.swift punctuation.definition.string.begin.swift",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.swift meta.function-call.swift string.quoted.double.single-line.swift punctuation.definition.string.begin.swift",
 		"r": {
 			"dark_plus": "string: #CE9178",
 			"light_plus": "string: #A31515",
@@ -1013,7 +1013,7 @@
 	},
 	{
 		"c": "Hello",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.swift meta.function-call.swift string.quoted.double.single-line.swift",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.swift meta.function-call.swift string.quoted.double.single-line.swift",
 		"r": {
 			"dark_plus": "string: #CE9178",
 			"light_plus": "string: #A31515",
@@ -1024,7 +1024,7 @@
 	},
 	{
 		"c": "\"",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.swift meta.function-call.swift string.quoted.double.single-line.swift punctuation.definition.string.end.swift",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.swift meta.function-call.swift string.quoted.double.single-line.swift punctuation.definition.string.end.swift",
 		"r": {
 			"dark_plus": "string: #CE9178",
 			"light_plus": "string: #A31515",
@@ -1035,7 +1035,7 @@
 	},
 	{
 		"c": ")",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.swift meta.function-call.swift punctuation.definition.arguments.end.swift",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.swift meta.function-call.swift punctuation.definition.arguments.end.swift",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -1046,7 +1046,7 @@
 	},
 	{
 		"c": "//",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.swift comment.line.double-slash.swift punctuation.definition.comment.swift",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.swift comment.line.double-slash.swift punctuation.definition.comment.swift",
 		"r": {
 			"dark_plus": "comment: #6A9955",
 			"light_plus": "comment: #008000",
@@ -1057,7 +1057,7 @@
 	},
 	{
 		"c": " [“H”: 1, “e”: 1, “l”: 2, “o”: 1]",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.swift comment.line.double-slash.swift",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.swift comment.line.double-slash.swift",
 		"r": {
 			"dark_plus": "comment: #6A9955",
 			"light_plus": "comment: #008000",
@@ -1068,7 +1068,7 @@
 	},
 	{
 		"c": "```",
-		"t": "text.html.myst markup.fenced_code.block.myst punctuation.definition.myst",
+		"t": "text.html.markdown markup.fenced_code.block.markdown punctuation.definition.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",

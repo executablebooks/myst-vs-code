@@ -1,7 +1,7 @@
 [
 	{
 		"c": "a ",
-		"t": "text.html.myst meta.paragraph.myst",
+		"t": "text.html.markdown meta.paragraph.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -12,7 +12,7 @@
 	},
 	{
 		"c": "*",
-		"t": "text.html.myst meta.paragraph.myst markup.italic.myst punctuation.definition.italic.myst",
+		"t": "text.html.markdown meta.paragraph.markdown markup.italic.markdown punctuation.definition.italic.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -23,7 +23,7 @@
 	},
 	{
 		"c": "b",
-		"t": "text.html.myst meta.paragraph.myst markup.italic.myst",
+		"t": "text.html.markdown meta.paragraph.markdown markup.italic.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -34,7 +34,7 @@
 	},
 	{
 		"c": "*",
-		"t": "text.html.myst meta.paragraph.myst markup.italic.myst punctuation.definition.italic.myst",
+		"t": "text.html.markdown meta.paragraph.markdown markup.italic.markdown punctuation.definition.italic.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -45,7 +45,7 @@
 	},
 	{
 		"c": " c",
-		"t": "text.html.myst meta.paragraph.myst",
+		"t": "text.html.markdown meta.paragraph.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -56,7 +56,7 @@
 	},
 	{
 		"c": "*",
-		"t": "text.html.myst meta.paragraph.myst markup.italic.myst punctuation.definition.italic.myst",
+		"t": "text.html.markdown meta.paragraph.markdown markup.italic.markdown punctuation.definition.italic.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -67,7 +67,7 @@
 	},
 	{
 		"c": "d",
-		"t": "text.html.myst meta.paragraph.myst markup.italic.myst",
+		"t": "text.html.markdown meta.paragraph.markdown markup.italic.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -78,7 +78,7 @@
 	},
 	{
 		"c": "*",
-		"t": "text.html.myst meta.paragraph.myst markup.italic.myst punctuation.definition.italic.myst",
+		"t": "text.html.markdown meta.paragraph.markdown markup.italic.markdown punctuation.definition.italic.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",

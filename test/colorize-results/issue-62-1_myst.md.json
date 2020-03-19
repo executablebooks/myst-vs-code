@@ -1,7 +1,7 @@
 [
 	{
 		"c": "```",
-		"t": "text.html.myst markup.fenced_code.block.myst punctuation.definition.myst",
+		"t": "text.html.markdown markup.fenced_code.block.markdown punctuation.definition.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -12,18 +12,18 @@
 	},
 	{
 		"c": "py",
-		"t": "text.html.myst markup.fenced_code.block.myst support.class.language.myst",
+		"t": "text.html.markdown markup.fenced_code.block.markdown fenced_code.block.language.markdown",
 		"r": {
-			"dark_plus": "support.class: #4EC9B0",
-			"light_plus": "support.class: #267F99",
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
 			"dark_vs": "default: #D4D4D4",
 			"light_vs": "default: #000000",
-			"hc_black": "support.class: #4EC9B0"
+			"hc_black": "default: #FFFFFF"
 		}
 	},
 	{
 		"c": "{1}:title=greet.py",
-		"t": "text.html.myst markup.fenced_code.block.myst fenced_code.block.language.attributes.myst",
+		"t": "text.html.markdown markup.fenced_code.block.markdown fenced_code.block.language.attributes.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -34,7 +34,7 @@
 	},
 	{
 		"c": "#",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.python comment.line.number-sign.python punctuation.definition.comment.python",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.python comment.line.number-sign.python punctuation.definition.comment.python",
 		"r": {
 			"dark_plus": "comment: #6A9955",
 			"light_plus": "comment: #008000",
@@ -45,7 +45,7 @@
 	},
 	{
 		"c": " Testing code fence with line highlighting attributes.",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.python comment.line.number-sign.python",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.python comment.line.number-sign.python",
 		"r": {
 			"dark_plus": "comment: #6A9955",
 			"light_plus": "comment: #008000",
@@ -56,7 +56,7 @@
 	},
 	{
 		"c": "def",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.python meta.function.python storage.type.function.python",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.python meta.function.python storage.type.function.python",
 		"r": {
 			"dark_plus": "storage.type: #569CD6",
 			"light_plus": "storage.type: #0000FF",
@@ -67,7 +67,7 @@
 	},
 	{
 		"c": " ",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.python meta.function.python",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.python meta.function.python",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -78,7 +78,7 @@
 	},
 	{
 		"c": "greetings",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.python meta.function.python entity.name.function.python",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.python meta.function.python entity.name.function.python",
 		"r": {
 			"dark_plus": "entity.name.function: #DCDCAA",
 			"light_plus": "entity.name.function: #795E26",
@@ -89,7 +89,7 @@
 	},
 	{
 		"c": "(",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.python meta.function.python punctuation.definition.parameters.begin.python",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.python meta.function.python punctuation.definition.parameters.begin.python",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -100,7 +100,7 @@
 	},
 	{
 		"c": ")",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.python meta.function.python punctuation.definition.parameters.end.python",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.python meta.function.python punctuation.definition.parameters.end.python",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -111,7 +111,7 @@
 	},
 	{
 		"c": ":",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.python meta.function.python punctuation.section.function.begin.python",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.python meta.function.python punctuation.section.function.begin.python",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -122,7 +122,7 @@
 	},
 	{
 		"c": "    ",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.python",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.python",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -133,7 +133,7 @@
 	},
 	{
 		"c": "print",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.python keyword.other.python",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.python keyword.other.python",
 		"r": {
 			"dark_plus": "keyword: #569CD6",
 			"light_plus": "keyword: #0000FF",
@@ -144,7 +144,7 @@
 	},
 	{
 		"c": "(",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.python",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.python",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -155,7 +155,7 @@
 	},
 	{
 		"c": "\"",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.python string.quoted.double.single-line.python punctuation.definition.string.begin.python",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.python string.quoted.double.single-line.python punctuation.definition.string.begin.python",
 		"r": {
 			"dark_plus": "string: #CE9178",
 			"light_plus": "string: #A31515",
@@ -166,7 +166,7 @@
 	},
 	{
 		"c": "Hello world!",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.python string.quoted.double.single-line.python",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.python string.quoted.double.single-line.python",
 		"r": {
 			"dark_plus": "string: #CE9178",
 			"light_plus": "string: #A31515",
@@ -177,7 +177,7 @@
 	},
 	{
 		"c": "\"",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.python string.quoted.double.single-line.python punctuation.definition.string.end.python",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.python string.quoted.double.single-line.python punctuation.definition.string.end.python",
 		"r": {
 			"dark_plus": "string: #CE9178",
 			"light_plus": "string: #A31515",
@@ -188,7 +188,7 @@
 	},
 	{
 		"c": ")",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.python",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.python",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -199,7 +199,7 @@
 	},
 	{
 		"c": "```",
-		"t": "text.html.myst markup.fenced_code.block.myst punctuation.definition.myst",
+		"t": "text.html.markdown markup.fenced_code.block.markdown punctuation.definition.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",

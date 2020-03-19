@@ -1,7 +1,7 @@
 [
 	{
 		"c": "```",
-		"t": "text.html.myst markup.fenced_code.block.myst punctuation.definition.myst",
+		"t": "text.html.markdown markup.fenced_code.block.markdown punctuation.definition.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -12,18 +12,18 @@
 	},
 	{
 		"c": "log",
-		"t": "text.html.myst markup.fenced_code.block.myst support.variable.language.myst",
+		"t": "text.html.markdown markup.fenced_code.block.markdown fenced_code.block.language.markdown",
 		"r": {
-			"dark_plus": "support.variable: #9CDCFE",
-			"light_plus": "support.variable: #001080",
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
 			"dark_vs": "default: #D4D4D4",
 			"light_vs": "default: #000000",
-			"hc_black": "support.variable: #9CDCFE"
+			"hc_black": "default: #FFFFFF"
 		}
 	},
 	{
 		"c": "2015-12-09",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log comment log.date",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log comment log.date",
 		"r": {
 			"dark_plus": "comment: #6A9955",
 			"light_plus": "comment: #008000",
@@ -34,7 +34,7 @@
 	},
 	{
 		"c": " [",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -45,7 +45,7 @@
 	},
 	{
 		"c": "2600",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log constant.language log.constant",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log constant.language log.constant",
 		"r": {
 			"dark_plus": "constant.language: #569CD6",
 			"light_plus": "constant.language: #0000FF",
@@ -56,7 +56,7 @@
 	},
 	{
 		"c": "] ",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -67,7 +67,7 @@
 	},
 	{
 		"c": "INFO",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log markup.inserted log.info",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log markup.inserted log.info",
 		"r": {
 			"dark_plus": "markup.inserted: #B5CEA8",
 			"light_plus": "markup.inserted: #098658",
@@ -78,7 +78,7 @@
 	},
 	{
 		"c": "  [main]: Hello world, testing log line stacktrace highlighting",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -89,7 +89,7 @@
 	},
 	{
 		"c": "System.NullReferenceException",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log string.regexp, emphasis log.exceptiontype",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log string.regexp, emphasis log.exceptiontype",
 		"r": {
 			"dark_plus": "string: #CE9178",
 			"light_plus": "string: #A31515",
@@ -100,7 +100,7 @@
 	},
 	{
 		"c": ": Object reference not set to an instance of an object.",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -111,7 +111,7 @@
 	},
 	{
 		"c": "    at MyClass.DoSomethingElse(string foo)",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log string.key, emphasis log.exception",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log string.key, emphasis log.exception",
 		"r": {
 			"dark_plus": "string: #CE9178",
 			"light_plus": "string: #A31515",
@@ -122,7 +122,7 @@
 	},
 	{
 		"c": "    at MyClass.DoSomething()",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log string.key, emphasis log.exception",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log string.key, emphasis log.exception",
 		"r": {
 			"dark_plus": "string: #CE9178",
 			"light_plus": "string: #A31515",
@@ -133,7 +133,7 @@
 	},
 	{
 		"c": "2015-12-09",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log comment log.date",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log comment log.date",
 		"r": {
 			"dark_plus": "comment: #6A9955",
 			"light_plus": "comment: #008000",
@@ -144,7 +144,7 @@
 	},
 	{
 		"c": " [",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -155,7 +155,7 @@
 	},
 	{
 		"c": "2600",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log constant.language log.constant",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log constant.language log.constant",
 		"r": {
 			"dark_plus": "constant.language: #569CD6",
 			"light_plus": "constant.language: #0000FF",
@@ -166,7 +166,7 @@
 	},
 	{
 		"c": "] ",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -177,7 +177,7 @@
 	},
 	{
 		"c": "INFO",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log markup.inserted log.info",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log markup.inserted log.info",
 		"r": {
 			"dark_plus": "markup.inserted: #B5CEA8",
 			"light_plus": "markup.inserted: #098658",
@@ -188,7 +188,7 @@
 	},
 	{
 		"c": "  [main]: Hello world, testing log line URL highlighting, ",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -199,7 +199,7 @@
 	},
 	{
 		"c": "https://code.visualstudio.com/",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log constant.language log.constant",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log constant.language log.constant",
 		"r": {
 			"dark_plus": "constant.language: #569CD6",
 			"light_plus": "constant.language: #0000FF",
@@ -210,7 +210,7 @@
 	},
 	{
 		"c": "2015-12-09",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log comment log.date",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log comment log.date",
 		"r": {
 			"dark_plus": "comment: #6A9955",
 			"light_plus": "comment: #008000",
@@ -221,7 +221,7 @@
 	},
 	{
 		"c": " [",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -232,7 +232,7 @@
 	},
 	{
 		"c": "2600",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log constant.language log.constant",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log constant.language log.constant",
 		"r": {
 			"dark_plus": "constant.language: #569CD6",
 			"light_plus": "constant.language: #0000FF",
@@ -243,7 +243,7 @@
 	},
 	{
 		"c": "] ",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -254,7 +254,7 @@
 	},
 	{
 		"c": "INFO",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log markup.inserted log.info",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log markup.inserted log.info",
 		"r": {
 			"dark_plus": "markup.inserted: #B5CEA8",
 			"light_plus": "markup.inserted: #098658",
@@ -265,7 +265,7 @@
 	},
 	{
 		"c": "  [main]: Hello world, testing log line namespace highlighting, ",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -276,7 +276,7 @@
 	},
 	{
 		"c": "MyApp.MyNameSpace.MyClass",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log constant.language log.constant",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log constant.language log.constant",
 		"r": {
 			"dark_plus": "constant.language: #569CD6",
 			"light_plus": "constant.language: #0000FF",
@@ -287,7 +287,7 @@
 	},
 	{
 		"c": "2015-12-09",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log comment log.date",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log comment log.date",
 		"r": {
 			"dark_plus": "comment: #6A9955",
 			"light_plus": "comment: #008000",
@@ -298,7 +298,7 @@
 	},
 	{
 		"c": " [",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -309,7 +309,7 @@
 	},
 	{
 		"c": "2600",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log constant.language log.constant",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log constant.language log.constant",
 		"r": {
 			"dark_plus": "constant.language: #569CD6",
 			"light_plus": "constant.language: #0000FF",
@@ -320,7 +320,7 @@
 	},
 	{
 		"c": "] ",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -331,7 +331,7 @@
 	},
 	{
 		"c": "INFO",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log markup.inserted log.info",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log markup.inserted log.info",
 		"r": {
 			"dark_plus": "markup.inserted: #B5CEA8",
 			"light_plus": "markup.inserted: #098658",
@@ -342,7 +342,7 @@
 	},
 	{
 		"c": "  [main]: Hello world, testing log line GUID highlighting, ",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -353,7 +353,7 @@
 	},
 	{
 		"c": "FEDCBA09-1234-ABCD-0987-1234567890AB",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log constant.language log.constant",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log constant.language log.constant",
 		"r": {
 			"dark_plus": "constant.language: #569CD6",
 			"light_plus": "constant.language: #0000FF",
@@ -364,7 +364,7 @@
 	},
 	{
 		"c": "2015-12-09",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log comment log.date",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log comment log.date",
 		"r": {
 			"dark_plus": "comment: #6A9955",
 			"light_plus": "comment: #008000",
@@ -375,7 +375,7 @@
 	},
 	{
 		"c": " [",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -386,7 +386,7 @@
 	},
 	{
 		"c": "2600",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log constant.language log.constant",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log constant.language log.constant",
 		"r": {
 			"dark_plus": "constant.language: #569CD6",
 			"light_plus": "constant.language: #0000FF",
@@ -397,7 +397,7 @@
 	},
 	{
 		"c": "] ",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -408,7 +408,7 @@
 	},
 	{
 		"c": "INFO",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log markup.inserted log.info",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log markup.inserted log.info",
 		"r": {
 			"dark_plus": "markup.inserted: #B5CEA8",
 			"light_plus": "markup.inserted: #098658",
@@ -419,7 +419,7 @@
 	},
 	{
 		"c": "  [main]: Hello world, testing log line bracketed GUID highlighting, {",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -430,7 +430,7 @@
 	},
 	{
 		"c": "FEDCBA09-1234-ABCD-0987-1234567890AB",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log constant.language log.constant",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log constant.language log.constant",
 		"r": {
 			"dark_plus": "constant.language: #569CD6",
 			"light_plus": "constant.language: #0000FF",
@@ -441,7 +441,7 @@
 	},
 	{
 		"c": "}",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -452,7 +452,7 @@
 	},
 	{
 		"c": "2015-12-09",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log comment log.date",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log comment log.date",
 		"r": {
 			"dark_plus": "comment: #6A9955",
 			"light_plus": "comment: #008000",
@@ -463,7 +463,7 @@
 	},
 	{
 		"c": " [",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -474,7 +474,7 @@
 	},
 	{
 		"c": "2600",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log constant.language log.constant",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log constant.language log.constant",
 		"r": {
 			"dark_plus": "constant.language: #569CD6",
 			"light_plus": "constant.language: #0000FF",
@@ -485,7 +485,7 @@
 	},
 	{
 		"c": "] ",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -496,7 +496,7 @@
 	},
 	{
 		"c": "INFO",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log markup.inserted log.info",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log markup.inserted log.info",
 		"r": {
 			"dark_plus": "markup.inserted: #B5CEA8",
 			"light_plus": "markup.inserted: #098658",
@@ -507,7 +507,7 @@
 	},
 	{
 		"c": "  [main]: Hello world, testing log line ",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -518,7 +518,7 @@
 	},
 	{
 		"c": "\"quoted text\"",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log string log.string",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log string log.string",
 		"r": {
 			"dark_plus": "string: #CE9178",
 			"light_plus": "string: #A31515",
@@ -529,7 +529,7 @@
 	},
 	{
 		"c": " highlighting",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -540,7 +540,7 @@
 	},
 	{
 		"c": "2015-12-09",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log comment log.date",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log comment log.date",
 		"r": {
 			"dark_plus": "comment: #6A9955",
 			"light_plus": "comment: #008000",
@@ -551,7 +551,7 @@
 	},
 	{
 		"c": " [",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -562,7 +562,7 @@
 	},
 	{
 		"c": "2600",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log constant.language log.constant",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log constant.language log.constant",
 		"r": {
 			"dark_plus": "constant.language: #569CD6",
 			"light_plus": "constant.language: #0000FF",
@@ -573,7 +573,7 @@
 	},
 	{
 		"c": "] ",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -584,7 +584,7 @@
 	},
 	{
 		"c": "INFO",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log markup.inserted log.info",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log markup.inserted log.info",
 		"r": {
 			"dark_plus": "markup.inserted: #B5CEA8",
 			"light_plus": "markup.inserted: #098658",
@@ -595,7 +595,7 @@
 	},
 	{
 		"c": "  [main]: Hello world, testing log line numeric constant highlighting, ",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -606,7 +606,7 @@
 	},
 	{
 		"c": "1234",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log constant.language log.constant",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log constant.language log.constant",
 		"r": {
 			"dark_plus": "constant.language: #569CD6",
 			"light_plus": "constant.language: #0000FF",
@@ -617,7 +617,7 @@
 	},
 	{
 		"c": "2015-12-09",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log comment log.date",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log comment log.date",
 		"r": {
 			"dark_plus": "comment: #6A9955",
 			"light_plus": "comment: #008000",
@@ -628,7 +628,7 @@
 	},
 	{
 		"c": " [",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -639,7 +639,7 @@
 	},
 	{
 		"c": "2600",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log constant.language log.constant",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log constant.language log.constant",
 		"r": {
 			"dark_plus": "constant.language: #569CD6",
 			"light_plus": "constant.language: #0000FF",
@@ -650,7 +650,7 @@
 	},
 	{
 		"c": "] ",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -661,7 +661,7 @@
 	},
 	{
 		"c": "INFO",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log markup.inserted log.info",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log markup.inserted log.info",
 		"r": {
 			"dark_plus": "markup.inserted: #B5CEA8",
 			"light_plus": "markup.inserted: #098658",
@@ -672,7 +672,7 @@
 	},
 	{
 		"c": "  [main]: Hello world, testing log line basic constant highlighting, ",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -683,7 +683,7 @@
 	},
 	{
 		"c": "true",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log constant.language log.constant",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log constant.language log.constant",
 		"r": {
 			"dark_plus": "constant.language: #569CD6",
 			"light_plus": "constant.language: #0000FF",
@@ -694,7 +694,7 @@
 	},
 	{
 		"c": ", ",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -705,7 +705,7 @@
 	},
 	{
 		"c": "false",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log constant.language log.constant",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log constant.language log.constant",
 		"r": {
 			"dark_plus": "constant.language: #569CD6",
 			"light_plus": "constant.language: #0000FF",
@@ -716,7 +716,7 @@
 	},
 	{
 		"c": ", ",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -727,7 +727,7 @@
 	},
 	{
 		"c": "null",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log constant.language log.constant",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log constant.language log.constant",
 		"r": {
 			"dark_plus": "constant.language: #569CD6",
 			"light_plus": "constant.language: #0000FF",
@@ -738,7 +738,7 @@
 	},
 	{
 		"c": "2015-12-09",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log comment log.date",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log comment log.date",
 		"r": {
 			"dark_plus": "comment: #6A9955",
 			"light_plus": "comment: #008000",
@@ -749,7 +749,7 @@
 	},
 	{
 		"c": " [",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -760,7 +760,7 @@
 	},
 	{
 		"c": "2600",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log constant.language log.constant",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log constant.language log.constant",
 		"r": {
 			"dark_plus": "constant.language: #569CD6",
 			"light_plus": "constant.language: #0000FF",
@@ -771,7 +771,7 @@
 	},
 	{
 		"c": "] ",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -782,7 +782,7 @@
 	},
 	{
 		"c": "INFO",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log markup.inserted log.info",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log markup.inserted log.info",
 		"r": {
 			"dark_plus": "markup.inserted: #B5CEA8",
 			"light_plus": "markup.inserted: #098658",
@@ -793,7 +793,7 @@
 	},
 	{
 		"c": "  [main]: Hello world, testing log line level highlighting",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -804,7 +804,7 @@
 	},
 	{
 		"c": "2015-12-09",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log comment log.date",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log comment log.date",
 		"r": {
 			"dark_plus": "comment: #6A9955",
 			"light_plus": "comment: #008000",
@@ -815,7 +815,7 @@
 	},
 	{
 		"c": " [",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -826,7 +826,7 @@
 	},
 	{
 		"c": "2600",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log constant.language log.constant",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log constant.language log.constant",
 		"r": {
 			"dark_plus": "constant.language: #569CD6",
 			"light_plus": "constant.language: #0000FF",
@@ -837,7 +837,7 @@
 	},
 	{
 		"c": "] ",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -848,7 +848,7 @@
 	},
 	{
 		"c": "INFORMATION",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log markup.inserted log.info",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log markup.inserted log.info",
 		"r": {
 			"dark_plus": "markup.inserted: #B5CEA8",
 			"light_plus": "markup.inserted: #098658",
@@ -859,7 +859,7 @@
 	},
 	{
 		"c": " [main]: Hello world, testing log line level highlighting",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -870,7 +870,7 @@
 	},
 	{
 		"c": "2015-12-09",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log comment log.date",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log comment log.date",
 		"r": {
 			"dark_plus": "comment: #6A9955",
 			"light_plus": "comment: #008000",
@@ -881,7 +881,7 @@
 	},
 	{
 		"c": " [",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -892,7 +892,7 @@
 	},
 	{
 		"c": "2600",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log constant.language log.constant",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log constant.language log.constant",
 		"r": {
 			"dark_plus": "constant.language: #569CD6",
 			"light_plus": "constant.language: #0000FF",
@@ -903,7 +903,7 @@
 	},
 	{
 		"c": "] ",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -914,7 +914,7 @@
 	},
 	{
 		"c": "WARN",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log markup.deleted log.warning",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log markup.deleted log.warning",
 		"r": {
 			"dark_plus": "markup.deleted: #CE9178",
 			"light_plus": "markup.deleted: #A31515",
@@ -925,7 +925,7 @@
 	},
 	{
 		"c": "  [main]: Hello world, testing log line level highlighting",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -936,7 +936,7 @@
 	},
 	{
 		"c": "2015-12-09",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log comment log.date",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log comment log.date",
 		"r": {
 			"dark_plus": "comment: #6A9955",
 			"light_plus": "comment: #008000",
@@ -947,7 +947,7 @@
 	},
 	{
 		"c": " [",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -958,7 +958,7 @@
 	},
 	{
 		"c": "2600",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log constant.language log.constant",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log constant.language log.constant",
 		"r": {
 			"dark_plus": "constant.language: #569CD6",
 			"light_plus": "constant.language: #0000FF",
@@ -969,7 +969,7 @@
 	},
 	{
 		"c": "] ",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -980,7 +980,7 @@
 	},
 	{
 		"c": "WARNING",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log markup.deleted log.warning",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log markup.deleted log.warning",
 		"r": {
 			"dark_plus": "markup.deleted: #CE9178",
 			"light_plus": "markup.deleted: #A31515",
@@ -991,7 +991,7 @@
 	},
 	{
 		"c": " [main]: Hello world, testing log line level highlighting",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -1002,7 +1002,7 @@
 	},
 	{
 		"c": "2015-12-09",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log comment log.date",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log comment log.date",
 		"r": {
 			"dark_plus": "comment: #6A9955",
 			"light_plus": "comment: #008000",
@@ -1013,7 +1013,7 @@
 	},
 	{
 		"c": " [",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -1024,7 +1024,7 @@
 	},
 	{
 		"c": "2600",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log constant.language log.constant",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log constant.language log.constant",
 		"r": {
 			"dark_plus": "constant.language: #569CD6",
 			"light_plus": "constant.language: #0000FF",
@@ -1035,7 +1035,7 @@
 	},
 	{
 		"c": "] ",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -1046,7 +1046,7 @@
 	},
 	{
 		"c": "ERROR",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log string.regexp, strong log.error",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log string.regexp, strong log.error",
 		"r": {
 			"dark_plus": "string: #CE9178",
 			"light_plus": "string: #A31515",
@@ -1057,7 +1057,7 @@
 	},
 	{
 		"c": " [main]: Hello world, testing log line level highlighting",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -1068,7 +1068,7 @@
 	},
 	{
 		"c": "2015-12-09",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log comment log.date",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log comment log.date",
 		"r": {
 			"dark_plus": "comment: #6A9955",
 			"light_plus": "comment: #008000",
@@ -1079,7 +1079,7 @@
 	},
 	{
 		"c": " [",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -1090,7 +1090,7 @@
 	},
 	{
 		"c": "2600",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log constant.language log.constant",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log constant.language log.constant",
 		"r": {
 			"dark_plus": "constant.language: #569CD6",
 			"light_plus": "constant.language: #0000FF",
@@ -1101,7 +1101,7 @@
 	},
 	{
 		"c": "] ",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -1112,7 +1112,7 @@
 	},
 	{
 		"c": "FAIL",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log string.regexp, strong log.error",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log string.regexp, strong log.error",
 		"r": {
 			"dark_plus": "string: #CE9178",
 			"light_plus": "string: #A31515",
@@ -1123,7 +1123,7 @@
 	},
 	{
 		"c": "  [main]: Hello world, testing log line level highlighting",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -1134,7 +1134,7 @@
 	},
 	{
 		"c": "2015-12-09",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log comment log.date",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log comment log.date",
 		"r": {
 			"dark_plus": "comment: #6A9955",
 			"light_plus": "comment: #008000",
@@ -1145,7 +1145,7 @@
 	},
 	{
 		"c": " [",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -1156,7 +1156,7 @@
 	},
 	{
 		"c": "2600",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log constant.language log.constant",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log constant.language log.constant",
 		"r": {
 			"dark_plus": "constant.language: #569CD6",
 			"light_plus": "constant.language: #0000FF",
@@ -1167,7 +1167,7 @@
 	},
 	{
 		"c": "] ",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -1178,7 +1178,7 @@
 	},
 	{
 		"c": "FAILURE",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log string.regexp, strong log.error",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log string.regexp, strong log.error",
 		"r": {
 			"dark_plus": "string: #CE9178",
 			"light_plus": "string: #A31515",
@@ -1189,7 +1189,7 @@
 	},
 	{
 		"c": " [main]: Hello world, testing log line level highlighting",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -1200,7 +1200,7 @@
 	},
 	{
 		"c": "2015-12-09",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log comment log.date",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log comment log.date",
 		"r": {
 			"dark_plus": "comment: #6A9955",
 			"light_plus": "comment: #008000",
@@ -1211,7 +1211,7 @@
 	},
 	{
 		"c": " [",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -1222,7 +1222,7 @@
 	},
 	{
 		"c": "2600",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log constant.language log.constant",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log constant.language log.constant",
 		"r": {
 			"dark_plus": "constant.language: #569CD6",
 			"light_plus": "constant.language: #0000FF",
@@ -1233,7 +1233,7 @@
 	},
 	{
 		"c": "] ",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -1244,7 +1244,7 @@
 	},
 	{
 		"c": "DEBUG",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log markup.changed log.debug",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log markup.changed log.debug",
 		"r": {
 			"dark_plus": "markup.changed: #569CD6",
 			"light_plus": "markup.changed: #0451A5",
@@ -1255,7 +1255,7 @@
 	},
 	{
 		"c": " [main]: Hello world, testing log line level highlighting",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -1266,7 +1266,7 @@
 	},
 	{
 		"c": "2015-12-09",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log comment log.date",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log comment log.date",
 		"r": {
 			"dark_plus": "comment: #6A9955",
 			"light_plus": "comment: #008000",
@@ -1277,7 +1277,7 @@
 	},
 	{
 		"c": " [",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -1288,7 +1288,7 @@
 	},
 	{
 		"c": "2600",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log constant.language log.constant",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log constant.language log.constant",
 		"r": {
 			"dark_plus": "constant.language: #569CD6",
 			"light_plus": "constant.language: #0000FF",
@@ -1299,7 +1299,7 @@
 	},
 	{
 		"c": "] TRACE [main]: Hello world, testing log line level highlighting",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -1310,7 +1310,7 @@
 	},
 	{
 		"c": "2015-12-09",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log comment log.date",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log comment log.date",
 		"r": {
 			"dark_plus": "comment: #6A9955",
 			"light_plus": "comment: #008000",
@@ -1321,7 +1321,7 @@
 	},
 	{
 		"c": " ",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -1332,7 +1332,7 @@
 	},
 	{
 		"c": "09:29",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log comment log.date",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log comment log.date",
 		"r": {
 			"dark_plus": "comment: #6A9955",
 			"light_plus": "comment: #008000",
@@ -1343,7 +1343,7 @@
 	},
 	{
 		"c": " [",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -1354,7 +1354,7 @@
 	},
 	{
 		"c": "2600",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log constant.language log.constant",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log constant.language log.constant",
 		"r": {
 			"dark_plus": "constant.language: #569CD6",
 			"light_plus": "constant.language: #0000FF",
@@ -1365,7 +1365,7 @@
 	},
 	{
 		"c": "] ",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -1376,7 +1376,7 @@
 	},
 	{
 		"c": "INFO",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log markup.inserted log.info",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log markup.inserted log.info",
 		"r": {
 			"dark_plus": "markup.inserted: #B5CEA8",
 			"light_plus": "markup.inserted: #098658",
@@ -1387,7 +1387,7 @@
 	},
 	{
 		"c": "  [main]: Hello world, testing log line datestamp variation highlighting",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -1398,7 +1398,7 @@
 	},
 	{
 		"c": "2015-12-09",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log comment log.date",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log comment log.date",
 		"r": {
 			"dark_plus": "comment: #6A9955",
 			"light_plus": "comment: #008000",
@@ -1409,7 +1409,7 @@
 	},
 	{
 		"c": " ",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -1420,7 +1420,7 @@
 	},
 	{
 		"c": "09:29:02.258",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log comment log.date",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log comment log.date",
 		"r": {
 			"dark_plus": "comment: #6A9955",
 			"light_plus": "comment: #008000",
@@ -1431,7 +1431,7 @@
 	},
 	{
 		"c": " [",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -1442,7 +1442,7 @@
 	},
 	{
 		"c": "2600",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log constant.language log.constant",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log constant.language log.constant",
 		"r": {
 			"dark_plus": "constant.language: #569CD6",
 			"light_plus": "constant.language: #0000FF",
@@ -1453,7 +1453,7 @@
 	},
 	{
 		"c": "] ",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -1464,7 +1464,7 @@
 	},
 	{
 		"c": "INFO",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log markup.inserted log.info",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log markup.inserted log.info",
 		"r": {
 			"dark_plus": "markup.inserted: #B5CEA8",
 			"light_plus": "markup.inserted: #098658",
@@ -1475,7 +1475,7 @@
 	},
 	{
 		"c": "  [main]: Hello world, testing log datestamp variation highlighting",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -1486,7 +1486,7 @@
 	},
 	{
 		"c": "12/09/2016",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log comment log.date",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log comment log.date",
 		"r": {
 			"dark_plus": "comment: #6A9955",
 			"light_plus": "comment: #008000",
@@ -1497,7 +1497,7 @@
 	},
 	{
 		"c": " [",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -1508,7 +1508,7 @@
 	},
 	{
 		"c": "2600",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log constant.language log.constant",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log constant.language log.constant",
 		"r": {
 			"dark_plus": "constant.language: #569CD6",
 			"light_plus": "constant.language: #0000FF",
@@ -1519,7 +1519,7 @@
 	},
 	{
 		"c": "] ",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -1530,7 +1530,7 @@
 	},
 	{
 		"c": "INFO",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log markup.inserted log.info",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log markup.inserted log.info",
 		"r": {
 			"dark_plus": "markup.inserted: #B5CEA8",
 			"light_plus": "markup.inserted: #098658",
@@ -1541,7 +1541,7 @@
 	},
 	{
 		"c": "  [main]: Hello world, testing log line datestamp variation highlighting",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -1552,7 +1552,7 @@
 	},
 	{
 		"c": "12.09.2016",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log comment log.date",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log comment log.date",
 		"r": {
 			"dark_plus": "comment: #6A9955",
 			"light_plus": "comment: #008000",
@@ -1563,7 +1563,7 @@
 	},
 	{
 		"c": " [",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -1574,7 +1574,7 @@
 	},
 	{
 		"c": "2600",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log constant.language log.constant",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log constant.language log.constant",
 		"r": {
 			"dark_plus": "constant.language: #569CD6",
 			"light_plus": "constant.language: #0000FF",
@@ -1585,7 +1585,7 @@
 	},
 	{
 		"c": "] ",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -1596,7 +1596,7 @@
 	},
 	{
 		"c": "INFO",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log markup.inserted log.info",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log markup.inserted log.info",
 		"r": {
 			"dark_plus": "markup.inserted: #B5CEA8",
 			"light_plus": "markup.inserted: #098658",
@@ -1607,7 +1607,7 @@
 	},
 	{
 		"c": "  [main]: Hello world, testing log line datestamp variation highlighting",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -1618,7 +1618,7 @@
 	},
 	{
 		"c": "12-09-2016",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log comment log.date",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log comment log.date",
 		"r": {
 			"dark_plus": "comment: #6A9955",
 			"light_plus": "comment: #008000",
@@ -1629,7 +1629,7 @@
 	},
 	{
 		"c": " [",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -1640,7 +1640,7 @@
 	},
 	{
 		"c": "2600",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log constant.language log.constant",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log constant.language log.constant",
 		"r": {
 			"dark_plus": "constant.language: #569CD6",
 			"light_plus": "constant.language: #0000FF",
@@ -1651,7 +1651,7 @@
 	},
 	{
 		"c": "] ",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -1662,7 +1662,7 @@
 	},
 	{
 		"c": "INFO",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log markup.inserted log.info",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log markup.inserted log.info",
 		"r": {
 			"dark_plus": "markup.inserted: #B5CEA8",
 			"light_plus": "markup.inserted: #098658",
@@ -1673,7 +1673,7 @@
 	},
 	{
 		"c": "  [main]: Hello world, testing log line datestamp variation highlighting",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -1684,7 +1684,7 @@
 	},
 	{
 		"c": "12-09-2015",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log comment log.date",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log comment log.date",
 		"r": {
 			"dark_plus": "comment: #6A9955",
 			"light_plus": "comment: #008000",
@@ -1695,7 +1695,7 @@
 	},
 	{
 		"c": " ",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -1706,7 +1706,7 @@
 	},
 	{
 		"c": "09:29",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log comment log.date",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log comment log.date",
 		"r": {
 			"dark_plus": "comment: #6A9955",
 			"light_plus": "comment: #008000",
@@ -1717,7 +1717,7 @@
 	},
 	{
 		"c": " [",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -1728,7 +1728,7 @@
 	},
 	{
 		"c": "2600",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log constant.language log.constant",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log constant.language log.constant",
 		"r": {
 			"dark_plus": "constant.language: #569CD6",
 			"light_plus": "constant.language: #0000FF",
@@ -1739,7 +1739,7 @@
 	},
 	{
 		"c": "] ",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -1750,7 +1750,7 @@
 	},
 	{
 		"c": "INFO",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log markup.inserted log.info",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log markup.inserted log.info",
 		"r": {
 			"dark_plus": "markup.inserted: #B5CEA8",
 			"light_plus": "markup.inserted: #098658",
@@ -1761,7 +1761,7 @@
 	},
 	{
 		"c": "  [main]: Hello world, testing log line datestamp variation highlighting",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -1772,7 +1772,7 @@
 	},
 	{
 		"c": "12-09-2015",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log comment log.date",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log comment log.date",
 		"r": {
 			"dark_plus": "comment: #6A9955",
 			"light_plus": "comment: #008000",
@@ -1783,7 +1783,7 @@
 	},
 	{
 		"c": " ",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -1794,7 +1794,7 @@
 	},
 	{
 		"c": "09:29:02,258",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log comment log.date",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log comment log.date",
 		"r": {
 			"dark_plus": "comment: #6A9955",
 			"light_plus": "comment: #008000",
@@ -1805,7 +1805,7 @@
 	},
 	{
 		"c": " [",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -1816,7 +1816,7 @@
 	},
 	{
 		"c": "2600",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log constant.language log.constant",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log constant.language log.constant",
 		"r": {
 			"dark_plus": "constant.language: #569CD6",
 			"light_plus": "constant.language: #0000FF",
@@ -1827,7 +1827,7 @@
 	},
 	{
 		"c": "] ",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -1838,7 +1838,7 @@
 	},
 	{
 		"c": "INFO",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log markup.inserted log.info",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log markup.inserted log.info",
 		"r": {
 			"dark_plus": "markup.inserted: #B5CEA8",
 			"light_plus": "markup.inserted: #098658",
@@ -1849,7 +1849,7 @@
 	},
 	{
 		"c": "  [main]: Hello world, testing log datestamp variation line highlighting",
-		"t": "text.html.myst markup.fenced_code.block.myst meta.embedded.block.log",
+		"t": "text.html.markdown markup.fenced_code.block.markdown meta.embedded.block.log",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -1860,7 +1860,7 @@
 	},
 	{
 		"c": "```",
-		"t": "text.html.myst markup.fenced_code.block.myst punctuation.definition.myst",
+		"t": "text.html.markdown markup.fenced_code.block.markdown punctuation.definition.markdown",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
