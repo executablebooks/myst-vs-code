@@ -35,5 +35,6 @@ jobs:
       uses: GabrielBB/xvfb-action@v1.0
       with:
         run: npm test
+    # TODO add publish on master tag
 
 
