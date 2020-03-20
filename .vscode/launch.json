@@ -17,7 +17,6 @@
                 "${workspaceFolder}/out/**/*.js"
             ],
             // "preLaunchTask": "npm: watch",
-            // "trace": "verbose"
         },
         {
             "name": "Extension Tests",
@@ -26,7 +25,7 @@
             "runtimeExecutable": "${execPath}",
             "args": [
                 "--extensionDevelopmentPath=${workspaceFolder}",
-                "--extensionTestsPath=${workspaceFolder}/out/test"
+                "--extensionTestsPath=${workspaceFolder}/out/test/suite/index.js"
             ],
             "outFiles": [
                 "${workspaceFolder}/out/test/**/*.js"

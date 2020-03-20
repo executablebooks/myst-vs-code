@@ -40,7 +40,7 @@ The main grammar is stored in `syntaxes/myst.tmLanguage`. This file is generated
 See [this guide on textmate bundles](https://macromates.com/manual/en/language_grammars) and
 [the VS Code guide](https://code.visualstudio.com/api/language-extensions/syntax-highlight-guide) for more help.
 
-### Building
+### Building the Grammar
 
 The grammar is written as a [jinja template](https://jinja.palletsprojects.com) YAML file,
 with the templates and default variables stored in `template/`
@@ -48,7 +48,8 @@ with the templates and default variables stored in `template/`
 To generate the main grammar with javascript:
 
 ```bash
-$ npm install
+$ npm ci
+$ npm run compile
 $ npm run build
 ```
 
@@ -56,22 +57,34 @@ or with python:
 
 ```bash
 $ pip install yaml jinja2
-$ python build.py
+$ python src/build.py
 ```
 
 ### Testing
 
-To launch a development version of the extension in VS Code, press `F5`.
-
-To run the grammar tests:
+To run the test suite:
 
 ```bash
 $ npm run test
 ```
 
-The test cases are stored as markdown files under `test/colorize-fixtures`. Grammar test results are stored under `test/colorize-results`, which are automatically generated from the fixtures.
+The highlighting test cases are stored as markdown files under `test_static/colorize-fixtures`. Grammar test results are stored under `test_static/colorize-results`, which are automatically generated from the fixtures.
 
-To test the grammar in VS Code, select the `Launch Extension` configuration in the VS Code debugger and run.
+To test the grammar in VS Code, select the `Launch Extension` configuration in the VS Code debugger and run. To launch a development version of the extension in VS Code, press `F5`.
+
+See also [VS Code Testing Extension Guide](https://code.visualstudio.com/api/working-with-extensions/testing-extension)
+
+### Linting
+
+```bash
+$ npm run lint
+```
+
+and to auto-fix lints:
+
+```bash
+$ npm run lint:fix
+```
 
 ### Publishing to VS Marketplace
 
