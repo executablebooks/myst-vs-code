@@ -3,6 +3,8 @@ import * as vscode from 'vscode'
 import * as yaml from 'js-yaml'
 
 const dirRegexp = new RegExp('^[ ]{0,3}[`]{3,}\\{')
+// Since these completions never change, we can store a global copy, on first load, to improve efficiency
+let dirCompletions: null | vscode.CompletionItem[] = null
 
 export class CompletionItemProvider implements vscode.CompletionItemProvider {
 
@@ -15,10 +17,14 @@ export class CompletionItemProvider implements vscode.CompletionItemProvider {
     const textLine = document.lineAt(line)
     const startLine = textLine.text.slice(undefined, character)
     if (dirRegexp.test(startLine)) {
+      if (dirCompletions !== null && dirCompletions.length !== 0 ) {
+        return [...dirCompletions]
+      }
       const directives = getDirectives()
       for (const name in directives) {
         directiveCompletion(name, directives[name], completions)
       }
+      dirCompletions = [...completions]
     }
     return completions
   }
