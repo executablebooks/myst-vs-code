@@ -62,14 +62,20 @@ function hasThemeChange(d: { [key: string]: any }, p: { [key: string]: any }) {
     return false
 }
 
+
+function pausecomp(millis: number) {
+    const date: any = new Date()
+    let curDate: any = null
+    do { curDate = new Date() }
+    while ((curDate - date) < millis)
+}
+
 suite('colorization', () => {
     // We place the test files in this lower level FoldingRange, so that when this file is compiled to out/test/,
     // it still finds thems
     const extensionColorizeFixturePath = join(__dirname, '../../../test_static/colorize-fixtures')
     if (fs.existsSync(extensionColorizeFixturePath)) {
-        setTimeout(() => {
-            console.log('paused')
-        }, 10000)
+        pausecomp(10000)
         const fixturesFiles = fs.readdirSync(extensionColorizeFixturePath)
         fixturesFiles.forEach(fixturesFile => {
             // define a test for each fixture
