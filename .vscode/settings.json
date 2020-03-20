@@ -19,5 +19,7 @@
     "yaml.schemas": {
         "tmlLanguage.schema.json": ["*.tmLanguage.j2.yaml"]
     },
-    "python.formatting.provider": "black"
+    "python.formatting.provider": "black",
+    "tslint.enable": false,
+    "eslint.validate": ["typescript"]
 }
