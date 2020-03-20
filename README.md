@@ -16,7 +16,11 @@ Embedded code blocks/cells can be utilised in their native language:
 
 <img width="500" alt="screenshot" src="https://raw.githubusercontent.com/ExecutableBookProject/myst-highlight-grammar/master/images/embedded-code.gif">
 
-Snippet completions are available for a number of Sphinx directives:
+Directive completion is available for all built-in sphinx directives:
+
+<img width="500" alt="screenshot" src="https://raw.githubusercontent.com/ExecutableBookProject/myst-highlight-grammar/master/images/directive-completion.gif">
+
+Snippet completions are also available for a number of Sphinx directives:
 
 <img width="500" alt="screenshot" src="https://raw.githubusercontent.com/ExecutableBookProject/myst-highlight-grammar/master/images/snippet-completion.gif">
 
