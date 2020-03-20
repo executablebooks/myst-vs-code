@@ -3,12 +3,12 @@
 [![VS Marketplace](https://vsmarketplacebadge.apphb.com/version/ExecutableBookProject.myst-highlight.svg "Current Release")](https://marketplace.visualstudio.com/items?itemName=ExecutableBookProject.myst-highlight)
 ![Github-CI](https://img.shields.io/github/workflow/status/ExecutableBookProject/myst-highlight-grammar/Github-CI?label=Github-CI)
 
-[MyST (Markedly Structured Text)](https://myst-parser.readthedocs.io) official Textmate grammar, and VS Code extension, for extending the markdown language.
+The official [MyST (Markedly Structured Text)](https://myst-parser.readthedocs.io) Textmate grammar, and VS Code extension, for extending the markdown language.
 
 This extension injects additional elements into the base markdown syntax highlighting grammar,
-and will also highlight `.myst`, `.mystnb` and `.mnb` files.
+and adds additional language support for MyST specific elements.
 
-**Important** This extension is still in alpha development, and may change in the future.
+**Important** This extension is a work in progress, and future changes are likely.
 
 <img width="500" alt="screenshot" src="https://raw.githubusercontent.com/ExecutableBookProject/myst-highlight-grammar/master/images/Screenshot.png">
 
