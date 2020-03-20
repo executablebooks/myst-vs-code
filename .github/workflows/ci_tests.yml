@@ -40,7 +40,7 @@ jobs:
     # only if all tests complete and the commit is tagged as a release
     name: Publish to Marketplace
     needs: build
-    if: github.event_name == 'push' && startsWith(github.event.ref, 'refs/tags') && contains(github.ref, "release")
+    if: github.event_name == 'push' && startsWith(github.event.ref, 'refs/tags') && contains(github.ref, 'release')
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
