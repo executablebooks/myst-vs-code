@@ -26,9 +26,8 @@ jobs:
       run: |
         npm ci
         npm run compile
-    # TODO not working
-    # - name: ESLint
-    #   uses: hallee/eslint-action@1.0.1
+    - name: Lint Code
+      run: npm run lint
     - name: Build Grammar
       run: npm run build
     - name: Run tests
