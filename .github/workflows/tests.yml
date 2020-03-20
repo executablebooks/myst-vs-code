@@ -26,10 +26,10 @@ jobs:
       run: |
         npm ci
         npm run compile
-    - name: Build Grammar
-      run: npm run build
     - name: ESLint
       uses: hallee/eslint-action@1.0.1
+    - name: Build Grammar
+      run: npm run build
     - name: Run tests
       uses: GabrielBB/xvfb-action@v1.0
       with:
