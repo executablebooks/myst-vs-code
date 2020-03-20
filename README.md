@@ -94,11 +94,10 @@ $ npm run lint:fix
 
 ### Publishing to VS Marketplace
 
-See: https://code.visualstudio.com/api/working-with-extensions/publishing-extension#publishing-extensions
+The publishing of the package should be done *via* the Github Actions CI. To trigger a release, bump the version in `package.json`, and create a new release tag on Github
+starting with `release`, e.g. `release-0.9.4`.
 
-```console
-$ vsce publish minor
-```
+See: https://code.visualstudio.com/api/working-with-extensions/publishing-extension#publishing-extensions
 
 ## Acknowledgements
 
