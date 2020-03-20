@@ -6,7 +6,7 @@ jobs:
 
   build:
 
-    name: "${{ matrix.os }}/${{ matrix.code-version }}"
+    name: "${{ matrix.os }}/${{matrix.node-version}}/${{ matrix.code-version }}"
     runs-on: ${{ matrix.os }}
 
     strategy:
@@ -31,6 +31,7 @@ jobs:
       run: npm run lint
     - name: Build Grammar
       run: npm run build
+      # TODO test built files don't change after this?
     - name: Run tests
       uses: GabrielBB/xvfb-action@v1.0
       with:
