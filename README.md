@@ -66,6 +66,8 @@ $ pip install yaml jinja2
 $ python src/build.py
 ```
 
+Snippets are also built in the same manner.
+
 ### Testing
 
 To run the test suite:
