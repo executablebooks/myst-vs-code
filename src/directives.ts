@@ -52,8 +52,9 @@ export function makeDescription(data: any, addClass: boolean = false) {
     string = '`' + data['klass'] + '`\n\n'
   }
   string = string + data['description']
-  string = string + '\n\n' + '```yaml\n' + opts + '\n```'
-  return new vscode.MarkdownString(string)
+  const mdown = new vscode.MarkdownString(string)
+  mdown.appendCodeblock(opts, 'yaml')
+  return mdown
 }
 
 
