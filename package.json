@@ -46,6 +46,9 @@
         ]
     },
     "main": "out/extension",
+    "activationEvents": [
+        "*"
+    ],
     "devDependencies": {
         "@types/glob": "^7.1.1",
         "@types/js-yaml": "^3.12.2",

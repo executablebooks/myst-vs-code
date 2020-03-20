@@ -4,7 +4,7 @@
 //  *  Licensed under the MIT License. See License.txt in the project root for license information.
 //  *--------------------------------------------------------------------------------------------*/
 // @ts-check
-// 'use strict';
+'use strict'
 
 import * as assert from 'assert'
 import { commands, Uri } from 'vscode'
@@ -75,7 +75,8 @@ suite('colorization', () => {
     // it still finds thems
     const extensionColorizeFixturePath = join(__dirname, '../../../test_static/colorize-fixtures')
     if (fs.existsSync(extensionColorizeFixturePath)) {
-        pausecomp(10000)
+        // pause to allow extension to load?
+        pausecomp(1000)
         const fixturesFiles = fs.readdirSync(extensionColorizeFixturePath)
         fixturesFiles.forEach(fixturesFile => {
             // define a test for each fixture
