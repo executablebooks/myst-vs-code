@@ -16,6 +16,8 @@
             "outFiles": [
                 "${workspaceFolder}/out/**/*.js"
             ],
+            // At least on my machine I am getting error: env: node: No such file or directory in mac
+            // see: https://stackoverflow.com/questions/43465086/env-node-no-such-file-or-directory-in-mac
             // "preLaunchTask": "npm: watch",
         },
         {
