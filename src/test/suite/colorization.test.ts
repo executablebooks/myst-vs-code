@@ -8,6 +8,7 @@
 'use strict'
 
 import * as assert from 'assert'
+import { before } from 'mocha'
 import { commands, Uri } from 'vscode'
 import { join, basename, dirname } from 'path'
 import * as fs from 'fs'
@@ -64,20 +65,22 @@ function hasThemeChange(d: { [key: string]: any }, p: { [key: string]: any }) {
 }
 
 suite('colorization', () => {
-    // ensure the extension is activated, so the grammar is injected
-    commands.executeCommand('myst.Activate').then((_data: any) => {
-        // We place the test files in this lower level FoldingRange, so that when this file is compiled to out/test/,
-        // it still finds them
-        const extensionColorizeFixturePath = join(__dirname, '../../../test_static/colorize-fixtures')
-        if (fs.existsSync(extensionColorizeFixturePath)) {
-            // pause to allow extension to load?
-            const fixturesFiles = fs.readdirSync(extensionColorizeFixturePath)
-            fixturesFiles.forEach(fixturesFile => {
-                // define a test for each fixture
-                test(fixturesFile, (done) => {
-                    assertUnchangedTokens(join(extensionColorizeFixturePath, fixturesFile), done)
-                })
-            })
-        }
+    before(() => {
+        // ensure the extension is activated, so the grammar is injected
+        commands.executeCommand('myst.Activate').then((_data: any) => { })
     })
+
+    // We place the test files in this lower level FoldingRange, so that when this file is compiled to out/test/,
+    // it still finds them
+    const extensionColorizeFixturePath = join(__dirname, '../../../test_static/colorize-fixtures')
+    if (fs.existsSync(extensionColorizeFixturePath)) {
+        // pause to allow extension to load?
+        const fixturesFiles = fs.readdirSync(extensionColorizeFixturePath)
+        fixturesFiles.forEach(fixturesFile => {
+            // define a test for each fixture
+            test(fixturesFile, (done) => {
+                assertUnchangedTokens(join(extensionColorizeFixturePath, fixturesFile), done)
+            })
+        })
+    }
 })

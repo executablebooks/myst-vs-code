@@ -1,16 +1,11 @@
 'use strict'
 import * as assert from 'assert'
-import { after } from 'mocha'
 import * as vscode from 'vscode'
 
 import * as completion from '../../completion'
 
 
 suite('Completions Tests', () => {
-
-    after(() => {
-        vscode.window.showInformationMessage('All tests done!')
-    })
 
     test('Read directives', () => {
         const dirs = completion.getDirectives()
@@ -23,5 +18,5 @@ suite('Completions Tests', () => {
         completion.directiveCompletion('acks', data, completions)
         assert.equal(completions.length, 1)
     })
-})
 
+})
