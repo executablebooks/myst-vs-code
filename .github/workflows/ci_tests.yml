@@ -1,3 +1,4 @@
+# see https://github.com/sdras/awesome-actions for a good list of available action
 name: Github-CI
 
 on: [push, pull_request]
@@ -6,19 +7,14 @@ jobs:
 
   build:
 
-    name: "${{ matrix.os }}/${{matrix.node-version}}/${{ matrix.code-version }}"
+    name: "${{ matrix.os }}/Node-${{matrix.node-version}}"
     runs-on: ${{ matrix.os }}
 
     strategy:
       matrix:
         os: [macos-latest, ubuntu-latest, windows-latest]
         node-version: [8.x, 10.x]
-        code-version: [stable, insiders]
-        # include:
-        #   - code-version: stable
-        #     node-version: 8.x
-        #   - code-version: insiders
-        #     node-version: 10.x
+        # code-version: [stable, insiders]
 
     steps:
     - uses: actions/checkout@v2
