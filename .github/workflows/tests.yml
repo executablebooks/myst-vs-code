@@ -19,7 +19,7 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest]
-        node-version: [10.x]
+        node-version: [8.x]
         include:
           - code-version: stable
           # - code-version: insiders
@@ -29,12 +29,12 @@ jobs:
     - name: Setup XVFB
       if: matrix.os == 'ubuntu-latest'
       run: |
-        export DISPLAY=":0"
+        export DISPLAY=":99"
         /usr/bin/Xvfb :99 -screen 0 1024x768x24 > /dev/null 2>&1 &
-    - name: Unset SSH_ASKPASS
-      # this was added based on https://stackoverflow.com/a/16104473/5033292
-      if: matrix.os == 'ubuntu-latest'
-      run: unset SSH_ASKPASS
+    # - name: Unset SSH_ASKPASS
+    #   # this was added based on https://stackoverflow.com/a/16104473/5033292
+    #   if: matrix.os == 'ubuntu-latest'
+    #   run: unset SSH_ASKPASS
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
       with:
