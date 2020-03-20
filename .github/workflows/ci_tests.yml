@@ -12,12 +12,13 @@ jobs:
     strategy:
       matrix:
         os: [macos-latest, ubuntu-latest, windows-latest]
-        # node-version: [8.x, 10.x]
-        include:
-          - code-version: stable
-            node-version: 8.x
-          - code-version: insiders
-            node-version: 10.x
+        node-version: [8.x, 10.x]
+        code-version: [stable, insiders]
+        # include:
+        #   - code-version: stable
+        #     node-version: 8.x
+        #   - code-version: insiders
+        #     node-version: 10.x
 
     steps:
     - uses: actions/checkout@v2
