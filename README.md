@@ -1,4 +1,4 @@
-# myst-highlight-grammar
+# myst-language-support
 
 [![VS Marketplace](https://vsmarketplacebadge.apphb.com/version/ExecutableBookProject.myst-highlight.svg "Current Release")](https://marketplace.visualstudio.com/items?itemName=ExecutableBookProject.myst-highlight)
 [![Github-CI](https://img.shields.io/github/workflow/status/ExecutableBookProject/myst-highlight-grammar/Github-CI?label=Github-CI)](https://github.com/ExecutableBookProject/myst-highlight-grammar/actions)
