@@ -1,0 +1,13 @@
+src/lib/**/*.ts
+types/**/*.ts
+resources/**/*.js
+out
+node_modules
+viewer/viewer.js
+.idea/
+__pycache__/
+.mypy_cache/
+.pytest_cache/
+.venv/
+.vscode/.ropeproject
+_archive/
