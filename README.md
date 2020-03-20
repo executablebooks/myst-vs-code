@@ -1,7 +1,7 @@
 # myst-highlight-grammar
 
 [![VS Marketplace](https://vsmarketplacebadge.apphb.com/version/ExecutableBookProject.myst-highlight.svg "Current Release")](https://marketplace.visualstudio.com/items?itemName=ExecutableBookProject.myst-highlight)
-![Build Status](https://github.com/ExecutableBookProject/myst-highlight-grammar/workflows/Node.js%20CI/badge.svg)
+![Github-CI](https://github.com/ExecutableBookProject/myst-highlight-grammar/workflows/Github-CI/badge.svg)
 
 [MyST (Markedly Structured Text)](https://myst-parser.readthedocs.io) official Textmate grammar, and VS Code extension, for extending the markdown language.
 
