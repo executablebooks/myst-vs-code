@@ -67,6 +67,9 @@ suite('colorization', () => {
     // it still finds thems
     const extensionColorizeFixturePath = join(__dirname, '../../../test_static/colorize-fixtures')
     if (fs.existsSync(extensionColorizeFixturePath)) {
+        setTimeout(() => {
+            console.log('paused')
+        }, 10000)
         const fixturesFiles = fs.readdirSync(extensionColorizeFixturePath)
         fixturesFiles.forEach(fixturesFile => {
             // define a test for each fixture
