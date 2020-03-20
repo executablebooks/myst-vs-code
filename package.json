@@ -43,11 +43,18 @@
                 "language": "markdown",
                 "path": "snippets/directives.json"
             }
+        ],
+        "commands": [
+            {
+                "command": "myst.Activate",
+                "title": "MyST: Activate"
+            }
         ]
     },
     "main": "out/extension",
     "activationEvents": [
-        "*"
+        "onCommand:myst.Activate",
+        "onLanguage:markdown"
     ],
     "devDependencies": {
         "@types/glob": "^7.1.1",

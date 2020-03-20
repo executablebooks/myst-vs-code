@@ -4,6 +4,7 @@
 //  *  Licensed under the MIT License. See License.txt in the project root for license information.
 //  *--------------------------------------------------------------------------------------------*/
 // @ts-check
+// Note https://www.npmjs.com/package/vscode-tmgrammar-test does a similar thing to this, however, it cannot handle grammar injections
 'use strict'
 
 import * as assert from 'assert'
@@ -62,27 +63,21 @@ function hasThemeChange(d: { [key: string]: any }, p: { [key: string]: any }) {
     return false
 }
 
-
-function pausecomp(millis: number) {
-    const date: any = new Date()
-    let curDate: any = null
-    do { curDate = new Date() }
-    while ((curDate - date) < millis)
-}
-
 suite('colorization', () => {
-    // We place the test files in this lower level FoldingRange, so that when this file is compiled to out/test/,
-    // it still finds thems
-    const extensionColorizeFixturePath = join(__dirname, '../../../test_static/colorize-fixtures')
-    if (fs.existsSync(extensionColorizeFixturePath)) {
-        // pause to allow extension to load?
-        pausecomp(1000)
-        const fixturesFiles = fs.readdirSync(extensionColorizeFixturePath)
-        fixturesFiles.forEach(fixturesFile => {
-            // define a test for each fixture
-            test(fixturesFile, (done) => {
-                assertUnchangedTokens(join(extensionColorizeFixturePath, fixturesFile), done)
+    // ensure the extension is activated, so the grammar is injected
+    commands.executeCommand('myst.Activate').then((_data: any) => {
+        // We place the test files in this lower level FoldingRange, so that when this file is compiled to out/test/,
+        // it still finds them
+        const extensionColorizeFixturePath = join(__dirname, '../../../test_static/colorize-fixtures')
+        if (fs.existsSync(extensionColorizeFixturePath)) {
+            // pause to allow extension to load?
+            const fixturesFiles = fs.readdirSync(extensionColorizeFixturePath)
+            fixturesFiles.forEach(fixturesFile => {
+                // define a test for each fixture
+                test(fixturesFile, (done) => {
+                    assertUnchangedTokens(join(extensionColorizeFixturePath, fixturesFile), done)
+                })
             })
-        })
-    }
+        }
+    })
 })
