@@ -22,10 +22,12 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - run: |
+    - name: Compile
+      run: |
         npm ci
         npm run compile
-    - run: npm run build --if-present
+    - name: Build Grammar
+      run: npm run build
     - name: ESLint
       uses: hallee/eslint-action@1.0.1
     - name: Run tests

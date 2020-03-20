@@ -67,7 +67,7 @@
     "scripts": {
         "lint": "eslint --cache --ext .ts,.js .",
         "lint:fix": "eslint --fix --cache --ext .ts,.js .",
-        "build": "npm run compile && node out/build",
+        "build": "node out/build",
         "vscode:prepublish": "npm run compile",
         "compile": "tsc -p ./",
         "watch": "tsc -watch -p ./",
