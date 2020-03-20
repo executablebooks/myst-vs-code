@@ -45,7 +45,6 @@
             }
         ]
     },
-    "main": "./out/extension",
     "devDependencies": {
         "@types/js-yaml": "^3.12.2",
         "@types/mocha": "^2.2.42",
@@ -69,7 +68,6 @@
         "lint": "eslint --cache --ext .ts,.js .",
         "lint:fix": "eslint --fix --cache --ext .ts,.js .",
         "build": "node out/build",
-        "vscode:prepublish": "npm run compile",
         "prepublish": "npm run compile && npm run build",
         "compile": "tsc -p ./",
         "watch": "tsc -watch -p ./",
