@@ -3,6 +3,7 @@ name: Github-CI
 on: [push, pull_request]
 
 jobs:
+
   build:
 
     name: "${{ matrix.os }}/${{ matrix.code-version }}"
@@ -34,6 +35,22 @@ jobs:
       uses: GabrielBB/xvfb-action@v1.0
       with:
         run: npm test
-    # TODO add publish on master tag
 
-
+  publish:
+    # only if all tests complete and the commit is tagged as a release
+    name: Publish to Marketplace
+    needs: build
+    if: github.event_name == 'push' && startsWith(github.event.ref, 'refs/tags') && contains(github.ref, "release")
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js 8.x
+      uses: actions/setup-node@v1
+      with:
+        node-version: 8.x
+    - name: Compile
+      run: npm ci
+    - name: Publish
+      run: vsce publish -p $VSCE_TOKEN
+      env:
+        VSCE_TOKEN: ${{ secrets.VSCE_PUB }}
