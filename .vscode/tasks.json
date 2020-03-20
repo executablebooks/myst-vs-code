@@ -9,7 +9,8 @@
             "problemMatcher": "$tsc-watch",
             "isBackground": true,
             "presentation": {
-                "reveal": "never"
+                "reveal": "always",
+                "revealProblems": "onProblem"
             },
             "group": {
                 "kind": "build",

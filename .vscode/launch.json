@@ -6,7 +6,7 @@
 	"version": "0.2.0",
     "configurations": [
         {
-            "name": "Extension",
+            "name": "Run Extension",
             "type": "extensionHost",
             "request": "launch",
             "runtimeExecutable": "${execPath}",
@@ -16,17 +16,18 @@
             "outFiles": [
                 "${workspaceFolder}/out/**/*.js"
             ],
+            // At least on my machine I am getting error: env: node: No such file or directory in mac
+            // see: https://stackoverflow.com/questions/43465086/env-node-no-such-file-or-directory-in-mac
             // "preLaunchTask": "npm: watch",
-            // "trace": "verbose"
         },
         {
-            "name": "Extension Tests",
+            "name": "Run Extension Tests",
             "type": "extensionHost",
             "request": "launch",
             "runtimeExecutable": "${execPath}",
             "args": [
                 "--extensionDevelopmentPath=${workspaceFolder}",
-                "--extensionTestsPath=${workspaceFolder}/out/test"
+                "--extensionTestsPath=${workspaceFolder}/out/test/suite/index.js"
             ],
             "outFiles": [
                 "${workspaceFolder}/out/test/**/*.js"

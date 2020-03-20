@@ -1,11 +1,14 @@
-/*---------------------------------------------------------------------------------------------
- *  Copyright (c) Microsoft Corporation. All rights reserved.
- *  Licensed under the MIT License. See License.txt in the project root for license information.
- *--------------------------------------------------------------------------------------------*/
+
+//  *---------------------------------------------------------------------------------------------
+//  *  Copyright (c) Microsoft Corporation. All rights reserved.
+//  *  Licensed under the MIT License. See License.txt in the project root for license information.
+//  *--------------------------------------------------------------------------------------------*/
 // @ts-check
-// 'use strict';
+// Note https://www.npmjs.com/package/vscode-tmgrammar-test does a similar thing to this, however, it cannot handle grammar injections
+'use strict'
 
 import * as assert from 'assert'
+import { before } from 'mocha'
 import { commands, Uri } from 'vscode'
 import { join, basename, dirname } from 'path'
 import * as fs from 'fs'
@@ -26,6 +29,7 @@ function assertUnchangedTokens(testFixurePath: string, done: MochaDone) {
                 try {
                     assert.deepEqual(data, previousData)
                 } catch (e) {
+                    // TODO use global variable to set whether we regenerate or not?
                     fs.writeFileSync(resultPath, JSON.stringify(data, null, '\t'), { flag: 'w' })
                     if (Array.isArray(data) && Array.isArray(previousData) && data.length === previousData.length) {
                         for (let i = 0; i < data.length; i++) {
@@ -35,7 +39,7 @@ function assertUnchangedTokens(testFixurePath: string, done: MochaDone) {
                                 throw e
                             }
                         }
-                        // different but no tokenization ot color change: no failure
+                        // different but no tokenization of color change: no failure
                     } else {
                         throw e
                     }
@@ -61,10 +65,16 @@ function hasThemeChange(d: { [key: string]: any }, p: { [key: string]: any }) {
 }
 
 suite('colorization', () => {
+    before(() => {
+        // ensure the extension is activated, so the grammar is injected
+        commands.executeCommand('myst.Activate').then((_data: any) => { })
+    })
+
     // We place the test files in this lower level FoldingRange, so that when this file is compiled to out/test/,
-    // it still finds thems
-    const extensionColorizeFixturePath = join(__dirname, '../../test_static/colorize-fixtures')
+    // it still finds them
+    const extensionColorizeFixturePath = join(__dirname, '../../../test_static/colorize-fixtures')
     if (fs.existsSync(extensionColorizeFixturePath)) {
+        // pause to allow extension to load?
         const fixturesFiles = fs.readdirSync(extensionColorizeFixturePath)
         fixturesFiles.forEach(fixturesFile => {
             // define a test for each fixture

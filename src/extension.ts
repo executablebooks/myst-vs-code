@@ -2,6 +2,7 @@
 // The module 'vscode' contains the VS Code extensibility API
 // Import the module and reference it with the alias vscode in your code below
 import * as vscode from 'vscode'
+import { CompletionItemProvider } from './completion'
 
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
@@ -14,13 +15,21 @@ export function activate(context: vscode.ExtensionContext) {
     // The command has been defined in the package.json file
     // Now provide the implementation of the command with  registerCommand
     // The commandId parameter must match the command field in package.json
-    const disposable = vscode.commands.registerCommand('myst.sayHello', () => {
+    const disposable = vscode.commands.registerCommand('myst.Activate', () => {
         // The code you place here will be executed every time your command is executed
         // Display a message box to the user
-        vscode.window.showInformationMessage('Hello World!')
+        vscode.window.showInformationMessage('Activated MyST-Markdown!')
     })
 
     context.subscriptions.push(disposable)
+
+    const mdSelector = { scheme: 'file', language: 'markdown' }
+
+    context.subscriptions.push(
+        vscode.languages.registerCompletionItemProvider(
+            mdSelector, new CompletionItemProvider(), '{'))
+
+
 }
 
 // this method is called when your extension is deactivated
