@@ -4,10 +4,10 @@ import plistlib
 import yaml
 from jinja2 import Template
 
-IN_PATH = Path(__file__).parent.joinpath("template/myst.tmLanguage.j2.yaml")
-LANGUAGE_PATH = Path(__file__).parent.joinpath("template/languages.yaml")
-DIRECTIVE_PATH = Path(__file__).parent.joinpath("template/directives.yaml")
-OUT_PATH = Path(__file__).parent.joinpath("syntaxes/myst.tmLanguage")
+IN_PATH = Path(__file__).parent.joinpath("../template/myst.tmLanguage.j2.yaml")
+LANGUAGE_PATH = Path(__file__).parent.joinpath("../template/languages.yaml")
+DIRECTIVE_PATH = Path(__file__).parent.joinpath("../template/directives.yaml")
+OUT_PATH = Path(__file__).parent.joinpath("../syntaxes/myst.tmLanguage")
 
 if __name__ == "__main__":
 

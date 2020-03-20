@@ -1,0 +1,39 @@
+name: Github-CI
+
+on: [push, pull_request]
+
+jobs:
+  build:
+
+    name: "${{ matrix.code-version }}/${{ matrix.os }})"
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        os: [macos-latest, ubuntu-latest, windows-latest]
+        node-version: [8.x]
+        include:
+          - code-version: stable
+          # - code-version: insiders
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    - name: Compile
+      run: |
+        npm ci
+        npm run compile
+    - name: Lint Code
+      run: npm run lint
+    - name: Build Grammar
+      run: npm run build
+    - name: Run tests
+      uses: GabrielBB/xvfb-action@v1.0
+      with:
+        run: npm test
+    # TODO add publish on master tag
+
+
