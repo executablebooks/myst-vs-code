@@ -200,6 +200,17 @@ export function getDirectives(): any {
       linenos: flag
       name: unchanged
     required_arguments: 0
+  code-cell:
+    name: code-cell
+    description: |
+      This is a special directive cell, used by [MyST-NB](https://myst-nb.readthedocs.io) notebooks,
+      converted by [jupytext](https://jupytext.readthedocs.io/en/latest/formats.html#myst-markdown)
+      The optional argument should be the syntax highlighting language.
+    required_arguments: 0
+    optional_arguments: 1
+    has_content: true
+    klass: CodeCell
+    options: any
   codeauthor:
     description: 'Directive to give the name of the author of the current document
       or section. Shown in the output only if the show_authors option is on.'
@@ -637,6 +648,16 @@ export function getDirectives(): any {
       file: path
       url: uri
     required_arguments: 1
+  raw-cell:
+    name: raw-cell
+    description: |
+      This is a special directive cell, used by [MyST-NB](https://myst-nb.readthedocs.io) notebooks,
+      converted by [jupytext](https://jupytext.readthedocs.io/en/latest/formats.html#myst-markdown)
+    required_arguments: 0
+    optional_arguments: 0
+    has_content: true
+    klass: RawCell
+    options: any
   replace:
     description: ''
     has_content: true
