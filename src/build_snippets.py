@@ -2,8 +2,8 @@ from pathlib import Path
 import json
 import yaml
 
-IN_PATH = Path(__file__).parent.joinpath("dir.template.yaml")
-OUT_PATH = Path(__file__).parent.joinpath("directives.json")
+IN_PATH = Path(__file__).parent.joinpath("../snippets/dir.template.yaml")
+OUT_PATH = Path(__file__).parent.joinpath("../snippets/directives.json")
 
 if __name__ == "__main__":
 
