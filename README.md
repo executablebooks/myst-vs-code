@@ -14,7 +14,7 @@ and adds additional language support for MyST specific elements.
   - [Features](#features)
     - [Syntax Highlighting](#syntax-highlighting)
     - [Hover and Autocompletion](#hover-and-autocompletion)
-    - [Preview Enancement](#preview-enancement)
+    - [Preview Enhancement](#preview-enhancement)
   - [Working with Markdown](#working-with-markdown)
   - [Contributing](#contributing)
     - [Building the Grammar](#building-the-grammar)
@@ -45,7 +45,7 @@ Snippet completions are also available for a number of Sphinx directives:
 
 <img width="500" alt="screenshot" src="https://raw.githubusercontent.com/ExecutableBookProject/myst-highlight-grammar/master/images/snippet-completion.gif">
 
-### Preview Enancement
+### Preview Enhancement
 
 This extension enhances VS Code's built-in Markdown previewer
 ([see this guide for info](https://code.visualstudio.com/api/extension-guides/markdown-extension)),
