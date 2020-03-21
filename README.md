@@ -1,7 +1,7 @@
 # myst-language-support
 
-[![VS Marketplace](https://vsmarketplacebadge.apphb.com/version/ExecutableBookProject.myst-highlight.svg "Current Release")](https://marketplace.visualstudio.com/items?itemName=ExecutableBookProject.myst-highlight)
-[![Github-CI](https://img.shields.io/github/workflow/status/ExecutableBookProject/myst-highlight-grammar/Github-CI?label=Github-CI)](https://github.com/ExecutableBookProject/myst-highlight-grammar/actions)
+[![VS Marketplace][vs-market-badge]][vs-market-link]
+[![Github-CI][github-ci-badge]][github-ci-link]
 
 The official [MyST (Markedly Structured Text)](https://myst-parser.readthedocs.io) Textmate grammar, and VS Code extension, for extending the markdown language.
 
@@ -146,3 +146,8 @@ See: https://code.visualstudio.com/api/working-with-extensions/publishing-extens
 ## Acknowledgements
 
 Testing originally adapted from [vscode-markdown-tm-grammar](https://github.com/microsoft/vscode-markdown-tm-grammar/tree/59a5962e4775bf96484bba64c5322422b555a40d).
+
+[vs-market-badge]: https://vsmarketplacebadge.apphb.com/version/ExecutableBookProject.myst-highlight.svg "Current Release"
+[vs-market-link]: https://marketplace.visualstudio.com/items?itemName=ExecutableBookProject.myst-highlight
+[github-ci-badge]: https://img.shields.io/github/workflow/status/ExecutableBookProject/myst-highlight-grammar/Github-CI?label=Github-CI
+[github-ci-link]: https://github.com/ExecutableBookProject/myst-highlight-grammar/actions
