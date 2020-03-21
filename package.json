@@ -91,6 +91,6 @@
         "compile": "tsc -p ./",
         "watch": "tsc -watch -p ./",
         "pretest": "npm run compile && npm run build",
-        "test": "node ./out/test/runIntergration.js && ./node_modules/mocha/bin/mocha --ui tdd out/test/standalone/**/**test.js"
+        "test": "node out/test/runIntergration.js && node_modules/mocha/bin/mocha --ui tdd out/test/standalone/"
     }
 }
