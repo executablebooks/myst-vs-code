@@ -70,15 +70,20 @@ Snippets are also built in the same manner.
 
 ### Testing
 
-To run the test suite:
+To run the full test suite:
 
 ```bash
-$ npm run test
+$ npm test
 ```
+
+The test suite is split into 'integration' tests,
+which require VS Code to be launched,
+and 'standalone' tests,
+which can be run in the standard fashion with [mocha](https://mochajs.org).
 
 The highlighting test cases are stored as markdown files under `test_static/colorize-fixtures`. Grammar test results are stored under `test_static/colorize-results`, which are automatically generated from the fixtures.
 
-To test the grammar in VS Code, select the `Launch Extension` configuration in the VS Code debugger and run. To launch a development version of the extension in VS Code, press `F5`.
+To visualise the grammar in VS Code, select the `Launch Extension` configuration in the VS Code debugger and run. To launch a development version of the extension in VS Code, press `F5`.
 
 See also [VS Code Testing Extension Guide](https://code.visualstudio.com/api/working-with-extensions/testing-extension)
 
