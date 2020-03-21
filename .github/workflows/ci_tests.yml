@@ -1,20 +1,20 @@
+# see https://github.com/sdras/awesome-actions for a good list of available action
 name: Github-CI
 
 on: [push, pull_request]
 
 jobs:
+
   build:
 
-    name: "${{ matrix.os }}/${{ matrix.code-version }}"
+    name: "${{ matrix.os }}/Node-${{matrix.node-version}}"
     runs-on: ${{ matrix.os }}
 
     strategy:
       matrix:
         os: [macos-latest, ubuntu-latest, windows-latest]
-        node-version: [8.x]
-        include:
-          - code-version: stable
-          # - code-version: insiders
+        node-version: [8.x, 10.x]
+        # code-version: [stable, insiders]
 
     steps:
     - uses: actions/checkout@v2
@@ -30,10 +30,23 @@ jobs:
       run: npm run lint
     - name: Build Grammar
       run: npm run build
+      # TODO test built files don't change after this?
     - name: Run tests
       uses: GabrielBB/xvfb-action@v1.0
       with:
         run: npm test
-    # TODO add publish on master tag
 
-
+  publish:
+    # only if all tests complete and the commit is tagged as a release
+    name: Publish to Marketplace
+    needs: build
+    if: github.event_name == 'push' && startsWith(github.event.ref, 'refs/tags') && contains(github.ref, 'release')
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - run: npm ci
+    - uses: lannonbr/vsce-action@master
+      with:
+        args: "publish -p $VSCE_TOKEN"
+      env:
+        VSCE_TOKEN: ${{ secrets.VSCE_PUB }}
