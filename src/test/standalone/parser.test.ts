@@ -14,15 +14,13 @@ suite('Parse Tests', () => {
     })
 
     test('Expand admonitions', () => {
-        let tokens = toTokens('````{note}\n```{tip}\ncontent\n```\na\n````')
-        tokens = expandAdmonitions(tokens, /^\{(note|tip)\}.*/)
+        let tokens = toTokens('`````{note}\n````{tip}\n```python\ncontent\n```\n````\na\n`````')
+        tokens = expandAdmonitions(tokens, /^\{(note|tip)\}\s*(.*)/)
         const types = tokens.map((t) => t.type)
         assert.deepEqual(types, [
             'admonition_open',
             'admonition_open',
-            'paragraph_open',
-            'inline',
-            'paragraph_close',
+            'fence',
             'admonition_close',
             'paragraph_open',
             'inline',

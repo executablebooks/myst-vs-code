@@ -7,30 +7,34 @@ export function toTokens(input: string) {
     return md.parse(input, env)
 }
 
-export function makeEnclosure(original: Token) {
+
+function makeEnclosure(original: Token, name: string, attributes: string) {
     const openToken = new Token('admonition_open', 'div', original.nesting)
-    openToken.meta = {'directive': original.info}  // TODO splitline into name and attributes (seperate func)
+    openToken.meta = { name, attributes }
+    openToken.attrSet('class', `admonition ${name}`)
     openToken.map = original.map
     openToken.info = original.info
     openToken.block = true
     const closeToken = new Token('admonition_close', 'div', original.nesting)
+    closeToken.meta = { name, attributes }
     closeToken.block = true
-    openToken.meta = {'directive': original.info}
     return { openToken, closeToken }
 }
 
 
-export function expandAdmonitions(tokens: Token[], match: RegExp) {
+export function expandAdmonitions(tokens: Token[], regex: RegExp) {
     let changed = true
     while (changed) {
         changed = false
         const newTokens: Token[] = []
         for (let index = 0; index < tokens.length; index++) {
             const token = tokens[index]
-            if ((token.type === 'fence') && (token.info.match(match))) {
+            const match = token.info.match(regex)
+            if ((token.type === 'fence') && (match !== null)) {
                 changed = true
+                // TODO parse inital yaml block (of present)
                 const nestedTokens = toTokens(token.content)
-                const { openToken, closeToken } = makeEnclosure(token)
+                const { openToken, closeToken } = makeEnclosure(token, match[1], match[2])
                 newTokens.push(openToken)
                 newTokens.push(...nestedTokens)
                 newTokens.push(closeToken)
