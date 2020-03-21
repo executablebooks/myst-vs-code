@@ -10,6 +10,19 @@ and adds additional language support for MyST specific elements.
 
 **Important** This extension is a work in progress, and future changes are likely.
 
+- [myst-language-support](#myst-language-support)
+  - [Features](#features)
+    - [Syntax Highlighting](#syntax-highlighting)
+    - [Hover and Autocompletion](#hover-and-autocompletion)
+    - [Preview Enancement](#preview-enancement)
+  - [Working with Markdown](#working-with-markdown)
+  - [Contributing](#contributing)
+    - [Building the Grammar](#building-the-grammar)
+    - [Testing](#testing)
+    - [Linting](#linting)
+    - [Publishing to VS Marketplace](#publishing-to-vs-marketplace)
+  - [Acknowledgements](#acknowledgements)
+
 ## Features
 
 ### Syntax Highlighting
@@ -32,7 +45,7 @@ Snippet completions are also available for a number of Sphinx directives:
 
 <img width="500" alt="screenshot" src="https://raw.githubusercontent.com/ExecutableBookProject/myst-highlight-grammar/master/images/snippet-completion.gif">
 
-### Preview
+### Preview Enancement
 
 This extension enhances VS Code's built-in Markdown previewer
 ([see this guide for info](https://code.visualstudio.com/api/extension-guides/markdown-extension)),
@@ -40,7 +53,7 @@ to properly render nested admonitions, and code directives, etc.
 
 <img width="500" alt="screenshot" src="https://raw.githubusercontent.com/ExecutableBookProject/myst-highlight-grammar/master/images/preview.gif">
 
-If you encounter any issues wuth this, you can disable it
+If you encounter any issues with this, you can disable it
 with the `myst.preview.enable` configuration option
 (and please report it).
 
@@ -52,7 +65,7 @@ Here are some useful editor keyboard shortcuts:
 * Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
 * Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
 
-### For more information
+For more information:
 
 * [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
 * [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
