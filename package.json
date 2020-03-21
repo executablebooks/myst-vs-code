@@ -49,7 +49,18 @@
                 "command": "myst.Activate",
                 "title": "MyST: Activate"
             }
-        ]
+        ],
+        "markdown.markdownItPlugins": true,
+        "configuration": {
+            "title": "MyST-Markdown Configuration",
+            "properties": {
+                "myst.preview.enable": {
+                    "description": "Whether to enable the Markdown Preview extension (requires reload)",
+                    "type": "boolean",
+                    "default": true
+                }
+            }
+        }
     },
     "main": "out/extension",
     "activationEvents": [

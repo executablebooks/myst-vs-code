@@ -10,11 +10,17 @@ and adds additional language support for MyST specific elements.
 
 **Important** This extension is a work in progress, and future changes are likely.
 
+## Features
+
+### Syntax Highlighting
+
 <img width="500" alt="screenshot" src="https://raw.githubusercontent.com/ExecutableBookProject/myst-highlight-grammar/master/images/Screenshot.png">
 
 Embedded code blocks/cells can be utilised in their native language:
 
 <img width="500" alt="screenshot" src="https://raw.githubusercontent.com/ExecutableBookProject/myst-highlight-grammar/master/images/embedded-code.gif">
+
+### Hover and Autocompletion
 
 Directive completion and hover is available for all built-in sphinx directives:
 
@@ -25,6 +31,18 @@ Directive completion and hover is available for all built-in sphinx directives:
 Snippet completions are also available for a number of Sphinx directives:
 
 <img width="500" alt="screenshot" src="https://raw.githubusercontent.com/ExecutableBookProject/myst-highlight-grammar/master/images/snippet-completion.gif">
+
+### Preview
+
+This extension enhances VS Code's built-in Markdown previewer
+([see this guide for info](https://code.visualstudio.com/api/extension-guides/markdown-extension)),
+to properly render nested admonitions, and code directives, etc.
+
+<img width="500" alt="screenshot" src="https://raw.githubusercontent.com/ExecutableBookProject/myst-highlight-grammar/master/images/preview.gif">
+
+If you encounter any issues wuth this, you can disable it
+with the `myst.preview.enable` configuration option
+(and please report it).
 
 ## Working with Markdown
 
