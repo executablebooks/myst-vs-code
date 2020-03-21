@@ -4,15 +4,27 @@ import Token = require('markdown-it/lib/token')  // eslint-disable-line
 
 
 /**
- * A basic block tokenizer that doesn't require other parameters
- * (mainly for tests)
+ * Create a block tokenizer function, with an instantiated MarkdownIt instance
  */
-export function toTokensBasic(input: string) {
-    const md = new MarkdownIt()
-    const env = {}
-    const tokens: Token[] = []
-    md.block.parse(input, md, env, tokens)
-    return tokens
+export function makeToTokens(md: MarkdownIt, env: any = {}) {
+
+    function toTokens(input: string, startLine: number | null = null) {
+        const tokens: Token[] = []
+        // TODO I think ideally we would use md.block.tokenize, to directly set startLine
+        // however, it is not specified on the type
+        // for possible fix: https://github.com/Microsoft/TypeScript/issues/2076
+        md.block.parse(input, md, env, tokens)
+        if (startLine !== null){
+            for (let index = 0; index < tokens.length; index++) {
+                const token = tokens[index]
+                if (token.map !== null) {
+                    token.map = [token.map[0] + startLine, token.map[1] + startLine]
+                }
+            }
+        }
+        return tokens
+    }
+    return toTokens
 }
 
 /**
@@ -42,10 +54,7 @@ function makeEnclosure(original: Token, name: string, attributes: string) {
  * @param regex the regex to match the string after the triple tick, shoud match groups (name, attributes)
  * @param toTokens the function for running nested parses
  */
-export function expandAdmonitions(tokens: Token[], regex: RegExp, toTokens: Function | null = null) {
-    if (toTokens === null) {
-        toTokens = toTokensBasic
-    }
+export function expandAdmonitions(tokens: Token[], regex: RegExp, toTokens: Function) {
     let changed = true
     while (changed) {
         changed = false
@@ -56,7 +65,7 @@ export function expandAdmonitions(tokens: Token[], regex: RegExp, toTokens: Func
             if ((token.type === 'fence') && (match !== null)) {
                 changed = true
                 // TODO extract inital yaml block (if present)
-                const nestedTokens = toTokens(token.content)
+                const nestedTokens = toTokens(token.content, token.map[0])
                 const { openToken, closeToken } = makeEnclosure(token, match[1], match[2])
                 newTokens.push(openToken)
                 newTokens.push(...nestedTokens)
@@ -108,15 +117,11 @@ export function markitPlugin(md: MarkdownIt)
     /// this plugin expands nested admonitions
     const ruleAdmonitions: Rule = (state) =>
     {
-        function toTokens(input: string) {
-            const tokens: Token[] = []
-            md.block.parse(input, md, state.env, tokens)
-            return tokens
-        }
+        const toTokens = makeToTokens(md, state.env)
         // TODO make the admonitions variable
         state.tokens = expandAdmonitions(state.tokens, /^\{(attention|caution|danger|error|important|hint|note|seealso|tip|warning)\}\s*(.*)/, toTokens)
     }
-    /// this plugin fixes the laguage of code directives
+    /// this plugin fixes the language of code directives
     const ruleCodeCells: Rule = (state) =>
     {
         // TODO make the directive names variable
