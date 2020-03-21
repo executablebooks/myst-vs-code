@@ -10,11 +10,17 @@ and adds additional language support for MyST specific elements.
 
 **Important** This extension is a work in progress, and future changes are likely.
 
+## Features
+
+### Syntax Highlighting
+
 <img width="500" alt="screenshot" src="https://raw.githubusercontent.com/ExecutableBookProject/myst-highlight-grammar/master/images/Screenshot.png">
 
 Embedded code blocks/cells can be utilised in their native language:
 
 <img width="500" alt="screenshot" src="https://raw.githubusercontent.com/ExecutableBookProject/myst-highlight-grammar/master/images/embedded-code.gif">
+
+### Hover and Autocompletion
 
 Directive completion and hover is available for all built-in sphinx directives:
 
@@ -25,6 +31,18 @@ Directive completion and hover is available for all built-in sphinx directives:
 Snippet completions are also available for a number of Sphinx directives:
 
 <img width="500" alt="screenshot" src="https://raw.githubusercontent.com/ExecutableBookProject/myst-highlight-grammar/master/images/snippet-completion.gif">
+
+### Preview
+
+This extension enhances VS Code's built-in Markdown previewer
+([see this guide for info](https://code.visualstudio.com/api/extension-guides/markdown-extension)),
+to properly render nested admonitions, and code directives, etc.
+
+<img width="500" alt="screenshot" src="https://raw.githubusercontent.com/ExecutableBookProject/myst-highlight-grammar/master/images/preview.gif">
+
+If you encounter any issues wuth this, you can disable it
+with the `myst.preview.enable` configuration option
+(and please report it).
 
 ## Working with Markdown
 
@@ -70,15 +88,26 @@ Snippets are also built in the same manner.
 
 ### Testing
 
-To run the test suite:
+To run the full test suite:
 
 ```bash
-$ npm run test
+$ npm test
+```
+
+The test suite is split into 'integration' tests,
+which require VS Code to be launched,
+and 'standalone' tests,
+which can be run in the standard fashion with [mocha](https://mochajs.org).
+
+```bash
+$ npm run pretest
+$ node ./out/test/runIntergration.js
+$ ./node_modules/mocha/bin/mocha --ui tdd out/test/standalone/
 ```
 
 The highlighting test cases are stored as markdown files under `test_static/colorize-fixtures`. Grammar test results are stored under `test_static/colorize-results`, which are automatically generated from the fixtures.
 
-To test the grammar in VS Code, select the `Launch Extension` configuration in the VS Code debugger and run. To launch a development version of the extension in VS Code, press `F5`.
+To visualise the grammar in VS Code, select the `Launch Extension` configuration in the VS Code debugger and run. To launch a development version of the extension in VS Code, press `F5`.
 
 See also [VS Code Testing Extension Guide](https://code.visualstudio.com/api/working-with-extensions/testing-extension)
 

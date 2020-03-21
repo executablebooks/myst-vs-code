@@ -9,7 +9,8 @@
         "**/CVS": true,
         "**/.DS_Store": true,
         "**/.vscode-test": true,
-        "out": false
+        "out": false,
+        "node_modules": true
     },
     "search.exclude": {
         "out": true // set this to false to include "out" folder in search results

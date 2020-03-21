@@ -7,14 +7,9 @@ import * as completion from '../../directives'
 
 suite('Completions Tests', () => {
 
-    test('Read directives', () => {
-        const dirs = completion.getDirectives()
-        assert.equal(dirs['acks']['name'], 'acks')
-    })
-
     test('Make description', () => {
-        const dirs = completion.getDirectives()
-        const text = completion.makeDescription(dirs['note'], true)
+        const directive = completion.getDirectiveData('note')
+        const text = completion.makeDescription(directive, true)
         assert.equal(text.value.includes('.Note'), true)
     })
 
