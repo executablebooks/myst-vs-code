@@ -9,7 +9,7 @@ suite('Completions Tests', () => {
 
     test('Make description', () => {
         const directive = completion.getDirectiveData('note')
-        const text = completion.makeDescription(directive['note'], true)
+        const text = completion.makeDescription(directive, true)
         assert.equal(text.value.includes('.Note'), true)
     })
 
