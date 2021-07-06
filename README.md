@@ -118,9 +118,11 @@ $ node ./out/test/runIntergration.js
 $ ./node_modules/mocha/bin/mocha --ui tdd out/test/standalone/
 ```
 
-The highlighting test cases are stored as markdown files under `test_static/colorize-fixtures`. Grammar test results are stored under `test_static/colorize-results`, which are automatically generated from the fixtures.
+The highlighting test cases are stored as markdown files under `test_static/colorize-fixtures`.
+Grammar test results are stored under `test_static/colorize-results`, which are automatically generated/updated from the fixtures.
 
-To visualise the grammar in VS Code, select the `Launch Extension` configuration in the VS Code debugger and run. To launch a development version of the extension in VS Code, press `F5`.
+To visualise the grammar in VS Code, select the `Launch Extension` configuration in the VS Code debugger and run.
+To launch a development version of the extension in VS Code, press `F5`.
 
 See also [VS Code Testing Extension Guide](https://code.visualstudio.com/api/working-with-extensions/testing-extension)
 
