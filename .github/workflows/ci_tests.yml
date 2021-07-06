@@ -1,7 +1,11 @@
 # see https://github.com/sdras/awesome-actions for a good list of available action
 name: Github-CI
 
-on: [push, pull_request]
+on:
+  push:
+    branches: [master, ci-*]
+  pull_request:
+    branches: [master]
 
 jobs:
 
