@@ -9,7 +9,28 @@ on:
 
 jobs:
 
-  build:
+  lint:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Cache packages
+        id: cache-npm
+        uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-npm-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: ${{ runner.os }}-npm-
+      - name: Use Node.js 12.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12.x
+      - name: Install dependencies
+        run: npm ci
+      - name: Run linting
+        run: npm run lint
+
+  tests:
 
     name: "${{ matrix.os }}/Node-${{matrix.node-version}}"
     runs-on: ${{ matrix.os }}
@@ -18,11 +39,11 @@ jobs:
       fail-fast: false
       matrix:
         os: [macos-latest, ubuntu-latest, windows-latest]
-        node-version: [10.x]  # [8.x, 10.x]
+        node-version: [12.x]
         # code-version: [stable, insiders]
         include:
         - os: ubuntu-latest
-          node-version: 12.x
+          node-version: 10.x
         - os: ubuntu-latest
           node-version: 14.x
 
@@ -36,8 +57,6 @@ jobs:
       run: |
         npm ci
         npm run compile
-    - name: Lint Code
-      run: npm run lint
     - name: Build Grammar
       run: npm run build
       # TODO test built files don't change after this?
