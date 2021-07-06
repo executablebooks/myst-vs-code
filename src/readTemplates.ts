@@ -13,13 +13,13 @@ export function readGrammar(asPlist: boolean = false) {
     const directiveYaml = fs.readFileSync(path.join(__dirname, '../template/directives.yaml'), 'utf8')
 
     // read variables
-    const languages = yaml.safeLoad(languageYaml)
-    const directives = yaml.safeLoad(directiveYaml)
+    const languages = yaml.safeLoad(languageYaml) as {[key: string]: any}
+    const directives = yaml.safeLoad(directiveYaml) as {[key: string]: any}
 
     // inject variables
     // eslint-disable-next-line @typescript-eslint/camelcase
     const inputYaml = jinja.renderString(templateYaml, { admonition_classes: directives['admonition_classes'], code_classes: directives['code_classes'], languages }).toString()
-    const grammar = yaml.safeLoad(inputYaml)
+    const grammar = yaml.safeLoad(inputYaml) as {[key: string]: any}
     if (asPlist) {
         return plist.build(grammar)
     }
@@ -36,7 +36,7 @@ function getDefault(obj: any, name: any, defaultValue: any = null) {
 
 export function readSnippets(asJson: boolean = false) {
     const snippetsYaml = fs.readFileSync(path.join(__dirname, '../snippets/dir.template.yaml'), 'utf8')
-    const snippets = yaml.safeLoad(snippetsYaml)
+    const snippets = yaml.safeLoad(snippetsYaml) as {[key: string]: any}
     const finalData: { [index: string]: any } = {}
     for (const name in snippets) {
         const data = snippets[name]

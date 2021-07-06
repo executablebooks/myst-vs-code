@@ -15,7 +15,7 @@ suite('Build Tests', () => {
 
     test('Build directives', () => {
         const expected = fs.readFileSync(path.join(__dirname, '../../../syntaxes', 'myst.tmLanguage'), 'utf8')
-        const plistString = readGrammar(true)
+        const plistString = readGrammar(true) as string
         assert.equal(sanitize(plistString), sanitize(expected))
     })
 
