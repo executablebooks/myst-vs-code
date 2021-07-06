@@ -51,6 +51,9 @@
             }
         ],
         "markdown.markdownItPlugins": true,
+        "markdown.previewStyles": [
+            "./style.css"
+        ],
         "configuration": {
             "title": "MyST-Markdown Configuration",
             "properties": {
@@ -73,6 +76,7 @@
     "devDependencies": {
         "@types/glob": "^7.1.1",
         "@types/js-yaml": "^3.12.2",
+        "@types/markdown-it": "^12.0.2",
         "@types/mocha": "^5.2.6",
         "@types/node": "^8.10.25",
         "@types/nunjucks": "^3.1.3",
@@ -84,6 +88,7 @@
         "eslint-config-prettier": "^8.3.0",
         "eslint-plugin-import": "^2.20.1",
         "eslint-plugin-prettier": "^3.4.0",
+        "markdown-it": "^12.1.0",
         "minimist": ">=1.2.2",
         "mocha": "^6.1.4",
         "nunjucks": "^3.2.1",
@@ -95,9 +100,8 @@
         "vscode-test": "^1.3.0"
     },
     "dependencies": {
-        "@types/markdown-it": "0.0.9",
         "js-yaml": "^3.13.1",
-        "markdown-it": "^10.0.0"
+        "markdown-it-docutils": "^0.0.9"
     },
     "scripts": {
         "format": "prettier --write src/*.ts src/**/*.ts",

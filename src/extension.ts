@@ -3,7 +3,7 @@
 // Import the module and reference it with the alias vscode in your code below
 import * as vscode from "vscode"
 import { CompletionItemProvider, HoverProvider } from "./directives"
-import { markitPlugin } from "./md_it_plugin"
+import docutilsPlugin from "markdown-it-docutils"
 
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
@@ -41,7 +41,7 @@ export function activate(context: vscode.ExtensionContext) {
   }
   return {
     extendMarkdownIt(md: any) {
-      return md.use(markitPlugin)
+      return md.use(docutilsPlugin)
     }
   }
 }
