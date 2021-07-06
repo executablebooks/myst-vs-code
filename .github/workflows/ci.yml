@@ -1,5 +1,5 @@
 # see https://github.com/sdras/awesome-actions for a good list of available action
-name: Github-CI
+name: CI
 
 on:
   push:
