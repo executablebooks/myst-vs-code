@@ -20,6 +20,11 @@ jobs:
         os: [macos-latest, ubuntu-latest, windows-latest]
         node-version: [10.x]  # [8.x, 10.x]
         # code-version: [stable, insiders]
+        include:
+        - os: ubuntu-latest
+        - node-version: 12.x
+        - os: ubuntu-latest
+        - node-version: 14.x
 
     steps:
     - uses: actions/checkout@v2
