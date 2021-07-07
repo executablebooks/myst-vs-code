@@ -101,7 +101,7 @@
     },
     "dependencies": {
         "js-yaml": "^3.13.1",
-        "markdown-it-docutils": "^0.0.9"
+        "markdown-it-docutils": "^0.0.10"
     },
     "scripts": {
         "format": "prettier --write src/*.ts src/**/*.ts",
