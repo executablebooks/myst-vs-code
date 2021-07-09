@@ -115,6 +115,8 @@
         "build": "npm run build:code && npm run build:assets",
         "watch": "tsc -watch -p ./",
         "pretest": "npm run build",
-        "test": "node out/test/runIntergration.js && mocha --ui tdd out/test/standalone/"
+        "test:unit": "mocha --ui tdd out/test/standalone/",
+        "test:integration": "node out/test/runIntergration.js",
+        "test": "npm run test:unit && npm run test:integration"
     }
 }

@@ -120,13 +120,13 @@ $ npm test
 
 The test suite is split into 'integration' tests,
 which require VS Code to be launched,
-and 'standalone' tests,
+and 'unit' tests,
 which can be run in the standard fashion with [mocha](https://mochajs.org).
 
 ```bash
 $ npm run pretest
-$ node ./out/test/runIntergration.js
-$ ./node_modules/mocha/bin/mocha --ui tdd out/test/standalone/
+$ npm run test:unit
+$ npm run test:integration
 ```
 
 The highlighting test cases are stored as markdown files under `test_static/colorize-fixtures`.
