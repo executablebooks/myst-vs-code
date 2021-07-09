@@ -3,10 +3,25 @@
 // Import the module and reference it with the alias vscode in your code below
 import * as vscode from "vscode"
 import { CompletionItemProvider, HoverProvider } from "./directivesCompletion"
-// import frontMatterPlugin from "markdown-it-front-matter"
+import frontMatterPlugin from "markdown-it-front-matter"
 import footnotePlugin from "markdown-it-footnote"
 import docutilsPlugin from "markdown-it-docutils"
 import type MarkdownIt from "markdown-it"
+import type StateCore from "markdown-it/lib/rules_core/state_core"
+
+/** Markdown-it plugin to convert the front-matter token to a renderable token, for previews */
+function convertFrontMatter(md: MarkdownIt) {
+  md.core.ruler.after("block", "convert_front_matter", (state: StateCore) => {
+    if (state.tokens.length && state.tokens[0].type === "front_matter") {
+      const replace = new state.Token("fence", "code", 0)
+      replace.map = state.tokens[0].map
+      replace.info = "yaml"
+      replace.content = state.tokens[0].meta
+      state.tokens[0] = replace
+    }
+    return true
+  })
+}
 
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
@@ -45,14 +60,13 @@ export function activate(context: vscode.ExtensionContext) {
   return {
     extendMarkdownIt(md: MarkdownIt) {
       // note ideally here, we would want to specify the config as commonmark, rather than default
-      return (
-        md
-          .enable("table")
-          // .use(frontMatterPlugin) // TODO this breaks preview, by consuming all of text and leaving an empty screen
-          .use(footnotePlugin)
-          .disable("footnote_inline") // not yet implemented in myst-parser
-          .use(docutilsPlugin)
-      )
+      return md
+        .enable("table")
+        .use(frontMatterPlugin, () => {})
+        .use(convertFrontMatter)
+        .use(footnotePlugin)
+        .disable("footnote_inline") // not yet implemented in myst-parser
+        .use(docutilsPlugin)
     }
   }
 }
