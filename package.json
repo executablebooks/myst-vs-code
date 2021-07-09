@@ -52,7 +52,7 @@
         ],
         "markdown.markdownItPlugins": true,
         "markdown.previewStyles": [
-            "./style.css"
+            "./node_modules/markdown-it-docutils/dist/css/style.min.css"
         ],
         "configuration": {
             "title": "MyST-Markdown Configuration",
@@ -101,7 +101,7 @@
     },
     "dependencies": {
         "js-yaml": "^3.13.1",
-        "markdown-it-docutils": "^0.0.10"
+        "markdown-it-docutils": "^0.0.12"
     },
     "scripts": {
         "format": "prettier --write src/*.ts src/**/*.ts",
