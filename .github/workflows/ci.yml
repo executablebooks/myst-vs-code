@@ -53,13 +53,11 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - name: Compile
+    - name: Build Package
       run: |
         npm ci
-        npm run compile
-    - name: Build Grammar
-      run: npm run build
-      # TODO test built files don't change after this?
+        npm run build
+      # TODO test built grammar files don't change after this?
     - name: Run tests
       uses: GabrielBB/xvfb-action@v1.0
       with:

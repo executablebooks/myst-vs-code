@@ -15,28 +15,17 @@ parserOptions:
   ecmaVersion: 2018
   project: "./tsconfig.eslint.json"
 rules:
-  # TODO turn the following on after updating repo
-  "@typescript-eslint/naming-convention": "off"
+
+  # these are related to using any
   "@typescript-eslint/no-unsafe-member-access": "off"
   "@typescript-eslint/no-unsafe-assignment": "off"
-  "@typescript-eslint/no-floating-promises": "off"
   "@typescript-eslint/restrict-template-expressions": "off"
-  "@typescript-eslint/no-unsafe-return": "off"
   "@typescript-eslint/explicit-module-boundary-types": "off"
-  "@typescript-eslint/restrict-plus-operands": "off"
-  "@typescript-eslint/no-unsafe-call": "off"
-  "@typescript-eslint/ban-types": "off"
-  # end TODO
+  "@typescript-eslint/no-explicit-any": "off"
+
   no-undef: "off"
   no-unused-vars: "off"
   no-constant-condition: "off"
-  "@typescript-eslint/ban-ts-comment": error
-  "@typescript-eslint/prefer-interface": "off"
-  "@typescript-eslint/explicit-function-return-type": "off"
-  "@typescript-eslint/explicit-member-accessibility": "off"
-  "@typescript-eslint/indent": "off"
-  "@typescript-eslint/interface-name-prefix": "off"
-  "@typescript-eslint/no-use-before-define": "off"
   "@typescript-eslint/type-annotation-spacing":
     - error
     - before: false
@@ -52,10 +41,6 @@ rules:
   prefer-arrow-callback:
     - error
     - allowUnboundThis: false
-  "@typescript-eslint/no-parameter-properties": "off"
-  "@typescript-eslint/no-explicit-any": "off"
-  "@typescript-eslint/no-inferrable-types": "off"
-  "@typescript-eslint/prefer-regexp-exec": "off"
   "@typescript-eslint/no-empty-function": "off"
   "@typescript-eslint/no-misused-promises":
     - error

@@ -17,7 +17,8 @@ and adds additional language support for MyST specific elements.
     - [Preview Enhancement](#preview-enhancement)
   - [Working with Markdown](#working-with-markdown)
   - [Contributing](#contributing)
-    - [Building the Grammar](#building-the-grammar)
+    - [Manual testing](#manual-testing)
+    - [Building the grammar and snippet assets](#building-the-grammar-and-snippet-assets)
     - [Testing](#testing)
     - [Linting](#linting)
     - [Publishing to VS Marketplace](#publishing-to-vs-marketplace)
@@ -77,17 +78,29 @@ The main grammar is stored in `syntaxes/myst.tmLanguage`. This file is generated
 See [this guide on textmate bundles](https://macromates.com/manual/en/language_grammars) and
 [the VS Code guide](https://code.visualstudio.com/api/language-extensions/syntax-highlight-guide) for more help.
 
-### Building the Grammar
+### Manual testing
 
-The grammar is written as a [jinja template](https://jinja.palletsprojects.com) YAML file,
+To launch a local version of the extension in VS Code, first ensure the extension build is updated:
+
+```console
+$ npm run build
+```
+
+Now select the `Launch Extension` configuration in the VS Code debugger and run.
+To launch a development version of the extension in VS Code, press `F5`.
+
+See also [VS Code Testing Extension Guide](https://code.visualstudio.com/api/working-with-extensions/testing-extension)
+
+### Building the grammar and snippet assets
+
+The grammar is written as a [Jinja template](https://jinja.palletsprojects.com) YAML file,
 with the templates and default variables stored in `template/`
 
-To generate the main grammar with javascript:
+To generate the asset files (grammar and snippets):
 
 ```bash
 $ npm ci
-$ npm run compile
-$ npm run build
+$ npm run build:assets
 ```
 
 or with python:
@@ -96,8 +109,6 @@ or with python:
 $ pip install yaml jinja2
 $ python src/build.py
 ```
-
-Snippets are also built in the same manner.
 
 ### Testing
 
@@ -120,11 +131,6 @@ $ ./node_modules/mocha/bin/mocha --ui tdd out/test/standalone/
 
 The highlighting test cases are stored as markdown files under `test_static/colorize-fixtures`.
 Grammar test results are stored under `test_static/colorize-results`, which are automatically generated/updated from the fixtures.
-
-To visualise the grammar in VS Code, select the `Launch Extension` configuration in the VS Code debugger and run.
-To launch a development version of the extension in VS Code, press `F5`.
-
-See also [VS Code Testing Extension Guide](https://code.visualstudio.com/api/working-with-extensions/testing-extension)
 
 ### Linting
 

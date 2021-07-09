@@ -2,7 +2,7 @@
 import * as assert from "assert"
 import * as vscode from "vscode"
 
-import * as completion from "../../directives"
+import * as completion from "../../directivesCompletion"
 
 suite("Completions Tests", () => {
   test("Make description", () => {

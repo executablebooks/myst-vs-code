@@ -2,8 +2,11 @@
 // The module 'vscode' contains the VS Code extensibility API
 // Import the module and reference it with the alias vscode in your code below
 import * as vscode from "vscode"
-import { CompletionItemProvider, HoverProvider } from "./directives"
+import { CompletionItemProvider, HoverProvider } from "./directivesCompletion"
+// import frontMatterPlugin from "markdown-it-front-matter"
+import footnotePlugin from "markdown-it-footnote"
 import docutilsPlugin from "markdown-it-docutils"
+import type MarkdownIt from "markdown-it"
 
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
@@ -18,7 +21,7 @@ export function activate(context: vscode.ExtensionContext) {
   const disposable = vscode.commands.registerCommand("myst.Activate", () => {
     // The code you place here will be executed every time your command is executed
     // Display a message box to the user
-    vscode.window.showInformationMessage("Activated MyST-Markdown!")
+    void vscode.window.showInformationMessage("Activated MyST-Markdown!")
   })
 
   context.subscriptions.push(disposable)
@@ -40,8 +43,16 @@ export function activate(context: vscode.ExtensionContext) {
     return {}
   }
   return {
-    extendMarkdownIt(md: any) {
-      return md.use(docutilsPlugin)
+    extendMarkdownIt(md: MarkdownIt) {
+      // note ideally here, we would want to specify the config as commonmark, rather than default
+      return (
+        md
+          .enable("table")
+          // .use(frontMatterPlugin) // TODO this breaks preview, by consuming all of text and leaving an empty screen
+          .use(footnotePlugin)
+          .disable("footnote_inline") // not yet implemented in myst-parser
+          .use(docutilsPlugin)
+      )
     }
   }
 }

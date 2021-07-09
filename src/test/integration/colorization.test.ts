@@ -75,7 +75,10 @@ function hasThemeChange(d: { [key: string]: any }, p: { [key: string]: any }) {
 suite("colorization", () => {
   before(() => {
     // ensure the extension is activated, so the grammar is injected
-    commands.executeCommand("myst.Activate").then((_data: any) => {})
+    commands.executeCommand("myst.Activate").then(
+      (_data: any) => {},
+      () => {}
+    )
   })
 
   // We place the test files in this lower level FoldingRange, so that when this file is compiled to out/test/,
@@ -90,6 +93,7 @@ suite("colorization", () => {
     fixturesFiles.forEach(fixturesFile => {
       // define a test for each fixture
       test(fixturesFile, done => {
+        // eslint-disable-next-line @typescript-eslint/no-floating-promises
         assertUnchangedTokens(join(extensionColorizeFixturePath, fixturesFile), done)
       })
     })

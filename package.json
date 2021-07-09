@@ -101,17 +101,20 @@
     },
     "dependencies": {
         "js-yaml": "^3.13.1",
-        "markdown-it-docutils": "^0.0.12"
+        "markdown-it-docutils": "^0.0.12",
+        "markdown-it-footnote": "^3.0.3",
+        "markdown-it-front-matter": "^0.2.3"
     },
     "scripts": {
         "format": "prettier --write src/*.ts src/**/*.ts",
         "lint": "eslint -c .eslintrc.yaml --max-warnings 1 --cache --ext .ts,.js .",
         "lint:fix": "eslint -c .eslintrc.yaml --fix --cache --ext .ts,.js .",
-        "build": "node out/build",
-        "vscode:prepublish": "npm run compile && npm run build",
-        "compile": "tsc -p ./",
+        "vscode:prepublish": "npm run build",
+        "build:code": "tsc -p ./",
+        "build:assets": "node out/build",
+        "build": "npm run build:code && npm run build:assets",
         "watch": "tsc -watch -p ./",
-        "pretest": "npm run compile && npm run build",
+        "pretest": "npm run build",
         "test": "node out/test/runIntergration.js && mocha --ui tdd out/test/standalone/"
     }
 }
