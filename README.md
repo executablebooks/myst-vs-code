@@ -19,7 +19,7 @@ and adds additional language support for MyST specific elements.
   - [Contributing](#contributing)
     - [Manual testing](#manual-testing)
     - [Building the grammar and snippet assets](#building-the-grammar-and-snippet-assets)
-    - [Testing](#testing)
+    - [Unit and integration testing](#unit-and-integration-testing)
     - [Linting](#linting)
     - [Publishing to VS Marketplace](#publishing-to-vs-marketplace)
   - [Acknowledgements](#acknowledgements)
@@ -86,10 +86,8 @@ To launch a local version of the extension in VS Code, first ensure the extensio
 $ npm run build
 ```
 
-Now select the `Launch Extension` configuration in the VS Code debugger and run.
+Now select the `Launch Extension` configuration in the VS Code `Run and Debug` side panel.
 To launch a development version of the extension in VS Code, press `F5`.
-
-See also [VS Code Testing Extension Guide](https://code.visualstudio.com/api/working-with-extensions/testing-extension)
 
 ### Building the grammar and snippet assets
 
@@ -110,18 +108,14 @@ $ pip install yaml jinja2
 $ python src/build.py
 ```
 
-### Testing
+### Unit and integration testing
 
-To run the full test suite:
+The test suite is split into:
 
-```bash
-$ npm test
-```
+- 'integration' tests, which require VS Code to be launched, and
+- 'unit' tests, which can be run in the standard fashion with [mocha](https://mochajs.org)
 
-The test suite is split into 'integration' tests,
-which require VS Code to be launched,
-and 'unit' tests,
-which can be run in the standard fashion with [mocha](https://mochajs.org).
+You can run them on the CLI with `npm test`, or separately:
 
 ```bash
 $ npm run pretest
@@ -129,8 +123,14 @@ $ npm run test:unit
 $ npm run test:integration
 ```
 
+Running from the CLI will download and launch a specific version of VS Code (see `src/test/runIntergration.ts`).
+
+Note though, that running integration tests from within VS Code may error (see [Testing extensions tips](https://code.visualstudio.com/api/working-with-extensions/testing-extension#using-insiders-version-for-extension-development)).
+In this case you can run the tests directly through the `Debug Launcher` in the side panel (see `.vscode/launch.json`).
+
 The highlighting test cases are stored as markdown files under `test_static/colorize-fixtures`.
 Grammar test results are stored under `test_static/colorize-results`, which are automatically generated/updated from the fixtures.
+Note though that the fixture results can change between VS Code versions, so you should use the version specified in `src/test/runIntergration.ts`.
 
 ### Linting
 
