@@ -6,14 +6,16 @@ import * as path from "path"
 import { mystBlockPlugin } from "../../mdPlugins"
 
 suite("Syntax Fixtures: MyST Blocks", () => {
-  const fixtures = fs.readFileSync(
-    path.join(__dirname, "../../../test_static/syntax-fixtures", "myst_block.md"),
-    "utf8"
-  )
+  const fixtures = fs
+    .readFileSync(
+      path.join(__dirname, "../../../test_static/syntax-fixtures", "myst_block.md"),
+      "utf8"
+    )
+    .replace(/\r\n|\n\r|\n|\r/g, "\n")
   const mdit = MarkdownIt("commonmark").use(mystBlockPlugin)
   fixtures
-    .split(/\n\r?\.\n\r?\n\r?/)
-    .map(s => s.split(/\n\r?\.\n\r?/))
+    .split(/\n\.\n\n/)
+    .map(s => s.split(/\n\.\n/))
     .forEach(([name, text, expected]) => {
       test(name, () => {
         const rendered = mdit.render(text)
