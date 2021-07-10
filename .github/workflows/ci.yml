@@ -4,6 +4,8 @@ name: CI
 on:
   push:
     branches: [master, ci-*]
+    tags:
+    - "v[0-9]+.[0-9]+.[0-9]+*"
   pull_request:
     branches: [master]
 
@@ -65,9 +67,9 @@ jobs:
 
   publish:
     # only if all tests complete and the commit is tagged as a release
-    name: Publish to Marketplace
+    name: Publish to VS Code Marketplace
     needs: [lint, tests]
-    if: github.event_name == 'push' && startsWith(github.event.ref, 'refs/tags') && contains(github.ref, 'release')
+    if: github.event_name == 'push' && startsWith(github.event.ref, 'refs/tags') && contains(github.ref, 'v')
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
