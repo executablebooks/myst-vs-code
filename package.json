@@ -61,6 +61,22 @@
                     "description": "Whether to enable the Markdown Preview extension (requires reload)",
                     "type": "boolean",
                     "default": true
+                },
+                "myst.preview.extensions": {
+                    "description": "The syntax extensions to load",
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "enum": [
+                            "amsmath",
+                            "deflist",
+                            "dollarmath",
+                            "tasklist"
+                        ]
+                    },
+                    "default": [
+                        "dollarmath"
+                    ]
                 }
             }
         }
@@ -76,6 +92,7 @@
     "devDependencies": {
         "@types/glob": "^7.1.1",
         "@types/js-yaml": "^3.12.2",
+        "@types/katex": "^0.11.1",
         "@types/markdown-it": "^12.0.2",
         "@types/mocha": "^5.2.6",
         "@types/node": "^8.10.25",
@@ -101,9 +118,14 @@
     },
     "dependencies": {
         "js-yaml": "^3.13.1",
+        "katex": "^0.13.11",
+        "markdown-it-amsmath": "^0.1.2",
+        "markdown-it-deflist": "^2.1.0",
         "markdown-it-docutils": "^0.0.12",
+        "markdown-it-dollarmath": "^0.2.0",
         "markdown-it-footnote": "^3.0.3",
-        "markdown-it-front-matter": "^0.2.3"
+        "markdown-it-front-matter": "^0.2.3",
+        "markdown-it-task-lists": "^2.1.1"
     },
     "scripts": {
         "format": "prettier --write src/*.ts src/**/*.ts",

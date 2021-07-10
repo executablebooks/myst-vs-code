@@ -7,21 +7,12 @@ import frontMatterPlugin from "markdown-it-front-matter"
 import footnotePlugin from "markdown-it-footnote"
 import docutilsPlugin from "markdown-it-docutils"
 import type MarkdownIt from "markdown-it"
-import type StateCore from "markdown-it/lib/rules_core/state_core"
-
-/** Markdown-it plugin to convert the front-matter token to a renderable token, for previews */
-function convertFrontMatter(md: MarkdownIt) {
-  md.core.ruler.after("block", "convert_front_matter", (state: StateCore) => {
-    if (state.tokens.length && state.tokens[0].type === "front_matter") {
-      const replace = new state.Token("fence", "code", 0)
-      replace.map = state.tokens[0].map
-      replace.info = "yaml"
-      replace.content = state.tokens[0].meta
-      state.tokens[0] = replace
-    }
-    return true
-  })
-}
+import dollarmathPlugin from "markdown-it-dollarmath"
+import amsmathPlugin from "markdown-it-amsmath"
+import deflistPlugin from "markdown-it-deflist"
+import tasklistPlugin from "markdown-it-task-lists"
+import { renderToString } from "katex"
+import { convertFrontMatter, mystBlockPlugin } from "./mdPlugins"
 
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
@@ -60,13 +51,39 @@ export function activate(context: vscode.ExtensionContext) {
   return {
     extendMarkdownIt(md: MarkdownIt) {
       // note ideally here, we would want to specify the config as commonmark, rather than default
-      return md
+      const extensions: string[] = vscode.workspace
+        .getConfiguration("myst.preview")
+        .get("extensions", [])
+      let newMd = md
         .enable("table")
         .use(frontMatterPlugin, () => {})
         .use(convertFrontMatter)
+        .use(mystBlockPlugin)
         .use(footnotePlugin)
         .disable("footnote_inline") // not yet implemented in myst-parser
         .use(docutilsPlugin)
+
+      if (extensions.includes("dollarmath")) {
+        newMd = newMd.use(dollarmathPlugin, {
+          double_inline: true,
+          renderer: renderToString,
+          optionsInline: { throwOnError: false, displayMode: false },
+          optionsBlock: { throwOnError: false, displayMode: true }
+        })
+      }
+      if (extensions.includes("amsmath")) {
+        newMd = newMd.use(amsmathPlugin, {
+          renderer: renderToString,
+          options: { throwOnError: false, displayMode: true }
+        })
+      }
+      if (extensions.includes("deflist")) {
+        newMd = newMd.use(deflistPlugin)
+      }
+      if (extensions.includes("tasklist")) {
+        newMd = newMd.use(tasklistPlugin)
+      }
+      return newMd
     }
   }
 }

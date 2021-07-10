@@ -1,20 +1,22 @@
-# myst-language-support
+# MyST VS Code Extension
 
 [![VS Marketplace][vs-market-badge]][vs-market-link]
 [![Github-CI][github-ci-badge]][github-ci-link]
 
 The official [MyST (Markedly Structured Text)](https://myst-parser.readthedocs.io) Textmate grammar, and VS Code extension, for extending the markdown language.
 
-This extension injects additional elements into the base markdown syntax highlighting grammar,
-and adds additional language support for MyST specific elements.
+This extension injects additional elements into the base markdown syntax highlighting grammar, and adds additional language support for MyST specific elements.
 
 **Important** This extension is a work in progress, and future changes are likely.
 
-- [myst-language-support](#myst-language-support)
+**NEW**: In version 0.11, the preview parser has been fully re-written!
+
+- [MyST VS Code Extension](#myst-vs-code-extension)
   - [Features](#features)
     - [Syntax Highlighting](#syntax-highlighting)
     - [Hover and Autocompletion](#hover-and-autocompletion)
     - [Preview Enhancement](#preview-enhancement)
+      - [A note on dollar-math](#a-note-on-dollar-math)
   - [Working with Markdown](#working-with-markdown)
   - [Contributing](#contributing)
     - [Manual testing](#manual-testing)
@@ -49,27 +51,40 @@ Snippet completions are also available for a number of Sphinx directives:
 ### Preview Enhancement
 
 This extension enhances VS Code's built-in Markdown previewer
-([see this guide for info](https://code.visualstudio.com/api/extension-guides/markdown-extension)),
-to properly render nested admonitions, and code directives, etc.
+([see this guide for info](https://code.visualstudio.com/api/extension-guides/markdown-extension)), to properly render MyST syntax like directives and other extensions.
 
 <img width="500" alt="screenshot" src="https://raw.githubusercontent.com/ExecutableBookProject/myst-highlight-grammar/master/images/preview.gif">
 
-If you encounter any issues with this, you can disable it
-with the `myst.preview.enable` configuration option
-(and please report it).
+If you encounter any issues with this, you can disable it with the `myst.preview.enable` [configuration setting][vscode-settings] (and please report it).
+
+You can add MyST syntax extensions with the `myst.preview.extensions` [configuration setting][vscode-settings]. Available extensions:
+
+- `amsmath`: Parse AMS LaTeX math environments
+- `deflist`: Parse definition lists
+- `dollarmath`: Parse dollar-delimited math (on by default)
+- `tasklist`: Parse GitHub style task lists
+
+Note after changing this setting you should reload the VS Code window.
+
+#### A note on dollar-math
+
+From VS Code version `v1.58.0`, VS Code natively supports dollar math rendering ([see here](https://code.visualstudio.com/updates/v1_58#_math-formula-rendering-in-the-markdown-preview)).
+Using the `dollarmath` extension overrides this with some slightly different parsing rules (e.g. dollarmath allows `$$` display math in inline contexts and also labels: `$$a=1$$ (label)`).
+
+If there are still any incompatibilities you can turn off the native support with `markdown.math.enabled` [configuration setting][vscode-settings].
 
 ## Working with Markdown
 
 Here are some useful editor keyboard shortcuts:
 
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
+- Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
+- Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
+- Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
 
 For more information:
 
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+- [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
+- [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
 
 ## Contributing
 
@@ -126,7 +141,7 @@ $ npm run test:integration
 Running from the CLI will download and launch a specific version of VS Code (see `src/test/runIntergration.ts`).
 
 Note though, that running integration tests from within VS Code may error (see [Testing extensions tips](https://code.visualstudio.com/api/working-with-extensions/testing-extension#using-insiders-version-for-extension-development)).
-In this case you can run the tests directly through the `Debug Launcher` in the side panel (see `.vscode/launch.json`).
+In this case you can run the tests directly through the `Debug Launcher` in the side panel (see `.vscode/launch.json`). The output can be viewed in the debug console.
 
 The highlighting test cases are stored as markdown files under `test_static/colorize-fixtures`.
 Grammar test results are stored under `test_static/colorize-results`, which are automatically generated/updated from the fixtures.
@@ -159,3 +174,4 @@ Testing originally adapted from [vscode-markdown-tm-grammar](https://github.com/
 [vs-market-link]: https://marketplace.visualstudio.com/items?itemName=ExecutableBookProject.myst-highlight
 [github-ci-badge]: https://img.shields.io/github/workflow/status/ExecutableBookProject/myst-highlight-grammar/Github-CI?label=Github-CI
 [github-ci-link]: https://github.com/ExecutableBookProject/myst-highlight-grammar/actions
+[vscode-settings]: https://code.visualstudio.com/docs/getstarted/settings
