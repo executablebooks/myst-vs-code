@@ -4,7 +4,7 @@ import * as yaml from "js-yaml"
 import * as jinja from "nunjucks"
 import * as plist from "plist"
 
-export function readGrammar(asPlist: boolean = false) {
+export function readGrammar(asPlist = false) {
   const templateYaml = fs.readFileSync(
     path.join(__dirname, "../template/myst.tmLanguage.j2.yaml"),
     "utf8"
@@ -40,12 +40,14 @@ export function readGrammar(asPlist: boolean = false) {
 function getDefault(obj: any, name: any, defaultValue: any = null) {
   const value = obj[name]
   if (value === undefined) {
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-return
     return defaultValue
   }
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-return
   return value
 }
 
-export function readSnippets(asJson: boolean = false) {
+export function readSnippets(asJson = false) {
   const snippetsYaml = fs.readFileSync(
     path.join(__dirname, "../snippets/dir.template.yaml"),
     "utf8"

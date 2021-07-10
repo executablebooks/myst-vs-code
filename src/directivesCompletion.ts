@@ -3,10 +3,10 @@ import * as vscode from "vscode"
 import * as yaml from "js-yaml"
 import * as dirDict from "./data/directives.json"
 
-const dirRegexp = new RegExp(".*[`]{3,}\\{") // TODO check not backslash escapes
+const dirRegexp = new RegExp(".*[`:]{3,}\\{") // TODO check not backslash escapes
 const dirStartRegexp = new RegExp("\\{[a-zA-Z0-9\\-]+\\}")
 
-export function getDirectiveData(name: string) {
+export function getDirectiveData(name: string): any {
   const dict: { [key: string]: any } = dirDict
   return dict[name]
 }
@@ -27,7 +27,11 @@ export class CompletionItemProvider implements vscode.CompletionItemProvider {
       const completions: vscode.CompletionItem[] = []
       const dict: { [key: string]: any } = dirDict
       for (const name in dirDict) {
-        directiveCompletion(name, dict[name], completions)
+        try {
+          directiveCompletion(name, dict[name], completions)
+        } catch (error) {
+          console.warn(`Could not create directive completion: ${name}: ${error}`)
+        }
       }
       return completions
     }
@@ -35,7 +39,7 @@ export class CompletionItemProvider implements vscode.CompletionItemProvider {
   }
 }
 
-export function makeDescription(data: any, addClass: boolean = false) {
+export function makeDescription(data: any, addClass = false): vscode.MarkdownString {
   const opts = yaml.safeDump({
     "Required Args": data["required_arguments"],
     "Optional Args": data["optional_arguments"],
@@ -44,9 +48,9 @@ export function makeDescription(data: any, addClass: boolean = false) {
   })
   let string = ""
   if (addClass) {
-    string = "`" + data["klass"] + "`\n\n"
+    string = "`" + `${data["klass"]}` + "`\n\n"
   }
-  string = string + data["description"]
+  string = string + `${data["description"]}`
   const mdown = new vscode.MarkdownString(string)
   mdown.appendCodeblock(opts, "yaml")
   return mdown
@@ -72,18 +76,24 @@ export class HoverProvider implements vscode.HoverProvider {
   ): Promise<vscode.Hover> {
     const range = document.getWordRangeAtPosition(position, dirStartRegexp)
     if (range === undefined) {
-      return new Promise(resolve => resolve())
+      return new Promise(resolve =>
+        resolve(new vscode.Hover(new vscode.MarkdownString("")))
+      )
     }
     const textLine = document.lineAt(range.start)
     const startLine = textLine.text.slice(undefined, range.start.character)
-    if (!startLine.endsWith("```")) {
-      return new Promise(resolve => resolve())
+    if (!(startLine.endsWith("```") || startLine.endsWith(":::"))) {
+      return new Promise(resolve =>
+        resolve(new vscode.Hover(new vscode.MarkdownString("")))
+      )
     }
     // TODO check for backslash escapes
     let text = document.getText(range)
     text = text.slice(1, -1)
     if (!(text in dirDict)) {
-      return new Promise(resolve => resolve())
+      return new Promise(resolve =>
+        resolve(new vscode.Hover(new vscode.MarkdownString("")))
+      )
     }
     const data = getDirectiveData(text)
     const mkdown = makeDescription(data, true)
