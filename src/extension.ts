@@ -12,7 +12,7 @@ import amsmathPlugin from "markdown-it-amsmath"
 import deflistPlugin from "markdown-it-deflist"
 import tasklistPlugin from "markdown-it-task-lists"
 import { renderToString } from "katex"
-import { convertFrontMatter, mystBlockPlugin } from "./mdPlugins"
+import { colonFencePlugin, convertFrontMatter, mystBlockPlugin } from "./mdPlugins"
 
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
@@ -71,6 +71,9 @@ export function activate(context: vscode.ExtensionContext) {
           optionsBlock: { throwOnError: false, displayMode: true }
         })
       }
+      if (extensions.includes("colon_fence")) {
+        newMd = newMd.use(colonFencePlugin)
+      }
       if (extensions.includes("amsmath")) {
         newMd = newMd.use(amsmathPlugin, {
           renderer: renderToString,
@@ -83,6 +86,7 @@ export function activate(context: vscode.ExtensionContext) {
       if (extensions.includes("tasklist")) {
         newMd = newMd.use(tasklistPlugin)
       }
+      // TODO substitutions
       return newMd
     }
   }

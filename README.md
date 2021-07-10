@@ -13,7 +13,7 @@ This extension extends VS Code's Markdown language with the following features:
 
 injects additional elements into the base markdown syntax highlighting grammar, and adds additional language support for MyST specific elements.
 
-**NEW**: In version 0.11, the preview parser has been fully re-written!
+**NEW**: In version 0.11, the preview parser has been fully re-written, with support for syntax extensions and rendering of common directives!
 
 - [MyST-Markdown VS Code Extension](#myst-markdown-vs-code-extension)
   - [Features](#features)

@@ -3,7 +3,7 @@ import * as vscode from "vscode"
 import * as yaml from "js-yaml"
 import * as dirDict from "./data/directives.json"
 
-const dirRegexp = new RegExp(".*[`]{3,}\\{") // TODO check not backslash escapes
+const dirRegexp = new RegExp(".*[`:]{3,}\\{") // TODO check not backslash escapes
 const dirStartRegexp = new RegExp("\\{[a-zA-Z0-9\\-]+\\}")
 
 export function getDirectiveData(name: string): any {
@@ -27,7 +27,11 @@ export class CompletionItemProvider implements vscode.CompletionItemProvider {
       const completions: vscode.CompletionItem[] = []
       const dict: { [key: string]: any } = dirDict
       for (const name in dirDict) {
-        directiveCompletion(name, dict[name], completions)
+        try {
+          directiveCompletion(name, dict[name], completions)
+        } catch (error) {
+          console.warn(`Could not create directive completion: ${name}: ${error}`)
+        }
       }
       return completions
     }
@@ -78,7 +82,7 @@ export class HoverProvider implements vscode.HoverProvider {
     }
     const textLine = document.lineAt(range.start)
     const startLine = textLine.text.slice(undefined, range.start.character)
-    if (!startLine.endsWith("```")) {
+    if (!(startLine.endsWith("```") || startLine.endsWith(":::"))) {
       return new Promise(resolve =>
         resolve(new vscode.Hover(new vscode.MarkdownString("")))
       )

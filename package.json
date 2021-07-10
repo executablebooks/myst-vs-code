@@ -69,6 +69,7 @@
                         "type": "string",
                         "enum": [
                             "amsmath",
+                            "colon_fence",
                             "deflist",
                             "dollarmath",
                             "tasklist"
