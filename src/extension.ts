@@ -14,6 +14,8 @@ import tasklistPlugin from "markdown-it-task-lists"
 import { renderToString } from "katex"
 import { colonFencePlugin, convertFrontMatter, mystBlockPlugin } from "./mdPlugins"
 
+const extensionId = "executablebookproject.myst-highlight"
+
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
 export function activate(context: vscode.ExtensionContext) {
@@ -22,13 +24,15 @@ export function activate(context: vscode.ExtensionContext) {
   console.log("Activated MyST-Markdown extension")
 
   // The command has been defined in the package.json file
-  // Now provide the implementation of the command with  registerCommand
+  // Now provide the implementation of the command with registerCommand
   // The commandId parameter must match the command field in package.json
   const disposable = vscode.commands.registerCommand("myst.Activate", () => {
     // The code you place here will be executed every time your command is executed
     // Display a message box to the user
     void vscode.window.showInformationMessage("Activated MyST-Markdown!")
   })
+
+  notifyNewReleases(context)
 
   context.subscriptions.push(disposable)
 
@@ -94,3 +98,39 @@ export function activate(context: vscode.ExtensionContext) {
 
 // this method is called when your extension is deactivated
 export function deactivate() {}
+
+/** Notify users that if the extension has been updated to a new major release */
+function notifyNewReleases(context: vscode.ExtensionContext) {
+  const previousVersion = context.globalState.get("previousVersion")
+  const currentVersion =
+    vscode.extensions.getExtension(extensionId)?.packageJSON.version
+  void context.globalState.update("previousVersion", currentVersion)
+  if (typeof previousVersion !== "string") {
+    console.log(`set previousVersion: ${currentVersion}`)
+    return
+  }
+  if (typeof currentVersion === "string" && currentVersion !== previousVersion) {
+    if (isMajorUpdate(previousVersion, currentVersion)) {
+      void vscode.window.showInformationMessage(
+        `MyST-Markdown updated to v${currentVersion}. See the Changelog for what's new!`
+      )
+    }
+  }
+}
+
+/** Check if major update to extension or, if major version is 0, check patch version */
+function isMajorUpdate(previousVersion: string, currentVersion: string): boolean {
+  try {
+    const previousVerArr = previousVersion.split(".").map(Number)
+    const currentVerArr = currentVersion.split(".").map(Number)
+    if (currentVerArr[0] === 0 && currentVerArr[1] > previousVerArr[1]) {
+      return true
+    }
+    if (currentVerArr[0] > previousVerArr[0]) {
+      return true
+    }
+  } catch (error) {
+    console.warn(`Failed to read extension versions: ${error}`)
+  }
+  return false
+}

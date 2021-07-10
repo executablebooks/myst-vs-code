@@ -8,12 +8,11 @@ The official [MyST (Markedly Structured Text)](https://myst-parser.readthedocs.i
 This extension extends VS Code's Markdown language with the following features:
 
 - Extended syntax highlighting
-- Hover and auto-completion for roles and directives
+- Hover information and auto-completion for roles and directives
 - Extended preview rendering
+- Code snippets for role and directive definitions
 
 injects additional elements into the base markdown syntax highlighting grammar, and adds additional language support for MyST specific elements.
-
-**NEW**: In version 0.11, the preview parser has been fully re-written, with support for syntax extensions and rendering of common directives!
 
 - [MyST-Markdown VS Code Extension](#myst-markdown-vs-code-extension)
   - [Features](#features)
@@ -102,8 +101,7 @@ For more information:
 
 The main grammar is stored in `syntaxes/myst.tmLanguage`. This file is generated from `myst.tmLanguage.base.yaml`.
 
-See [this guide on textmate bundles](https://macromates.com/manual/en/language_grammars) and
-[the VS Code guide](https://code.visualstudio.com/api/language-extensions/syntax-highlight-guide) for more help.
+See [this guide on textmate bundles](https://macromates.com/manual/en/language_grammars), the [VS Code Syntax Highlight guide](https://code.visualstudio.com/api/language-extensions/syntax-highlight-guide), and the [extension API](https://code.visualstudio.com/api) for more help.
 
 ### Manual testing
 
