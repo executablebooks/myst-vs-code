@@ -1,4 +1,4 @@
-# MyST VS Code Extension
+# MyST-Markdown VS Code Extension
 
 [![VS Marketplace][vs-market-badge]][vs-market-link]
 [![Github-CI][github-ci-badge]][github-ci-link]
@@ -15,7 +15,7 @@ injects additional elements into the base markdown syntax highlighting grammar, 
 
 **NEW**: In version 0.11, the preview parser has been fully re-written!
 
-- [MyST VS Code Extension](#myst-vs-code-extension)
+- [MyST-Markdown VS Code Extension](#myst-markdown-vs-code-extension)
   - [Features](#features)
     - [Syntax Highlighting](#syntax-highlighting)
     - [Hover and Autocompletion](#hover-and-autocompletion)
