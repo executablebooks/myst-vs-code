@@ -7,8 +7,6 @@ The official [MyST (Markedly Structured Text)](https://myst-parser.readthedocs.i
 
 This extension injects additional elements into the base markdown syntax highlighting grammar, and adds additional language support for MyST specific elements.
 
-**Important** This extension is a work in progress, and future changes are likely.
-
 **NEW**: In version 0.11, the preview parser has been fully re-written!
 
 - [MyST VS Code Extension](#myst-vs-code-extension)
@@ -169,6 +167,8 @@ See: https://code.visualstudio.com/api/working-with-extensions/publishing-extens
 ## Acknowledgements
 
 Testing originally adapted from [vscode-markdown-tm-grammar](https://github.com/microsoft/vscode-markdown-tm-grammar/tree/59a5962e4775bf96484bba64c5322422b555a40d).
+
+VS Code Markdown extension exemplars were taken from [vscode/extensions/markdown-math](https://github.com/microsoft/vscode/blob/main/extensions/markdown-math).
 
 [vs-market-badge]: https://vsmarketplacebadge.apphb.com/version/ExecutableBookProject.myst-highlight.svg "Current Release"
 [vs-market-link]: https://marketplace.visualstudio.com/items?itemName=ExecutableBookProject.myst-highlight
