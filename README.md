@@ -34,30 +34,30 @@ injects additional elements into the base markdown syntax highlighting grammar, 
 
 ### Syntax Highlighting
 
-<img width="500" alt="screenshot" src="https://raw.githubusercontent.com/ExecutableBookProject/myst-vs-code/master/images/Screenshot.png">
+<img width="500" alt="screenshot" src="https://raw.githubusercontent.com/executablebooks/myst-vs-code/master/images/Screenshot.png">
 
 Embedded code blocks/cells can be utilised in their native language:
 
-<img width="500" alt="screenshot" src="https://raw.githubusercontent.com/ExecutableBookProject/myst-vs-code/master/images/embedded-code.gif">
+<img width="500" alt="screenshot" src="https://raw.githubusercontent.com/executablebooks/myst-vs-code/master/images/embedded-code.gif">
 
 ### Hover and Autocompletion
 
 Directive completion and hover is available for all built-in sphinx directives:
 
-<img width="500" alt="screenshot" src="https://raw.githubusercontent.com/ExecutableBookProject/myst-vs-code/master/images/directive-completion.gif">
+<img width="500" alt="screenshot" src="https://raw.githubusercontent.com/executablebooks/myst-vs-code/master/images/directive-completion.gif">
 
-<img width="500" alt="screenshot" src="https://raw.githubusercontent.com/ExecutableBookProject/myst-vs-code/master/images/directive-hover.gif">
+<img width="500" alt="screenshot" src="https://raw.githubusercontent.com/executablebooks/myst-vs-code/master/images/directive-hover.gif">
 
 Snippet completions are also available for a number of Sphinx directives:
 
-<img width="500" alt="screenshot" src="https://raw.githubusercontent.com/ExecutableBookProject/myst-vs-code/master/images/snippet-completion.gif">
+<img width="500" alt="screenshot" src="https://raw.githubusercontent.com/executablebooks/myst-vs-code/master/images/snippet-completion.gif">
 
 ### Preview Enhancement
 
 This extension enhances VS Code's built-in Markdown previewer
 ([see this guide for info](https://code.visualstudio.com/api/extension-guides/markdown-extension)), to properly render MyST syntax like directives and other extensions.
 
-<img width="500" alt="screenshot" src="https://raw.githubusercontent.com/ExecutableBookProject/myst-vs-code/master/images/preview.gif">
+<img width="500" alt="screenshot" src="https://raw.githubusercontent.com/executablebooks/myst-vs-code/master/images/preview.gif">
 
 If you encounter any issues with this, you can disable it with the `myst.preview.enable` [configuration setting][vscode-settings] (and please report it).
 
@@ -188,6 +188,6 @@ VS Code Markdown extension exemplars were taken from [vscode/extensions/markdown
 
 [vs-market-badge]: https://vsmarketplacebadge.apphb.com/version/ExecutableBookProject.myst-highlight.svg "Current Release"
 [vs-market-link]: https://marketplace.visualstudio.com/items?itemName=ExecutableBookProject.myst-highlight
-[github-ci-badge]: https://img.shields.io/github/workflow/status/ExecutableBookProject/myst-vs-code/Github-CI?label=Github-CI
-[github-ci-link]: https://github.com/ExecutableBookProject/myst-vs-code/actions
+[github-ci-badge]: https://img.shields.io/github/workflow/status/executablebooks/myst-vs-code/Github-CI?label=Github-CI
+[github-ci-link]: https://github.com/executablebooks/myst-vs-code/actions
 [vscode-settings]: https://code.visualstudio.com/docs/getstarted/settings

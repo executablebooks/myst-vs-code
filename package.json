@@ -14,11 +14,11 @@
     "license": "MIT",
     "repository": {
         "type": "git",
-        "url": "https://github.com/ExecutableBookProject/myst-vs-code.git"
+        "url": "https://github.com/executablebooks/myst-vs-code.git"
     },
-    "homepage": "https://github.com/ExecutableBookProject/myst-vs-code/blob/master/README.md",
+    "homepage": "https://github.com/executablebooks/myst-vs-code/blob/master/README.md",
     "bugs": {
-        "url": "https://github.com/ExecutableBookProject/myst-vs-code/issues/new/choose"
+        "url": "https://github.com/executablebooks/myst-vs-code/issues/new/choose"
     },
     "categories": [
         "Programming Languages"
