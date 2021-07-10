@@ -3,9 +3,15 @@
 [![VS Marketplace][vs-market-badge]][vs-market-link]
 [![Github-CI][github-ci-badge]][github-ci-link]
 
-The official [MyST (Markedly Structured Text)](https://myst-parser.readthedocs.io) Textmate grammar, and VS Code extension, for extending the markdown language.
+The official [MyST (Markedly Structured Text)](https://myst-parser.readthedocs.io) VS Code extension, for extending the Markdown language.
 
-This extension injects additional elements into the base markdown syntax highlighting grammar, and adds additional language support for MyST specific elements.
+This extension extends VS Code's Markdown language with the following features:
+
+- Extended syntax highlighting
+- Hover and auto-completion for roles and directives
+- Extended preview rendering
+
+injects additional elements into the base markdown syntax highlighting grammar, and adds additional language support for MyST specific elements.
 
 **NEW**: In version 0.11, the preview parser has been fully re-written!
 
@@ -28,30 +34,30 @@ This extension injects additional elements into the base markdown syntax highlig
 
 ### Syntax Highlighting
 
-<img width="500" alt="screenshot" src="https://raw.githubusercontent.com/ExecutableBookProject/myst-highlight-grammar/master/images/Screenshot.png">
+<img width="500" alt="screenshot" src="https://raw.githubusercontent.com/ExecutableBookProject/myst-language-support/master/images/Screenshot.png">
 
 Embedded code blocks/cells can be utilised in their native language:
 
-<img width="500" alt="screenshot" src="https://raw.githubusercontent.com/ExecutableBookProject/myst-highlight-grammar/master/images/embedded-code.gif">
+<img width="500" alt="screenshot" src="https://raw.githubusercontent.com/ExecutableBookProject/myst-language-support/master/images/embedded-code.gif">
 
 ### Hover and Autocompletion
 
 Directive completion and hover is available for all built-in sphinx directives:
 
-<img width="500" alt="screenshot" src="https://raw.githubusercontent.com/ExecutableBookProject/myst-highlight-grammar/master/images/directive-completion.gif">
+<img width="500" alt="screenshot" src="https://raw.githubusercontent.com/ExecutableBookProject/myst-language-support/master/images/directive-completion.gif">
 
-<img width="500" alt="screenshot" src="https://raw.githubusercontent.com/ExecutableBookProject/myst-highlight-grammar/master/images/directive-hover.gif">
+<img width="500" alt="screenshot" src="https://raw.githubusercontent.com/ExecutableBookProject/myst-language-support/master/images/directive-hover.gif">
 
 Snippet completions are also available for a number of Sphinx directives:
 
-<img width="500" alt="screenshot" src="https://raw.githubusercontent.com/ExecutableBookProject/myst-highlight-grammar/master/images/snippet-completion.gif">
+<img width="500" alt="screenshot" src="https://raw.githubusercontent.com/ExecutableBookProject/myst-language-support/master/images/snippet-completion.gif">
 
 ### Preview Enhancement
 
 This extension enhances VS Code's built-in Markdown previewer
 ([see this guide for info](https://code.visualstudio.com/api/extension-guides/markdown-extension)), to properly render MyST syntax like directives and other extensions.
 
-<img width="500" alt="screenshot" src="https://raw.githubusercontent.com/ExecutableBookProject/myst-highlight-grammar/master/images/preview.gif">
+<img width="500" alt="screenshot" src="https://raw.githubusercontent.com/ExecutableBookProject/myst-language-support/master/images/preview.gif">
 
 If you encounter any issues with this, you can disable it with the `myst.preview.enable` [configuration setting][vscode-settings] (and please report it).
 
@@ -172,6 +178,6 @@ VS Code Markdown extension exemplars were taken from [vscode/extensions/markdown
 
 [vs-market-badge]: https://vsmarketplacebadge.apphb.com/version/ExecutableBookProject.myst-highlight.svg "Current Release"
 [vs-market-link]: https://marketplace.visualstudio.com/items?itemName=ExecutableBookProject.myst-highlight
-[github-ci-badge]: https://img.shields.io/github/workflow/status/ExecutableBookProject/myst-highlight-grammar/Github-CI?label=Github-CI
-[github-ci-link]: https://github.com/ExecutableBookProject/myst-highlight-grammar/actions
+[github-ci-badge]: https://img.shields.io/github/workflow/status/ExecutableBookProject/myst-language-support/Github-CI?label=Github-CI
+[github-ci-link]: https://github.com/ExecutableBookProject/myst-language-support/actions
 [vscode-settings]: https://code.visualstudio.com/docs/getstarted/settings

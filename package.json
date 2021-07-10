@@ -5,9 +5,9 @@
     "version": "0.10.2",
     "repository": {
         "type": "git",
-        "url": "https://github.com/ExecutableBookProject/myst-highlight-grammar.git"
+        "url": "https://github.com/ExecutableBookProject/myst-language-support.git"
     },
-    "homepage": "https://github.com/ExecutableBookProject/myst-highlight-grammar/blob/master/README.md",
+    "homepage": "https://github.com/ExecutableBookProject/myst-language-support/blob/master/README.md",
     "publisher": "ExecutableBookProject",
     "keywords": [
         "markdown",
@@ -87,7 +87,7 @@
         "onLanguage:markdown"
     ],
     "bugs": {
-        "url": "https://github.com/ExecutableBookProject/myst-highlight-grammar/issues/new/choose"
+        "url": "https://github.com/ExecutableBookProject/myst-language-support/issues/new/choose"
     },
     "devDependencies": {
         "@types/glob": "^7.1.1",
