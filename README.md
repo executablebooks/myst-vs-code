@@ -20,6 +20,7 @@ injects additional elements into the base markdown syntax highlighting grammar, 
     - [Syntax Highlighting](#syntax-highlighting)
     - [Hover and Autocompletion](#hover-and-autocompletion)
     - [Preview Enhancement](#preview-enhancement)
+      - [CSS Styling](#css-styling)
       - [A note on dollar-math](#a-note-on-dollar-math)
   - [Working with Markdown](#working-with-markdown)
   - [Contributing](#contributing)
@@ -69,6 +70,13 @@ You can add MyST syntax extensions with the `myst.preview.extensions` [configura
 - `tasklist`: Parse GitHub style task lists
 
 Note after changing this setting you should reload the VS Code window.
+
+#### CSS Styling
+
+Principally the stylings from [markdown-it-docutils](https://github.com/executablebooks/markdown-it-docutils) are used.
+
+The colors are in light mode by default, switching to the dark mode when set by the users operating system.
+See the [`prefers-color-scheme` documentation](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme) for details.
 
 #### A note on dollar-math
 
