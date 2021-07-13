@@ -397,6 +397,13 @@
   sources:
     - source.shell
 - identifiers:
+    - svelte
+  language: svelte
+  name: svelte
+  sources:
+    - source.svelte
+  allow_yaml: true
+- identifiers:
     - typescript
     - ts
   language: typescript
