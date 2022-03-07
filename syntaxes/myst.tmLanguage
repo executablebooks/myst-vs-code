@@ -355,6 +355,10 @@
           </dict>
           <dict>
             <key>include</key>
+            <string>#directive-code-svelte</string>
+          </dict>
+          <dict>
+            <key>include</key>
             <string>#directive-code-ts</string>
           </dict>
           <dict>
@@ -2820,6 +2824,90 @@
               <dict>
                 <key>include</key>
                 <string>source.shell</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+      <key>directive-code-svelte</key>
+      <dict>
+        <key>begin</key>
+        <string>(^|\G)(\s*)(\`{3,}|~{3,})\s*\{(code|code-block|code-cell)\}\s*(?i:(svelte)((\s+|:|\{)[^\`~]*)?$)</string>
+        <key>name</key>
+        <string>markup.directive.code.myst</string>
+        <key>end</key>
+        <string>(^|\G)(\2|\s{0,3})(\3)\s*$</string>
+        <key>beginCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+          <key>4</key>
+          <dict>
+            <key>name</key>
+            <string>support.class.directive.myst</string>
+          </dict>
+          <key>5</key>
+          <dict>
+            <key>name</key>
+            <string>support.variable.language.myst</string>
+          </dict>
+        </dict>
+        <key>endCaptures</key>
+        <dict>
+          <key>3</key>
+          <dict>
+            <key>name</key>
+            <string>punctuation.definition.myst</string>
+          </dict>
+        </dict>
+        <key>patterns</key>
+        <array>
+          <dict>
+            <key>begin</key>
+            <string>(^|\G)(\s*)(.*)</string>
+            <key>while</key>
+            <string>(^|\G)(?!\s*([\`~]{3,})\s*$)</string>
+            <key>contentName</key>
+            <string>meta.embedded.block.svelte</string>
+            <key>patterns</key>
+            <array>
+              <dict>
+                <key>begin</key>
+                <string>(^|\G)(-{3})\s*$</string>
+                <key>beginCaptures</key>
+                <dict>
+                  <key>1</key>
+                  <dict>
+                    <key>name</key>
+                    <string>punctuation.options.myst</string>
+                  </dict>
+                </dict>
+                <key>end</key>
+                <string>(^|\G)(-{3})\s*$</string>
+                <key>endCaptures</key>
+                <dict>
+                  <key>2</key>
+                  <dict>
+                    <key>name</key>
+                    <string>punctuation.options.myst</string>
+                  </dict>
+                </dict>
+                <key>contentName</key>
+                <string>meta.embedded.block.options</string>
+                <key>patterns</key>
+                <array>
+                  <dict>
+                    <key>include</key>
+                    <string>source.yaml</string>
+                  </dict>
+                </array>
+              </dict>
+              <dict>
+                <key>include</key>
+                <string>source.svelte</string>
               </dict>
             </array>
           </dict>
