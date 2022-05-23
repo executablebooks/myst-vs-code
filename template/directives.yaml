@@ -8,6 +8,9 @@ admonition_classes:
   - note
   - tip
   - warning
+  - admonition
+  - margin
+  - toggle
 code_classes:
   - code
   - code-block

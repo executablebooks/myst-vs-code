@@ -125,7 +125,7 @@
         <key>comment</key>
         <string>These are directive blocks, whereby the content, should be treated as markdown</string>
         <key>begin</key>
-        <string>(^|\G)(\s*)(`{3,}|~{3,})\{(attention|caution|danger|error|important|hint|note|tip|warning)\}\s*(?=([^`~]*)?$)</string>
+        <string>(^|\G)(\s*)(`{3,}|~{3,})\{(attention|caution|danger|error|important|hint|note|tip|warning|admonition|margin|toggle)\}\s*(?=([^`~]*)?$)</string>
         <key>beginCaptures</key>
         <dict>
           <key>3</key>
