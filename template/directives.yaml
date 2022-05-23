@@ -10,7 +10,15 @@ admonition_classes:
   - warning
   - admonition
   - margin
+  - sidebar
   - toggle
+  - dropdown
+  - panels
+  - epigraph
+  - glossary
+  - tabbed
+  - div
+  - figure
 code_classes:
   - code
   - code-block
