@@ -304,7 +304,7 @@ function colon_fence_rule(
   state.line = nextLine + (haveEndMarker ? 1 : 0)
 
   const token = state.push("fence", "code", 0)
-  token.info = params
+  token.info = params.trim()  // whitespace before a directive should be ignored
   token.content = state.getLines(startLine + 1, nextLine, len, true)
   token.markup = markup
   token.map = [startLine, state.line]
