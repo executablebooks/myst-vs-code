@@ -28,6 +28,9 @@
         "vscode": "^1.41.0"
     },
     "main": "out/extension",
+    "extensionDependencies": [
+        "chrisjsewell.myst-tml-syntax"
+    ],
     "dependencies": {
         "js-yaml": "^3.13.1",
         "katex": "^0.13.11",
@@ -46,8 +49,6 @@
         "@types/markdown-it": "^12.0.2",
         "@types/mocha": "^5.2.6",
         "@types/node": "^8.10.25",
-        "@types/nunjucks": "^3.1.3",
-        "@types/plist": "^3.0.2",
         "@types/vscode": "^1.41.0",
         "@typescript-eslint/eslint-plugin": "^4.28.2",
         "@typescript-eslint/parser": "^4.28.2",
@@ -58,8 +59,6 @@
         "markdown-it": "^12.1.0",
         "minimist": ">=1.2.2",
         "mocha": "^6.1.4",
-        "nunjucks": "^3.2.1",
-        "plist": "^3.0.1",
         "prettier": "^2.3.2",
         "process": "^0.11.10",
         "tslint": "^5.8.0",
@@ -85,19 +84,6 @@
         "onLanguage:markdown"
     ],
     "contributes": {
-        "grammars": [
-            {
-                "path": "./syntaxes/myst.tmLanguage",
-                "injectTo": [
-                    "text.html.markdown"
-                ],
-                "scopeName": "text.myst.injection",
-                "embeddedLanguages": {
-                    "meta.embedded.block.markdown": "text.html.markdown",
-                    "meta.embedded.block.ipython": "source.python"
-                }
-            }
-        ],
         "snippets": [
             {
                 "language": "markdown",
