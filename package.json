@@ -58,7 +58,7 @@
         "eslint-plugin-prettier": "^3.4.0",
         "markdown-it": "^12.1.0",
         "minimist": ">=1.2.2",
-        "mocha": "^6.1.4",
+        "mocha": "^10.2.0",
         "prettier": "^2.3.2",
         "process": "^0.11.10",
         "tslint": "^5.8.0",
