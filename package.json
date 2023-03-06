@@ -56,7 +56,7 @@
         "eslint-config-prettier": "^8.3.0",
         "eslint-plugin-import": "^2.20.1",
         "eslint-plugin-prettier": "^3.4.0",
-        "markdown-it": "^12.1.0",
+        "markdown-it": "^12.3.2",
         "minimist": ">=1.2.2",
         "mocha": "^6.1.4",
         "prettier": "^2.3.2",
