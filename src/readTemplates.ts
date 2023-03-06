@@ -1,41 +1,6 @@
 import * as fs from "fs"
 import * as path from "path"
 import * as yaml from "js-yaml"
-import * as jinja from "nunjucks"
-import * as plist from "plist"
-
-export function readGrammar(asPlist = false) {
-  const templateYaml = fs.readFileSync(
-    path.join(__dirname, "../template/myst.tmLanguage.j2.yaml"),
-    "utf8"
-  )
-  const languageYaml = fs.readFileSync(
-    path.join(__dirname, "../template/languages.yaml"),
-    "utf8"
-  )
-  const directiveYaml = fs.readFileSync(
-    path.join(__dirname, "../template/directives.yaml"),
-    "utf8"
-  )
-
-  // read variables
-  const languages = yaml.safeLoad(languageYaml) as { [key: string]: any }
-  const directives = yaml.safeLoad(directiveYaml) as { [key: string]: any }
-
-  // inject variables
-  const inputYaml = jinja
-    .renderString(templateYaml, {
-      admonition_classes: directives["admonition_classes"],
-      code_classes: directives["code_classes"],
-      languages
-    })
-    .toString()
-  const grammar = yaml.safeLoad(inputYaml) as { [key: string]: any }
-  if (asPlist) {
-    return plist.build(grammar)
-  }
-  return grammar
-}
 
 function getDefault(obj: any, name: any, defaultValue: any = null) {
   const value = obj[name]

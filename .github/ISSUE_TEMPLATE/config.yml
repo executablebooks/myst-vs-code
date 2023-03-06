@@ -1,0 +1,7 @@
+contact_links:
+- name: Syntax highlighting issues
+  url: https://github.com/chrisjsewell/vscode-myst-syntax
+  about: This extension deals with syntax highlighting.
+- name: General MyST questions
+  url: https://github.com/executablebooks/MyST-Parser/discussions
+  about: For more general MyST questions.

@@ -2,7 +2,7 @@
 import * as assert from "assert"
 import * as fs from "fs"
 import * as path from "path"
-import { readGrammar, readSnippets } from "../../readTemplates"
+import { readSnippets } from "../../readTemplates"
 
 function sanitize(fileString: string) {
   fileString = fileString.replace("\\r\\n", "\n")
@@ -11,15 +11,6 @@ function sanitize(fileString: string) {
 }
 
 suite("Build Tests", () => {
-  test("Build directives", () => {
-    const expected = fs.readFileSync(
-      path.join(__dirname, "../../../syntaxes", "myst.tmLanguage"),
-      "utf8"
-    )
-    const plistString = readGrammar(true) as string
-    assert.equal(sanitize(plistString), sanitize(expected))
-  })
-
   test("Build snippets", () => {
     const expected = fs.readFileSync(
       path.join(__dirname, "../../../snippets", "directives.json"),
